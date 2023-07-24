@@ -19,7 +19,7 @@ json_output.mkdir(parents=True, exist_ok=True)
 xml_output.mkdir(parents=True, exist_ok=True)
 
 
-def replace_text(e):
+def replace_text(e: dict | str) -> dict | str | None:
     if e is None:
         return
 
@@ -35,17 +35,19 @@ def replace_text(e):
                 to_update = str_to_xml(v)
                 if k != "#text":
                     to_update = {k: to_update}
-
                 to_remove.append(k)
+
         elif isinstance(v, dict):
             e[k] = replace_text(v)
+
         elif isinstance(v, list):
             if v == []:
                 continue
-            # print(v)
             e[k] = [replace_text(x) for x in v]
+
         elif v is None:
             continue
+
         else:
             raise ValueError
 
@@ -76,16 +78,12 @@ def replace_text(e):
     # e.update(to_update)
     return e
 
+
 def str_to_xml(text: str) -> dict:
     # text = re.sub(r"(\s)\1+", r"\g<1>", text).strip()
     text = re.sub(r"(\s)+", " ", text)
     doc = nlp(text)
-    # new_text = []
-    # for token in doc:
-    #     new_token = soup.new_tag("w", pos=token.pos_, dep=token.dep_, lemma=token.lemma_, entity=token.ent_type_)
-    #     new_token.string = token.text
-    #     new_text.append(xmltodict.parse(new_token))
-    # return new_text
+
     # res = [
     #         {
     #             "@pos": token.pos_,
@@ -99,17 +97,17 @@ def str_to_xml(text: str) -> dict:
     # return {"w": res} if len(res) > 1 else {"w": res[0]}
 
     return {
-            "w": [
-                {
-                    "@pos": token.pos_,
-                    "@dep": token.dep_,
-                    "@lemma": token.lemma_,
-                    "@entity": token.ent_type_,
-                    "#text": token.text
-                }
-                for token in doc
-            ]
-        }
+        "w": [
+            {
+                "@pos": token.pos_,
+                "@dep": token.dep_,
+                "@lemma": token.lemma_,
+                "@entity": token.ent_type_,
+                "#text": token.text
+            }
+            for token in doc
+        ]
+    }
 
 
 for file in original_folder.glob("*.xml"):
