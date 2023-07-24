@@ -1,0 +1,3268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../Teinte/tei2html.xsl"?>
+<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<!--Odette: 2020-12-02T21:03:36+01:00-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>LE MEDECIN MALGRE' LUY</title>
+                <title>COMEDIE.</title>
+                <author>Par I.B.P. Moliere</author>
+            </titleStmt>
+            <editionStmt>
+                <edition>Université Sorbonne Nouvelle</edition>
+                <respStmt>
+                    <name>Zornitsa Pavlova</name>
+                    <resp>édition XML-TEI</resp>
+                </respStmt>
+                <respStmt>
+                    <name>Gabriella Parussa</name>
+                    <resp>relecture</resp>
+                </respStmt>
+                <respStmt>
+                    <name>Chiara Mainardi</name>
+                    <resp>correction XML-TEI</resp>
+                </respStmt>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>Université Sorbonne Nouvelle</publisher>
+                <date when="2020"/>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl>BNF RES-YF-3141</bibl>
+                <biblFull>
+                    <titleStmt>
+                        <title>Les oeuvres de Monsieur de Moliere.</title>
+                        <title>Tome III.</title>
+                        <editor>A Paris, Chez Claude Barbin, au Palais, sur le second Perron de la S. Chapelle. 1673.
+                            Avec privilege du Roy.
+                        </editor>
+
+                    </titleStmt>
+                    <publicationStmt>
+                        <publisher>Université Sorbonne Nouvelle</publisher>
+                    </publicationStmt>
+                </biblFull>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <creation>
+                <date when="1673">1673</date>
+                <!--Selon l'achevé d'imprimer sur la page de titre figure 1674. -->
+            </creation>
+            <langUsage>
+                <language ident="fr">FR</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div>
+                <argument>
+                    <head>ACTEURS.</head>
+                    <castList>
+                        <castItem xml:id="SGANARELLE">Sganarelle
+                            <roleDesc>, Mary de Martine.</roleDesc>
+                        </castItem>
+                        <castItem xml:id="MARTINE">Martine
+                            <roleDesc>, Femme de Sganarelle.</roleDesc>
+                        </castItem>
+                        <castItem xml:id="M.ROBERT">M. Robert
+                            <roleDesc>, Voisin de Sganarelle.</roleDesc>
+                        </castItem>
+                        <castItem xml:id="VALERE">Valere
+                            <roleDesc>, Domestique de Geronte.</roleDesc>
+                        </castItem>
+                        <castItem xml:id="LUCAS">Lucas
+                            <roleDesc>, Mary de Jacqueline.</roleDesc>
+                        </castItem>
+                        <castItem xml:id="GERONTE">Geronte
+                            <roleDesc>, Pere de Lucinde.</roleDesc>
+                        </castItem>
+                        <castItem xml:id="JACQUELINE">Jacqueline
+                            <roleDesc>, Nourrice chez Geronte, Femme de Lucas.</roleDesc>
+                        </castItem>
+                        <castItem xml:id="LUCINDE">Lucinde
+                            <roleDesc>, Fille de Geronte.</roleDesc>
+                        </castItem>
+                        <castItem xml:id="LEANDRE">Leandre
+                            <roleDesc>, Amant de Lucinde.</roleDesc>
+                        </castItem>
+                        <castItem xml:id="THIBAUT">Thibaut
+                            <roleDesc>, Pere de Perrin.</roleDesc>
+                        </castItem>
+                        <castItem xml:id="PERRIN">Perrin
+                            <roleDesc>, Fils de Thibaut, Païsan. [1]</roleDesc>
+                        </castItem>
+                    </castList>
+                </argument>
+            </div>
+            <div>
+                <head>LE MEDECIN MALGRE LUY</head>
+                <head>COMEDIE.</head>
+            </div>
+            <div type="act" n="I">
+                <head>ACTE PREMIER.</head>
+            </div>
+            <div type="scene" n="1">
+                <head>SCENE PREMIERE.</head>
+                <stage type="castList">SGANARELLE, MARTINE, en se querellant.</stage>
+                <sp who="SGANARELLE">
+                    <speaker>SGANARELLE.</speaker>
+                    <p>Non, je te dis que je n’en veux rien faire, &amp; que c’est à moy de parler, &amp; d’estre le
+                        Maistre.
+                    </p>
+                </sp>
+                <sp who="MARTINE">
+                    <speaker>MARTINE</speaker>
+                    <p>Et je te dis, moi, que je veux que tu vives à ma fantaisie, &amp; que je ne me suis point mariée
+                        avec toi pour souffrir tes fredaines. [2]
+                    </p>
+                </sp>
+                <sp who="SGANARELLE">
+                    <speaker>SGANARELLE.</speaker>
+                    <p>O la grande fatigue que d’avoir une Femme ! &amp; qu’Aristote a bien raison, quand il dit qu’une
+                        femme est pire qu’un Démon !
+                    </p>
+                </sp>
+                <sp who="MARTINE">
+                    <speaker>MARTINE.</speaker>
+                    <p>Voyez un peu l’habile Homme, avec son benest d’Aristote.</p>
+                </sp>
+                <sp who="SGANARELLE">
+                    <speaker>SGANARELLE.</speaker>
+                    <p>Ouï habile Homme. Trouve moi un faiseur de Fagots qui sçache, comme moi, raisonner des choses ;
+                        qui ait servi six ans un fameux Medecin ; &amp; qui ait sçeu dans son jeune âge son Rudiment par
+                        cœur.
+                    </p>
+                </sp>
+                <sp who="MARTINE">
+                    <speaker>MARTINE.</speaker>
+                    <p>Peste du Fou fieffé.</p>
+                </sp>
+                <sp who="SGANARELLE">
+                    <speaker>SGANARELLE.</speaker>
+                    <p>Peste de la Carogne.</p>
+                </sp>
+                <sp who="MARTINE">
+                    <speaker>MARTINE.</speaker>
+                    <p>Que maudite soit l’heure &amp; le jour, où je m’avisay d’aller dire ouy !</p>
+                </sp>
+                <sp who="SGANARELLE">
+                    <speaker>SGANARELLE.</speaker>
+                    <p>Que maudit soit le Bec-cornu de Notaire qui me fit signer ma ruine !</p>
+                </sp>
+                <sp who="MARTINE">
+                    <speaker>MARTINE.</speaker>
+                    <p>C'est bien à toy, vrayment, à te plaindre de cette affaire. Devrois-tu estre un seul moment sans
+                        rendre graces au Ciel de m’avoir pour ta Femme ? &amp; meritois-tu d’épouser une Personne comme
+                        moi ?
+                    </p>
+                </sp>
+                <sp who="SGANARELLE">
+                    <speaker>SGANARELLE.</speaker>
+                    <p>Il est vray que tu me fis trop d’honneur, &amp; que j’eus lieu de me loüer la premiere nuit de
+                        nos Nopces. Hé, morbleu, ne me fais point parler [3] là-dessus, je dirois de certaines
+                        choses....
+                    </p>
+                </sp>
+                <sp who="MARTINE">
+                    <speaker>MARTINE.</speaker>
+                    <p>Quoy, que dirois-tu ?</p>
+                </sp>
+                <sp who="SGANARELLE">
+                    <speaker>SGANARELLE.</speaker>
+                    <p>Baste. Laissons-là ce Chapitre, il suffit que nous sçavons ce que nous sçavons, &amp; que tu fus
+                        bien-heureuse de me trouver.
+                    </p>
+                </sp>
+                <sp who="MARTINE">
+                    <speaker>MARTINE.</speaker>
+                    <p>Qu'appelles-tu bien-heureuse de te trouver ? Un Homme qui me réduit à l’Hospital, un Débauché, un
+                        Traistre qui me mange tout ce que j[’]ay.
+                    </p>
+                </sp>
+                <sp who="SGANARELLE">
+                    <speaker>SGANARELLE.</speaker>
+                    <p>Tu as menti, j’en boy une partie.</p>
+                </sp>
+                <sp who="MARTINE">
+                    <speaker>MARTINE.</speaker>
+                    <p>Qui me vend, piece-à-piece, tout ce qui est dans le Logis.</p>
+                </sp>
+                <sp who="SGANARELLE">
+                    <speaker>SGANARELLE.</speaker>
+                    <p>C’est vivre de Ménage.</p>
+                </sp>
+                <sp who="MARTINE">
+                    <speaker>MARTINE.</speaker>
+                    <p>Qui m’a osté jusqu’au Lit que j’avois.</p>
+                </sp>
+                <sp who="SGANARELLE">
+                    <speaker>SGANARELLE.</speaker>
+                    <p>Tu t’en leveras plus matin.</p>
+                </sp>
+                <sp who="MARTINE">
+                    <speaker>MARTINE.</speaker>
+                    <p>Enfin, qui ne laisse aucun Meuble dans toute la Maison.</p>
+                </sp>
+                <sp who="SGANARELLE">
+                    <speaker>SGANARELLE.</speaker>
+                    <p>On en déménage plus aisément.</p>
+                </sp>
+                <sp who="MARTINE">
+                    <speaker>MARTINE.</speaker>
+                    <p>Et qui du matin jusqu’au soir ne fait que joüer &amp; que boire.</p>
+                </sp>
+                <sp who="SGANARELLE">
+                    <speaker>SGANARELLE.</speaker>
+                    <p>C'est pour ne me point ennuyer. [4]</p>
+                </sp>
+                <sp who="MARTINE">
+                    <speaker>MARTINE.</speaker>
+                    <p>Et que veux-tu, pendant ce temps, que je fasse avec ma Famille ?</p>
+                </sp>
+                <sp who="SGANARELLE">
+                    <speaker>SGANARELLE.</speaker>
+                    <p>Tout ce qu’il te plaira.</p>
+                </sp>
+                <sp who="MARTINE">
+                    <speaker>MARTINE.</speaker>
+                    <p>J'ay quatre pauvres petits Enfans sur les bras.</p>
+                </sp>
+                <sp who="SGANARELLE">
+                    <speaker>SGANARELLE.</speaker>
+                    <p>Mets-les à terre.</p>
+                </sp>
+                <sp who="MARTINE">
+                    <speaker>MARTINE.</speaker>
+                    <p>Qui me demandent à toute heure du pain.</p>
+                </sp>
+                <sp who="SGANARELLE">
+                    <speaker>SGANARELLE.</speaker>
+                    <p>Donne-leur le foüet. Quand j’ay bien bû &amp; bien mangé, je veux que tout le monde soit saoul
+                        dans ma Maison.
+                    </p>
+                </sp>
+                <sp who="MARTINE">
+                    <speaker>MARTINE.</speaker>
+                    <p>Et tu pretens, Yvrogne, que les choses aillent toûjours de mesme ?</p>
+                </sp>
+                <sp who="SGANARELLE">
+                    <speaker>SGANARELLE.</speaker>
+                    <p>Ma Femme, allons tout doucement, s’il vous plaist.</p>
+                </sp>
+                <sp who="MARTINE">
+                    <speaker>MARTINE.</speaker>
+                    <p>Que j’endure éternellement tes insolences &amp; tes débauches ?</p>
+                </sp>
+                <sp who="SGANARELLE">
+                    <speaker>SGANARELLE.</speaker>
+                    <p>Ne nous emportons point, ma Femme.</p>
+                </sp>
+                <sp who="MARTINE">
+                    <speaker>MARTINE.</speaker>
+                    <p>Et que je ne sçache pas trouver le moien de te ranger à ton devoir ?</p>
+                </sp>
+                <sp who="SGANARELLE">
+                    <speaker>SGANARELLE.</speaker>
+                    <p>Ma Femme, vous sçavez que je n’ay pas l’ame endurante, &amp; que j’ay le bras assez bon. [5]</p>
+                </sp>
+                <sp who="MARTINE">
+                    <speaker>MARTINE.</speaker>
+                    <p>Je me moque de tes menaces.</p>
+                </sp>
+                <sp who="SGANARELLE">
+                    <speaker>SGANARELLE.</speaker>
+                    <p>Ma petite Femme, ma mie, vostre peau vous demange, à vostre ordinaire.</p>
+                </sp>
+                <sp who="MARTINE">
+                    <speaker>MARTINE.</speaker>
+                    <p>Je te montreray bien que je ne te crains nullement.</p>
+                </sp>
+                <sp who="SGANARELLE">
+                    <speaker>SGANARELLE.</speaker>
+                    <p>Ma chere Moitié, vous avez envie de me dérober quelque chose.</p>
+                </sp>
+                <sp who="MARTINE">
+                    <speaker>MARTINE.</speaker>
+                    <p>Crois-tu que je m’épouvante de tes paroles ?</p>
+                </sp>
+                <sp who="SGANARELLE">
+                    <speaker>SGANARELLE.</speaker>
+                    <p>Doux Objet de mes vœux, je vous froteray les oreilles.</p>
+                </sp>
+                <sp who="MARTINE">
+                    <speaker>MARTINE.</speaker>
+                    <p>Yvrogne que tu es.</p>
+                </sp>
+                <sp who="SGANARELLE">
+                    <speaker>SGANARELLE.</speaker>
+                    <p>Je vous battray.</p>
+                </sp>
+                <sp who="MARTINE">
+                    <speaker>MARTINE.</speaker>
+                    <p>Sac à-vin.</p>
+                </sp>
+                <sp who="SGANARELLE">
+                    <speaker>SGANARELLE.</speaker>
+                    <p>Je vous rosseray.</p>
+                </sp>
+                <sp who="MARTINE">
+                    <speaker>MARTINE.</speaker>
+                    <p>Infâme.</p>
+                </sp>
+                <sp who="SGANARELLE">
+                    <speaker>SGANARELLE.</speaker>
+                    <p>Je vous étrilleray.</p>
+                </sp>
+                <sp who="MARTINE">
+                    <speaker>MARTINE.</speaker>
+                    <p>Traistre, Insolent, Trompeur, Lâche, Coquin, Pendart, Gueux, Belistre, Fripon, Maraut,
+                        Voleur....
+                    </p>
+                </sp>
+                <sp who="SGANARELLE">
+                    <speaker>SGANARELLE</speaker>
+                    <stage>
+                        <hi rend="i">prend un Baston, &amp; lui en donne. [6]</hi>
+                    </stage>
+                    <p>Ah, vous en voulez donc ?</p>
+                </sp>
+                <sp who="MARTINE">
+                    <speaker>MARTINE.</speaker>
+                    <p>Ah, ah, ah, ah.</p>
+                </sp>
+                <sp who="SGANARELLE">
+                    <speaker>SGANARELLE.</speaker>
+                    <p>Voila le vray moyen de vous appaiser.</p>
+                </sp>
+            </div>
+            <div type="scene" n="II">
+                <head>SCENE II.</head>
+                <stage type="castList">MONSIEUR ROBERT, SGANARELLE, MARTINE.</stage>
+                <sp who="M.ROBERT">
+                    <speaker>M. ROBERT.</speaker>
+                    <p>Hola, hola, hola ; Fy. Qu'est-ce-cy ? Querelle infamie ! Peste soit le Coquin, de
+                        battre ainsi la Femme.
+                    </p>
+                </sp>
+                <sp who="MARTINE">
+                    <speaker>MARTINE</speaker>
+                    <stage>
+                        <hi rend="i">les mains sur les costez lui parle en le faisant reculer, &amp; à la fin lui donne
+                            un soufflet.
+                        </hi>
+                    </stage>
+                    <p>Et je veux qu’il me batte, moy.</p>
+                </sp>
+                <sp who="M.ROBERT">
+                    <speaker>M. ROBERT.</speaker>
+                    <p>Ah, j’y consens de tout mon cœur.</p>
+                </sp>
+                <sp who="MARTINE">
+                    <speaker>MARTINE.</speaker>
+                    <p>Dequoy vous meslez-vous ?</p>
+                </sp>
+                <sp who="M.ROBERT">
+                    <speaker>M. ROBERT.</speaker>
+                    <p>J'ay tort.</p>
+                </sp>
+                <sp who="MARTINE">
+                    <speaker>MARTINE.</speaker>
+                    <p>Est-ce là vostre affaire ?</p>
+                </sp>
+                <sp who="M.ROBERT">
+                    <speaker>M. ROBERT.</speaker>
+                    <p>Vous avez raison.</p>
+                </sp>
+                <sp who="MARTINE">
+                    <speaker>MARTINE.</speaker>
+                    <p>Voyez un peu cet Impertinent, qui veut [7] empescher les Marys de battre leurs Femmes.</p>
+                </sp>
+                <sp who="M.ROBERT">
+                    <speaker>M. ROBERT.</speaker>
+                    <p>Je me retracte.</p>
+                </sp>
+                <sp who="MARTINE">
+                    <speaker>MARTINE.</speaker>
+                    <p>Qu'avez-vous à voir là-dessus ?</p>
+                </sp>
+                <sp who="M.ROBERT">
+                    <speaker>M. ROBERT.</speaker>
+                    <p>Rien.</p>
+                </sp>
+                <sp who="MARTINE">
+                    <speaker>MARTINE.</speaker>
+                    <p>Est-ce à vous d’y mettre le nez ?</p>
+                </sp>
+                <sp who="M.ROBERT">
+                    <speaker>M. ROBERT</speaker>
+                    <p>Non.</p>
+                </sp>
+                <sp who="MARTINE">
+                    <speaker>MARTINE.</speaker>
+                    <p>Meslez-vous de vos affaires.</p>
+                </sp>
+                <sp who="M.ROBERT">
+                    <speaker>M. ROBERT.</speaker>
+                    <p>Je ne dis plus mot.</p>
+                </sp>
+                <sp who="MARTINE">
+                    <speaker>MARTINE.</speaker>
+                    <p>Il me plaist d’estre battuë.</p>
+                </sp>
+                <sp who="M.ROBERT">
+                    <speaker>M. ROBERT.</speaker>
+                    <p>D'accord.</p>
+                </sp>
+                <sp who="MARTINE">
+                    <speaker>MARTINE.</speaker>
+                    <p>Ce n’est pas à vos despens.</p>
+                </sp>
+                <sp who="M.ROBERT">
+                    <speaker>M. ROBERT.</speaker>
+                    <p>Il est vray.</p>
+                </sp>
+                <sp who="MARTINE">
+                    <speaker>MARTINE.</speaker>
+                    <p>Et vous estes un Sot, de venir vous fourrer où vous n’avez que faire.</p>
+                </sp>
+                <sp who="M.ROBERT">
+                    <speaker>M. ROBERT</speaker>
+                    <stage>
+                        <hi rend="i">passe en suite vers le Mary, qui pareillement lui parle toûjours en le faisant
+                            reculer, le frappe avec le mesme Baston, le met en fuite, &amp; dit à la fin.
+                        </hi>
+                    </stage>
+                    <p>Compere, je vous demande pardon de tout mon cœur. Faites, rossez, battez comme il faut [8] vostre
+                        Femme ; je vous aideray si vous le voulez.
+                    </p>
+                </sp>
+                <sp who="SGANARELLE">
+                    <speaker>SGANARELLE.</speaker>
+                    <p>Il ne me plaist pas, moy.</p>
+                </sp>
+                <sp who="M.ROBERT">
+                    <speaker>M. ROBERT.</speaker>
+                    <p>Ah, c’est une autre chose !</p>
+                </sp>
+                <sp who="SGANARELLE">
+                    <speaker>SGANARELLE.</speaker>
+                    <p>Je la veux battre, si je le veux ; &amp; ne la veux pas battre si je ne le veux pas.</p>
+                </sp>
+                <sp who="M.ROBERT">
+                    <speaker>M. ROBERT.</speaker>
+                    <p>Fort bien.</p>
+                </sp>
+                <sp who="SGANARELLE">
+                    <speaker>SGANARELLE.</speaker>
+                    <p>C'est ma Femme, &amp; non pas la vostre.</p>
+                </sp>
+                <sp who="M.ROBERT">
+                    <speaker>M. ROBERT.</speaker>
+                    <p>Sans doute.</p>
+                </sp>
+                <sp who="SGANARELLE">
+                    <speaker>SGANARELLE.</speaker>
+                    <p>Vous n’avez rien à me commander.</p>
+                </sp>
+                <sp who="M.ROBERT">
+                    <speaker>M. ROBERT.</speaker>
+                    <p>D'accord.</p>
+                </sp>
+                <sp who="SGANARELLE">
+                    <speaker>SGANARELLE.</speaker>
+                    <p>Je n’ay que faire de vostre aide.</p>
+                </sp>
+                <sp who="M.ROBERT">
+                    <speaker>M. ROBERT.</speaker>
+                    <p>Tres-volontiers.</p>
+                </sp>
+                <sp who="SGANARELLE">
+                    <speaker>SGANARELLE.</speaker>
+                    <p>Et vous estes un Impertinent, de vous ingerer des affaires d’autruy. Apprenez que Ciceron dit
+                        qu’entre l’arbre &amp; le doigt il ne faut point mettre l’écorce.
+                        <stage>
+                            <hi rend="i">En suite il revient vers sa Femme, &amp; lui dit en lui pressant la main.</hi>
+                        </stage>
+                        O çà, faisons la paix nous deux. Touche-là.
+                    </p>
+                </sp>
+                <sp who="MARTINE">
+                    <speaker>MARTINE.</speaker>
+                    <p>Oüy, aprés m’avoir ainsi battuë ? [9]</p>
+                </sp>
+                <sp who="SGANARELLE">
+                    <speaker>SGANARELLE.</speaker>
+                    <p>Cela n’est rien. Touche[.]</p>
+                </sp>
+                <sp who="MARTINE">
+                    <speaker>MARTINE.</speaker>
+                    <p>Je ne veux pas.</p>
+                </sp>
+                <sp who="SGANARELLE">
+                    <speaker>SGANARELLE.</speaker>
+                    <p>Eh !</p>
+                </sp>
+                <sp who="MARTINE">
+                    <speaker>MARTINE.</speaker>
+                    <p>Non.</p>
+                </sp>
+                <sp who="SGANARELLE">
+                    <speaker>SGANARELLE.</speaker>
+                    <p>Ma petite Femme.</p>
+                </sp>
+                <sp who="MARTINE">
+                    <speaker>MARTINE.</speaker>
+                    <p>Point.</p>
+                </sp>
+                <sp who="SGANARELLE">
+                    <speaker>SGANARELLE.</speaker>
+                    <p>Allons, te dis-je.</p>
+                </sp>
+                <sp who="MARTINE">
+                    <speaker>MARTINE.</speaker>
+                    <p>Je n’en feray rien.</p>
+                </sp>
+                <sp who="SGANARELLE">
+                    <speaker>SGANARELLE.</speaker>
+                    <p>Vien, vien, vien.</p>
+                </sp>
+                <sp who="MARTINE">
+                    <speaker>MARTINE.</speaker>
+                    <p>Non, je veux estre en colere.</p>
+                </sp>
+                <sp who="SGANARELLE">
+                    <speaker>SGANARELLE.</speaker>
+                    <p>Fy, c’est une bagatelle ; allons, allons.</p>
+                </sp>
+                <sp who="MARTINE">
+                    <speaker>MARTINE.</speaker>
+                    <p>Laisse-moy là.</p>
+                </sp>
+                <sp who="SGANARELLE">
+                    <speaker>SGANARELLE.</speaker>
+                    <p>Touche, te dis-je.</p>
+                </sp>
+                <sp who="MARTINE">
+                    <speaker>MARTINE.</speaker>
+                    <p>Tu m’as trop mal traitée.</p>
+                </sp>
+                <sp who="SGANARELLE">
+                    <speaker>SGANARELLE.</speaker>
+                    <p>Et bien va, je te demande pardon, mets-là ta main.</p>
+                </sp>
+                <sp who="MARTINE">
+                    <speaker>MARTINE</speaker>
+                    <stage>
+                        <hi rend="i">bas</hi>
+                    </stage>
+                    <p>Je te pardonne, mais tu le payeras. [10]</p>
+                </sp>
+                <sp who="SGANARELLE">
+                    <speaker>SGANARELLE.</speaker>
+                    <p>Tu es une Folle de prendre garde à cela ; Ce sont petites choses qui sont de temps en temps
+                        necessaires dans l’amitié, &amp; cinq ou six coups de baston entre gens qui s’aiment, ne font
+                        que ragaillardir l’affection. Va, je m’en vais au Bois, &amp; je te promets aujourd’huy plus
+                        d’un cent de Fagots.
+                    </p>
+                </sp>
+            </div>
+            <div type="scene" n="3">
+                <head>SCENE III.</head>
+                <sp who="MARTINE">
+                    <speaker>MARTINE</speaker>
+                    <stage>
+                        <hi rend="i">seule.</hi>
+                    </stage>
+                    <p>Va, quelque mine que je fasse, je n’oubliray pas mon ressentiment, &amp; je brûle en moy-mesme de
+                        trouver les moyens de te punir des coups que tu me donnes. Je sçay bien qu’une Femme a toûjours
+                        dans les mains dequoy se vanger d’un Mary ; mais c’est une punition trop délicate pour mon
+                        Pendart : Je veux une vangeance qui se fasse un peu mieux sentir, &amp; ce n’est pas
+                        contentement pour l’injure que j’ay receuë. [11]
+                    </p>
+                </sp>
+            </div>
+            <div type="scene" n="4">
+                <head>SCENE IV.</head>
+                <stage type="castList">VALERE, LUCAS, MARTINE.</stage>
+                <sp who="LUCAS">
+                    <speaker>LUCAS.</speaker>
+                    <p>Parguenne j’avons pris là tous deux une gueble de commission ; &amp; je ne sçay pas, moy, ce que
+                        je pensons attraper.
+                    </p>
+                </sp>
+                <sp who="VALERE">
+                    <speaker>VALERE.</speaker>
+                    <p>Que veux-tu, mon pauvre Nourricier ? il faut bien obeïr à nostre Maistre ; &amp; puis nous avons
+                        interest, l’un &amp; l’autre, à la santé de sa Fille, nostre Maistresse, &amp; sans doute son
+                        Mariage differé par sa Maladie nous vaudra quelque récompense. Horace qui est liberal, a bonne
+                        part aux pretentions qu’on peut avoir sur sa Personne ; &amp; quoi qu’elle ait fait voir de
+                        l’amitié pour un certain Leandre, tu sçais bien que son Pere n’a jamais voulu consentir à le
+                        recevoir pour son Gendre.
+                    </p>
+                </sp>
+                <sp who="MARTINE">
+                    <speaker>MARTINE</speaker>
+                    <stage>
+                        <hi rend="i">révant à part-elle.</hi>
+                    </stage>
+                    <p>Ne puis-je point trouver quelque invention pour me vanger ?</p>
+                </sp>
+                <sp who="LUCAS">
+                    <speaker>LUCAS.</speaker>
+                    <p>Mais quelle fantaisie s’est-il bouté là dans la teste, puis que les Medecins y avont tous perdu
+                        leur Latin ?
+                    </p>
+                </sp>
+                <sp who="VALERE">
+                    <speaker>VALERE.</speaker>
+                    <p>On trouve quelquefois à force de chercher, [12] ce qu’on ne trouve pas d’abord ; &amp; souvent en
+                        de simples lieux...
+                    </p>
+                </sp>
+                <sp who="MARTINE">
+                    <speaker>MARTINE.</speaker>
+                    <p>Oüy, il faut que je m’en vange à quelque prix que ce soit ; Ces coups de baston me reviennent au
+                        cœur, je ne les sçaurois digerer, &amp; ....
+                        <stage>
+                            <hi rend="i">Elle dit cecy en revant, de force que ne prenant pas garde à ces deux Hommes,
+                                elle les heurte en se retournant, &amp; leur dit
+                            </hi>
+                        </stage>
+                         : Ah ! Messieurs, je vous demande pardon, je ne vous voyois pas, &amp; cherchois dans ma teste
+                        quelque chose qui m’embarasse.
+                    </p>
+                </sp>
+                <sp who="VALERE">
+                    <speaker>VALERE.</speaker>
+                    <p>Chacun à ses soins dans le Monde ; &amp; nous cherchons ce que nous voudrions bien trouver.</p>
+                </sp>
+                <sp who="MARTINE">
+                    <speaker>MARTINE.</speaker>
+                    <p>Seroit-ce quelque chose où je vous puisse aider ?</p>
+                </sp>
+                <sp who="VALERE">
+                    <speaker>VALERE.</speaker>
+                    <p>Cela se pourroit faire ; &amp; nous tâchons de rencontrer quelque habile Homme, quelque Medecin
+                        particulier qui pût donner quelque soulagement à la Fille de nostre Maistre, attaquée d’une
+                        Maladie qui lui a osté tout d’un coup l’usage de la langue. Plusieurs Medecins ont déja épuisé
+                        toute leur Science aprés elle ; mais on trouve par fois des Gens avec des Secrets admirables ;
+                        de certains Remedes particuliers, qui font le plus souvent ce que les autres n’ont sçeu faire,
+                        &amp; c’est là ce que nous cherchons.
+                    </p>
+                </sp>
+                <sp who="MARTINE">
+                    <speaker>MARTINE</speaker>
+                    <stage>
+                        <hi rend="i">dit ces deux premieres lignes bas.</hi>
+                    </stage>
+                    <p>Ah, que le Ciel m’inspire une admirable in-[13]vention pour me vanger de mon Pendart !
+                        <stage>
+                            <hi rend="i">haut.</hi>
+                        </stage>
+                        Vous ne pouviez jamais vous mieux adresser pour rencontrer ce que vous cherchez ; &amp; nous
+                        avons un Homme, le plus merveilleux Homme du Monde, pour les Maladies desesperées.
+                    </p>
+                </sp>
+                <sp who="VALERE">
+                    <speaker>VALERE.</speaker>
+                    <p>Et de grace, où pouvons-nous le rencontrer ?</p>
+                </sp>
+                <sp who="MARTINE">
+                    <speaker>MARTINE.</speaker>
+                    <p>Vous le trouverez maintenant vers ce petit lieu que voila, qui s’amuse à couper du Bois.</p>
+                </sp>
+                <sp who="LUCAS">
+                    <speaker>LUCAS.</speaker>
+                    <p>Un Medecin qui coupe du Bois ?</p>
+                </sp>
+                <sp who="VALERE">
+                    <speaker>VALERE.</speaker>
+                    <p>Qui s’amuse à cüeillir des Simples, voulez-vous dire ?</p>
+                </sp>
+                <sp who="MARTINE">
+                    <speaker>MARTINE.</speaker>
+                    <p>Non. C'est un Homme extraordinaire, qui se plaist à cela, fantasque, bizarre, quinteux,
+                        &amp; que vous ne prendriez jamais pour ce qu’il est : Il va vestu d’une façon
+                        extravagante, affecte quelquesfois de paroistre ignorant, tient sa Science renfermée,
+                        &amp; ne fuit rien tant tous les jours, que d’exercer les merveilleux talens qu’il a eu
+                        du Ciel pour la Medecine.
+                    </p>
+                </sp>
+                <sp who="VALERE">
+                    <speaker>VALERE.</speaker>
+                    <p>C'est une chose admirable, que tous les grands Hommes ont toûjours du caprice, quelque
+                        petit grain de folie meslé à leur Science.
+                    </p>
+                </sp>
+                <sp who="MARTINE">
+                    <speaker>MARTINE.</speaker>
+                    <p>La folie de celui-cy est plus grande qu’on ne peut croire ; car elle va par fois jusqu’à
+                        vouloir estre battu pour demeurer d’accord de sa [14] capacité , &amp; je vous donne
+                        avis que vous n’en viendrez pas à bout ; qu’il n’avoüera jamais qu’il est Medecin, s’il
+                        se le met en fantaisie , que vous ne preniez chacun un baston, &amp; ne le reduisiez à
+                        force de coups, à vous confesser à la fin, ce qu’il vous cachera d’abord : c’est ainsi
+                        que nous en usons quand nous avons besoin de lui.
+                    </p>
+                </sp>
+                <sp who="VALERE">
+                    <speaker>VALERE.</speaker>
+                    <p>Voila une étrange folie !</p>
+                </sp>
+                <sp who="MARTINE">
+                    <speaker>MARTINE.</speaker>
+                    <p>Il est vray : mais aprés cela vous verrez qu’il fait des merveilles.</p>
+                </sp>
+                <sp who="VALERE">
+                    <speaker>VALERE.</speaker>
+                    <p>Comment s’appelle-t-il ?</p>
+                </sp>
+                <sp who="MARTINE">
+                    <speaker>MARTINE.</speaker>
+                    <p>Il s’appelle Sganarelle ; mais il est aisé à connoistre. C'est un Homme qui a une large Barbe
+                        noire, &amp; qui porte une Fraise, avec un Habit jaune &amp; vert.
+                    </p>
+                </sp>
+                <sp who="LUCAS">
+                    <speaker>LUCAS.</speaker>
+                    <p>Un Habit jaune &amp; vart ! C'est donc le Medecin des Paroquets.</p>
+                </sp>
+                <sp who="VALERE">
+                    <speaker>VALERE.</speaker>
+                    <p>Mais est-il bien vray qu’il soit si habile que vous le dites ?</p>
+                </sp>
+                <sp who="MARTINE">
+                    <speaker>MARTINE.</speaker>
+                    <p>Comment ! c’est un Homme qui fait des miracles. Il y a six mois qu’une Femme fut abandonnée de
+                        tous les autres Medecins : on la tenoit morte il y avoit déja six heures ; &amp; l’on se
+                        disposoit à l’ensevelir, lors qu’on y fit venir de force l’Homme dont nous parlons. Il lui mit,
+                        [15] l’ayant veuë, une petite goutte de je ne sçay quoy dans la bouche ; &amp; dans le mesme
+                        instant elle se leva de son Lit, &amp; se mit aussi-tost à se promener dans sa Chambre, comme si
+                        de rien n’eust esté.
+                    </p>
+                </sp>
+                <sp who="LUCAS">
+                    <speaker>LUCAS.</speaker>
+                    <p>Ah !</p>
+                </sp>
+                <sp who="VALERE">
+                    <speaker>VALERE.</speaker>
+                    <p>Il faloit que ce fust quelque goutte d’Or potable.</p>
+                </sp>
+                <sp who="MARTINE">
+                    <speaker>MARTINE.</speaker>
+                    <p>Cela pourroit bien estre. Il n’y a pas trois semaines encore, qu’un jeune Enfant de douze
+                        ans tomba du haut du Clocher en bas, &amp; se brisa sur le pavé la teste, les bras,
+                        &amp; les jambes. On n’y eut pas plûtost amené nostre Homme, qu’il le frotta par tout le
+                        corps d’un certain Onguent qu’il sçait faire ; &amp; l’Enfant aussi-tost se leva sur ses
+                        pieds, &amp; courut joüer à la fossette.
+                    </p>
+                </sp>
+                <sp who="LUCAS">
+                    <speaker>LUCAS.</speaker>
+                    <p>Ah !</p>
+                </sp>
+                <sp who="VALERE">
+                    <speaker>VALERE.</speaker>
+                    <p>Il faut que cet Homme-là ait la Medecine Universelle.</p>
+                </sp>
+                <sp who="MARTINE">
+                    <speaker>MARTINE.</speaker>
+                    <p>Qui en doute ?</p>
+                </sp>
+                <sp who="LUCAS">
+                    <speaker>LUCAS.</speaker>
+                    <p>Testigué, vela justement l’Homme qu’il nous faut : allons viste le charcher.</p>
+                </sp>
+                <sp who="VALERE">
+                    <speaker>VALERE.</speaker>
+                    <p>Nous vous remercions du plaisir que vous nous faites. [16]</p>
+                </sp>
+                <sp who="MARTINE">
+                    <speaker>MARTINE.</speaker>
+                    <p>Mais souvenez-vous bien au moins de l’avertissement que je vous ay donné.</p>
+                </sp>
+                <sp who="LUCAS">
+                    <speaker>LUCAS.</speaker>
+                    <p>Eh morguenne, laissez-nous faire ; s’il ne tient qu’à battre, la Vache est à nous.</p>
+                </sp>
+                <sp who="VALERE">
+                    <speaker>VALERE.</speaker>
+                    <p>Nous sommes bien-heureux d’avoir fait cette rencontre ; &amp; j’en conçois pour moy la meilleure
+                        esperance du monde.
+                    </p>
+                </sp>
+            </div>
+            <div type="scene" n="5">
+                <head>SCENE V.</head>
+                <stage type="castList">SGANARELLE, VALERE, LUCAS.</stage>
+                <sp who="SGANARELLE">
+                    <speaker>SGANARELLE</speaker>
+                    <stage>
+                        <hi rend="i">entre sur le Theatre en chantant &amp; tenant une Bouteille.</hi>
+                    </stage>
+                    <p>La, la, la.</p>
+                </sp>
+                <sp who="VALERE">
+                    <speaker>VALERE.</speaker>
+                    <p>J'entens quelqu’un qui chante, &amp; qui coupe du Bois.</p>
+                </sp>
+                <sp who="SGANARELLE">
+                    <speaker>SGANARELLE.</speaker>
+                    <p>La, la, la... Ma foy, c’est assez travaillé pour boire un coup ; prenons un peu
+                        d’haleine.
+                        <stage>
+                            <hi rend="i">Il boit, &amp; dit après avoir bû.</hi>
+                        </stage>
+                        Voila du
+                        Bois qui est salé comme tous les Diables.
+                    </p>
+                    <l rend="i">Qu'ils sont doux,</l>
+                    <l rend="i">Bouteille jolie,</l>
+                    <l rend="i">Qu'ils sont doux</l>
+                    <l rend="i">Vos petits glou gloux !</l>
+                    <l rend="i">Mais mon sort feroit bien des jaloux,</l>
+                    <l rend="i">Si vous estiez toûjours remplie:</l>
+                    <l rend="i">Ah ! Bouteille ma mie,</l>
+                    <l rend="i">Pourquoy vous vuidez-vous ? [17]</l>
+                    <p>Allons, morbleu, il ne faut point engendrer de mélancolie.</p>
+                </sp>
+                <sp who="VALERE">
+                    <speaker>VALERE.</speaker>
+                    <p>Le voila lui-mesme.</p>
+                </sp>
+                <sp who="LUCAS">
+                    <speaker>LUCAS.</speaker>
+                    <p>Je pense que vous dites vray, &amp; que j’avons bouté le nez dessus.</p>
+                </sp>
+                <sp who="VALERE">
+                    <speaker>VALERE.</speaker>
+                    <p>Voyons de prés.</p>
+                </sp>
+                <sp who="SGANARELLE">
+                    <speaker>SGANARELLE</speaker>
+                    <stage>
+                        <hi rend="i">les appercevant, les regarde en se tournant vers l’un, &amp; puis vers l’autre ;
+                            &amp; abaissant sa voix, dit.
+                        </hi>
+                    </stage>
+                    <p>Ah ma petite Fripone, que je t’aime, mon petit bouchon ! <hi rend="i">Mon fort.... feroit....
+                        bien des.... jaloux, Si....
+                    </hi> Que Diable, à qui en veulent ces Gens-là ?
+                    </p>
+                </sp>
+                <sp who="VALERE">
+                    <speaker>VALERE.</speaker>
+                    <p>C'est lui assurément.</p>
+                </sp>
+                <sp who="LUCAS">
+                    <speaker>LUCAS.</speaker>
+                    <p>Le vela tout craché comme on nous l’a defiguré.</p>
+                </sp>
+                <sp who="SGANARELLE">
+                    <speaker>SGANARELLE</speaker>
+                    <stage>
+                        <hi rend="i">à part.</hi>
+                    </stage>
+                    <stage>
+                        <hi rend="i">Icy il pose la Bouteille à terre ; &amp; Valere se baissant pour le salüer, comme
+                            il croit que c’est à dessein de la prendre, il la met de l’autre costé : en suite dequoy,
+                            Lucas faisant la mesme chose, il la reprend, &amp; la tient contre son estomach, avec divers
+                            gestes, qui font un grand jeu de Theatre.
+                        </hi>
+                    </stage>
+                    <p>Ils consultent en me regardant. Quel dessein auroient-ils ?</p>
+                </sp>
+                <sp who="VALERE">
+                    <speaker>VALERE.</speaker>
+                    <p>Monsieur, n’est-ce pas vous qui vous appelez Sganarelle ? [18]</p>
+                </sp>
+                <sp who="SGANARELLE">
+                    <speaker>SGANARELLE.</speaker>
+                    <p>Eh, quoy ?</p>
+                </sp>
+                <sp who="VALERE">
+                    <speaker>VALERE.</speaker>
+                    <p>Je vous demande si ce n’est pas vous qui se nomme Sganarelle ?</p>
+                </sp>
+                <sp who="SGANARELLE">
+                    <speaker>SGANARELLE</speaker>
+                    <stage>
+                        <hi rend="i">se tournant vers Valere, puis vers Lucas.</hi>
+                    </stage>
+                    <p>Oüy, &amp; non, selon ce que vous lui voulez.</p>
+                </sp>
+                <sp who="VALERE">
+                    <speaker>VALERE.</speaker>
+                    <p>Nous ne voulons que lui faire toutes les civilitez que nous pourrons.</p>
+                </sp>
+                <sp who="SGANARELLE">
+                    <speaker>SGANARELLE.</speaker>
+                    <p>En ce cas, c’est moy qui se nomme Sganarelle.</p>
+                </sp>
+                <sp who="VALERE">
+                    <speaker>VALERE.</speaker>
+                    <p>Monsieur, nous sommes ravis de vous voir. On nous a adressez à vous pour ce que nous cherchons ;
+                        &amp; nous venons implorer vostre aide, dont nous avons besoin.
+                    </p>
+                </sp>
+                <sp who="SGANARELLE">
+                    <speaker>SGANARELLE.</speaker>
+                    <p>Si c’est quelque chose, Messieurs, qui dépende de mon petit negoce, je suis tout prest à vous
+                        rendre service.
+                    </p>
+                </sp>
+                <sp who="VALERE">
+                    <speaker>VALERE.</speaker>
+                    <p>Monsieur, c’est trop de grace que vous nous faites : mais, Monsieur, couvrez-vous, s’il vous
+                        plaist, le Soleil pourroit vous incommoder.
+                    </p>
+                </sp>
+                <sp who="LUCAS">
+                    <speaker>LUCAS.</speaker>
+                    <p>Monsieu, boutez dessus.</p>
+                </sp>
+                <sp who="SGANARELLE">
+                    <speaker>SGANARELLE.</speaker>
+                    <p>Voicy des Gens bien pleins de cerémonie. [19]</p>
+                </sp>
+                <sp who="VALERE">
+                    <speaker>VALERE.</speaker>
+                    <p>Monsieur, il ne faut pas trouver étrange que nous venions à vous : les habiles Gens sont toûjours
+                        recherchez, &amp; nous sommes instruits de vostre capacité.
+                    </p>
+                </sp>
+                <sp who="SGANARELLE">
+                    <speaker>SGANARELLE.</speaker>
+                    <p>Il est vray, Messieurs, que je suis le premier Homme du Monde pour faire des Fagots.</p>
+                </sp>
+                <sp who="VALERE">
+                    <speaker>VALERE.</speaker>
+                    <p>Ah Monsieur....</p>
+                </sp>
+                <sp who="SGANARELLE">
+                    <speaker>SGANARELLE.</speaker>
+                    <p>Je n’y épargne aucune chose, &amp; les fais d’une façon qu’il n’y a rien à dire.</p>
+                </sp>
+                <sp who="VALERE">
+                    <speaker>VALERE.</speaker>
+                    <p>Monsieur, ce n’est pas cela dont il est question.</p>
+                </sp>
+                <sp who="SGANARELLE">
+                    <speaker>SGANARELLE.</speaker>
+                    <p>Mais aussi je les vens cent dix sols le cent.</p>
+                </sp>
+                <sp who="VALERE">
+                    <speaker>VALERE.</speaker>
+                    <p>Ne parlons point de cela, s’il vous plaist.</p>
+                </sp>
+                <sp who="SGANARELLE">
+                    <speaker>SGANARELLE.</speaker>
+                    <p>Je vous promets que je ne sçaurois les donner à moins.</p>
+                </sp>
+                <sp who="VALERE">
+                    <speaker>VALERE.</speaker>
+                    <p>Monsieur, nous sçavons les choses.</p>
+                </sp>
+                <sp who="SGANARELLE">
+                    <speaker>SGANARELLE.</speaker>
+                    <p>Si vous sçavez les choses, vous sçavez que je les vens cela.</p>
+                </sp>
+                <sp who="VALERE">
+                    <speaker>VALERE.</speaker>
+                    <p>Monsieur, c’est se moquer, que....</p>
+                </sp>
+                <sp who="SGANARELLE">
+                    <speaker>SGANARELLE.</speaker>
+                    <p>Je ne me moque point, je n’en puis rien rabattre. [20]</p>
+                </sp>
+                <sp who="VALERE">
+                    <speaker>VALERE.</speaker>
+                    <p>Parlons d’autre façon, de grace.</p>
+                </sp>
+                <sp who="SGANARELLE">
+                    <speaker>SGANARELLE.</speaker>
+                    <p>Vous en pourrez trouver autre-part à moins ; il y a Fagots, &amp; Fagots : Mais pour ceux que je
+                        fais....
+                    </p>
+                </sp>
+                <sp who="VALERE">
+                    <speaker>VALERE.</speaker>
+                    <p>Eh, Monsieur, laissons-là ce discours.</p>
+                </sp>
+                <sp who="SGANARELLE">
+                    <speaker>SGANARELLE.</speaker>
+                    <p>Je vous jure que vous ne les auriez pas, s’il s’en faloit un double.</p>
+                </sp>
+                <sp who="VALERE">
+                    <speaker>VALERE.</speaker>
+                    <p>Eh fy.</p>
+                </sp>
+                <sp who="SGANARELLE">
+                    <speaker>SGANARELLE.</speaker>
+                    <p>Non, en conscience, vous en payerez cela. Je vous parle sincerement, &amp; ne suis pas Homme à
+                        surfaire.
+                    </p>
+                </sp>
+                <sp who="VALERE">
+                    <speaker>VALERE.</speaker>
+                    <p>Faut-il, Monsieur, qu’une Personne comme vous s’amuse à ces grossieres feintes ? s’abaisse à
+                        parler de la sorte ? qu’un Homme si sçavant, un fameux Medecin comme vous estes, veüille se
+                        déguiser aux yeux du Monde, &amp; tenir enterrez les beaux talens qu’il a ?
+                    </p>
+                </sp>
+                <sp who="SGANARELLE">
+                    <speaker>SGANARELLE</speaker>
+                    <stage>
+                        <hi rend="i">à part.</hi>
+                    </stage>
+                    <p>Il est fou.</p>
+                </sp>
+                <sp who="VALERE">
+                    <speaker>VALERE.</speaker>
+                    <p>De grace, Monsieur, ne dissimulez point avec nous.</p>
+                </sp>
+                <sp who="SGANARELLE">
+                    <speaker>SGANARELLE.</speaker>
+                    <p>Comment ?</p>
+                </sp>
+                <sp who="LUCAS">
+                    <speaker>LUCAS.</speaker>
+                    <p>Tout ce tripotage ne sart de rian : je sçavons çen que je sçavons. [21]</p>
+                </sp>
+                <sp who="SGANARELLE">
+                    <speaker>SGANARELLE.</speaker>
+                    <p>Quoy donc ? que me voulez-vous dire ? Pour qui me prenez-vous ?</p>
+                </sp>
+                <sp who="VALERE">
+                    <speaker>VALERE.</speaker>
+                    <p>Pour ce que vous estes, pour un grand Medecin.</p>
+                </sp>
+                <sp who="SGANARELLE">
+                    <speaker>SGANARELLE.</speaker>
+                    <p>Medecin vous-mesme ; je ne le suis point, &amp; ne l’ay jamais esté.</p>
+                </sp>
+                <sp who="VALERE">
+                    <speaker>VALERE.</speaker>
+                    <stage>
+                        <hi rend="i">bas.</hi>
+                    </stage>
+                    <p>Voila sa folie qui le tient.
+                        <stage>
+                            <hi rend="i">haut</hi>
+                        </stage>
+                        . Monsieur, ne veüillez point nier les choses davantage ; &amp; n’en venons point, s’il vous
+                        plaist, à de fâcheuses extrémitez.
+                    </p>
+                </sp>
+                <sp who="SGANARELLE">
+                    <speaker>SGANARELLE.</speaker>
+                    <p>A quoy donc ?</p>
+                </sp>
+                <sp who="VALERE">
+                    <speaker>VALERE.</speaker>
+                    <p>A de certaines choses dont nous serions marris.</p>
+                </sp>
+                <sp who="SGANARELLE">
+                    <speaker>SGANARELLE.</speaker>
+                    <p>Parbleu, venez-en à tout ce qu’il vous plaira ; je ne suis point Medecin, &amp; ne sçay ce que
+                        vous me voulez dire.
+                    </p>
+                </sp>
+                <sp who="VALERE">
+                    <speaker>VALERE.</speaker>
+                    <stage>
+                        <hi rend="i">bas.</hi>
+                    </stage>
+                    <p>Je voy bien qu’il faut se servir du remede.
+                        <stage>
+                            <hi rend="i">haut</hi>
+                        </stage>
+                        . Monsieur, encor un coup, je vous prie d’avoüer ce que vous estes.
+                    </p>
+                </sp>
+                <sp who="LUCAS">
+                    <speaker>LUCAS.</speaker>
+                    <p>Et testigué ne lantiponez point davantage, &amp; confessez à la franquette que v'estes
+                        Medecin.
+                    </p>
+                </sp>
+                <sp who="SGANARELLE">
+                    <speaker>SGANARELLE.</speaker>
+                    <p>J'enrage. [22]</p>
+                </sp>
+                <sp who="VALERE">
+                    <speaker>VALERE.</speaker>
+                    <p>A quoy bon nier ce qu’on sçait ?</p>
+                </sp>
+                <sp who="LUCAS">
+                    <speaker>LUCAS.</speaker>
+                    <p>Pourquoy toutes ces fraimes-là ? à quoy est-ce que ça vous sart ?</p>
+                </sp>
+                <sp who="SGANARELLE">
+                    <speaker>SGANARELLE.</speaker>
+                    <p>Messieurs, en un mot, autant qu’en deux mille, je vous dis que je ne suis point Medecin.</p>
+                </sp>
+                <sp who="VALERE">
+                    <speaker>VALERE.</speaker>
+                    <p>Vous n’estes point Medecin ?</p>
+                </sp>
+                <sp who="SGANARELLE">
+                    <speaker>SGANARELLE.</speaker>
+                    <p>Non.</p>
+                </sp>
+                <sp who="LUCAS">
+                    <speaker>LUCAS.</speaker>
+                    <p>V'nestes pas Medecin ?</p>
+                </sp>
+                <sp who="SGANARELLE">
+                    <speaker>SGANARELLE.</speaker>
+                    <p>Non, vous dis-je.</p>
+                </sp>
+                <sp who="VALERE">
+                    <speaker>VALERE.</speaker>
+                    <p>Puis que vous le voulez, il faut s’y résoudre.</p>
+                </sp>
+                <stage>
+                    <hi rend="i">Ils prennent un baston, &amp; le frappent.</hi>
+                </stage>
+                <sp who="SGANARELLE">
+                    <speaker>SGANARELLE.</speaker>
+                    <p>Ah ! ah ! ah ! Messieurs, je suis tout ce qu’il vous plaira.</p>
+                </sp>
+                <sp who="VALERE">
+                    <speaker>VALERE.</speaker>
+                    <p>Pourquoy, Monsieur, nous obligez-vous à cette violence ?</p>
+                </sp>
+                <sp who="LUCAS">
+                    <speaker>LUCAS.</speaker>
+                    <p>A quoy bon nous bailler la peine de vous battre ?</p>
+                </sp>
+                <sp who="VALERE">
+                    <speaker>VALERE.</speaker>
+                    <p>Je vous assure que j’en ay tous les regrets du monde. [23]</p>
+                </sp>
+                <sp who="LUCAS">
+                    <speaker>LUCAS.</speaker>
+                    <p>Par mafigué j’en sis fâché franchement.</p>
+                </sp>
+                <sp who="SGANARELLE">
+                    <speaker>SGANARELLE.</speaker>
+                    <p>Que Diable est-ce-cy, Messieurs ? De grace, est-ce pour rire ; ou si tous deux vous extravaguez,
+                        de vouloir que je sois Medecin ?
+                    </p>
+                </sp>
+                <sp who="VALERE">
+                    <speaker>VALERE.</speaker>
+                    <p>Quoy, vous ne vous rendez pas encore, &amp; vous vous défendez d’estre Medecin ?</p>
+                </sp>
+                <sp who="SGANARELLE">
+                    <speaker>SGANARELLE.</speaker>
+                    <p>Diable emporte, si je le suis.</p>
+                </sp>
+                <sp who="LUCAS">
+                    <speaker>LUCAS.</speaker>
+                    <p>Il n’est pas vray qu’ous sayez Medecin ?</p>
+                </sp>
+                <sp who="SGANARELLE">
+                    <speaker>SGANARELLE.</speaker>
+                    <p>Non, la peste m’étouffe.
+                        <stage>
+                            <hi rend="i">Là ils recommencent de le battre</hi>
+                        </stage>
+                        . Ah, ah. Hé bien, Messieurs, ouy, puis que vous le voulez, je suis Medecin, je suis Medecin ;
+                        Apoticaire encor, si vous le trouvez bon. J'aime mieux consentir à tout, que de me faire
+                        assommer.
+                    </p>
+                </sp>
+                <sp who="VALERE">
+                    <speaker>VALERE.</speaker>
+                    <p>Ah voila qui va bien, Monsieur, je suis ravy de vous voir raisonnable.</p>
+                </sp>
+                <sp who="LUCAS">
+                    <speaker>LUCAS.</speaker>
+                    <p>Vous me boutez la joye au cœur, quand je vous voy parler comme ça.</p>
+                </sp>
+                <sp who="VALERE">
+                    <speaker>VALERE.</speaker>
+                    <p>Je vous demande pardon de toute mon ame.</p>
+                </sp>
+                <sp who="LUCAS">
+                    <speaker>LUCAS.</speaker>
+                    <p>Je vous demandons excuse de la libarté que j’avons prise. [24]</p>
+                </sp>
+                <sp who="SGANARELLE">
+                    <speaker>SGANARELLE</speaker>
+                    <stage>
+                        <hi rend="i">à part.</hi>
+                    </stage>
+                    <p>Oüais, seroit-ce bien moy qui me tromperois, &amp; serois-je devenu Medecin sans m’en estre
+                        apperceu ?
+                    </p>
+                </sp>
+                <sp who="VALERE">
+                    <speaker>VALERE.</speaker>
+                    <p>Monsieur, vous ne vous repentirez pas de nous montrer ce que vous estes ; &amp; vous verrez
+                        assurément que vous en serez satisfait.
+                    </p>
+                </sp>
+                <sp who="SGANARELLE">
+                    <speaker>SGANARELLE.</speaker>
+                    <p>Mais, Messieurs, dites-moy, ne vous trompez-vous point vous-mesmes ? Est-il bien assuré que je
+                        sois Medecin ?
+                    </p>
+                </sp>
+                <sp who="LUCAS">
+                    <speaker>LUCAS.</speaker>
+                    <p>Oüy par ma figué.</p>
+                </sp>
+                <sp who="SGANARELLE">
+                    <speaker>SGANARELLE.</speaker>
+                    <p>Tout-de-bon ?</p>
+                </sp>
+                <sp who="VALERE">
+                    <speaker>VALERE.</speaker>
+                    <p>Sans-doute.</p>
+                </sp>
+                <sp who="SGANARELLE">
+                    <speaker>SGANARELLE.</speaker>
+                    <p>Diable emporte si je le sçavois.</p>
+                </sp>
+                <sp who="VALERE">
+                    <speaker>VALERE.</speaker>
+                    <p>Comment ? Vous estes le plus habile Medecin du Monde.</p>
+                </sp>
+                <sp who="SGANARELLE">
+                    <speaker>SGANARELLE.</speaker>
+                    <p>Ah ! ah !</p>
+                </sp>
+                <sp who="LUCAS">
+                    <speaker>LUCAS.</speaker>
+                    <p>Un Medecin qui a guary je ne sçay combien de Maladies.</p>
+                </sp>
+                <sp who="SGANARELLE">
+                    <speaker>SGANARELLE.</speaker>
+                    <p>Tudieu !</p>
+                </sp>
+                <sp who="VALERE">
+                    <speaker>VALERE.</speaker>
+                    <p>Une Femme estoit tenuë pour morte il y avoir six heures ; elle estoit preste à ensevelir, lors
+                        [25] qu’avec une goutte de quelque chose vous la fistes revenir, &amp; marcher d’abord par la
+                        Chambre.
+                    </p>
+                </sp>
+                <sp who="SGANARELLE">
+                    <speaker>SGANARELLE.</speaker>
+                    <p>Peste !</p>
+                </sp>
+                <sp who="LUCAS">
+                    <speaker>LUCAS.</speaker>
+                    <p>Un petit Enfant de douze ans se laissit choir du haut d’un Clocher, dequoy il eut la teste, les
+                        jambes, &amp; les bras cassez ; &amp; vous, avec je ne sçay quel Onguent, vous fistes
+                        qu’aussi-tost il se relevit sur ses pieds, &amp; s’en fut joüer à la fossette.
+                    </p>
+                </sp>
+                <sp who="SGANARELLE">
+                    <speaker>SGANARELLE.</speaker>
+                    <p>Diantre !</p>
+                </sp>
+                <sp who="VALERE">
+                    <speaker>VALERE.</speaker>
+                    <p>Enfin, Monsieur, vous aurez contentement avec nous ; &amp; vous gagnerez ce que vous voudrez, en
+                        vous laissant conduire où nous pretendons vous mener.
+                    </p>
+                </sp>
+                <sp who="SGANARELLE">
+                    <speaker>SGANARELLE.</speaker>
+                    <p>Je gagneray ce que je voudray ?</p>
+                </sp>
+                <sp who="VALERE">
+                    <speaker>VALERE.</speaker>
+                    <p>Oüy.</p>
+                </sp>
+                <sp who="SGANARELLE">
+                    <speaker>SGANARELLE.</speaker>
+                    <p>Ah ! je suis Medecin sans contredit. Je l’avois oublié, mais je m’en ressouviens. Dequoy est-il
+                        question ? où faut-il se transporter ?
+                    </p>
+                </sp>
+                <sp who="VALERE">
+                    <speaker>VALERE.</speaker>
+                    <p>Nous vous conduirons. Il est question d’aller voir une Fille qui a perdu la parole.</p>
+                </sp>
+                <sp who="SGANARELLE">
+                    <speaker>SGANARELLE.</speaker>
+                    <p>Ma foy je ne l’ay pas trouvée. [26]</p>
+                </sp>
+                <sp who="VALERE">
+                    <speaker>VALERE.</speaker>
+                    <p>Il aime à rire. Allons, Monsieur.</p>
+                </sp>
+                <sp who="SGANARELLE">
+                    <speaker>SGANARELLE.</speaker>
+                    <p>Sans une Robe de Medecin ?</p>
+                </sp>
+                <sp who="VALERE">
+                    <speaker>VALERE.</speaker>
+                    <p>Nous en prendrons une.</p>
+                </sp>
+                <sp who="SGANARELLE">
+                    <speaker>SGANARELLE</speaker>
+                    <stage>
+                        <hi rend="i">presentant sa Bouteille à Valere.</hi>
+                    </stage>
+                    <p>Tenez cela, vous. Voila où je mets mes Juleps.
+                        <stage>
+                            <hi rend="i">Puis se tournant vers Lucas en crachant.</hi>
+                        </stage>
+                        Vous, marchez là-dessus, par Ordonnance du Medecin.
+                    </p>
+                </sp>
+                <sp who="VALERE">
+                    <speaker>VALERE.</speaker>
+                    <p>Palsanguenne, vela un Medecin qui me plaist ; je pense qu’il reüssira, car il est bouffon.</p>
+                </sp>
+                <stage><hi rend="i">Fin du premier Acte.</hi>[27]
+                </stage>
+            </div>
+            <div type="act" n="II">
+                <head>ACTE II.</head>
+                <div type="scene" n="1">
+                    <head>SCENE PREMIERE.</head>
+                    <stage type="castList">GERONTE, VALERE, LUCAS, JACQUELINE.</stage>
+                    <sp who="VALERE">
+                        <speaker>VALERE.</speaker>
+                        <p>Ouy, Monsieur, je croy que vous serez satisfait ; &amp; nous vous avons amené le plus grand
+                            Medecin du Monde.
+                        </p>
+                    </sp>
+                    <sp who="LUCAS">
+                        <speaker>LUCAS.</speaker>
+                        <p>Oh morguenne, il faut tirer l’échelle aprés cety-là ; &amp; tou les autres ne sont pas
+                            daignes de ly déchauffer ses soüillez.
+                        </p>
+                    </sp>
+                    <sp who="VALERE">
+                        <speaker>VALERE.</speaker>
+                        <p>C'est un Homme qui a fait des Cures merveilleuses.</p>
+                    </sp>
+                    <sp who="LUCAS">
+                        <speaker>LUCAS.</speaker>
+                        <p>Qui a gary des Gens qui estiant morts.</p>
+                    </sp>
+                    <sp who="VALERE">
+                        <speaker>VALERE.</speaker>
+                        <p>Il est un peu capricieux, comme je vous ay dit ; &amp; par fois il a des momens où son esprit
+                            s’échappe, &amp; ne paroist pas ce qu’il est. [28]
+                        </p>
+                    </sp>
+                    <sp who="LUCAS">
+                        <speaker>LUCAS.</speaker>
+                        <p>Oüy, il aime à bouffonner, &amp; l’an diroit par fois, ne v'sen déplaise, qu’il a quelque
+                            petit coup de hache à la teste.
+                        </p>
+                    </sp>
+                    <sp who="VALERE">
+                        <speaker>VALERE.</speaker>
+                        <p>Mais dans le fond il est toute Science ; &amp; bien souvent il dit des choses tout-à-fait
+                            relevées.
+                        </p>
+                    </sp>
+                    <sp who="LUCAS">
+                        <speaker>LUCAS.</speaker>
+                        <p>Quand il s’y boute, il parle tout fin drait comme s’il lisoit dans un Livre.</p>
+                    </sp>
+                    <sp who="VALERE">
+                        <speaker>VALERE.</speaker>
+                        <p>Sa réputation s’est déja répanduë icy ; &amp; tout le monde vient à lui.</p>
+                    </sp>
+                    <sp who="GERONTE">
+                        <speaker>GERONTE.</speaker>
+                        <p>Je meurs d’envie de le voir ; faites-le moy viste venir.</p>
+                    </sp>
+                    <sp who="VALERE">
+                        <speaker>VALERE.</speaker>
+                        <p>Je le vay querir.</p>
+                    </sp>
+                    <sp who="JACQUELINE">
+                        <speaker>JACQUELINE.</speaker>
+                        <p>Par ma fy, Monsieu, cety-cy fera justement ce qu’ant fait les autres. Je pense que ce sera
+                            queussy queumy ; &amp; la meilleure Medeçaine que l’an pourroit bailler à vostre Fille, ce
+                            seroit, selon moi, un biau &amp; bon Mary pour qui elle eust de l’amiqué.
+                        </p>
+                    </sp>
+                    <sp who="GERONTE">
+                        <speaker>GERONTE.</speaker>
+                        <p>Oüais, Nourrice, ma mie, vous vous meslez de bien des choses.</p>
+                    </sp>
+                    <sp who="LUCAS">
+                        <speaker>LUCAS.</speaker>
+                        <p>Taisez-vous, nostre Ménagere Jaquelaine : ce n’est pas à vous à boutter là votre nez.</p>
+                    </sp>
+                    <sp who="JACQUELINE">
+                        <speaker>JACQUELINE.</speaker>
+                        <p>Je vous dis vous &amp; douze, que tous ces Me-[29]decins n’y feront rian que de liau claire ;
+                            que vostre Fille a besoin d’autre chose que de Ribarbe &amp; de Sené, &amp; qu’un Mary est
+                            un emplastre qui garit tous les maux des Filles.
+                        </p>
+                    </sp>
+                    <sp who="GERONTE">
+                        <speaker>GERONTE.</speaker>
+                        <p>Est-elle en estat maintenant qu’on s’en voulust charger avec l’infirmité qu’elle a ? Et lors
+                            que j’ay esté dans le dessein de la marier, ne s’est-elle pas opposée à mes volontez ?
+                        </p>
+                    </sp>
+                    <sp who="JACQUELINE">
+                        <speaker>JACQUELINE.</speaker>
+                        <p>Je le croy bian, vou ly voüilliez bailler eun Homme qu’alle n’aime point. Que ne preniais
+                            vous ce Monsieu Liandre qui ly touchoit au cœur ? Alle auroit esté fort obeïssante ; &amp;
+                            je m’en vas gager qu’il la prendroit ly, comme alle est, si vou la ly voüillais donner.
+                        </p>
+                    </sp>
+                    <sp who="GERONTE">
+                        <speaker>GERONTE.</speaker>
+                        <p>Ce Leandre n’est pas ce qu’il lui faut ; il n’a pas du bien comme l’autre.</p>
+                    </sp>
+                    <sp who="JACQUELINE">
+                        <speaker>JACQUELINE.</speaker>
+                        <p>Il a eun Oncle qui est si riche, dont il est heriquié ?</p>
+                    </sp>
+                    <sp who="GERONTE">
+                        <speaker>GERONTE.</speaker>
+                        <p>Tous ces biens à venir me semblent autant de Chansons. Il n’est rien tel que ce qu’on tient ;
+                            &amp; l’on court grand risque de s’abuser, lors que l’on compte sur le bien qu’un autre vous
+                            garde. La mort n’a pas toûjours les oreilles ouvertes aux vœux &amp; aux prieres de
+                            Messieurs les Heritiers ; &amp; l’on a le temps d’avoir les dents longues, lors qu’on attend
+                            pour vivre le trépas de quelqu’un. [30]
+                        </p>
+                    </sp>
+                    <sp who="JACQUELINE">
+                        <speaker>JACQUELINE.</speaker>
+                        <p>Enfin j’ay toûjours oüy dire, qu’en Mariage, comme ailleurs, contentement passe richesse. Les
+                            Peres &amp; les Meres ant cette maudite couteume, de demander toûjours qu’a-t-il &amp;
+                            qu’a-t-elle ? &amp; le Compere Piarre a marié sa Fille Simonette au gros Thomas pour un
+                            quarquié de Vaigne qu’il avoit davantage que le jeune Robin où alle avoit bouté son
+                            amiquié ; &amp; vela que la pauvre Creyature en est devenuë jaune comme eun Coin, &amp; n’a
+                            point profité tout depuis ce temps-là. C'est un bel exemple pour vous, Monsieu ; on n’a que
+                            son plaisir en ce Monde ; &amp; j’aimerois mieux bailler à ma Fille eun bon Mary qui ly fût
+                            agriable, que toutes les Rentes de la Biausse.
+                        </p>
+                    </sp>
+                    <sp who="GERONTE">
+                        <speaker>GERONTE.</speaker>
+                        <p>Peste ! Madame la Nourrice, comme vous dégoisez ! Taisez-vous, je vous prie, vous prenez trop
+                            de soin, &amp; vous échauffez vostre lait.
+                        </p>
+                    </sp>
+                    <sp who="LUCAS">
+                        <speaker>LUCAS</speaker>
+                        <stage>
+                            <hi rend="i">en disant cecy frappe sur la poitrine de Geronte.</hi>
+                        </stage>
+                        <p>Morgué, tais-toy, t’es eune impartinante. Monsieu n’a que faire de tes discours, &amp; il
+                            sçait ce qu’il a à faire. Mesle-toy de donner à téter à ton Enfant, sans tant faire la
+                            raisonneuse. Monsieu est le Pere de sa Fille ; &amp; il est bon &amp; sage, pour voir ce
+                            qu’il ly faut.
+                        </p>
+                    </sp>
+                    <sp who="GERONTE">
+                        <speaker>GERONTE.</speaker>
+                        <p>Tout-doux ; oh tout-doux.</p>
+                    </sp>
+                    <sp who="LUCAS">
+                        <speaker>LUCAS.</speaker>
+                        <p>Monsieu, je veux un peu la mortifier, &amp; ly [31] apprendre le respect qu’alle vous doit.
+                        </p>
+                    </sp>
+                    <sp who="GERONTE">
+                        <speaker>GERONTE.</speaker>
+                        <p>Oüy, mais ces gestes ne sont pas necessaires.</p>
+                    </sp>
+                </div>
+                <div type="scene" n="2">
+                    <head>SCENE II.</head>
+                    <stage type="castList">VALERE, SGANARELLE, GERONTE, LUCAS, JACQUELINE.</stage>
+                    <sp who="VALERE">
+                        <speaker>VALERE.</speaker>
+                        <p>Monsieur, preparez-vous, voici nôtre Medecin qui entre.</p>
+                    </sp>
+                    <sp who="GERONTE">
+                        <speaker>GERONTE.</speaker>
+                        <p>Monsieur, je suis ravi de vous voir chez moi, &amp; nous avons grand besoin de vous.</p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE</speaker>
+                        <stage>
+                            <hi rend="i">en Robe de Medecin, avec un Chapeau des plus pointus.</hi>
+                        </stage>
+                        <p>Hippocrate dit...que nous nous couvrions tous deux.</p>
+                    </sp>
+                    <sp who="GERONTE">
+                        <speaker>GERONTE.</speaker>
+                        <p>Hipocrate dit cela ?</p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>Ouï.</p>
+                    </sp>
+                    <sp who="GERONTE">
+                        <speaker>GERONTE.</speaker>
+                        <p>Dans quel Chapitre, s’il vous plaist ?</p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>Dans son Chapitre des Chapeaux.</p>
+                    </sp>
+                    <sp who="GERONTE">
+                        <speaker>GERONTE.</speaker>
+                        <p>Puis qu’Hipocrate le dit, il le faut faire. [32]</p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>Monsieur le Medecin, ayant appris les merveilleuses choses...</p>
+                    </sp>
+                    <sp who="GERONTE">
+                        <speaker>GERONTE.</speaker>
+                        <p>A qui parlez-vous, de grace ?</p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>A vous.</p>
+                    </sp>
+                    <sp who="GERONTE">
+                        <speaker>GERONTE.</speaker>
+                        <p>Je ne suis pas Medecin.</p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>Vous n’estes pas Medecin ?</p>
+                    </sp>
+                    <sp who="GERONTE">
+                        <speaker>GERONTE.</speaker>
+                        <p>Non vrayment.</p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE</speaker>
+                        <stage>
+                            <hi rend="i">prend ici un Baston, &amp; le bat comme on l’a battu.</hi>
+                        </stage>
+                        <p>Tout-de-bon ?</p>
+                    </sp>
+                    <sp who="GERONTE">
+                        <speaker>GERONTE.</speaker>
+                        <p>Tout-de-bon. Ah, ah, ah.</p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>Vous estes Medecin maintenant ; je n’ay jamais eu d’autres Licences.</p>
+                    </sp>
+                    <sp who="GERONTE">
+                        <speaker>GERONTE.</speaker>
+                        <p>Quel diable d’homme m’avez-vous-là amené ?</p>
+                    </sp>
+                    <sp who="VALERE">
+                        <speaker>VALERE.</speaker>
+                        <p>Je vous ay bien dit que c’estoit un Medecin goguenard.</p>
+                    </sp>
+                    <sp who="GERONTE">
+                        <speaker>GERONTE.</speaker>
+                        <p>Ouï, mais je l’envoyerois promener avec ses goguenarderies.</p>
+                    </sp>
+                    <sp who="LUCAS">
+                        <speaker>LUCAS.</speaker>
+                        <p>Ne prenez pas garde à ça, Monsieur, ce n’est que pour rire. [33]</p>
+                    </sp>
+                    <sp who="GERONTE">
+                        <speaker>GERONTE.</speaker>
+                        <p>Cette raillerie ne me plaist pas.</p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>Monsieur, je vous demande pardon de la liberté que j’ay prise.</p>
+                    </sp>
+                    <sp who="GERONTE">
+                        <speaker>GERONTE.</speaker>
+                        <p>Monsieur, je suis vostre serviteur.</p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>Je suis fâché...</p>
+                    </sp>
+                    <sp who="GERONTE">
+                        <speaker>GERONTE.</speaker>
+                        <p>Cela n’est rien.</p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>Des coups de baston....</p>
+                    </sp>
+                    <sp who="GERONTE">
+                        <speaker>GERONTE.</speaker>
+                        <p>Il n’y a pas de mal.</p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>Que j’ay eu l’honneur de vous donner.</p>
+                    </sp>
+                    <sp who="GERONTE">
+                        <speaker>GERONTE.</speaker>
+                        <p>Ne parlons plus de cela. Monsieur, j’ay une Fille qui est tombée dans une étrange maladie.
+                        </p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>Je suis ravi, Monsieur, que vostre Fille ait besoin de moi ; &amp; je souhaiterois de tout
+                            mon cœur que vous en eussiez besoin aussi vous &amp; toute vôtre Famille, pour vous
+                            témoigner l’envie que j’ay de vous servir.
+                        </p>
+                    </sp>
+                    <sp who="GERONTE">
+                        <speaker>GERONTE.</speaker>
+                        <p>Je vous suis obligé de ces sentimens.</p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>Je vous assure que c’est du meilleur de mon ame que je vous parle.</p>
+                    </sp>
+                    <sp who="GERONTE">
+                        <speaker>GERONTE.</speaker>
+                        <p>C'est trop d’honneur que vous me faites.... [34]</p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>Comment s’appelle vôtre Fille ?</p>
+                    </sp>
+                    <sp who="GERONTE">
+                        <speaker>GERONTE.</speaker>
+                        <p>Lucinde.</p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>Lucinde ! ah beau nom à medicamenter ! Lucinde !</p>
+                    </sp>
+                    <sp who="GERONTE">
+                        <speaker>GERONTE.</speaker>
+                        <p>Je m’en vais voir un peu ce qu’elle fait.</p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>Qui est cette grande Femme-là ?</p>
+                    </sp>
+                    <sp who="GERONTE">
+                        <speaker>GERONTE.</speaker>
+                        <p>C'est la Nourrice d’un petit Enfant que j’ay.</p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>Peste ! le joly meuble que voila. Ah Nourrice ! charmante Nourrice, ma Medecine est la
+                            tres-humble Esclave de vôtre Nourricerie ; &amp; je voudrois bien estre le petit
+                            Poupon fortuné qui tetast le lait de vos bonnes graces.
+                            <stage>
+                                <hi rend="i">Il luy
+                                    porte la main sur le sein[.]
+                                </hi>
+                            </stage>
+                            Tous mes remedes, toute ma science,
+                            toute ma capacité est à vôtre service,&amp;….
+                        </p>
+                    </sp>
+                    <sp who="LUCAS">
+                        <speaker>LUCAS.</speaker>
+                        <p>Avec votre parmission, Monsieu le Medecin, laissez-là ma Femme, je vous prie.</p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>Quoi, est-elle vôtre Femme ?</p>
+                    </sp>
+                    <sp who="LUCAS">
+                        <speaker>LUCAS.</speaker>
+                        <p>Ouï.</p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE</speaker>
+                        <stage>
+                            <hi rend="i">fait semblant d’embrasser Lucas ; &amp; se tournant du coste de la Nourrice, il
+                                l’embrasse.
+                            </hi>
+                        </stage>
+                        <p>Ah vrayment je ne sçavois pas cela ; &amp; je [35] m’en réjoüis pour l’amour de l’un &amp; de
+                            l’autre.
+                        </p>
+                    </sp>
+                    <sp who="LUCAS">
+                        <speaker>LUCAS</speaker>
+                        <stage>
+                            <hi rend="i">en le tirant.</hi>
+                        </stage>
+                        <p>Tout doucement, s’il vous plaist.</p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>Je vous assure que je suis ravi que vous soyez unis ensemble.
+                            <stage>
+                                <hi rend="i">Il fait encor semblant d’embrasser Lucas ; &amp; passant dessous ses bras,
+                                    se jette au col de sa Femme.
+                                </hi>
+                            </stage>
+                            Je la felicite d’avoir un Mary comme vous ; &amp; je vous felicite vous, d’avoir une Femme
+                            si belle, si sage, &amp; si bien faite comme elle est.
+                        </p>
+                    </sp>
+                    <sp who="LUCAS">
+                        <speaker>LUCAS</speaker>
+                        <stage>
+                            <hi rend="i">en le tirant encore.</hi>
+                        </stage>
+                        <p>Eh testigué, point tant de complimens, je vous supplie.</p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>Ne voulez-vous pas que je me réjouïsse avec vous d’un si bel assemblage ?</p>
+                    </sp>
+                    <sp who="LUCAS">
+                        <speaker>LUCAS.</speaker>
+                        <p>Avec moi, tant qu’il vous plaira ; mais avec ma Femme, treve de sarimonie.</p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>Je prens part également au bon-heur de tous deux.
+                            <stage>
+                                <hi rend="i">Il continue le mesme jeu.</hi>
+                            </stage>
+                            Et si je vous embrasse pour vous en témoigner ma joye, je l’embrasse de mesme pour lui en
+                            témoigner aussi.
+                        </p>
+                    </sp>
+                    <sp who="LUCAS">
+                        <speaker>LUCAS</speaker>
+                        <stage>
+                            <hi rend="i">en le tirant derechef.</hi>
+                        </stage>
+                        <p>Ah vartigué, Monsieu le Medecin, que de lantiponages ! [36]</p>
+                    </sp>
+                </div>
+                <div type="scene" n="3">
+                    <head>SCENE III.</head>
+                    <stage type="castList">SGANARELLE, GERONTE, LUCAS, JACQUELINE.</stage>
+                    <sp who="GERONTE">
+                        <speaker>GERONTE.</speaker>
+                        <p>Monsieur, voici tout-à-l’heure ma Fille qu’on va vous amener.</p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>Je l’attens, Monsieur, avec toute la Medecine.</p>
+                    </sp>
+                    <sp who="GERONTE">
+                        <speaker>GERONTE.</speaker>
+                        <p>Où est elle ?</p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE</speaker>
+                        <stage>
+                            <hi rend="i">se touchant le front.</hi>
+                        </stage>
+                        <p>Là-dedans.</p>
+                    </sp>
+                    <sp who="GERONTE">
+                        <speaker>GERONTE.</speaker>
+                        <p>Fort-bien.</p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE</speaker>
+                        <stage>
+                            <hi rend="i">en voulant toucher les tetons de la Nourrice.</hi>
+                        </stage>
+                        <p>Mais comme je m’interesse à toute vôtre Famille, il faut que j’essaye un peu le lait de vôtre
+                            Nourrice, &amp; que je visite son sein.
+                        </p>
+                    </sp>
+                    <sp who="LUCAS">
+                        <speaker>LUCAS</speaker>
+                        <stage>
+                            <hi rend="i">le tirant, &amp; luy faisant faire la piroüette.</hi>
+                        </stage>
+                        <p>Nanain, nanain, je n’avons que faire de ça.</p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>C'est l’Office du Medecin, de voir les tétons des Nourrices. [37]</p>
+                    </sp>
+                    <sp who="LUCAS">
+                        <speaker>LUCAS.</speaker>
+                        <p>Il gnia Office qui quienne, je sis votte sarviteur.</p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>As-tu bien la hardiesse de t’opposer au Medecin ? Hors de là.</p>
+                    </sp>
+                    <sp who="LUCAS">
+                        <speaker>LUCAS.</speaker>
+                        <p>Je me moque de ça.</p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE</speaker>
+                        <stage>
+                            <hi rend="i">en le regardant de travers.</hi>
+                        </stage>
+                        <p>Je te donneray le Fievre.</p>
+                    </sp>
+                    <sp who="JACQUELINE">
+                        <speaker>JACQUELINE</speaker>
+                        <stage>
+                            <hi rend="i">prenant Lucas par le bras, &amp; luy faisant aussi faire la
+                                piroüette.
+                            </hi>
+                        </stage>
+                        <p>Oste-toy de là aussi : Est-ce que je ne sis pas assez grande pour me défendre
+                            moi-mesme, s’il me fait quelque chose qui ne soit pas à faire ?
+                        </p>
+                    </sp>
+                    <sp who="LUCAS">
+                        <speaker>LUCAS.</speaker>
+                        <p>Je ne veux pas qu’il te taste, moi.</p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>Fy le vilain, qui est jaloux de sa Femme.</p>
+                    </sp>
+                    <sp who="GERONTE">
+                        <speaker>GERONTE.</speaker>
+                        <p>Voicy ma Fille. [38]</p>
+                    </sp>
+                </div>
+                <div type="scene" n="4">
+                    <head>SCENE IV.</head>
+                    <stage type="castList">LUCINDE, VALERE, GERONTE, LUCAS, SGANARELLE, JACQUELINE.</stage>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>Est-ce-là la Malade ?</p>
+                    </sp>
+                    <sp who="GERONTE">
+                        <speaker>GERONTE.</speaker>
+                        <p>Ouï, je n’ay qu’elle de Fille ; &amp; j’aurois tous les regrets du monde, si elle venoit à
+                            mourir.
+                        </p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>Qu'elle s’en garde bien ; il ne faut pas qu’elle meure sans l’Ordonnance du Medecin.</p>
+                    </sp>
+                    <sp who="GERONTE">
+                        <speaker>GERONTE.</speaker>
+                        <p>Allons, un Siege.</p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>Voila une Malade qui n’est pas tant dégoûtante ; &amp; je tiens qu’un Homme bien sain s’en
+                            accommoderoit assez.
+                        </p>
+                    </sp>
+                    <sp who="GERONTE">
+                        <speaker>GERONTE.</speaker>
+                        <p>Vous l’avez fait rire, Monsieur.</p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>Tant-mieux ; lors que le Medecin fait rire le Malade, c’est le meilleur signe du monde. Hé
+                            bien, dequoi est-il question ? qu’avez-vous ? quel est le mal que vous sentez ?
+                        </p>
+                    </sp>
+                    <sp who="LUCINDE">
+                        <speaker>LUCINDE</speaker>
+                        <stage>
+                            <hi rend="i">respond par signes, en portant sa main à sa bouche, à sa teste, &amp; sous son
+                                menton.
+                            </hi>
+                        </stage>
+                        <p>Han, hi, hon, han. [39]</p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>Eh ! que dites-vous ?</p>
+                    </sp>
+                    <sp who="LUCINDE">
+                        <speaker>LUCINDE</speaker>
+                        <stage>
+                            <hi rend="i">continue les mesmes gestes.</hi>
+                        </stage>
+                        <p>Han, hi, hon, han, han, hi, hon.</p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>Quoi ?</p>
+                    </sp>
+                    <sp who="LUCINDE">
+                        <speaker>LUCINDE.</speaker>
+                        <p>Han, hi, hon.</p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE</speaker>
+                        <stage>
+                            <hi rend="i">la contrefaisant.</hi>
+                        </stage>
+                        <p>Han, hi, hon, han, ha. Je ne vous entens point ; Quel diable de langage est-ce là ?</p>
+                    </sp>
+                    <sp who="GERONTE">
+                        <speaker>GERONTE.</speaker>
+                        <p>Monsieur, c’est-là sa maladie : Elle est devenuë muette, sans que jusques ici on en ait pû
+                            sçavoir la cause ; &amp; c’est un accident qui a fait reculer son Mariage.
+                        </p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>Et pourquoi ?</p>
+                    </sp>
+                    <sp who="GERONTE">
+                        <speaker>GERONTE.</speaker>
+                        <p>Celui qu’elle doit épouser, veut attendre sa guerison, pour conclure les choses.</p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>Et qui est ce Sot-là, qui ne veut pas que sa Femme soit muette ? Plût à Dieu que la mienne
+                            eût cette maladie, je me garderois bien de la vouloir guerir.
+                        </p>
+                    </sp>
+                    <sp who="GERONTE">
+                        <speaker>GERONTE.</speaker>
+                        <p>Enfin, Monsieur, nous vous prions d’employer tous vos soins, pour la soulager de son mal.</p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>Ah ne vous mettez pas en peine. Dites-moi un peu, ce mal l’oppresse-t-il beaucoup ? [40]</p>
+                    </sp>
+                    <sp who="GERONTE">
+                        <speaker>GERONTE.</speaker>
+                        <p>Ouï, Monsieur.</p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>Tant-mieux. Sent-elle de grandes douleurs ?</p>
+                    </sp>
+                    <sp who="GERONTE">
+                        <speaker>GERONTE.</speaker>
+                        <p>Fort grandes.</p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>C'est fort bien fait. Va-t-elle où vous sçavez ?</p>
+                    </sp>
+                    <sp who="GERONTE">
+                        <speaker>GERONTE.</speaker>
+                        <p>Ouï.</p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>Copieusement ?</p>
+                    </sp>
+                    <sp who="GERONTE">
+                        <speaker>GERONTE.</speaker>
+                        <p>Je n’entens rien à cela.</p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>La matiere est-elle loüable ?</p>
+                    </sp>
+                    <sp who="GERONTE">
+                        <speaker>GERONTE.</speaker>
+                        <p>Je ne me connois pas à ces choses.</p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE</speaker>
+                        <stage>
+                            <hi rend="i">se tournant vers la Malade.</hi>
+                        </stage>
+                        <p>Donnez-moi vostre bras. Voila un pouls qui marque que vostre Fille est muette.</p>
+                    </sp>
+                    <sp who="GERONTE">
+                        <speaker>GERONTE.</speaker>
+                        <p>Eh ouï, Monsieur, c’est là son mal ; vous l’avez trouvé tout du premier coup.</p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>Ah, ah.</p>
+                    </sp>
+                    <sp who="JACQUELINE">
+                        <speaker>JACQUELINE.</speaker>
+                        <p>Voyez comme il a deviné sa maladie.</p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>Nous autres grands Medecins, nous connoissons d’abord les choses. Un Ignorant auroit esté
+                            embarassé, &amp; vous eust esté dire, c’est ceci, c’est [41] cela : mais moi, je touche au
+                            but du premier coup, &amp; je vous apprens que vôtre Fille est muette.
+                        </p>
+                    </sp>
+                    <sp who="GERONTE">
+                        <speaker>GERONTE.</speaker>
+                        <p>Ouï ; mais je voudrois bien que vous me pûssiez dire d’où cela vient.</p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>Il n’est rien de plus aisé. Cela vient de ce qu’elle a perdu la parole.</p>
+                    </sp>
+                    <sp who="GERONTE">
+                        <speaker>GERONTE.</speaker>
+                        <p>Fort-bien : mais la cause, s’il vous plaist, qui fait qu’elle a perdu la parole ?</p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>Tous nos meilleurs Autheurs vous diront que c’est l’empeschement de l’action de sa langue.
+                        </p>
+                    </sp>
+                    <sp who="GERONTE">
+                        <speaker>GERONTE.</speaker>
+                        <p>Mais encore, vos sentimens sur cet empeschement de l’action de sa langue ?</p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>Aristote là-dessus dit...de fort belles choses.</p>
+                    </sp>
+                    <sp who="GERONTE">
+                        <speaker>GERONTE.</speaker>
+                        <p>Je le croy.</p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>Ah c’estoit un grand Homme !</p>
+                    </sp>
+                    <sp who="GERONTE">
+                        <speaker>GERONTE.</speaker>
+                        <p>Sans-doute.</p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE</speaker>
+                        <stage>
+                            <hi rend="i">levant son bras depuis le coude.</hi>
+                        </stage>
+                        <p>Grand Homme tout-à-fait : un Homme qui estoit plus grand que moi de tout cela. Pour revenir
+                            donc à nostre raisonnement : Je tiens que cet empeschement de l’action de sa langue
+                            est [42] causé par de certaines humeurs qu’entre nous autres Sçavans nous appellons
+                            humeurs peccantes ; peccantes, c’est à dire....humeurs peccantes ; dautant que les
+                            vapeurs formées par les exhalaisons des influences qui s’élevent dans la région des
+                            maladies, venant...pour ainsi dire...à... Entendez-vous le Latin ?
+                        </p>
+                    </sp>
+                    <sp who="GERONTE">
+                        <speaker>GERONTE.</speaker>
+                        <p>En aucune façon.</p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE</speaker>
+                        <stage>
+                            <hi rend="i">se levant avec étonnement.</hi>
+                        </stage>
+                        <p>Vous n’entendez point le Latin !</p>
+                    </sp>
+                    <sp who="GERONTE">
+                        <speaker>GERONTE.</speaker>
+                        <p>Non.</p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE</speaker>
+                        <stage>
+                            <hi rend="i">en faisant diverses plaisantes postures.</hi>
+                        </stage>
+                        <p>Cabricias arci thuram, catalamus, singulariter, nominativo hæc Musa la Muse, Bonus, bona,
+                            bonum, Deus sanctus, est ne oratio Latinas ? etiam, ouï ? quare, pourquoi ? quia
+                            substantivo, &amp; adjectivum, concordat in generi, numerum, &amp; casus.
+                        </p>
+                    </sp>
+                    <sp who="GERONTE">
+                        <speaker>GERONTE.</speaker>
+                        <p>Ah que n’ay-je étudié !</p>
+                    </sp>
+                    <sp who="JACQUELINE">
+                        <speaker>JACQUELINE.</speaker>
+                        <p>L'habile-Homme que vela !</p>
+                    </sp>
+                    <sp who="LUCAS">
+                        <speaker>LUCAS.</speaker>
+                        <p>Ouï, ça est si biau, que je n’y entens goute.</p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>Or ces vapeurs dont je vous parle, venant à passer du costé gauche où est le foye, au costé
+                            droit où est le cœur, il se trouve que le poulmon que nous appellons en Latin, armyan,
+                            ayant [43] communication avec le cerveau, que nous nommons en Grec, nasmus, par le
+                            moien de la veine cave, que nous appellons en Hebreu, cubile, rencontre en son chemin
+                            lesdites vapeurs qui remplissent les ventricules de l’omoplate : &amp; parce que
+                            lesdites vapeurs... comprenez bien ce raisonnement je vous prie ; &amp; parce que
+                            lesdites vapeurs ont une certaine malignité.... Ecoutez bien ceci, je vous
+                            conjure.
+                        </p>
+                    </sp>
+                    <sp who="GERONTE">
+                        <speaker>GERONTE.</speaker>
+                        <p>Ouï.</p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>Ont une certaine malignité qui est causée... Soyez attentif, s’il vous plaist.</p>
+                    </sp>
+                    <sp who="GERONTE">
+                        <speaker>GERONTE.</speaker>
+                        <p>Je le suis.</p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>Qui est causée par l’acreté des humeurs engendrées dans la concavité du diaphragme, il
+                            arrive que ces vapeurs....Ossabandus, nequeys, nequer, potarinum, quipsa milus[.]
+                            Voila justement ce qui fait que vostre Fille est muette.
+                        </p>
+                    </sp>
+                    <sp who="JACQUELINE">
+                        <speaker>JACQUELINE.</speaker>
+                        <p>Ah que ça est bian dit, notre Homme !</p>
+                    </sp>
+                    <sp who="LUCAS">
+                        <speaker>LUCAS.</speaker>
+                        <p>Que n’ay-je la langue aussi bian penduë ?</p>
+                    </sp>
+                    <sp who="GERONTE">
+                        <speaker>GERONTE.</speaker>
+                        <p>On ne peut pas mieux raisonner sans-doute. Il n’y a qu’une seule chose qui m’a choqué ; c’est
+                            l’endroit du foye &amp; du cœur. Il me semble que vous les placez autrement qu’ils ne sont ;
+                            que le cœur est du costé gauche, &amp; le foye du costé droit. [44]
+                        </p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>Ouï, cela estoit autrefois ainsi ; mais nous avons changé tout cela, &amp; nous faisons
+                            maintenant la Medecine d’une methode toute nouvelle.
+                        </p>
+                    </sp>
+                    <sp who="GERONTE">
+                        <speaker>GERONTE.</speaker>
+                        <p>C'est ce que je ne sçavois pas ; &amp; je vous demande pardon de mon ignorance.</p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>Il n’y a point de mal ; &amp; vous n’estes pas obligé d’estre aussi habile que nous.</p>
+                    </sp>
+                    <sp who="GERONTE">
+                        <speaker>GERONTE.</speaker>
+                        <p>Assurément : mais, Monsieur, que croyez-vous qu’il faille faire à cette maladie ?</p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>Ce que je croy qu’il faille faire ?</p>
+                    </sp>
+                    <sp who="GERONTE">
+                        <speaker>GERONTE.</speaker>
+                        <p>Ouï.</p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>Mon avis est qu’on la remette sur son lit ; &amp; qu’on lui fasse prendre pour remede,
+                            quantité de Pain trempé dans du Vin.
+                        </p>
+                    </sp>
+                    <sp who="GERONTE">
+                        <speaker>GERONTE.</speaker>
+                        <p>Pourquoi cela, Monsieur ?</p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>Parce qu’il y a dans le Vin &amp; le Pain, meslez ensemble, une vertu simpathique qui fait
+                            parler. Ne voyez-vous pas bien qu’on ne donne autre chose aux Perroquets, &amp; qu’ils
+                            apprennent à parler en mangeant de cela ?
+                        </p>
+                    </sp>
+                    <sp who="GERONTE">
+                        <speaker>GERONTE.</speaker>
+                        <p>Cela est vray. Ah le grand Homme ! Viste, quantité de Pain &amp; de Vin. [45]</p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>Je reviendray voir sur le soir en quel estat elle sera.
+                            <stage>
+                                <hi rend="i">A la Nourrice.</hi>
+                            </stage>
+                            Doucement, vous. Monsieur voila une Nourrice à laquelle il faut que je fasse quelque petits
+                            remedes.
+                        </p>
+                    </sp>
+                    <sp who="JACQUELINE">
+                        <speaker>JACQUELINE.</speaker>
+                        <p>Qui, moi ? je me porte le mieux du Monde.</p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>Tant-pis, Nourrice, tant-pis. Cette grande santé est à craindre ; &amp; il ne sera pas
+                            mauvais de vous faire quelque petite Saignée amiable, de vous donner quelque petit Clystere
+                            dulcifiant.
+                        </p>
+                    </sp>
+                    <sp who="GERONTE">
+                        <speaker>GERONTE.</speaker>
+                        <p>Mais, Monsieur, voila une mode que je ne comprens point. Pourquoi s’aller faire saigner,
+                            quand on n’a point de maladie ?
+                        </p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>Il n’importe, la mode en est salutaire ; &amp; comme on boit pour la soif à venir, il faut se
+                            faire aussi saigner pour la maladie à venir.
+                        </p>
+                    </sp>
+                    <sp who="JACQUELINE">
+                        <speaker>JACQUELINE</speaker>
+                        <stage>
+                            <hi rend="i">en se retirant.</hi>
+                        </stage>
+                        <p>Ma fy; je me moque de ça ; &amp; je ne veux point faire de mon Corps une Boutique
+                            d’Apoticaire.
+                        </p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>Vous estes rétive aux Remedes ; mais nous sçaurons vous soûmettre à la raison.
+                            <stage>
+                                <hi rend="i">Parlant à Geronte.</hi>
+                            </stage>
+                            Je vous donne le bon-jour.
+                        </p>
+                    </sp>
+                    <sp who="GERONTE">
+                        <speaker>GERONTE.</speaker>
+                        <p>Attendez un peu, s’il vous plaist.</p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>Que voulez-vous faire ? [46]</p>
+                    </sp>
+                    <sp who="GERONTE">
+                        <speaker>GERONTE.</speaker>
+                        <p>Vous donner de l’argent, Monsieur.</p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE</speaker>
+                        <stage>
+                            <hi rend="i">tendant sa main derriere par dessous sa Robe, tandis que Geronte ouvre sa
+                                Bourse.
+                            </hi>
+                        </stage>
+                        <p>Je n’en prendray pas, Monsieur.</p>
+                    </sp>
+                    <sp who="GERONTE">
+                        <speaker>GERONTE.</speaker>
+                        <p>Monsieur.</p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>Point du tout.</p>
+                    </sp>
+                    <sp who="GERONTE">
+                        <speaker>GERONTE.</speaker>
+                        <p>Un petit moment.</p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>En aucune façon.</p>
+                    </sp>
+                    <sp who="GERONTE">
+                        <speaker>GERONTE.</speaker>
+                        <p>De grace.</p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>Vous vous mocquez.</p>
+                    </sp>
+                    <sp who="GERONTE">
+                        <speaker>GERINTE.</speaker>
+                        <p>Voila qui est fait.</p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>Je n’en feray rien.</p>
+                    </sp>
+                    <sp who="GERONTE">
+                        <speaker>GERONTE.</speaker>
+                        <p>Eh !</p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>Ce n’est pas l’argent qui me fait agir.</p>
+                    </sp>
+                    <sp who="GERONTE">
+                        <speaker>GERONTE.</speaker>
+                        <p>Je le croy.</p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE</speaker>
+                        <stage>
+                            <hi rend="i">apres avoir pris l’argent.</hi>
+                        </stage>
+                        <p>Cela est-il de poids ?</p>
+                    </sp>
+                    <sp who="GERONTE">
+                        <speaker>GERONTE.</speaker>
+                        <p>Ouï, Monsieur. [47]</p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>Je ne suis pas un Medecin mercenaire.</p>
+                    </sp>
+                    <sp who="GERONTE">
+                        <speaker>GERONTE.</speaker>
+                        <p>Je le sçay bien.</p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>L'interest ne me gouverne point.</p>
+                    </sp>
+                    <sp who="GERONTE">
+                        <speaker>GERONTE.</speaker>
+                        <p>Je n’ay pas cette pensée.</p>
+                    </sp>
+                </div>
+                <div type="scene" n="5">
+                    <head>SCENE V.</head>
+                    <stage type="castList">SGANARELLE, LEANDRE.</stage>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE</speaker>
+                        <stage>regardant son argent.</stage>
+                        <p>Ma foi, cela ne va pas mal ; &amp; pourveu que....</p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>LEANDRE.</speaker>
+                        <p>Monsieur, il y a long-temps que je vous attens ; &amp; je viens implorer vôtre assistance.
+                        </p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE</speaker>
+                        <stage>
+                            <hi rend="i">luy prenant le poignet.</hi>
+                        </stage>
+                        <p>Voila un pouls qui est fort mauvais.</p>
+                    </sp>
+                    <sp who="LEANDRE">
+                        <speaker>LEANDRE.</speaker>
+                        <p>Je ne suis point malade, Monsieur ; &amp; ce n’est pas pour cela que je viens à vous.</p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>Si vous n’estes pas malade, que diable ne le dites-vous donc ?</p>
+                    </sp>
+                    <sp who="LEANDRE">
+                        <speaker>LEANDRE.</speaker>
+                        <p>Non. Pour vous dire la chose en deux mots, je m’appelle Leandre, qui suis amoureux de [48]
+                            Lucinde que vous venez de visiter : &amp; comme par la mauvaise humeur de son Pere, toute
+                            sorte d’accés m’est fermé auprés d’elle, je me hazarde à vous prier de vouloir servir mon
+                            amour, &amp;
+                            de me donner lieu d’executer un stratagême que j’ay trouvé ; pour lui pouvoir dire deux
+                            mots, d’où dépendent absolument mon bon-heur &amp; ma vie.
+                        </p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE</speaker>
+                        <stage>
+                            <hi rend="i">paroissant en colere.</hi>
+                        </stage>
+                        <p>Pour qui me prenez-vous ? Comment ? oser vous adresser à moi pour vous servir dans vôtre
+                            amour, &amp; vouloir ravaler la dignité de Medecin à des emplois de cette nature ?
+                        </p>
+                    </sp>
+                    <sp who="LEANDRE">
+                        <speaker>LEANDRE.</speaker>
+                        <p>Monsieur, ne faites point de bruit.</p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE</speaker>
+                        <stage>
+                            <hi rend="i">en le faisant reculer.</hi>
+                        </stage>
+                        <p>J'en veux faire moi, vous estes un Impertinent.</p>
+                    </sp>
+                    <sp who="LEANDRE">
+                        <speaker>LEANDRE.</speaker>
+                        <p>Eh ! Monsieur, doucement.</p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>Un Mal-avisé.</p>
+                    </sp>
+                    <sp who="LEANDRE">
+                        <speaker>LEANDRE.</speaker>
+                        <p>De grace.</p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>Je vous apprendray que je ne suis point Homme à cela ; &amp; que c’est une insolence
+                            extréme...
+                        </p>
+                    </sp>
+                    <sp who="LEANDRE">
+                        <speaker>LEANDRE</speaker>
+                        <stage>
+                            <hi rend="i">tirant une Bourse qu’il luy donne.</hi>
+                        </stage>
+                        <p>Monsieur.</p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE</speaker>
+                        <stage>
+                            <hi rend="i">tenant la Bourse.</hi>
+                        </stage>
+                        <p>De vouloir m’employer.... Je ne parle pas pour vous ; car vous estes honneste Homme, [49]
+                            &amp; je serois ravi de vous rendre service : Mais il y a de certains Impertinens au monde,
+                            qui viennent prendre les Gens pour ce qu’ils ne sont pas ; &amp; je vous avouë que cela me
+                            met en colere.
+                        </p>
+                    </sp>
+                    <sp who="LEANDRE">
+                        <speaker>LEANDRE.</speaker>
+                        <p>Je vous demande pardon, Monsieur, de la liberté que....</p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>Vous vous mocquez. Dequoy est-il question ?</p>
+                    </sp>
+                    <sp who="LEANDRE">
+                        <speaker>LEANDRE.</speaker>
+                        <p>Vous sçaurez donc, Monsieur, que cette maladie que vous voulez guerir ; est une feinte
+                            maladie. Les Medecins ont raisonné là-dessus comme il faut ; &amp; ils n’ont pas manqué de
+                            dire que cela procedoit, qui du cerveau, qui des entrailles, qui de la ratte, qui du foye :
+                            mais il est certain que l’amour en est la veritable cause, &amp; que Lucinde n’a trouvé
+                            cette maladie que pour se délivrer d’un Mariage dont elle estoit importunée. Mais de crainte
+                            qu’on ne nous voye ensemble, retirons-nous d’ici ; &amp; je vous diray en marchant, ce que
+                            je souhaite de vous.
+                        </p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>Allons, Monsieur, vous m’avez donné pour vôtre amour une tendresse qui n’est pas concevable ;
+                            &amp; j’y perdray toute ma Medecine, ou la Malade crévera, ou bien elle sera à vous.
+                        </p>
+                    </sp>
+                    <stage><hi rend="i">Fin du Second Acte.</hi>[50]
+                    </stage>
+                </div>
+            </div>
+            <div type="act" n="3">
+                <head>ACTE III.</head>
+                <div type="scene" n="1">
+                    <head>SCENE PREMIERE.</head>
+                    <stage type="castList">SGANARELLE, LEANDRE.</stage>
+                    <sp who="LEANDRE">
+                        <speaker>LEANDRE.</speaker>
+                        <p>Il me semble que je ne suis pas mal ainsi pour un Apoticaire ; &amp; comme le Pere ne m’a
+                            guere veu, ce changement d’habit &amp; de perruque est assez capable, je croy, de me
+                            deguiser à ses yeux.
+                        </p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>Sans-doute.</p>
+                    </sp>
+                    <sp who="LEANDRE">
+                        <speaker>LEANDRE.</speaker>
+                        <p>Tout ce que je souhaiterois, seroit de sçavoir cinq ou six grands mots de Medecine, pour
+                            parer mon discours, &amp; me donner l’air d’habile Homme.
+                        </p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>Allez, allez, tout cela n’est pas necessaire ; il suffit de l’habit, &amp; je n’en sçais pas
+                            plus que vous.
+                        </p>
+                    </sp>
+                    <sp who="LEANDRE">
+                        <speaker>LEANDRE.</speaker>
+                        <p>Comment ? [51]</p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>Diable emporte, si j’entens rien en Medecine. Vous estes honneste-Homme, &amp; je veux bien
+                            me confier à vous, comme vous vous confiez à moi.
+                        </p>
+                    </sp>
+                    <sp who="LEANDRE">
+                        <speaker>LEANDRE.</speaker>
+                        <p>Quoi, vous n’estes pas effectivement...</p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>Non, vous dy je, ils m’ont fait Medecin malgré mes dents. Je ne m’estois jamais mêlé
+                            d’être si sçavant que cela ; &amp; toutes mes études n’ont esté que jusqu’en Sixiéme.
+                            Je ne sçay point sur quoi cette imagination leur est venuë : mais quand j[’]ay veu
+                            qu’à toute force ils vouloient que je fusse Medecin, je me suis résolu de l’estre aux
+                            dépens de qui il appartiendra. Cependant vous ne sçauriez croire comment l’erreur
+                            s’est répanduë, &amp; de quelle façon chacun est endiablé à me croire habile Homme. On
+                            me vient chercher de tous les costez ; &amp; si les choses vont toûjours de mesme, je
+                            suis d’avis de m’en tenir toute ma vie à la Medecine. Je trouve que c’est le Mestier
+                            le meilleur de tous ; car soit qu’on fasse bien ou soit qu’on fasse mal, on est
+                            toûjours payé de même sorte. La méchante besogne ne retombe jamais sur nostre dos,
+                            &amp; nous taillons comme il nous plaist sur l’étoffe où nous travaillons, Un
+                            Cordonnier en faisant des Souliers, ne sçauroit gaster un morceau de cuir, qu’il n’en
+                            paye les pots cassez : mais ici l’on peut gaster un Homme sans qu’il en couste rien.
+                            Les béveuës ne sont point pour nous ; &amp; c’est toûjours la faute de celui qui
+                            meurt. Enfin le bon de cette Profession, [52] est qu’il y a parmi les Morts une
+                            honnesteté, une discretion la plus grande du monde ; &amp; jamais on n’en voit se
+                            plaindre du Medecin qui l’a tué.
+                        </p>
+                    </sp>
+                    <sp who="LEANDRE">
+                        <speaker>LEANDRE.</speaker>
+                        <p>Il est vray que les Morts sont fort honnestes-Gens sur cette matiere.</p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE</speaker>
+                        <stage>
+                            <hi rend="i">voyant des Hommes qui viennent à luy.</hi>
+                        </stage>
+                        <p>Voila des Gens qui ont la mine de me venir consulter. Allez toûjours m’attendre aupres du
+                            Logis de vostre Maistresse.
+                        </p>
+                    </sp>
+                </div>
+                <div type="scene" n="2">
+                    <head>SCENE II.</head>
+                    <stage type="castList">THIBAULT, PERRIN, SGANARELLE.</stage>
+                    <sp who="THIBAUT">
+                        <speaker>THIBAUT.</speaker>
+                        <p>Monsieu, je venons vous charcher, mon Fils Perrin &amp; moi.</p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>Qu'y a-t-il ?</p>
+                    </sp>
+                    <sp who="THIBAUT">
+                        <speaker>THIBAUT.</speaker>
+                        <p>Sa pauvre Mere, qui a nom Parette, est dans un Lit malade il y a six mois.</p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE</speaker>
+                        <stage>
+                            <hi rend="i">tendant la main comme pour recevoir de l’argent.</hi>
+                        </stage>
+                        <p>Que voulez-vous que j’y fasse ?</p>
+                    </sp>
+                    <sp who="THIBAUT">
+                        <speaker>THIBAUT.</speaker>
+                        <p>Je voudrions, Monsieu, que vous nous baillissiez quelque petite drôlerie pour la garir.
+                            [53]
+                        </p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>Il faut voir dequoi est-ce qu’elle est malade.</p>
+                    </sp>
+                    <sp who="THIBAUT">
+                        <speaker>THIBAUT.</speaker>
+                        <p>Alle est malade d’hypocrisie, Monsieu.</p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>D'hypocrisie ?</p>
+                    </sp>
+                    <sp who="THIBAUT">
+                        <speaker>THIBAUT.</speaker>
+                        <p>Ouï, c’est à dire qu’elle est enflée par tout, &amp; l’an dit que c’est quantité de
+                            seriositez qu’alle a dans le Corps, &amp; que son foye, son ventre, ou sa ratte, comme vous
+                            voudrais l’appeller, au glieu de faire du sang, ne fait plus que de liau. Alle a de deux
+                            jours l’un la fiévre quotiguenne, avec des lassitudes &amp; des douleurs dans les musles des
+                            jambes. On entend dans sa gorge des fleumes qui sont tout prests à l’étouffer ; &amp; par
+                            fois il lui prend des sincoles &amp; des conversions, que je crayons qu’alle est passée.
+                            J'avons dans notre Village un Apoticaire, reverence parler, qui ly a donné je ne sçay
+                            combien d’histoires ; &amp; il m’en couste plus d’eune douzaine de bons écus en Lavemens ne
+                            vs’en déplaise, en Apostumes qu’on ly a fait prendre, en Infections de Jacinthe, &amp; en
+                            Portions cordales. Mais tout-ça, comme dit l’autre, n’a esté que de l’Onguent miton-mitaine.
+                            Il veloit ly bailler d’eune certaine drogue que l’on appelle du Vin ametile ; mais j’ay-s-eu
+                            peur franchement que ça l’envoyit à patres, &amp; l’an dit que ces gros Medecins tuont je ne
+                            sçay combien de monde avec cette invention-là.
+                        </p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE</speaker>
+                        <stage>
+                            <hi rend="i">tendant toûjours la main,[54] &amp; la branlant comme pour signe qu’il demande
+                                de l’argent.
+                            </hi>
+                        </stage>
+                        <p>Venons au fait, mon Ami, venons au fait.</p>
+                    </sp>
+                    <sp who="THIBAUT">
+                        <speaker>THIBAUT.</speaker>
+                        <p>Le fait est, Monsieu, que je venons vous prier de nous dire ce qu’il faut que je fassions.
+                        </p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>Je ne vous entens point du tout.</p>
+                    </sp>
+                    <sp who="PERRIN">
+                        <speaker>PERRIN.</speaker>
+                        <p>Monsieu, ma Mere est malade, &amp; vela deux écus que je vous apportons pour nous bailler
+                            queuque Remede.
+                        </p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>Ah, je vous entens, vous. Voila un Garçon qui parle clairement, qui s’explique comme il faut.
+                            Vous dites que vostre Mere est malade d’hydropisie, qu’elle est enflée par tout le Corps,
+                            qu’elle a la fiévre, avec des douleurs dans les jambes, &amp; qu’il lui prend par fois des
+                            syncopes, &amp; des convulsions, c’est à dire des évanoüissemens.
+                        </p>
+                    </sp>
+                    <sp who="PERRIN">
+                        <speaker>PERRIN.</speaker>
+                        <p>Eh ouï, Monsieu, c’est justement çà.</p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>J'ay compris d’abord vos paroles. Vous avez un Pere qui ne sçait ce qu’il dit. Maintenant
+                            vous me demandez un Remede ?
+                        </p>
+                    </sp>
+                    <sp who="PERRIN">
+                        <speaker>PERRIN.</speaker>
+                        <p>Ouï, Monsieu.</p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>Un Remede pour la guerir ?</p>
+                    </sp>
+                    <sp who="PERRIN">
+                        <speaker>PERRIN.</speaker>
+                        <p>C'est comme je l’entendons. [55]</p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>Tenez, voila un morceau de Formage qu’il faut que vous lui fassiez prendre.</p>
+                    </sp>
+                    <sp who="PERRIN">
+                        <speaker>PERRIN.</speaker>
+                        <p>Du Fromage, Monsieu ?</p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>Ouï, c’est un Formage preparé, où il y entre de l’or, du coral, &amp; des perles, &amp;
+                            quantité d’autres choses précieuses.
+                        </p>
+                    </sp>
+                    <sp who="PERRIN">
+                        <speaker>PERRIN.</speaker>
+                        <p>Monsieu, je vous sommes bien obligez ; &amp; j’allons ly faire prendre ça tout-à-l’heure.</p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>Allez. Si elle meurt, ne manquez pas de la faire enterrer du mieux que vous pourrez.</p>
+                    </sp>
+                </div>
+                <div type="scene" n="3">
+                    <head>SCENE III.</head>
+                    <stage type="castList">JACQUELINE, SGANARELLE, LUCAS.</stage>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>Voici la belle Nourrice. Ah, Nourrice de mon cœur, je suis ravi de cette rencontre ; &amp;
+                            vostre veuë est la Rhubarbe, la Casse, &amp; le Sené, qui purgent toute la mélancolie de mon
+                            ame.
+                        </p>
+                    </sp>
+                    <sp who="JACQUELINE">
+                        <speaker>JACQUELINE.</speaker>
+                        <p>Par ma figué, Monsieu le Medecin, ça est trop bian dit pour moi, &amp; je n’entens rien à
+                            tout vôtre Latin. [56]
+                        </p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>Devenez malade, Nourrice, je vous prie, devenez malade pour l’amour de moi. J'aurois toutes
+                            les joyes du monde de vous guerir.
+                        </p>
+                    </sp>
+                    <sp who="JACQUELINE">
+                        <speaker>JACQUELINE.</speaker>
+                        <p>Je sis votre Sarvante, j’aime bian mieux qu’an ne me guarisse pas.</p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>Que je vous plains, belle Nourrice, d’avoir un Mari jaloux &amp; fâcheux comme celui que vous
+                            avez !
+                        </p>
+                    </sp>
+                    <sp who="JACQUELINE">
+                        <speaker>JACQUELINE.</speaker>
+                        <p>Que velez-vous, Monsieu, c’est pour la penitence de mes fautes ; &amp; là où la Chevre est
+                            liée, il faut bian qu’alle y broute.
+                        </p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>Comment, un Rustre comme cela ? Un Homme qui vous observe toûjours, &amp; ne veut pas que
+                            personne vous parle !
+                        </p>
+                    </sp>
+                    <sp who="JACQUELINE">
+                        <speaker>JACQUELINE.</speaker>
+                        <p>Helas ! vous n’avez rien veu encore ; &amp; ce n’est qu’un petit échantillon de sa mauvaise
+                            humeur.
+                        </p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>Est-il possible, &amp; qu’un Homme ait l’ame assez basse pour mal-traiter une Personne comme
+                            vous ? Ah que j’en sçais, belle Nourrice, &amp; qui ne sont pas loin d’icy, qui se
+                            tiendroient heureux de baiser seulement les petits bouts de vos petons ! Pourquoy faut-il
+                            qu’une Personne si bien faite, soit tombée en de telles mains ? &amp; qu’un franc animal, un
+                            brutal, un stupide, un sot.... Pardonnez-moy, Nourrice, si je parle ainsi de vostre Mary.
+                            [57]
+                        </p>
+                    </sp>
+                    <sp who="JACQUELINE">
+                        <speaker>JACQUELINE.</speaker>
+                        <p>Eh, Monsieu, je sçay bien qu’il merite tous ces noms-là.</p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>Oüy sans doute, Nourrice, il les merite, &amp; il meriteroit encore que vous lui missiez
+                            quelque chose sur la teste, pour le punir des soupçons qu’il a.
+                        </p>
+                    </sp>
+                    <sp who="JACQUELINE">
+                        <speaker>JACQUELINE.</speaker>
+                        <p>Il est bien vray que si je n’avois devant les yeux que son interest, il pourroit m’obliger à
+                            queuque étrange chose.
+                        </p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>Ma foy, vous ne feriez pas mal de vous vanger de lui avec quelqu’un. C'est un Homme, je vous
+                            le dy, qui merite bien cela ; &amp; si j’estois assez heureux, belle Nourrice, pour estre
+                            choisi pour....
+                            <stage>
+                                <hi rend="i">En cet endroit tous deux appercevant Lucas qui estoit derriere eux, &amp;
+                                    entendoit leur Dialogue, chacun se retire de son costé, mais le Medecin d’une
+                                    maniere fort plaisante.
+                                </hi>
+                            </stage>
+                            [58]
+                        </p>
+                    </sp>
+                </div>
+                <div type="scene" n="4">
+                    <head>SCENE IV.</head>
+                    <stage type="castList">GERONTE, LUCAS.</stage>
+                    <sp who="GERONTE">
+                        <speaker>GERONTE.</speaker>
+                        <p>Hola, Lucas, n’as-tu point veu icy nostre Medecin ?</p>
+                    </sp>
+                    <sp who="LUCAS">
+                        <speaker>LUCAS.</speaker>
+                        <p>Et oüy de par tous les diantes, je l’ay veu, &amp; ma Femme aussi.</p>
+                    </sp>
+                    <sp who="GERONTE">
+                        <speaker>GERONTE.</speaker>
+                        <p>Où est-ce donc qu’il peut estre ?</p>
+                    </sp>
+                    <sp who="LUCAS">
+                        <speaker>LUCAS.</speaker>
+                        <p>Je ne sçay : mais je voudrois qu’il fut à tous les Guebles.</p>
+                    </sp>
+                    <sp who="GERONTE">
+                        <speaker>GERONTE.</speaker>
+                        <p>Y a-t-en voir un peu ce que fait ma Fille.</p>
+                    </sp>
+                </div>
+                <div type="scene" n="5">
+                    <head>SCENE V.</head>
+                    <stage type="castList">SGANARELLE, LEANDRE, GERONTE.</stage>
+                    <sp who="GERONTE">
+                        <speaker>GERONTE.</speaker>
+                        <p>Ah, Monsieur, je demandois où vous estiez.</p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>Je m’estois amusé dans vostre Court à expul-[59]ser le superflu de la Boisson. Comment se
+                            porte la Malade ?
+                        </p>
+                    </sp>
+                    <sp who="GERONTE">
+                        <speaker>GERONTE.</speaker>
+                        <p>Un peu plus mal, depuis vostre Remede.</p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>Tant-mieux. C'est signe qu’il opere.</p>
+                    </sp>
+                    <sp who="GERONTE">
+                        <speaker>GERONTE.</speaker>
+                        <p>Oüy, mais en operant, je crains qu’il ne l’étouffe.</p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>Ne vous mettez pas en peine ; j’ay des Remedes qui se moquent de tout, &amp; je l’attens à
+                            l’agonie.
+                        </p>
+                    </sp>
+                    <sp who="GERONTE">
+                        <speaker>GERONTE.</speaker>
+                        <p>Qui est cet Homme-là que vous amenez ?</p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE</speaker>
+                        <stage>
+                            <hi rend="i">faisant des signes avec la main que c’est un Apoticaire.</hi>
+                        </stage>
+                        <p>C'est...</p>
+                    </sp>
+                    <sp who="GERONTE">
+                        <speaker>GERONTE.</speaker>
+                        <p>Quoy ?</p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>Celui...</p>
+                    </sp>
+                    <sp who="GERONTE">
+                        <speaker>GERONTE.</speaker>
+                        <p>Eh !</p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>Qui...</p>
+                    </sp>
+                    <sp who="GERONTE">
+                        <speaker>GERONTE.</speaker>
+                        <p>Je vous entens.</p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>Vostre Fille en aura besoin.[60]</p>
+                    </sp>
+                </div>
+                <div type="scene" n="4">
+                    <head>SCENE VI.</head>
+                    <stage type="castList">JACQUELINE, LUCINDE, GERONTE, LE ANDRE, SGANARELLE.</stage>
+                    <sp who="JACQUELINE">
+                        <speaker>JACQUELINE.</speaker>
+                        <p>Monsieu, vela vostre Fille qui veut un peu marché.</p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>Cela lui fera du bien. Allez-vous-en, Monsieur l’Apoticaire, taster un peu son pouls, afin
+                            que je raisonne tantost avec vous de sa maladie.
+                            <stage>
+                                <hi rend="i">En cet endroit il tire Geronte à un bout du Theatre, &amp; lui passant un
+                                    bras sur les èpaules, lui rabat la main sous le menton, avec laquelle il le fait
+                                    retourner vers lui, lors qu’il veut regarder ce que sa Fille &amp; l’Apoticaire font
+                                    ensemble, lui tenant cependant le discours suivant pour l’amuser.
+                                </hi>
+                            </stage>
+                            Monsieur, c’est une grande &amp; subtile question entre les Docteurs, de sçavoir si les
+                            Femmes sont plus faciles à guerir que les Hommes. Je vous prie d’écouter cecy, s’il vous
+                            plaist. Les uns disent que non ; les autres disent que oüy ; &amp; moy je dis que oüy, &amp;
+                            non : dautant que l’incongruité des humeurs opaques qui se rencontrent au tempérament
+                            naturel des Femmes, estant cause que la partie brutale veut toûjours prendre empire sur la
+                            sensitive, on voit que l’inégalité de leurs opinions dépend du mouvement oblique du
+                            cer-[61]cle de la Lune ; &amp; comme le Soleil qui darde ses rayons sur la concavité de la
+                            Terre, trouve...
+                        </p>
+                    </sp>
+                    <sp who="LUCINDE">
+                        <speaker>LUCINDE.</speaker>
+                        <p>Non, je ne suis point du tout capable de changer de sentimens.</p>
+                    </sp>
+                    <sp who="GERONTE">
+                        <speaker>GERONTE.</speaker>
+                        <p>Voila ma Fille qui parle. O grande vertu du Remede ! ô admirable Medecin ! Que je vous suis
+                            obligé, Monsieur, de cette guerison merveilleuse ; &amp; que puis-je faire pour vous aprés
+                            un tel service !
+                        </p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE</speaker>
+                        <stage>
+                            <hi rend="i">se promenant sur le Theatre, &amp; s’essuyant le front.</hi>
+                        </stage>
+                        <p>Voila une Maladie qui m’a bien donné de la peine !</p>
+                    </sp>
+                    <sp who="LUCINDE">
+                        <speaker>LUCINDE.</speaker>
+                        <p>Oüy, mon Pere, j’ay recouvré la parole ; mais je l’ay recouvrée pour vous dire, que je
+                            n’auray jamais d’autres Epous que Leandre, &amp; que c’est inutilement que vous voulez me
+                            donner Horace.
+                        </p>
+                    </sp>
+                    <sp who="GERONTE">
+                        <speaker>GERONTE.</speaker>
+                        <p>Mais....</p>
+                    </sp>
+                    <sp who="LUCINDE">
+                        <speaker>LUCINDE.</speaker>
+                        <p>Rien n’est capable d’ébranler la résolution que j’ay prise.</p>
+                    </sp>
+                    <sp who="GERONTE">
+                        <speaker>GERONTE.</speaker>
+                        <p>Quoy....</p>
+                    </sp>
+                    <sp who="LUCINDE">
+                        <speaker>LUCINDE.</speaker>
+                        <p>Vous m’opposerez en vain de belles Raisons. [62]</p>
+                    </sp>
+                    <sp who="GERONTE">
+                        <speaker>GERONTE.</speaker>
+                        <p>Si....</p>
+                    </sp>
+                    <sp who="LUCINDE">
+                        <speaker>LUCINDE.</speaker>
+                        <p>Tous vos discours ne serviront de rien.</p>
+                    </sp>
+                    <sp who="GERONTE">
+                        <speaker>GERONTE.</speaker>
+                        <p>Je....</p>
+                    </sp>
+                    <sp who="LUCINDE">
+                        <speaker>LUCINDE.</speaker>
+                        <p>C'est une chose où je suis déterminée.</p>
+                    </sp>
+                    <sp who="GERONTE">
+                        <speaker>GERONTE.</speaker>
+                        <p>Mais....</p>
+                    </sp>
+                    <sp who="LUCINDE">
+                        <speaker>LUCINDE.</speaker>
+                        <p>Il n’est puissance Paternelle qui me puisse obliger à me marier malgré moy.</p>
+                    </sp>
+                    <sp who="GERONTE">
+                        <speaker>GERONTE.</speaker>
+                        <p>J'ay...</p>
+                    </sp>
+                    <sp who="LUCINDE">
+                        <speaker>LUCINDE.</speaker>
+                        <p>Vous avez beau faire tous vos efforts.</p>
+                    </sp>
+                    <sp who="GERONTE">
+                        <speaker>GERONTE.</speaker>
+                        <p>Il....</p>
+                    </sp>
+                    <sp who="LUCINDE">
+                        <speaker>LUCINDE.</speaker>
+                        <p>Mon cœur ne sçauroit se soûmettre à cette tyrannie.</p>
+                    </sp>
+                    <sp who="GERONTE">
+                        <speaker>GERONTE.</speaker>
+                        <p>La....</p>
+                    </sp>
+                    <sp who="LUCINDE">
+                        <speaker>LUCINDE.</speaker>
+                        <p>Et je me jetteray plûtost dans un Convent, que d’épouser un Homme que je n’aime point.</p>
+                    </sp>
+                    <sp who="GERONTE">
+                        <speaker>GERONTE.</speaker>
+                        <p>Mais....</p>
+                    </sp>
+                    <sp who="LUCINDE">
+                        <speaker>LUCINDE</speaker>
+                        <stage>
+                            <hi rend="i">parlant d’un ton de voix à étourdir.</hi>
+                        </stage>
+                        <p>Non. En aucune façon. Point d’affaire. Vous perdez le temps. Je n’en feray rien. Cela est
+                            résolu. [63]
+                        </p>
+                    </sp>
+                    <sp who="GERONTE">
+                        <speaker>GERONTE.</speaker>
+                        <p>Ah quelle impétuosité de paroles ! Il n’y a pas moyen d’y résister. Monsieur, je vous prie de
+                            la faire redevenir muette.
+                        </p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>C'est une chose qui m’est impossible. Tout ce que je puis faire pour vostre service, est de
+                            vous rendre sourd, si vous voulez.
+                        </p>
+                    </sp>
+                    <sp who="GERONTE">
+                        <speaker>GERONTE.</speaker>
+                        <p>Je vous remercie. Penses-tu donc....</p>
+                    </sp>
+                    <sp who="LUCINDE">
+                        <speaker>LUCINDE.</speaker>
+                        <p>Non, toutes vos raisons ne gagneront rien sur mon ame.</p>
+                    </sp>
+                    <sp who="GERONTE">
+                        <speaker>GERONTE.</speaker>
+                        <p>Tu épouseras Horace dés ce soir.</p>
+                    </sp>
+                    <sp who="LUCINDE">
+                        <speaker>LUCINDE.</speaker>
+                        <p>J'épouseray plûtost la Mort.</p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>Mon Dieu, arrestez-vous, laissez-moy médicamenter cette affaire. C'est une maladie qui la
+                            tient ; &amp; je sçais le remede qu’il y faut apporter.
+                        </p>
+                    </sp>
+                    <sp who="GERONTE">
+                        <speaker>GERONTE.</speaker>
+                        <p>Seroit-il possible, Monsieur, que vous pussiez aussi guerir cette maladie d’esprit ?</p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>Oüy, laissez-moy faire, j’ay des Remedes pour tout ; &amp; nostre Apoticaire nous
+                            servira. pour cette Cure.
+                            <stage>
+                                <hi rend="i">Il appelle l’Apoticaire, &amp; lui
+                                    parle.
+                                </hi>
+                            </stage>
+                            Un mot. Vous voyez que l’ardeur qu’elle a pour ce Leandre, est
+                            tout-à-fait contraire aux volontez du Pere, qu’il n’y a point de temps à perdre, que
+                            les humeurs sont fort aigries, &amp; qu’il [64] est necessaire de trouver promptement
+                            un remede à ce mal qui pourroit empirer par le retardement. Pour moy je n’y en vois
+                            qu’un seul, qui est une prise de Fuite Purgative, que vous meslerez comme il faut avec
+                            deux drachmes de Matrimonium en Pilules. Peut-estre fera-t-elle quelque difficulté à
+                            prendre ce Remede : mais comme vous estes habile Homme dans vostre Mestier, c’est à
+                            vous de l’y résoudre, &amp; de lui faire avaler la chose du mieux que vous pourrez.
+                            Allez-vous-en lui faire faire un petit tour de Jardin, afin de preparer les humeurs,
+                            tandis que j’entretiendray icy son Pere : mais sur tout ne perdez point de temps. Au
+                            Remede, viste, au Remede specifique.
+                        </p>
+                    </sp>
+                </div>
+                <div type="scene" n="7">
+                    <head>SCENE VII.</head>
+                    <stage type="castList">GERONTE, SGANARELLE.</stage>
+                    <sp who="GERONTE">
+                        <speaker>GERONTE.</speaker>
+                        <p>Quelles Drogues, Monsieur, sont celles que vous venez de dire ? Il me semble que je ne les ay
+                            jamais oüy nommer.
+                        </p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>Ce sont Drogues dont on se sert dans les nécessitez urgentes.</p>
+                    </sp>
+                    <sp who="GERONTE">
+                        <speaker>GERONTE.</speaker>
+                        <p>Avez-vous jamais veu une insolence pareille à la sienne ? [65]</p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>Les Filles sont quelquesfois un peu testuës.</p>
+                    </sp>
+                    <sp who="GERONTE">
+                        <speaker>GERONTE.</speaker>
+                        <p>Vous ne sçauriez croire comme elle est affolée de ce Leandre.</p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>La chaleur du sang fait cela dans les jeunes esprits.</p>
+                    </sp>
+                    <sp who="GERONTE">
+                        <speaker>GERONTE.</speaker>
+                        <p>Pour moy, dés que j’ay eu découvert la violence de cet amour, j’ay sçeu tenir toûjours ma
+                            Fille renfermée.
+                        </p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>Vous avez fait sagement.</p>
+                    </sp>
+                    <sp who="GERONTE">
+                        <speaker>GERONTE.</speaker>
+                        <p>Et j’ay bien empesché qu’ils n’ayent eu communication ensemble.</p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>Fort bien.</p>
+                    </sp>
+                    <sp who="GERONTE">
+                        <speaker>GERONTE.</speaker>
+                        <p>Il seroit arrivé quelque folie, si j’avois souffert qu’ils se fussent veus.</p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>Sans doute.</p>
+                    </sp>
+                    <sp who="GERONTE">
+                        <speaker>GERONTE.</speaker>
+                        <p>Et je croy qu’elle auroit esté Fille à s’en aller avec lui.</p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>C'est prudemment raisonné.</p>
+                    </sp>
+                    <sp who="GERONTE">
+                        <speaker>GERONTE.</speaker>
+                        <p>On m’avertit qu’il fait tous ses efforts pour lui parler. [66]</p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>Quel Drole !</p>
+                    </sp>
+                    <sp who="GERONTE">
+                        <speaker>GERONTE.</speaker>
+                        <p>Mais il perdra son temps.</p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>Ah, ah.</p>
+                    </sp>
+                    <sp who="GERONTE">
+                        <speaker>GERONTE.</speaker>
+                        <p>Et j’empescheray bien qu’il ne la voye.</p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>Il n’a pas affaire à un Sot, &amp; vous sçavez des rubriques qu’il ne sçait pas. Plus fin que
+                            vous n’est pas beste.
+                        </p>
+                    </sp>
+                </div>
+                <div type="scene" n="8">
+                    <head>SCENE VIII.</head>
+                    <stage type="castList">LUCAS, GERONTE, SGANARELLE.</stage>
+                    <sp who="LUCAS">
+                        <speaker>LUCAS.</speaker>
+                        <p>Ah palsanguenne, Monsieu, vaicy bian du tintamarre ; votre Fille s’en est enfuye avec son
+                            Liandre. C'estoit lui qui estoit l’Apoticaire ; &amp; vela Monsieu le Médecin qui a
+                            fait cette belle operation-là.
+                        </p>
+                    </sp>
+                    <sp who="GERONTE">
+                        <speaker>GERONTE.</speaker>
+                        <p>Comment, m’assassiner de la façon ? Allons, un Commissaire, &amp; qu’on empesche qu’il ne
+                            sorte. Ah Traistre, je vous feray punir par la Justice.
+                        </p>
+                    </sp>
+                    <sp who="LUCAS">
+                        <speaker>LUCAS.</speaker>
+                        <p>Ah par ma fy, Monsieu le Medecin, vous serez pendu ; ne bougez de là seulement. [67]</p>
+                    </sp>
+                </div>
+                <div type="scene" n="9">
+                    <head>SCENE IX.</head>
+                    <stage type="castList">MARTINE, SGANARELLE, LUCAS.</stage>
+                    <sp who="MARTINE">
+                        <speaker>MARTINE.</speaker>
+                        <p>Ah mon Dieu, que j’ay eu de peine à trouver ce Logis ! Dites-moy un peu des nouvelles du
+                            Medecin que je vous ay donné.
+                        </p>
+                    </sp>
+                    <sp who="LUCAS">
+                        <speaker>LUCAS.</speaker>
+                        <p>Le vela qui va estre pendu.</p>
+                    </sp>
+                    <sp who="MARTINE">
+                        <speaker>MARTINE</speaker>
+                        <p>Quoy, mon Mary pendu ? Helas ! Et qu’a-t-il fait pour cela ?</p>
+                    </sp>
+                    <sp who="LUCAS">
+                        <speaker>LUCAS.</speaker>
+                        <p>Il a fait enlever la Fille de notre Maistre.</p>
+                    </sp>
+                    <sp who="MARTINE">
+                        <speaker>MARTINE.</speaker>
+                        <p>Helas ! mon cher Mary, est-il bien vray qu’on te va pendre ?</p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>Tu vois. Ah !</p>
+                    </sp>
+                    <sp who="MARTINE">
+                        <speaker>MARTINE.</speaker>
+                        <p>Faut-il que tu te laisses mourir en presence de tant de Gens ?</p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>Que veux-tu que j’y fasse ?</p>
+                    </sp>
+                    <sp who="MARTINE">
+                        <speaker>MARTINE.</speaker>
+                        <p>Encore si tu avois achevé de couper nostre Bois, je prendrois quelque consolation.
+                            [68]
+                        </p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>Retire-toy de là, tu me fends le cœur.</p>
+                    </sp>
+                    <sp who="MARTINE">
+                        <speaker>MARTINE.</speaker>
+                        <p>Non, je veux demeurer pour t’encourager à la mort ; &amp; je ne te quitteray point, que je ne
+                            t’aye veu pendu.
+                        </p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>Ah !</p>
+                    </sp>
+                </div>
+                <div type="scene" n="10">
+                    <head>SCENE X.</head>
+                    <stage type="castList">GERONTE, SGANARELLE, MARTINE, LUCAS.</stage>
+                    <sp who="GERONTE">
+                        <speaker>GERONTE.</speaker>
+                        <p>Le Commissaire viendra bien-tost, &amp; l’on s’en va vous mettre en lieu où l’on me répondra
+                            de vous.
+                        </p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE</speaker>
+                        <stage>
+                            <hi rend="i">le chapeau à la main.</hi>
+                        </stage>
+                        <p>Helas ! cela ne se peut-il point changer en quelques coups de baston ?</p>
+                    </sp>
+                    <sp who="GERONTE">
+                        <speaker>GERONTE.</speaker>
+                        <p>Non, non, la Justice en ordonnera. Mais que vois-je ? [69]</p>
+                    </sp>
+                </div>
+                <div type="scene">
+                    <head>SCENE DERNIERE.</head>
+                    <stage type="castList">LEANDRE, LUCINDE, JACQUELINE, LUCAS, GERONTE, SGANARELLE, MARTINE.</stage>
+                    <sp who="LEANDRE">
+                        <speaker>LEANDRE.</speaker>
+                        <p>Monsieur, je viens faire paroistre Leandre à vos yeux, &amp; remettre Lucinde en vostre
+                            pouvoir. Nous avons eu dessein de prendre la fuite nous deux, &amp; de nous aller marier
+                            ensemble : mais cette entreprise a fait place à un procedé plus honneste. Je ne prétens
+                            point vous voler vostre Fille, &amp; ce n’est que de vostre main que je veux la recevoir. Ce
+                            que je vous diray, Monsieur, c’est que je viens tout-à-l’heure de recevoir des Lettres par
+                            où j’apprens que mon Oncle est mort, &amp; que je suis heritier de tous ses biens.
+                        </p>
+                    </sp>
+                    <sp who="GERONTE">
+                        <speaker>GERONTE.</speaker>
+                        <p>Monsieur, vostre vertu m’est tout-à-fait considérable, &amp; je vous donne ma Fille avec la
+                            plus grande joye du monde.
+                        </p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>La Medecine l’a échapé belle.</p>
+                    </sp>
+                    <sp who="MARTINE">
+                        <speaker>MARTINE.</speaker>
+                        <p>Puis que tu ne seras point pendu, rens-moy grace d’estre Medecin, car c’est moy qui t’ay
+                            procuré cet honneur. [70]
+                        </p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>Oüy, c’est toy qui m’as procuré je ne sçay combien de coups de baston.</p>
+                    </sp>
+                    <sp who="LEANDRE">
+                        <speaker>LEANDRE.</speaker>
+                        <p>L'effet en est trop beau, pour en garder du ressentiment.</p>
+                    </sp>
+                    <sp who="SGANARELLE">
+                        <speaker>SGANARELLE.</speaker>
+                        <p>Soit, je te pardonne ces coups de baston, en faveur de la Dignité où tu m’as élevé : mais
+                            prepare-toy desormais à vivre dans un grand respect avec un Homme de ma consequence ; &amp;
+                            songe que la colere d’un Medecin est plus à craindre qu’on ne peut croire.
+                        </p>
+                    </sp>
+                    <stage>F I N.</stage>
+                </div>
+            </div>
+        </body>
+    </text>
+</TEI>

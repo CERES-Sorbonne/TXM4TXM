@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title>Le Jeu de Robin et Marion</title>
+			</titleStmt>
+			<editionStmt>
+			</editionStmt>
+			<publicationStmt>
+				<publisher>A voir</publisher>
+				<date>N/A</date>
+			</publicationStmt>
+			<sourceDesc>
+				<p>Transcrit d'après le manuscrit Aix-en-Provece, Bibl. Méjanes, 166</p>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+	<text>
+		<body>
+		</body>
+	</text>
+</TEI>

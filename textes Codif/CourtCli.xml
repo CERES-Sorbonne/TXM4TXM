@@ -1,0 +1,2463 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../Teinte/tei2html.xsl"?>
+<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<!--Odette: 2021-02-07T16:55:03+01:00-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>UN CLIENT SÉRIEUX</title>
+                <author>PAR</author>
+                <author>GEORGES COURTELINE</author>
+            </titleStmt>
+            <editionStmt>
+                <edition>Université Sorbonne Nouvelle</edition>
+                <respStmt>
+                    <name>Zornitsa Pavlova</name>
+                    <resp>édition XML-TEI</resp>
+                </respStmt>
+                <respStmt>
+                    <name>Gabriella Parussa</name>
+                    <resp>relecture</resp>
+                </respStmt>
+                <respStmt>
+                    <name>Chiara Mainardi</name>
+                    <resp>correction XML-TEI</resp>
+                </respStmt>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>Université Sorbonne Nouvelle</publisher>
+                <date when="2021"/>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl>PARIS,ERNEST FLAMMARION, ÉDITEUR, 26, rue Racine, Près L'Odéon</bibl>
+                <bibl>BNF-8-Y2-50708</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <creation>
+                <date when="1897">1897</date>
+            </creation>
+            <langUsage>
+                <language ident="fr">Français</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <front><!--Commentaire de Chiara : j'ai inséré un <front> pour la note et pour le titre, au lieu des deux <div> que vous aviez mises -->
+            <div>
+                <!--Le texte original ne contient pas une liste des personnages. Nous ajoutons ici les noms des personnages cités dans le texte pour les fins de l'encodage XML-TEI-->
+                <note resp="editor">
+                    <castList>
+                        <castItem xml:id="HUISSIER">L'HUISSIER</castItem>
+                        <castItem xml:id="SUBSTITUT">LE SUBSTITUT</castItem>
+                        <castItem xml:id="PRESIDENT">LE PRÉSIDENT</castItem>
+                        <castItem xml:id="LA_VOIX_DU_PRÉSIDENT">LA VOIX DU PRÉSIDENT</castItem>
+                        <castItem xml:id="BARBEMOLLE">BARBEMOLLE</castItem>
+                        <castItem xml:id="LAGOUPILLE">LAGOUPILLE</castItem>
+                        <castItem xml:id="LE_PAUVRE_MAPIPE">LE PAUVRE MAPIPE</castItem>
+                        <castItem xml:id="ALFRED">ALFRED</castItem>
+                        <castItem xml:id="AVOCAT">L'AVOCAT</castItem>
+                        <castItem xml:id="LE_JUGE_FOY_DE_VAULX">LE JUGE FOY DE VAULX</castItem>
+                        <castItem xml:id="L_AVOCAT_DE_MAPIPE">L'AVOCAT DE MAPIPE</castItem>
+                    </castList>
+                </note>
+                <head>UN CLIENT SÉRIEUX</head>
+            </div>
+        </front>
+        <body>
+
+            <div type="scene" n="1">
+                <head>SCÈNE PREMIÈRE</head>
+                <stage type="setting">En chambre du Conseil.
+                    Fauteuils et chaises de reps vert bouteille. Hautes boiseries de chêne montant à mi-hauteur des
+                    murs, au-dessous d’un papier gros bleu où s’éparpillent des fleurs de lys.
+                    Un feu de coke siffle dans l’âtre.
+                    L'huissier seul, planté devant une glace, noue sur sa nuque le ruban de son rabat.
+                    La porte s’ouvre.
+                </stage>
+                <sp who="SUBSTITUT">
+                    <speaker>LE SUBSTITUT</speaker>
+                    <stage>, qui entre</stage>
+                    <p>Bonjour.</p>
+                </sp>
+
+                <stage>C'est un homme de trente-cinq à trente-huit ans, petit et blond. L'allure d’un foutriquet rageur
+                    et rancunier. D'ailleurs, la plus grande distinction. Pantalon et veston irréprochables. Des pieds
+                    de fillette, chaussés d’escarpins vernis. Un chapeau de soie où Narcisse trouverait à mirer son
+                    image. [4]
+                </stage>
+                <sp who="HUISSIER">
+                    <speaker>L'HUISSIER</speaker>
+                    <p>Monsieur le substitut, mes respects !</p>
+                </sp>
+                <sp who="SUBSTITUT">
+                    <speaker>LE SUBSTITUT</speaker>
+                    <p>Vous avez <hi rend="i">l’Officiel</hi>?
+                    </p>
+                </sp>
+                <sp who="HUISSIER">
+                    <speaker>L'HUISSIER</speaker>
+                    <p>Non, Monsieur le substitut.</p>
+                </sp>
+                <sp who="SUBSTITUT">
+                    <speaker>LE SUBSTITUT</speaker>
+                    <p>Depuis ce matin, je bats tous les kiosques de Paris; pas moyen de mettre la main dessus.</p>
+                </sp>
+                <sp who="HUISSIER">
+                    <speaker>L'HUISSIER</speaker>
+                    <p>Ça ne m’étonne pas. Il ne sera mis en vente qu’à midi. C'est dans le <hi rend="i">Matin</hi>, en
+                        dernière heure.
+                    </p>
+                </sp>
+                <sp who="SUBSTITUT">
+                    <speaker>LE SUBSTITUT</speaker>
+                    <p>Il est arrivé quelque chose?</p>
+                </sp>
+                <sp who="HUISSIER">
+                    <speaker>L'HUISSIER</speaker>
+                    <p>Un accident comme on allait mettre sous presse. Toute une forme en pâte!</p>
+                </sp>
+                <sp who="SUBSTITUT">
+                    <speaker>LE SUBSTITUT</speaker>
+                    <stage>, amer</stage>
+                    <p>Charmant!... Ces choses-là sont faites pour moi. Enfin!... Pensez à me l’apporter dès qu’il sera
+                        paru. J'ai hâte d’avoir des nouvelles. [5]
+                    </p>
+                </sp>
+                <sp who="HUISSIER">
+                    <speaker>L'HUISSIER</speaker>
+                    <p>Vous êtes décoré ?"</p>
+                </sp>
+                <sp who="SUBSTITUT">
+                    <speaker>LE SUBSTITUT</speaker>
+                    <p>Décoré? (
+                        <stage>
+                            <hi rend="i">Jetant ses gants dans son chapeau.</hi>
+                        </stage>
+                        ) C'est-à-dire que je suis sacqué, probablement.
+                    </p>
+                </sp>
+                <sp who="HUISSIER">
+                    <speaker>L'HUISSIER</speaker>
+                    <stage>, abasourdi</stage>
+                    <p>Non?</p>
+                </sp>
+                <sp who="SUBSTITUT">
+                    <speaker>LE SUBSTITUT</speaker>
+                    <p>Je vous dis que le décret de révocation a peut-être été soumis hier à la signature
+                        présidentielle.
+                    </p>
+                </sp>
+                <sp who="HUISSIER">
+                    <speaker>L'HUISSIER</speaker>
+                    <p>Qu'est-ce qu’il se passe?</p>
+                </sp>
+                <sp who="SUBSTITUT">
+                    <speaker>LE SUBSTITUT</speaker>
+                    <p>Il se passe que, depuis un mois, l’<hi rend="i">Intransigeant</hi> mène contre moi une campagne.
+                    </p>
+                </sp>
+                <sp who="HUISSIER">
+                    <speaker>L'HUISSIER</speaker>
+                    <stage>, qui le savait parfaitement</stage>
+                    <p>A cause?</p>
+                </sp>
+                <sp who="SUBSTITUT">
+                    <speaker>LE SUBSTITUT</speaker>
+                    <p>A cause que le cousin du gendre du beau-frère de ma belle-sœur a décidé sa tante à mettre son
+                        filleul aux jésuites de Vaugirard. [6]
+                    </p>
+                </sp>
+                <sp who="HUISSIER">
+                    <speaker>L'HUISSIER</speaker>
+                    <stage>, jouant la consternation</stage>
+                    <p>Zut!</p>
+                </sp>
+                <sp who="SUBSTITUT">
+                    <speaker>LE SUBSTITUT</speaker>
+                    <stage>, qui endosse sa robe</stage>
+                    <p>J'en suis comme un fou, je vous dis! D'ailleurs, je sais de qui vient le coup.</p>
+                </sp>
+                <sp who="HUISSIER">
+                    <speaker>L'HUISSIER</speaker>
+                    <p>De qui?</p>
+                </sp>
+                <sp who="SUBSTITUT">
+                    <speaker>LE SUBSTITUT</speaker>
+                    <p>De Barbemolle, parbleu!... misérable plaidaillon! avocat sans causes! canaille! Voilà longtemps
+                        que je le surveille, que j’observe, sans souffler mot, son petit travail de termite. Pistonné
+                        par les radicaux au Ministère de la Justice, il a obtenu du garde des sceaux la promesse d’être
+                        nommé substitut à Paris dès que se produira une vacance. Alors, naturellement, il fait tout ce
+                        qu’il peut pour faire un trou au Parquet.
+                    </p>
+                </sp>
+                <sp who="HUISSIER">
+                    <speaker>L'HUISSIER</speaker>
+                    <stage>, effaré</stage>
+                    <p>Il veut faire un trou au parquet?</p>
+                </sp>
+                <sp who="SUBSTITUT">
+                    <speaker>LE SUBSTITUT</speaker>
+                    <p>Oui.</p>
+                </sp>
+                <sp who="HUISSIER">
+                    <speaker>L'HUISSIER</speaker>
+                    <p>Pour regarder ce qui se passe? [7]</p>
+                </sp>
+                <sp who="SUBSTITUT">
+                    <speaker>LE SUBSTITUT</speaker>
+                    <stage>, agacé</stage>
+                    <p>J'ai de la peine à me faire comprendre. Je ne vous dis pas « au parquet », je vous dis « au
+                        Parquet » ! Le Parquet! Vous ne savez pas ce qu’on appelle le Parquet?
+                    </p>
+                </sp>
+                <sp who="HUISSIER">
+                    <speaker>L'HUISSIER</speaker>
+                    <p>Ah! pardon!</p>
+                </sp>
+                <sp who="SUBSTITUT">
+                    <speaker>LE SUBSTITUT</speaker>
+                    <p>Pied-plat! Flaire-fesse!... Non, mais qu’il l’ait jamais, ma place!... J'ai des amis au <hi
+                            rend="i">Figaro
+                    </hi> ; je lui ferai savoir comment je m’appelle, vous verrez si ça traînera.
+                    </p>
+                </sp>
+                <sp who="HUISSIER">
+                    <speaker>L'HUISSIER</speaker>
+                    <p>Vous aurez rudement raison.</p>
+                </sp>
+                <stage type="setting">La porte s’ouvre.</stage>
+                <sp who="SUBSTITUT">
+                    <speaker>LE SUBSTITUT</speaker>
+                    <stage>, bas à l’huissier</stage>
+                    <p>Chut!... Le président!</p>
+                </sp>
+                <stage>C'est le président, en effet, homme de cinquante ans, celui-ci, aux larges favoris blancs où
+                    s’éteignent de dernières rousseurs. Menton en fessier de poupée. Cheveux rares. Binocle d’écaille.
+                </stage>
+                <sp who="PRESIDENT">
+                    <speaker>LE PRÉSIDENT</speaker>
+                    <p>Messieurs, je vous présente mes hommages. (
+                        <stage>
+                            <hi rend="i">Les deux hommes saluent jusqu’à terre.</hi>
+                        </stage>
+                        ) Comment, d’É-[8]chaussé n’est pas là?... Et Foy de Vaulx?... où est-il, Foy de Vaulx?... Pas
+                        arrivé non plus, Foy de Vaulx?... Oh mais... oh mais... oh mais...
+                    </p>
+                </sp>
+                <sp who="HUISSIER">
+                    <speaker>L'HUISSIER</speaker>
+                    <p>Ces messieurs ne sont pas en retard. Il n’est qu’onze heures et demie, monsieur le président.</p>
+                </sp>
+                <sp who="PRESIDENT">
+                    <speaker>LE PRÉSIDENT</speaker>
+                    <p>Il est onze heures et demie pour eux comme pour moi, et je vous ferai humblement remarquer que je
+                        suis là. Singuliers temps, où le président s’astreint à des servitudes, tandis que les juges
+                        s’en affranchissent! - Le rôle est-il chargé?
+                    </p>
+                </sp>
+                <sp who="HUISSIER">
+                    <speaker>L'HUISSIER</speaker>
+                    <p>Du tout! Deux petites affaires longues comme cela.</p>
+                </sp>
+                <sp who="PRESIDENT">
+                    <speaker>LE PRÉSIDENT</speaker>
+                    <p>C'est que je pars pour Fontainebleau, moi, par l’exprès deux heures dix-sept. Et à ce propos (
+                        <stage>
+                            <hi rend="i">au substitut</hi>
+                        </stage>
+                        ), obligez-moi donc de vous en rapporter purement et simplement à la sagesse du tribunal, pour
+                        l’application des peines. Vous n’y perdrez rien et ça me rendra service.
+                    </p>
+                </sp>
+                <sp who="SUBSTITUT">
+                    <speaker>LE SUBSTITUT</speaker>
+                    <p>Entendu. [9]</p>
+                </sp>
+                <sp who="PRESIDENT">
+                    <speaker>LE PRÉSIDENT</speaker>
+                    <p>Soit dit sans reproche, vous avez l’éloquence prolixe, les jours où vous vous y mettez, et j’ai
+                        une peur de manquer le train !
+                    </p>
+                </sp>
+                <sp who="SUBSTITUT">
+                    <speaker>LE SUBSTITUT</speaker>
+                    <stage>, un peu sec</stage>
+                    <p>Soyez tranquille.</p>
+                </sp>
+                <sp who="PRESIDENT">
+                    <speaker>LE PRÉSIDENT</speaker>
+                    <p>Je compte sur vous.</p>
+                </sp>
+
+                <stage>Il passe dans son cabinet dont il laisse la porte ouverte.</stage>
+                <sp who="SUBSTITUT">
+                    <speaker>LE SUBSTITUT</speaker>
+                    <stage>, à l’huissier</stage>
+                    <p>Allez donc voir chez le concierge, au cas où il serait arrivé.</p>
+                </sp>
+                <sp who="HUISSIER">
+                    <speaker>L'HUISSIER</speaker>
+                    <p>Qui? Le concierge?</p>
+                </sp>
+                <sp who="SUBSTITUT">
+                    <speaker>LE SUBSTITUT</speaker>
+                    <p>L'<hi rend="i">Officiel</hi>.
+                    </p>
+                </sp>
+                <sp who="HUISSIER">
+                    <speaker>L'HUISSIER</speaker>
+                    <p>Ah! pardon! - A l’instant, Monsieur le substitut.</p>
+                </sp>
+                <stage>Il sort.</stage>
+                <sp who="PRESIDENT">
+                    <speaker>LE PRÉSIDENT</speaker>
+                    <stage>, qu’on ne voit plus</stage>
+                    <p>Eh bien ! vous avez vu, ce matin... l’<hi rend="i">Intransigeant</hi>? [10]
+                    </p>
+                </sp>
+                <sp who="SUBSTITUT">
+                    <speaker>LE SUBSTITUT</speaker>
+                    <stage>, jouant l’ignorance</stage>
+                    <p>Je ne sais rien.</p>
+                </sp>
+                <sp who="LA_VOIX_DU_PRÉSIDENT">
+                    <speaker>LA VOIX DU PRÉSIDENT</speaker>
+                    <p>Je vous renseignerai donc : il y a encore un mot pour vous.</p>
+                </sp>
+                <sp who="SUBSTITUT">
+                    <speaker>LE SUBSTITUT</speaker>
+                    <stage>, avec calme</stage>
+                    <p>Ah !</p>
+                </sp>
+                <sp who="LA_VOIX_DU_PRÉSIDENT">
+                    <speaker>LA VOIX DU PRÉSIDENT</speaker>
+                    <p>Oui. Un filet de première page. Une note très désagréable. Ah ! ces gaillards-là ont soin de
+                        vous ; ils vous mènent par de petits chemins plutôt parsemés de rocailles.
+                    </p>
+                </sp>
+                <sp who="SUBSTITUT">
+                    <speaker>LE SUBSTITUT</speaker>
+                    <p>Et ça me laisse froid, ô combien! Pour l’importance que ça a!...</p>
+                </sp>
+                <sp who="LA_VOIX_DU_PRÉSIDENT">
+                    <speaker>LA VOIX DU PRÉSIDENT</speaker>
+                    <p>Aucune!</p>
+                </sp>
+                <sp who="SUBSTITUT">
+                    <speaker>LE SUBSTITUT</speaker>
+                    <stage>, les bras élargis d’évidence</stage>
+                    <p>Enfin, voyons!</p>
+                </sp>
+                <sp who="PRESIDENT">
+                    <speaker>LE PRÉSIDENT</speaker>
+                    <stage>, qui reparaît, sa toque sur l’oreille et sa toge sur le bras</stage>
+                    <p>Aucune! - Évidemment, c’est embêtant, c’est [11] regrettable à tous les points de vue; mais comme
+                        importance, c’est zéro.
+                    </p>
+                </sp>
+                <sp who="SUBSTITUT">
+                    <speaker>LE SUBSTITUT</speaker>
+                    <p>Embêtant?</p>
+                </sp>
+                <sp who="PRESIDENT">
+                    <speaker>LE PRÉSIDENT</speaker>
+                    <p>Oui.</p>
+                </sp>
+                <sp who="SUBSTITUT">
+                    <speaker>LE SUBSTITUT</speaker>
+                    <p>Pour qui?</p>
+                </sp>
+                <sp who="PRESIDENT">
+                    <speaker>LE PRÉSIDENT</speaker>
+                    <p>Pour vous.</p>
+                </sp>
+                <sp who="SUBSTITUT">
+                    <speaker>LE SUBSTITUT</speaker>
+                    <p>Encore une fois, Monsieur le président...</p>
+                </sp>
+                <sp who="PRESIDENT">
+                    <speaker>LE PRÉSIDENT</speaker>
+                    <stage>, endossant sa toge</stage>
+                    <p>Et un peu aussi pour les autres. Car enfin, il ne faut pas nous faire d’illusions, nous écopons
+                        tous, dans l’affaire, - et dans les grands prix, qui plus est.
+                    </p>
+                </sp>
+                <sp who="SUBSTITUT">
+                    <speaker>LE SUBSTITUT</speaker>
+                    <stage>, les lèvres pincées</stage>
+                    <p>Croyez que j’en suis désolé.</p>
+                </sp>
+                <sp who="PRESIDENT">
+                    <speaker>LE PRÉSIDENT</speaker>
+                    <p>Il n’y a vraiment pas de quoi. Êtes-vous responsable des infamies d’une presse dont le mépris
+                        universel a depuis longtemps fait justice, et s’il convient à la canaille de cracher sur les
+                        gens qui pas-[12]ssent, est-ce que cela vous regarde? Non, n’est-ce pas?
+                    </p>
+                </sp>
+                <sp who="SUBSTITUT">
+                    <speaker>LE SUBSTITUT</speaker>
+                    <stage>, avec un sourire</stage>
+                    <p>Au fond, c’est mon avis.</p>
+                </sp>
+                <sp who="PRESIDENT">
+                    <speaker>LE PRÉSIDENT</speaker>
+                    <p>Et le mien.</p>
+                </sp>
+                <sp who="SUBSTITUT">
+                    <speaker>LE SUBSTITUT</speaker>
+                    <p>Oui, hein?</p>
+                </sp>
+                <sp who="PRESIDENT">
+                    <speaker>LE PRÉSIDENT</speaker>
+                    <p>Cent milliards de fois!</p>
+                </sp>
+                <sp who="SUBSTITUT">
+                    <speaker>LE SUBSTITUT</speaker>
+                    <p>Je suis bien aise d’être fixé. A vrai dire, je redoutais un peu le mécontentement de mes
+                        collègues. Que dit boue, dit éclaboussures, et...
+                    </p>
+                </sp>
+                <sp who="PRESIDENT">
+                    <speaker>LE PRÉSIDENT</speaker>
+                    <stage>, de la même voix solennelle dont il flanquerait cinq ans de prison à quelqu’un qui n’aurait
+                        rien fait
+                    </stage>
+                    <p>Il est des boues qui ne tachent pas!</p>
+                </sp>
+                <sp who="SUBSTITUT">
+                    <speaker>LE SUBSTITUT</speaker>
+                    <p>Certes!</p>
+                </sp>
+                <sp who="PRESIDENT">
+                    <speaker>LE PRÉSIDENT</speaker>
+                    <p>Et quand bien même elles tacheraient, il est des gens trop haut placés par la dignité de leur
+                        vie, par la noblesse de leur caractère, par la nature même des fonctions qu’ils exercent et du
+                        mandat confié à [13] leur austérité, pour que la moindre éclaboussure atteigne seulement jusqu’à
+                        leurs semelles.
+                    </p>
+                </sp>
+                <sp who="SUBSTITUT">
+                    <speaker>LE SUBSTITUT</speaker>
+                    <p>Vous êtes bien gentil de me dire cela.</p>
+                </sp>
+                <sp who="PRESIDENT">
+                    <speaker>LE PRÉSIDENT</speaker>
+                    <p>Je vous le dis comme je le pense. Les attaques de l’<hi rend="i">Intransigeant</hi> sont aussi
+                        absurdes qu’odieuses, et vous avez pour vous tous les honnêtes gens; il n’y a qu’une voix
+                        là-dessus. - D'ailleurs, vous êtes dans votre tort.
+                    </p>
+                </sp>
+                <sp who="SUBSTITUT">
+                    <speaker>LE SUBSTITUT</speaker>
+                    <stage>, abasourdi</stage>
+                    <p>Moi?</p>
+                </sp>
+                <sp who="PRESIDENT">
+                    <speaker>LE PRÉSIDENT</speaker>
+                    <p>Vous pardonnerez à mon âge de sermonner un peu votre inexpérience ; mais on ne se conduit pas
+                        comme ça. (
+                        <stage>
+                            <hi rend="i">Mouvement du substitut.</hi>
+                        </stage>
+                        ) Quand on occupe dans une ville comme Paris une situation officielle, on ne met pas sa fille
+                        chez les sœurs et son gamin chez les jésuites. Cela tombe sous le sens, sacredié!
+                    </p>
+                </sp>
+                <sp who="SUBSTITUT">
+                    <speaker>LE SUBSTITUT</speaker>
+                    <p>Eh! ce n’est pas moi! [14]</p>
+                </sp>
+                <sp who="PRESIDENT">
+                    <speaker>LE PRÉSIDENT</speaker>
+                    <p>Ça ne fait rien. Vous êtes dans votre tort tout de même. Quoi! vous ne comprenez pas qu’en
+                        faisant cause commune avec une classe d’individus tenus à bon droit pour suspects, vous infligez
+                        au gouvernement que vous servez l’humiliation d’un désaveu?
+                    </p>
+                </sp>
+                <sp who="SUBSTITUT">
+                    <speaker>LE SUBSTITUT</speaker>
+                    <p>Permettez.</p>
+                </sp>
+                <sp who="PRESIDENT">
+                    <speaker>LE PRÉSIDENT</speaker>
+                    <p>Remarquez que je ne vous blâme pas.</p>
+                </sp>
+                <sp who="SUBSTITUT">
+                    <speaker>LE SUBSTITUT</speaker>
+                    <stage>, tristement ironique</stage>
+                    <p>Au contraire.</p>
+                </sp>
+                <sp who="PRESIDENT">
+                    <speaker>LE PRÉSIDENT</speaker>
+                    <p>J'en suis à cent lieues! Je dirai plus : cette façon de procéder, en contradiction absolue avec
+                        l’esprit de votre mission, me séduit, je l’avoue, étrangement. Elle est chez vous l’indice d’une
+                        rare indépendance, d’une fierté d’âme peu commune, tout à fait à votre éloge. Et croyez bien que
+                        je n’ai pas l’intention de vous passer la main dans les cheveux. Vous me demandez mon opinion,
+                        je vous donne mon opinion, - qui est aussi, par parenthèse, celle du procureur général. Il le
+                        disait hier encore : « Il [15] ira loin, ce garçon-là. C'est plus qu’une conscience, c’est un
+                        caractère! C'est plus qu’un homme, c’est un monsieur ! »
+                    </p>
+                </sp>
+                <sp who="SUBSTITUT">
+                    <speaker>LE SUBSTITUT</speaker>
+                    <p>Il a dit cela, le procureur?</p>
+                </sp>
+                <sp who="PRESIDENT">
+                    <speaker>LE PRÉSIDENT</speaker>
+                    <p>Tout haut!... devant quarante personnes.</p>
+                </sp>
+                <sp who="SUBSTITUT">
+                    <speaker>LE SUBSTITUT</speaker>
+                    <p>En parlant de moi?</p>
+                </sp>
+                <sp who="PRESIDENT">
+                    <speaker>LE PRÉSIDENT</speaker>
+                    <p>En parlant de vous.</p>
+                </sp>
+                <sp who="SUBSTITUT">
+                    <speaker>LE SUBSTITUT</speaker>
+                    <p>Vous m’en donnez votre parole?</p>
+                </sp>
+                <sp who="PRESIDENT">
+                    <speaker>LE PRÉSIDENT</speaker>
+                    <p>Je vous en donne ma parole.</p>
+                </sp>
+                <sp who="SUBSTITUT">
+                    <speaker>LE SUBSTITUT</speaker>
+                    <stage>, rêveur</stage>
+                    <p>Mais alors...</p>
+                </sp>
+                <sp who="PRESIDENT">
+                    <speaker>LE PRÉSIDENT</speaker>
+                    <p>Quoi?</p>
+                </sp>
+                <sp who="SUBSTITUT">
+                    <speaker>LE SUBSTITUT</speaker>
+                    <p>Alors... alors... (
+                        <stage>
+                            <hi rend="i">Résolument</hi>
+                        </stage>
+                        .) Voulez-vous me permettre, Monsieur le président, de vous poser une [16] question et de vous
+                        supplier d’y répondre avec toute la sincérité dont vous êtes susceptible? Tout de bon, là...
+                        franchement... entre nous... vous ne pensez pas que cette malheureuse campagne doive avoir pour
+                        mes... intérêts, de trop fâcheuses conséquences?
+                    </p>
+                </sp>
+                <sp who="PRESIDENT">
+                    <speaker>LE PRÉSIDENT</speaker>
+                    <p>Je pense que vos intérêts sont servis par les circonstances comme jamais ne furent servis les
+                        intérêts d’un magistrat à ses débuts, et que les événements le prouveront avant peu. Mais, mon
+                        cher, réfléchissez donc. Non seulement vous bénéficiez aux yeux du garde des sceaux, d’une mise
+                        en évidence dont vous sentez tout le prix, mais, par-des-sus le marché, l’acharnement féroce,
+                        l’acharnement imbécile de vos adversaires vous crée des titres exceptionnels à sa faveur et à
+                        son choix.
+                    </p>
+                </sp>
+                <sp who="SUBSTITUT">
+                    <speaker>LE SUBSTITUT</speaker>
+                    <p>Pourquoi?</p>
+                </sp>
+                <sp who="PRESIDENT">
+                    <speaker>LE PRÉSIDENT</speaker>
+                    <p>Pour la raison bien simple que l’animosité de gens exclusivement préoccupés de saper nos
+                        institutions, constitue une affirmation éclatante de votre [17] attachement et de votre
+                        dévouement à ces institutions mêmes.
+                    </p>
+                </sp>
+                <sp who="SUBSTITUT">
+                    <speaker>LE SUBSTITUT</speaker>
+                    <p>Oh ! sur ce point...</p>
+                </sp>
+                <sp who="PRESIDENT">
+                    <speaker>LE PRÉSIDENT</speaker>
+                    <p>Nous sommes d’accord. Le zèle dont vous êtes animé ne fait de doute pour personne, et je vous
+                        répète que votre avancement l’établira au premier jour.
+                    </p>
+                </sp>
+                <sp who="SUBSTITUT">
+                    <speaker>LE SUBSTITUT</speaker>
+                    <p>Tant mieux.</p>
+                </sp>
+                <sp who="PRESIDENT">
+                    <speaker>LE PRÉSIDENT</speaker>
+                    <p>Seulement, c’est à la condition que cette campagne, qui n’a déjà que trop duré, ne se prolongera
+                        pas davantage.
+                    </p>
+                </sp>
+                <sp who="SUBSTITUT">
+                    <speaker>LE SUBSTITUT</speaker>
+                    <p>Comment!</p>
+                </sp>
+                <sp who="PRESIDENT">
+                    <speaker>LE PRÉSIDENT</speaker>
+                    <p>Ah ça, est-ce que vous perdez la tête? Vous croyez que le garde des sceaux a été uniquement créé
+                        et mis au monde pour endosser vos maladresses et recevoir en pleine figure, de chenapans qui se
+                        servent de vous pour arriver jusqu’à lui et ne [18] vous visent que pour mieux l’atteindre, des
+                        ordures et des trognons de choux?
+                    </p>
+                </sp>
+                <sp who="SUBSTITUT">
+                    <speaker>LE SUBSTITUT</speaker>
+                    <stage>, exaspéré</stage>
+                    <p>Mais enfin, Monsieur le président, qu’est-ce que vous voulez que je fasse?</p>
+                </sp>
+                <sp who="PRESIDENT">
+                    <speaker>LE PRÉSIDENT</speaker>
+                    <p>Mon Dieu! c’est bien simple. Rien du tout!</p>
+                </sp>
+                <sp who="SUBSTITUT">
+                    <speaker>LE SUBSTITUT</speaker>
+                    <p>Dois-je me rendre à l’<hi rend="i">Intransigeant</hi> en chemise et un cierge à la main, pour y
+                        faire amende honorable?
+                    </p>
+                </sp>
+                <sp who="PRESIDENT">
+                    <speaker>LE PRÉSIDENT</speaker>
+                    <stage>, souriant</stage>
+                    <p>Ce serait peut-être excessif.</p>
+                </sp>
+                <sp who="SUBSTITUT">
+                    <speaker>LE SUBSTITUT</speaker>
+                    <p>Puis-je, oui ou non, moi, magistrat, fonctionnaire du gouvernement, aller battre les antichambres
+                        d’une salle de rédaction et solliciter le pardon d’un folliculaire taré, nauséabond et
+                        besogneux?
+                    </p>
+                </sp>
+                <sp who="PRESIDENT">
+                    <speaker>LE PRÉSIDENT</speaker>
+                    <p>Non, certes!</p>
+                </sp>
+                <sp who="SUBSTITUT">
+                    <speaker>LE SUBSTITUT</speaker>
+                    <p>Alors, j’en reviens à ma question. Que faire ? [19]</p>
+                </sp>
+                <sp who="PRESIDENT">
+                    <speaker>LE PRÉSIDENT</speaker>
+                    <p>J'en reviens à ma réponse : rien du tout ! (
+                        <stage>
+                            <hi rend="i">Très paternel.</hi>
+                        </stage>
+                        ) Ne vous faites donc pas de chagrin, mon cher enfant. Cela me désole de vous coir comme ça!...
+                        Puisque je vous dis que vos affaires sont en excellente posture!... (
+                        <stage>
+                            <hi rend="i">Tirant sa montre</hi>
+                        </stage>
+                        .) Midi!... Non, mais je vous le demande, se moque-t-on du monde à ce point? Ces gaillards-là
+                        vont me faire manquer le train, c’est sûr! - Deux affaires seulement, vous dites?
+                    </p>
+                </sp>
+                <sp who="SUBSTITUT">
+                    <speaker>LE SUBSTITUT</speaker>
+                    <p>Deux. Une affaire entre parties; l’autre à la requête du ministère public.</p>
+                </sp>
+                <sp who="PRESIDENT">
+                    <speaker>LE PRÉSIDENT</speaker>
+                    <p>Ma foi, nous n’en jugerons qu’une. Quant à la seconde, vous aurez l’obligeance d’en demander le
+                        renvoi à huitaine.
+                    </p>
+                </sp>
+                <sp who="SUBSTITUT">
+                    <speaker>LE SUBSTITUT</speaker>
+                    <p>Ça fera la quatrième remise.</p>
+                </sp>
+                <sp who="PRESIDENT">
+                    <speaker>LE PRÉSIDENT</speaker>
+                    <p>Je ne vous dis pas le contraire. De quoi s’agit-il?</p>
+                </sp>
+                <sp who="SUBSTITUT">
+                    <speaker>LE SUBSTITUT</speaker>
+                    <stage>, consultant le dossier</stage>
+                    <p>C'est un espèce de farceur qui a été arrêté le [20] dimanche des Rameaux, devant
+                        Notre-Dame-de-Lorette, vendant du cresson pour du buis.
+                    </p>
+                </sp>
+                <sp who="PRESIDENT">
+                    <speaker>LE PRÉSIDENT</speaker>
+                    <stage>, dans un geste large</stage>
+                    <p>Ça peut attendre. Vous comprenez, mon cher, qu’avec la meilleure volonté du monde, je ne peux
+                        pourtant pas obliger la Cie du P.-L.-M. à retarder le départ de ses trains.
+                    </p>
+                </sp>
+            </div>
+            <div type="scene" n="2">
+                <head>SCÈNE II</head>
+                <stage type="setting">La salle des Pas-Perdus au Palais de justice.
+                    Au long des murs fleurant la fraîcheur de la pierre, des bancs de chêne que ferment des accoudoirs
+                    luisants.
+                    Bourdonnement de ruche en travail. Un va-et-vient confus de robes noires où tranchent les blancheurs
+                    des rabats et l’hermine des épitoges, et que fixent, de leurs yeux sans regard, les deux nobles
+                    figures de marbre accroupies aux pieds de Berrier.
+                </stage>
+                <sp who="HUISSIER">
+                    <speaker>L'HUISSIER</speaker>
+                    <stage>, à l’avocat Barbemolle qu’il vient de rencontrer errant, la serviette sous le bras, en quête
+                        de la clientèle.
+                    </stage>
+                    <p>Maître Barbemolle, il me semble?</p>
+                </sp>
+                <sp who="BARBEMOLLE">
+                    <speaker>BARBEMOLLE</speaker>
+                    <p>Maître Loyal, si je ne m’abuse?</p>
+                </sp>
+                <sp who="HUISSIER">
+                    <speaker>L'HUISSIER</speaker>
+                    <stage>, lui serrant la main</stage>
+                    <p>Pour vous servir, si j’en étais capable. Eh, eh! mon gaillard ! [21]</p>
+                </sp>
+                <sp who="BARBEMOLLE">
+                    <speaker>BARBEMOLLE</speaker>
+                    <p>Quoi?</p>
+                </sp>
+                <sp who="HUISSIER">
+                    <speaker>L'HUISSIER</speaker>
+                    <p>Eh, eh! (
+                        <stage>
+                            <hi rend="i">Regard étonné de Barbemolle</hi>
+                        </stage>
+                        .) Nous en avons appris de belles.
+                    </p>
+                </sp>
+                <sp who="BARBEMOLLE">
+                    <speaker>BARBEMOLLE</speaker>
+                    <p>Je ne sais pas ce que vous voulez me dire.</p>
+                </sp>
+                <sp who="HUISSIER">
+                    <speaker>L'HUISSIER</speaker>
+                    <p>On veut donc, homme de peu de foi, passer de la flûte au tambour? Plaquer la veuve et l’orphelin,
+                        et barboter sa petite place à ce bon M. de Saimpol-Mépié?
+                    </p>
+                </sp>
+                <sp who="BARBEMOLLE">
+                    <speaker>BARBEMOLLE</speaker>
+                    <stage>, se défendant mollement</stage>
+                    <p>Mais non; mais non.</p>
+                </sp>
+                <sp who="HUISSIER">
+                    <speaker>L'HUISSIER</speaker>
+                    <p>Faites donc l’âne pour avoir du son! C'est extraordinaire comme ça prend! (
+                        <stage>
+                            <hi rend="i">Renseigné et confidentiel.</hi>
+                        </stage>
+                        ) On dit que le décret a été soumis hier au Président de la République?
+                    </p>
+                </sp>
+                <sp who="BARBEMOLLE">
+                    <speaker>BARBEMOLLE</speaker>
+                    <p>Des blagues, tout ça, des potins! (
+                        <stage>
+                            <hi rend="i">Baillant dans le creux de sa main avec l’indifférence endormie [22] d’un
+                                monsieur désintéressé du morne train-train de l’existence
+                            </hi>
+                        </stage>
+                        .) Chargée, l’audience de la 12e?
+                    </p>
+                </sp>
+                <sp who="HUISSIER">
+                    <speaker>L'HUISSIER</speaker>
+                    <p>Ouat! - Deux causes!</p>
+                </sp>
+                <sp who="BARBEMOLLE">
+                    <speaker>BARBEMOLLE</speaker>
+                    <p>Comment, deux causes!... Le krack des prévenus, alors!</p>
+                </sp>
+                <sp who="HUISSIER">
+                    <speaker>L'HUISSIER</speaker>
+                    <p>Le monde s’améliore peut-être.</p>
+                </sp>
+                <sp who="BARBEMOLLE">
+                    <speaker>BARBEMOLLE</speaker>
+                    <p>Vous êtes gai dans vos pronostics! Qu'est-ce que nous deviendrions, nous autres ? Encore, vous
+                        les huissiers...
+                    </p>
+                </sp>
+                <sp who="HUISSIER">
+                    <speaker>L'HUISSIER</speaker>
+                    <p>Oh! nous, nous sommes tranquilles. Tant que le monde sera monde, il y aura d’honnêtes gens et
+                        nous trouverons à gagner notre vie en instrumentant contre eux.
+                    </p>
+                </sp>
+                <stage>Ils rient.
+                    A ce moment:
+                </stage>
+                <sp who="LAGOUPILLE">
+                    <speaker>LAGOUPILLE</speaker>
+                    <stage>, s’approchant</stage>
+                    <p>Pour être jugé, s’il vous plaît ?</p>
+                </sp>
+
+                <stage>C'est un gars râblé et trapu. Figure réjouie et mal rasée de crapule contente de soi. [23]
+                    Patalon à pieds d’éléphant,(texte manquant) une ceinture de pompier. Pas de cravate (texte manquant)
+                    elle. Souliers de
+                    bain de mer où des lan (texte manquant) sur fond mastie.
+                </stage>
+                <sp who="HUISSIER">
+                    <speaker>L'HUISSIER</speaker>
+                    <p>Qu'est-ce que vous demandez, mon garçon ?</p>
+                </sp>
+                <sp who="LAGOUPILLE">
+                    <speaker>LAGOUPILLE</speaker>
+                    <p>Je suis cité.</p>
+                </sp>
+                <sp who="HUISSIER">
+                    <speaker>L'HUISSIER</speaker>
+                    <p>Quelle chambre ?</p>
+                </sp>
+                <sp who="LAGOUPILLE">
+                    <speaker>LAGOUPILLE</speaker>
+                    <p>Douzième. (
+                        <stage>
+                            <hi rend="i">Présentant sa citation</hi>
+                        </stage>
+                        .) V'là mon petit fafiot.
+                    </p>
+                </sp>
+                <sp who="HUISSIER">
+                    <speaker>L'HUISSIER</speaker>
+                    <p>Voyons ça.</p>
+                </sp>
+
+                <stage>Il lit Un temps. Enfin :</stage>
+                <sp who="HUISSIER">
+                    <speaker>L'HUISSIER</speaker>
+                    <stage>, auquel Barbemolle vient de lancer un discret coup de coude</stage>
+                    <p>Ça va bien. Par là, la 12e. - Ah!... Vous avez un avocat?</p>
+                </sp>
+                <sp who="LAGOUPILLE">
+                    <speaker>LAGOUPILLE</speaker>
+                    <p>Non, j’en ai pas.</p>
+                </sp>
+                <sp who="HUISSIER">
+                    <speaker>L'HUISSIER</speaker>
+                    <p>Il faut vous en procurer un. [24]</p>
+                </sp>
+                <sp who="LAGOUPILLE">
+                    <speaker>LAGOUPILLE</speaker>
+                    <p>Vous croyez?</p>
+                </sp>
+                <sp who="HUISSIER">
+                    <speaker>L'HUISSIER</speaker>
+                    <p>C'est indispensable.</p>
+                </sp>
+                <sp who="LAGOUPILLE">
+                    <speaker>LAGOUPILLE</speaker>
+                    <p>Où qu’c’est que ça se vend?</p>
+                </sp>
+                <sp who="HUISSIER">
+                    <speaker>L'HUISSIER</speaker>
+                    <p>Ma foi, vous avez de la chance. Voici Me Barbemolle, une des lumières du barreau.</p>
+                </sp>
+                <sp who="LAGOUPILLE">
+                    <speaker>LAGOUPILLE</speaker>
+                    <stage>, à Barbemolle</stage>
+                    <p>M'sieu...</p>
+                </sp>
+                <stage>Il lui tend une main où dort une crasse antique en petites anguilles minuscules. Barbemolle,
+                    prudent, s’abstient.
+                </stage>
+                <sp who="HUISSIER">
+                    <speaker>L'HUISSIER</speaker>
+                    <p>Un client, Maître Barbemolle !</p>
+                </sp>
+                <sp who="BARBEMOLLE">
+                    <speaker>BARBEMOLLE</speaker>
+                    <p>Impossible! Mille regrets!</p>
+                </sp>
+                <sp who="HUISSIER">
+                    <speaker>L'HUISSIER</speaker>
+                    <p>Pourquoi?</p>
+                </sp>
+                <sp who="BARBEMOLLE">
+                    <speaker>BARBEMOLLE</speaker>
+                    <p>Je suis trop occupé. J'ai de la besogne par dessus la tête. [25]</p>
+                </sp>
+                <sp who="HUISSIER">
+                    <speaker>L'HUISSIER</speaker>
+                    <p>Un bon mouvement, sacrebleu !</p>
+                </sp>
+                <sp who="BARBEMOLLE">
+                    <speaker>BARBEMOLLE</speaker>
+                    <p>Non !</p>
+                </sp>
+                <sp who="HUISSIER">
+                    <speaker>L'HUISSIER</speaker>
+                    <stage>, suppliant</stage>
+                    <p>Vous pouvez bien faire cela pour moi!</p>
+                </sp>
+                <sp who="BARBEMOLLE">
+                    <speaker>BARBEMOLLE</speaker>
+                    <p>Le diable vous emporte, mon cher !... Il faut toujours être à vos ordres. (
+                        <stage>
+                            <hi rend="i">A Lagoupille</hi>
+                        </stage>
+                        .) De quoi s’agit-il, mon ami ?
+                    </p>
+                </sp>
+                <sp who="LAGOUPILLE">
+                    <speaker>LAGOUPILLE</speaker>
+                    <p>Monsieur, c’est une espèce d’andouille à qui j’ai mis un marron. Alors y me fait un procès.</p>
+                </sp>
+                <sp who="HUISSIER">
+                    <speaker>L'HUISSIER</speaker>
+                    <stage>, de qui la voix sème l’encouragement</stage>
+                    <p>C'est intéressant à plaider.</p>
+                </sp>
+                <sp who="BARBEMOLLE">
+                    <speaker>BARBEMOLLE</speaker>
+                    <stage>, séduit, en effet</stage>
+                    <p>Oui... Le cas est assez nouveau. (
+                        <stage>
+                            <hi rend="i">Brusquement.</hi>
+                        </stage>
+                        ) Ça me décide. Eh bien, c’est convenu ; je me charge de votre affaire.
+                    </p>
+                </sp>
+                <sp who="LAGOUPILLE">
+                    <speaker>LAGOUPILLE</speaker>
+                    <p>Parfait, parfait. - Dites donc, et pour les... pepètes? [26]</p>
+                </sp>
+                <sp who="BARBEMOLLE">
+                    <speaker>BARBEMOLLE</speaker>
+                    <stage>, très net</stage>
+                    <p>Oh! je vous en préviens tout de suite. En principe, je ne plaide pas à moins de cinquante louis.
+                        (
+                        <stage>
+                            <hi rend="i">Fixant Lagoupille.</hi>
+                        </stage>
+                        ) Mais vous avez une figure qui me revient; vous me faites l’effet d’un brave homme;... pour
+                        vous, ce sera...
+                    </p>
+                </sp>
+                <sp who="LAGOUPILLE">
+                    <speaker>LAGOUPILLE</speaker>
+                    <p>Six francs.</p>
+                </sp>
+                <sp who="BARBEMOLLE">
+                    <speaker>BARBEMOLLE</speaker>
+                    <stage>, suffoqué</stage>
+                    <p>Six francs !</p>
+                </sp>
+                <sp who="LAGOUPILLE">
+                    <speaker>LAGOUPILLE</speaker>
+                    <p>Pas un radis de plus. C'est à prendre où à laisser.</p>
+                </sp>
+                <sp who="BARBEMOLLE">
+                    <speaker>BARBEMOLLE</speaker>
+                    <p>Mettez en vingt.</p>
+                </sp>
+                <sp who="LAGOUPILLE">
+                    <speaker>LAGOUPILLE</speaker>
+                    <p>Non!</p>
+                </sp>
+                <sp who="BARBEMOLLE">
+                    <speaker>BARBEMOLLE</speaker>
+                    <p>Quinze.</p>
+                </sp>
+                <sp who="LAGOUPILLE">
+                    <speaker>LAGOUPILLE</speaker>
+                    <p>Nib!</p>
+                </sp>
+                <sp who="BARBEMOLLE">
+                    <speaker>BARBEMOLLE</speaker>
+                    <p>Dix!... et je vous arrange votre bonhomme, vous m’en direz des nouvelles.[27]</p>
+                </sp>
+                <sp who="LAGOUPILLE">
+                    <speaker>LAGOUPILLE</speaker>
+                    <p>Sans blague?</p>
+                </sp>
+                <sp who="HUISSIER">
+                    <speaker>L'HUISSIER</speaker>
+                    <stage>, clignant de l’œil</stage>
+                    <p>Marchez donc, eh farceur! Je vous dis que Me Barbemolle est une des lumières du barreau.</p>
+                </sp>
+                <sp who="LAGOUPILLE">
+                    <speaker>LAGOUPILLE</speaker>
+                    <p>Eh bien tope là! Rossard qui s’en dédit!</p>
+                </sp>
+                <sp who="BARBEMOLLE">
+                    <speaker>BARBEMOLLE</speaker>
+                    <p>Faites passer la braise.</p>
+                </sp>
+                <stage>Lagoupille s’exécute.</stage>
+                <sp who="HUISSIER">
+                    <speaker>L'HUISSIER</speaker>
+                    <stage>, tirant sa montre...</stage>
+                    <p>Et en route! Midi vingt; le tribunal va entrer en séance.</p>
+                </sp>
+            </div>
+            <div type="scene" n="3">
+                <head>SCÈNE III</head>
+                <stage type="setting">La 12e chambre correctionnelle.
+                    Coup de sonnette.
+                </stage>
+                <sp who="HUISSIER">
+                    <speaker>L'HUISSIER</speaker>
+                    <p>Le tribunal, Messieurs ! Levez-vous.</p>
+                </sp>
+                <stage>Tout le monde se lève. Entrée solennelle des magistrats. Le substitut apparaît le dernier, ses
+                    dossiers sous le bras. [28]
+                    Le trop large ruban de son monocle lui sabre le visage d’une barre d’encre. Toujours hanté de l’idée
+                    fixe de mettre la main sur l’<hi rend="i">Officiel</hi>, il questionne du coin de l’œil l’huissier,
+                    qui répond négativement, d’un hochement de tête imperceptible. Long soupir du substitut.
+                </stage>
+                <sp who="PRESIDENT">
+                    <speaker>LE PRÉSIDENT</speaker>
+                    <stage>, installé entre ses deux assesseurs</stage>
+                    <p>L'audience est ouverte. (
+                        <stage>
+                            <hi rend="i">A l’huissier</hi>
+                        </stage>
+                        .) Appelez!
+                    </p>
+                </sp>
+                <sp who="HUISSIER">
+                    <speaker>L'HUISSIER</speaker>
+                    <stage>, à tue-tête.</stage>
+                    <p>Le ministère public contre Jean-Paul Mapipe!</p>
+                    <p>- Mapipe!</p>
+                </sp>
+                <sp who="LE_PAUVRE_MAPIPE">
+                    <speaker>LE PAUVRE MAPIPE</speaker>
+                    <stage>, au banc des prévenus et flanqué de deux municipaux</stage>
+                    <p>Présent!... Ous qu’est mon avocat?</p>
+                </sp>
+                <sp who="L_AVOCAT_DE_MAPIPE">
+                    <speaker>L'AVOCAT DE MAPIPE</speaker>
+                    <stage>, entrant par la porte des témoins</stage>
+                    <p>Je suis là. Calmez vous, Mapipe.</p>
+                </sp>
+                <sp who="LE_PAUVRE_MAPIPE">
+                    <speaker>LE PAUVRE MAPIPE</speaker>
+                    <stage>, au tribunal</stage>
+                    <p>Ça n’est pas pour vous acheter, mais vous y mettez le temps, bon Dieu! (
+                        <stage>
+                            <hi rend="i">A l’auditoire</hi>
+                        </stage>
+                        ) : Trois remises, messieurs et dames; trois remises!... Un mois que je suis en prévention !
+                    </p>
+                </sp>
+                <sp who="PRESIDENT">
+                    <speaker>LE PRÉSIDENT</speaker>
+                    <p>Maître, faites taire votre client. (
+                        <stage>
+                            <hi rend="i">Au substitut.</hi>
+                        </stage>
+                        ) Hum ! [29]
+                    </p>
+                </sp>
+                <sp who="AVOCAT">
+                    <speaker>L'AVOCAT</speaker>
+                    <p>Un peu de silence, donc, Mapipe!</p>
+                </sp>
+                <sp who="LE_PAUVRE_MAPIPE">
+                    <speaker>LE PAUVRE MAPIPE</speaker>
+                    <p>Et remarquez que je l’avais fait bénir! C'était du cresson bénit!</p>
+                </sp>
+                <sp who="AVOCAT">
+                    <speaker>L'AVOCAT</speaker>
+                    <p>Silence donc!</p>
+                </sp>
+                <sp who="LE_PAUVRE_MAPIPE">
+                    <speaker>LE PAUVRE MAPIPE</speaker>
+                    <stage>, entre ses dents</stage>
+                    <p>Du cresson bénit, c’est pus comme de la salade.</p>
+                </sp>
+                <sp who="PRESIDENT">
+                    <speaker>LE PRÉSIDENT</speaker>
+                    <p>Mapipe, levez-vous. (
+                        <stage>
+                            <hi rend="i">Au substitut</hi>
+                        </stage>
+                        .) Hum!... Hum! (
+                        <stage>
+                            <hi rend="i">A Mapipe</hi>
+                        </stage>
+                        .) Vous êtes poursuivi pour tromperie sur la qualité de la marchandise vendue. (
+                        <stage>
+                            <hi rend="i">Au substitut</hi>
+                        </stage>
+                        .) Hum!... Hum!... Hum!
+                    </p>
+                </sp>
+                <sp who="SUBSTITUT">
+                    <speaker>LE SUBSTITUT</speaker>
+                    <stage>, enfin rappelé au sentiment de ses devoirs</stage>
+                    <p>Un mot, Monsieur le Président. (
+                        <stage>
+                            <hi rend="i">Il se lève.</hi>
+                        </stage>
+                        ) Bien qu’étant le premier à regretter les lenteurs apportées à la solution de cette affaire, je
+                        me vois dans l’obligation d’en demander le renvoi une fois de plus. Si mes renseignements sont
+                        exacts - et j’ai lieu de les croire tels - le prévenu ne serait pas un malfaiteur [30]
+                        vulgaire ; il aurait eu maille à partir avec divers Parquets de province. Une enquête a été
+                        ordonnée, dont le résultat n’est pas encore connu. Je demande donc la remise à huitaine de
+                        l’affaire soumise à votre juridiction, ne pouvant hésiter un instant entre les intérêts d’un
+                        personnage suspect, si sacrés qu’ils puissent m’apparaître, et ceux autrement importants, de la
+                        Justice et de la Loi. (
+                        <stage>
+                            <hi rend="i">Il se rassied.</hi>
+                        </stage>
+                        )
+                    </p>
+                </sp>
+                <sp who="LE_PAUVRE_MAPIPE">
+                    <speaker>LE PAUVRE MAPIPE</speaker>
+                    <stage>, effaré</stage>
+                    <p>Quoi?... Quoi?... Encore une remise?... Ah ça, vous vous payez ma gueule !</p>
+                </sp>
+                <sp who="PRESIDENT">
+                    <speaker>LE PRÉSIDENT</speaker>
+                    <stage>, à l’avocat</stage>
+                    <p>Maître, invitez votre client à s’exprimer d’une façon plus convenable; c’est un service à lui
+                        rendre.
+                    </p>
+                </sp>
+                <sp who="AVOCAT">
+                    <speaker>L'AVOCAT</speaker>
+                    <p>Je sollicite l’indulgence en faveur de ce pauvre diable. Voilà un mois qu’il est sous...</p>
+                </sp>
+                <stage>Il se laisse échapper sa serviette et se baisse pour la ramasser.</stage>
+                <sp who="LE_PAUVRE_MAPIPE">
+                    <speaker>LE PAUVRE MAPIPE</speaker>
+                    <stage>, prenant l’auditoire à témoin</stage>
+                    <p>Moi?... je suis saoul?</p>
+                </sp>
+                <sp who="AVOCAT">
+                    <speaker>L'AVOCAT</speaker>
+                    <stage>, achevant sa phrase</stage>
+                    <p>... sous les verroux, et son impatience légitime [31] en dit plus long pour sa défense que tous
+                        les arguments du monde. Au surplus, nous sommes, lui et moi, aux ordres du tribunal. Je me
+                        bornerai à faire remarquer qu’il me sera impossible de prendre la parole d’aujourd’hui en huit.
+                        Je pars lundi pour Cascassonne, où je plaide le procès Baloche.
+                    </p>
+                </sp>
+                <sp who="PRESIDENT">
+                    <speaker>LE PRÉSIDENT</speaker>
+                    <p>Fort bien, Maître. A quinzaine, alors.</p>
+                </sp>
+                <sp who="HUISSIER">
+                    <speaker>L'HUISSIER</speaker>
+                    <stage>, dans l’auditoire, sa toque à la main</stage>
+                    <p>Je ferai remarquer à mon tour, que, dans quinze jours, ce sera la semaine de la Pentecôte,
+                        pendant laquelle les tribunaux ne siègent pas.
+                    </p>
+                </sp>
+                <sp who="PRESIDENT">
+                    <speaker>LE PRÉSIDENT</speaker>
+                    <p>Ah diable!... (
+                        <stage>
+                            <hi rend="i">Courte réflexion.</hi>
+                        </stage>
+                        ) Ma foi, Messieurs, tant pis! Nous n’y pouvons rien. - A trois semaines!
+                    </p>
+                </sp>
+                <sp who="LE_JUGE_FOY_DE_VAULX">
+                    <speaker>LE JUGE FOY DE VAULX</speaker>
+                    <stage>, avec douceur</stage>
+                    <p>Non.</p>
+                </sp>
+                <sp who="PRESIDENT">
+                    <speaker>LE PRÉSIDENT</speaker>
+                    <stage>, surpris</stage>
+                    <p>Pourquoi?</p>
+                </sp>
+                <sp who="LE_JUGE_FOY_DE_VAULX">
+                    <speaker>LE JUGE FOY DE VAULX</speaker>
+                    <p>J'ai sollicité et obtenu du garde des sceaux un congé de deux mois pour raison de santé. Or, la
+                        [32] loi frappe de nullité tout jugement rendu par un tribunal composé d’autres magistrats que
+                        ceux ayant siégé à la première audience.
+                    </p>
+                </sp>
+                <sp who="PRESIDENT">
+                    <speaker>LE PRÉSIDENT</speaker>
+                    <p>C'est rigoureusement exact. Eh bien, mon cher collègue, nous attendrons votre retour pour statuer
+                        sur l’affaire Mapipe.
+                    </p>
+                </sp>
+                <sp who="LE_PAUVRE_MAPIPE">
+                    <speaker>LE PAUVRE MAPIPE</speaker>
+                    <p>Ce qui nous renvoie en août!</p>
+                </sp>
+                <sp who="PRESIDENT">
+                    <speaker>LE PRÉSIDENT</speaker>
+                    <p>Oui! - Et encore non; je me trompe. Août, c’est l’époque des vacances.</p>
+                </sp>
+                <sp who="AVOCAT">
+                    <speaker>L'AVOCAT</speaker>
+                    <p>Renvoyons après vacations.</p>
+                </sp>
+                <sp who="SUBSTITUT">
+                    <speaker>LE SUBSTITUT</speaker>
+                    <p>Il n’y a que ça à faire.</p>
+                </sp>
+                <sp who="PRESIDENT">
+                    <speaker>LE PRÉSIDENT</speaker>
+                    <p>Mon Dieu, oui. (
+                        <stage>
+                            <hi rend="i">Consultant ses assesseurs</hi>
+                        </stage>
+                        .) Hum?... Hum? (
+                        <stage>
+                            <hi rend="i">Haut.</hi>
+                        </stage>
+                        ) Après vacation! - Emmenez, gardes!
+                    </p>
+                </sp>
+                <sp who="LE_PAUVRE_MAPIPE">
+                    <speaker>LE PAUVRE MAPIPE</speaker>
+                    <stage>, emmené par les municipaux</stage>
+                    <p>Cré bon Dieu de bonsoir de bon Dieu de vingt [33] Dieu de nom de Dieu de bon Dieu du tonnerre de
+                        Dieu de bon Dieu de sacré bon Dieu de nom de Dieu...
+                    </p>
+                </sp>
+                <stage>Il disparaît.</stage>
+                <sp who="PRESIDENT">
+                    <speaker>LE PRÉSIDENT</speaker>
+                    <p>Et d’une! - La seconde affaire, huissier.</p>
+                </sp>
+                <sp who="HUISSIER">
+                    <speaker>L'HUISSIER</speaker>
+                    <stage>, appelant</stage>
+                    <p>Alfred contre Lagoupille! - Lagoupille!</p>
+                </sp>
+                <sp who="LAGOUPILLE">
+                    <speaker>LAGOUPILLE</speaker>
+                    <stage>, dans l’auditoire</stage>
+                    <p>Lagoupille? Présent!</p>
+                </sp>
+                <sp who="HUISSIER">
+                    <speaker>L'HUISSIER</speaker>
+                    <p>Alfred!</p>
+                </sp>
+                <sp who="ALFRED">
+                    <speaker>ALFRED</speaker>
+                    <p>C'est moi!</p>
+                </sp>
+                <sp who="HUISSIER">
+                    <speaker>L'HUISSIER</speaker>
+                    <p>Approchez! (
+                        <stage>
+                            <hi rend="i">A Lagoupille</hi>
+                        </stage>
+                        .) Passez devant.
+                    </p>
+                </sp>
+                <sp who="LAGOUPILLE">
+                    <speaker>LAGOUPILLE</speaker>
+                    <p>Merci, Monsieur l’huissier. Je me souviendrai comme vous avez été poli avec moi. - Quant à vous,
+                        Monsieur Alfred, vous vous conduisez comme un cochon. Et ça il n’y a pas d’erreur, c’est un
+                        galant homme qui vous le dit. [34]
+                    </p>
+                </sp>
+                <sp who="PRESIDENT">
+                    <speaker>LE PRÉSIDENT</speaker>
+                    <p>Qu'est-ce qu’il y a donc là-bas?</p>
+                </sp>
+                <sp who="LAGOUPILLE">
+                    <speaker>LAGOUPILLE</speaker>
+                    <p>Il y a que M. Alfred se conduit comme un cochon!</p>
+                </sp>
+                <sp who="PRESIDENT">
+                    <speaker>LE PRÉSIDENT</speaker>
+                    <p>Vous, vous allez commencer par vous taire. Vous répondrez quand on vous questionnera.</p>
+                </sp>
+                <sp who="ALFRED">
+                    <speaker>ALFRED</speaker>
+                    <p>Bravo! C'est trop fort ça, aussi, d’être insulté par une canaille.</p>
+                </sp>
+                <sp who="LAGOUPILLE">
+                    <speaker>LAGOUPILLE</speaker>
+                    <p>Une canaille!...</p>
+                </sp>
+                <sp who="SUBSTITUT">
+                    <speaker>LE SUBSTITUT</speaker>
+                    <p>Je vais être obligé de sévir.</p>
+                </sp>
+                <sp who="ALFRED">
+                    <speaker>ALFRED</speaker>
+                    <stage>, à Lagoupille</stage>
+                    <p>Ah! vous entendez?</p>
+                </sp>
+                <sp who="SUBSTITUT">
+                    <speaker>LE SUBSTITUT</speaker>
+                    <p>Contre vous!</p>
+                </sp>
+                <sp who="LAGOUPILLE">
+                    <speaker>LAGOUPILLE</speaker>
+                    <p>Ça c’est tapé.</p>
+                </sp>
+                <sp who="PRESIDENT">
+                    <speaker>LE PRÉSIDENT</speaker>
+                    <p>On ne vous demande pas votre avis. [35]</p>
+                </sp>
+                <sp who="ALFRED">
+                    <speaker>ALFRED</speaker>
+                    <p>On a rudement raison.</p>
+                </sp>
+                <sp who="SUBSTITUT">
+                    <speaker>LE SUBSTITUT</speaker>
+                    <p>Ni le vôtre non plus.</p>
+                </sp>
+                <sp who="LAGOUPILLE">
+                    <speaker>LAGOUPILLE</speaker>
+                    <p>Très bien!</p>
+                </sp>
+                <sp who="PRESIDENT">
+                    <speaker>LE PRÉSIDENT</speaker>
+                    <p>Silence! Lagoupille.</p>
+                </sp>
+                <sp who="LAGOUPILLE">
+                    <speaker>LAGOUPILLE</speaker>
+                    <p>Je ne dis rien.</p>
+                </sp>
+                <sp who="ALFRED">
+                    <speaker>ALFRED</speaker>
+                    <p>On n’entend que lui.</p>
+                </sp>
+                <sp who="PRESIDENT">
+                    <speaker>LE PRÉSIDENT</speaker>
+                    <p>Alfred, voulez-vous vous taire?</p>
+                </sp>
+                <sp who="ALFRED">
+                    <speaker>ALFRED</speaker>
+                    <p>C'est ce que je fais.</p>
+                </sp>
+                <sp who="LAGOUPILLE">
+                    <speaker>LAGOUPILLE</speaker>
+                    <p>On ne le dirait pas.</p>
+                </sp>
+                <sp who="PRESIDENT">
+                    <speaker>LE PRÉSIDENT</speaker>
+                    <p>Lagoupille, pour la dernière fois, voulez-vous garder le silence ? [36]</p>
+                </sp>
+                <sp who="LAGOUPILLE">
+                    <speaker>LAGOUPILLE</speaker>
+                    <p>Très bien, très bien. Je le ferme.</p>
+                </sp>
+                <sp who="PRESIDENT">
+                    <speaker>LE PRÉSIDENT</speaker>
+                    <p>Quoi?</p>
+                </sp>
+                <sp who="LAGOUPILLE">
+                    <speaker>LAGOUPILLE</speaker>
+                    <p>Mon seau de propreté. Contre la force, il n’y a pas de résistance... C'est égal, un client comme
+                        moi, un vieil habitué... en justice! Elle est un peu raide tout de même.
+                    </p>
+                </sp>
+                <sp who="HUISSIER">
+                    <speaker>L'HUISSIER</speaker>
+                    <p>Silence donc!</p>
+                </sp>
+                <sp who="PRESIDENT">
+                    <speaker>LE PRÉSIDENT</speaker>
+                    <stage>, à Alfred</stage>
+                    <p>Je vous écoute. De quoi vous plaignez-vous, Monsieur?</p>
+                </sp>
+                <sp who="ALFRED">
+                    <speaker>ALFRED</speaker>
+                    <p>Monsieur, je suis limonadier rue Notre-Dame-de-Lorette où je tiens un petit café à l’enseigne du <hi
+                            rend="i">Pied qui remue</hi>; maison bien notée, j’ose le dire; rien que des habitués, de
+                        braves gens qui viennent, le soir, faire la partie en prenant leur demi-tasse.
+                    </p>
+                </sp>
+                <sp who="LAGOUPILLE">
+                    <speaker>LAGOUPILLE</speaker>
+                    <p>Vous devriez être honteux, Monsieur Alfred, de parler de vos habitués, après que vous vous êtes
+                        [37] conduit comme un cochon avec votre plus ancien client. Et encore comme un cochon... c’est
+                        comme deux cochons que je devrais dire!... comme trois cochons!... comme quatre cochons!...
+                        comme cinq cochons... comme...
+                    </p>
+                </sp>
+                <sp who="PRESIDENT">
+                    <speaker>LE PRÉSIDENT</speaker>
+                    <p>Ça va durer longtemps ce défilé de cochons? Je vous ai déjà dit de vous taire.</p>
+                </sp>
+                <sp who="LAGOUPILLE">
+                    <speaker>LAGOUPILLE</speaker>
+                    <p>C'est bon! je le referme.</p>
+                </sp>
+                <sp who="PRESIDENT">
+                    <speaker>LE PRÉSIDENT</speaker>
+                    <p>Quoi?</p>
+                </sp>
+                <sp who="LAGOUPILLE">
+                    <speaker>LAGOUPILLE</speaker>
+                    <p>Mon seau de propreté.</p>
+                </sp>
+                <sp who="PRESIDENT">
+                    <speaker>LE PRÉSIDENT</speaker>
+                    <p>Continuez, Monsieur Alfred.</p>
+                </sp>
+                <sp who="ALFRED">
+                    <speaker>ALFRED</speaker>
+                    <p>M. Lagoupille est en effet un de mes plus anciens clients...</p>
+                </sp>
+                <sp who="LAGOUPILLE">
+                    <speaker>LAGOUPILLE</speaker>
+                    <p>Cinq ans que je fréquente la maison! Plus de cent mille francs que j’y ai laissés! [38]</p>
+                </sp>
+                <sp who="ALFRED">
+                    <speaker>ALFRED</speaker>
+                    <p>... Mais Dieu sait depuis combien de temps je l’aurais flanqué à la porte, sans la crainte de
+                        faire de l’esclandre! Figurez-vous que cet espèce de sans le sou, qui n’a jamais pris plus d’une
+                        consommation...
+                    </p>
+                </sp>
+                <sp who="LAGOUPILLE">
+                    <speaker>LAGOUPILLE</speaker>
+                    <p>Une consommation?... J'en prends sept!</p>
+                </sp>
+                <sp who="BARBEMOLLE">
+                    <speaker>BARBEMOLLE</speaker>
+                    <p>Nous le prouverons!</p>
+                </sp>
+                <sp who="PRESIDENT">
+                    <speaker>LE PRÉSIDENT</speaker>
+                    <p>Tout à l’heure, Maître.</p>
+                </sp>
+                <sp who="ALFRED">
+                    <speaker>ALFRED</speaker>
+                    <p>Figurez-vous, Messieurs, dis-je, que cet espèce de sans le sou qui n’a jamais pris plus d’une
+                        consommation, - je jure que c’est la vérité! - est d’une exigence révoltante. Il arrive et, tout
+                        de suite, voilà la comédie qui commence : « Garçon ! un café! »
+                    </p>
+                </sp>
+                <sp who="LAGOUPILLE">
+                    <speaker>LAGOUPILLE</speaker>
+                    <p>Un café! Naturellement, un café. Si je vais au café, c’est pour prendre un café. Ce n’est pas
+                        pour prendre un lavement. (
+                        <stage>
+                            <hi rend="i">Il hausse les épaules.</hi>
+                        </stage>
+                        ) [39]
+                    </p>
+                </sp>
+                <sp who="BARBEMOLLE">
+                    <speaker>BARBEMOLLE</speaker>
+                    <p>C'est évident!</p>
+                </sp>
+                <sp who="ALFRED">
+                    <speaker>ALFRED</speaker>
+                    <p>On lui apporte son café! « Garçon les journaux!... »</p>
+                </sp>
+                <sp who="LAGOUPILLE">
+                    <speaker>LAGOUPILLE</speaker>
+                    <p>Et après? J'ai le droit de lire les journaux, peut-être.</p>
+                </sp>
+                <sp who="BARBEMOLLE">
+                    <speaker>BARBEMOLLE</speaker>
+                    <p>Ça crève les yeux.</p>
+                </sp>
+                <sp who="ALFRED">
+                    <speaker>ALFRED</speaker>
+                    <p>On lui apporte les journaux; tous, notez bien, il les lui faut tous, à ce monsieur! Une fois
+                        qu’il a les journaux : « Garçon, les cartes! »
+                    </p>
+                </sp>
+                <sp who="PRESIDENT">
+                    <speaker>LE PRÉSIDENT</speaker>
+                    <p>Pourquoi faire?</p>
+                </sp>
+                <sp who="ALFRED">
+                    <speaker>ALFRED</speaker>
+                    <p>Pour se faire des réussites.</p>
+                </sp>
+                <sp who="LAGOUPILLE">
+                    <speaker>LAGOUPILLE</speaker>
+                    <p>Si ça m’amuse, moi? C'est mon droit de me tirer la bonne aventure. [40]</p>
+                </sp>
+                <sp who="BARBEMOLLE">
+                    <speaker>BARBEMOLLE</speaker>
+                    <p>Parbleu!</p>
+                </sp>
+                <sp who="ALFRED">
+                    <speaker>ALFRED</speaker>
+                    <p>On lui apporte les cartes! « Garçon, le jacquet! »</p>
+                </sp>
+                <sp who="PRESIDENT">
+                    <speaker>LE PRÉSIDENT</speaker>
+                    <p>Le jacquet! Pour jouer tout seul?</p>
+                </sp>
+                <sp who="LAGOUPILLE">
+                    <speaker>LAGOUPILLE</speaker>
+                    <p>Non, pour m’asseoir dessus.</p>
+                </sp>
+                <sp who="ALFRED">
+                    <speaker>ALFRED</speaker>
+                    <p>Il trouve que mes banquettes sont trop basses.</p>
+                </sp>
+                <sp who="LAGOUPILLE">
+                    <speaker>LAGOUPILLE</speaker>
+                    <p>Et trop molles. On est assis comme dans de la pommade, ça me dégoûte.</p>
+                </sp>
+                <sp who="PRESIDENT">
+                    <speaker>LE PRÉSIDENT</speaker>
+                    <p>En supposant! Il me semble que le Bottin...</p>
+                </sp>
+                <sp who="LAGOUPILLE">
+                    <speaker>LAGOUPILLE</speaker>
+                    <p>Impossible, Monsieur le président. Je m’en sers pour chercher des adresses.</p>
+                </sp>
+                <sp who="PRESIDENT">
+                    <speaker>LE PRÉSIDENT</speaker>
+                    <p>Il fallait donc le dire tout de suite. Vous vous en emparez aussi? [41]</p>
+                </sp>
+                <sp who="BARBEMOLLE">
+                    <speaker>BARBEMOLLE</speaker>
+                    <p>Dame! mon client en a besoin pour faire sa correspondance.</p>
+                </sp>
+                <sp who="LAGOUPILLE">
+                    <speaker>LAGOUPILLE</speaker>
+                    <p>C'est sûr.</p>
+                </sp>
+                <sp who="PRESIDENT">
+                    <speaker>LE PRÉSIDENT</speaker>
+                    <p>Très bien, très bien. Achevez, Monsieur Alfred.</p>
+                </sp>
+                <sp who="ALFRED">
+                    <speaker>ALFRED</speaker>
+                    <p>Naturellement, privés de journaux...</p>
+                </sp>
+                <sp who="PRESIDENT">
+                    <speaker>LE PRÉSIDENT</speaker>
+                    <p>privés de Bottin...</p>
+                </sp>
+                <sp who="ALFRED">
+                    <speaker>ALFRED</speaker>
+                    <p>privés de jacquet...</p>
+                </sp>
+                <sp who="SUBSTITUT">
+                    <speaker>LE SUBSTITUT</speaker>
+                    <p>privés de cartes...</p>
+                </sp>
+                <sp who="ALFRED">
+                    <speaker>ALFRED</speaker>
+                    <p>... mes habitués, les uns après les autres, avaient déserté le <hi rend="i">Pied qui remue</hi>.
+                        Quelques-uns s’étaient bien rejetés, faute de mieux, sur le domino à quatre; malheureusement le
+                        raclement de l’os sur le marbre exaspère M. Lagoupille, en sorte que ces pauvres gens, ahuris
+                        des rappels à l’ordre et des récla-[42]mations continuelles de ce personnage, s’étaient vus
+                        rapidement contraints de renoncer à leur suprême distraction. Je les perdis à leur tour.
+                    </p>
+                </sp>
+                <sp who="PRESIDENT">
+                    <speaker>LE PRÉSIDENT</speaker>
+                    <p>Je vous crois sans peine.</p>
+                </sp>
+                <sp who="ALFRED">
+                    <speaker>ALFRED</speaker>
+                    <p>M. Lagoupille demeura donc le seul client d’une maison jadis florissante. Or, est-ce que l’autre
+                        soir, après avoir, comme à son ordinaire, accaparé tout mon matériel, il n’émit pas la
+                        prétention de me faire éteindre le gaz, disant qu’il voulait désormais être éclairé à la bougie?
+                    </p>
+                </sp>
+                <sp who="LAGOUPILLE">
+                    <speaker>LAGOUPILLE</speaker>
+                    <p>J'ai mal aux yeux.</p>
+                </sp>
+                <sp who="ALFRED">
+                    <speaker>ALFRED</speaker>
+                    <p>Ceci mit le comble à la mesure. Je déclarai à M. Lagoupille que j’en avais par-dessus les épaules
+                        et que je le priais d’aller voir ailleurs si j’y étais. Il me répondit...
+                    </p>
+                </sp>
+                <sp who="BARBEMOLLE">
+                    <speaker>BARBEMOLLE</speaker>
+                    <stage>, se levant</stage>
+                    <p>Je demande la parole. J'ai une question à poser.</p>
+                </sp>
+                <sp who="PRESIDENT">
+                    <speaker>LE PRÉSIDENT</speaker>
+                    <stage>, au substitut</stage>
+                    <p>Monsieur le substitut? [43]</p>
+                </sp>
+                <sp who="SUBSTITUT">
+                    <speaker>LE SUBSTITUT</speaker>
+                    <p>Je n’y vois aucun inconvénient.</p>
+                </sp>
+                <sp who="PRESIDENT">
+                    <speaker>LE PRÉSIDENT</speaker>
+                    <p>Parlez, Maître.</p>
+                </sp>
+                <sp who="BARBEMOLLE">
+                    <speaker>BARBEMOLLE</speaker>
+                    <p>Je désirerais savoir si le plaignant n’a pas passé en cours d’assises, il y a une quinzaine
+                        d’années, pour attentat à la pudeur.
+                    </p>
+                </sp>
+                <sp who="ALFRED">
+                    <speaker>ALFRED</speaker>
+                    <stage>, stupéfait</stage>
+                    <p>Moi!</p>
+                </sp>
+                <sp who="PRESIDENT">
+                    <speaker>LE PRÉSIDENT</speaker>
+                    <p>Maître?...</p>
+                </sp>
+                <sp who="ALFRED">
+                    <speaker>ALFRED</speaker>
+                    <stage>, hors de lui</stage>
+                    <p>C'est une infamie! c’est une abomination, c’est de pure scélératesse!</p>
+                </sp>
+                <sp who="SUBSTITUT">
+                    <speaker>LE SUBSTITUT</speaker>
+                    <p>J'invite la partie civile à user de termes plus modérés.</p>
+                </sp>
+                <sp who="ALFRED">
+                    <speaker>ALFRED</speaker>
+                    <stage>, les larmes aux yeux</stage>
+                    <p>Mais enfin, Monsieur, c’est odieux! Je suis un honnête homme, moi! je suis un bon père de
+                        famille! On peut prendre des renseignements dans mon quar-[44]tier. Et voilà qu’à cette heure,
+                        on essaye de me déshonorer devant tout le monde en répandant des bruits sur moi!
+                    </p>
+                </sp>
+                <sp who="PRESIDENT">
+                    <speaker>LE PRÉSIDENT</speaker>
+                    <p>Allons, un peu de calme!</p>
+                </sp>
+                <sp who="ALFRED">
+                    <speaker>ALFRED</speaker>
+                    <p>Monsieur, c’est ignoble.</p>
+                </sp>
+                <sp who="BARBEMOLLE">
+                    <speaker>BARBEMOLLE</speaker>
+                    <p>Je ferai remarquer que le plaignant ne répond pas à ma question. Il préfère se retrancher
+                        derrière des invectives grossières.
+                    </p>
+                </sp>
+                <sp who="ALFRED">
+                    <speaker>ALFRED</speaker>
+                    <p>A de pareilles insinuations, on ne répond que par le mépris.</p>
+                </sp>
+                <sp who="BARBEMOLLE">
+                    <speaker>BARBEMOLLE</speaker>
+                    <p>Oui, enfin, vous niez?</p>
+                </sp>
+                <sp who="ALFRED">
+                    <speaker>ALFRED</speaker>
+                    <p>Certes, je nie !</p>
+                </sp>
+                <sp who="BARBEMOLLE">
+                    <speaker>BARBEMOLLE</speaker>
+                    <stage>, avec un sourire</stage>
+                    <p>C'est ce que je voulais vous faire dire. Je n’insiste pas. Le Tribunal appréciera.</p>
+                </sp>
+
+                <stage>Il se rasseoit. [45]</stage>
+                <sp who="PRESIDENT">
+                    <speaker>LE PRÉSIDENT</speaker>
+                    <p>L'incident est clos. Continuez! (
+                        <stage>
+                            <hi rend="i">Long silence.</hi>
+                        </stage>
+                        ) Eh bien ! parlez, Monsieur Alfred.
+                    </p>
+                </sp>
+                <sp who="ALFRED">
+                    <speaker>ALFRED</speaker>
+                    <stage>, larmoyant</stage>
+                    <p>Parlez, parlez ! Je ne sais plus où j’en étais, moi. On me coupe la chique avec des histoires
+                        pareilles.
+                    </p>
+                </sp>
+                <sp who="SUBSTITUT">
+                    <speaker>LE SUBSTITUT</speaker>
+                    <p>Il faudrait en finir, cependant.</p>
+                </sp>
+                <sp who="PRESIDENT">
+                    <speaker>LE PRÉSIDENT</speaker>
+                    <p>C'est mon avis.</p>
+                </sp>
+                <sp who="BARBEMOLLE">
+                    <speaker>BARBEMOLLE</speaker>
+                    <p>Et le mien.</p>
+                </sp>
+                <sp who="PRESIDENT">
+                    <speaker>LE PRÉSIDENT</speaker>
+                    <p>Où voulez-vous en venir?</p>
+                </sp>
+                <sp who="SUBSTITUT">
+                    <speaker>LE SUBSTITUT</speaker>
+                    <p>Aux termes de la citation, Lagoupille vous aurait frappé?</p>
+                </sp>
+                <sp who="ALFRED">
+                    <speaker>ALFRED</speaker>
+                    <p>D'un coup de poing, oui, Monsieur; sur l’œil!</p>
+                </sp>
+                <sp who="PRESIDENT">
+                    <speaker>LE PRÉSIDENT</speaker>
+                    <p>Vous avez des témoins ? [46]</p>
+                </sp>
+                <sp who="ALFRED">
+                    <speaker>ALFRED</speaker>
+                    <p>Non.</p>
+                </sp>
+
+                <stage>Rires ironiques de Barbemolle.</stage>
+                <sp who="ALFRED">
+                    <speaker>ALFRED</speaker>
+                    <p>Qu'est-ce que vous avez à rire, vous? Je n’ai pas de témoins? Naturellement! Où voulez-vous que
+                        j’en prenne, des témoins? puisqu’il avait fait le vide chez moi!
+                    </p>
+                </sp>
+                <sp who="PRESIDENT">
+                    <speaker>LE PRÉSIDENT</speaker>
+                    <p>N'interpellez pas la défense. Vous demandez des dommages et intérêts?</p>
+                </sp>
+                <sp who="ALFRED">
+                    <speaker>ALFRED</speaker>
+                    <p>Je demande cinq cents francs!</p>
+                </sp>
+                <sp who="BARBEMOLLE">
+                    <speaker>BARBEMOLLE</speaker>
+                    <stage>, goguenard</stage>
+                    <p>De rente?</p>
+                </sp>
+                <sp who="PRESIDENT">
+                    <speaker>LE PRÉSIDENT</speaker>
+                    <stage>, à Alfred</stage>
+                    <p>Vous pouvez vous asseoir. Levez-vous, Lagoupille ! Qu'est-ce que vous avez à dire ?</p>
+                </sp>
+                <sp who="LAGOUPILLE">
+                    <speaker>LAGOUPILLE</speaker>
+                    <p>J'ai à dire que M. Alfred se conduit comme un cochon !</p>
+                </sp>
+                <sp who="PRESIDENT">
+                    <speaker>LE PRÉSIDENT</speaker>
+                    <p>Vous l’avez déjà dit; ensuite ? [47]</p>
+                </sp>
+                <sp who="LAGOUPILLE">
+                    <speaker>LAGOUPILLE</speaker>
+                    <p>Ensuite, c’est un sale menteur. Comment qu’y dit, je prends une consommation? J'en prends sept.
+                    </p>
+                </sp>
+                <sp who="ALFRED">
+                    <speaker>ALFRED</speaker>
+                    <p>Sept!</p>
+                </sp>
+                <sp who="LAGOUPILLE">
+                    <speaker>LAGOUPILLE</speaker>
+                    <p>Oui, sept!</p>
+                </sp>
+                <sp who="ALFRED">
+                    <speaker>ALFRED</speaker>
+                    <p>Par semaine?</p>
+                </sp>
+                <sp who="LAGOUPILLE">
+                    <speaker>LAGOUPILLE</speaker>
+                    <p>Par jour.</p>
+                </sp>
+                <sp who="ALFRED">
+                    <speaker>ALFRED</speaker>
+                    <p>Vous vous fichez du monde. Citez-les donc un peu, vos sept consommations. Non, mais citez-les
+                        donc, qu’on voie.
+                    </p>
+                </sp>
+                <sp who="PRESIDENT">
+                    <speaker>LE PRÉSIDENT</speaker>
+                    <p>Répondez.</p>
+                </sp>
+                <sp who="LAGOUPILLE">
+                    <speaker>LAGOUPILLE</speaker>
+                    <p>Monsieur, c’est bien simple. J'arrive et je demande un café. Bon! On me sert un verre de café,
+                        trois morceaux de sucre, une carafe d’eau et un carafon de cognac. [48]
+                    </p>
+                </sp>
+                <sp who="PRESIDENT">
+                    <speaker>LE PRÉSIDENT</speaker>
+                    <p>Ça vous fait une consommation.</p>
+                </sp>
+                <sp who="LAGOUPILLE">
+                    <speaker>LAGOUPILLE</speaker>
+                    <p>Ça me fait une consommation.</p>
+                </sp>
+                <sp who="ALFRED">
+                    <speaker>ALFRED</speaker>
+                    <p>Jusqu’ici nous sommes d’accord.</p>
+                </sp>
+                <sp who="LAGOUPILLE">
+                    <speaker>LAGOUPILLE</speaker>
+                    <p>Bon! Je bois la moitié de mon café et je comble le vide avec de l’eau, ça me fait un mazagran.
+                        Deuxième consommation.
+                    </p>
+                </sp>
+                <sp who="ALFRED">
+                    <speaker>ALFRED</speaker>
+                    <p>Quoi? quoi?</p>
+                </sp>
+                <sp who="PRESIDENT">
+                    <speaker>LE PRÉSIDENT</speaker>
+                    <p>Laissez parler le prévenu.</p>
+                </sp>
+                <sp who="LAGOUPILLE">
+                    <speaker>LAGOUPILLE</speaker>
+                    <p>Dans mon mazagran, je mets de l’eau-de-vie, ça me fait un gloria.</p>
+                </sp>
+                <sp who="ALFRED">
+                    <speaker>ALFRED</speaker>
+                    <p>Ah! ça mais...</p>
+                </sp>
+                <sp who="BARBEMOLLE">
+                    <speaker>BARBEMOLLE</speaker>
+                    <p>Ces interruptions continuelles sont insupportables. [49] Je supplie la partie civile de laisser
+                        mon client s’expliquer.
+                    </p>
+                </sp>
+                <sp who="LAGOUPILLE">
+                    <speaker>LAGOUPILLE</speaker>
+                    <p>Bon! Je prends mon deuxième morceau de sucre et je le mets à fondre dans l’eau, ça me fait un
+                        verre d’eau sucrée. Dans mon verre d’eau sucrée, je reverse du cognac, ça me fait un grog. Mon
+                        grog bu, je m’appuie un peu de cognac pur : ça me fait une fine champagne.
+                    </p>
+                </sp>
+                <sp who="PRESIDENT">
+                    <speaker>LE PRÉSIDENT</speaker>
+                    <p>Et enfin?</p>
+                </sp>
+                <sp who="LAGOUPILLE">
+                    <speaker>LAGOUPILLE</speaker>
+                    <p>Enfin, sur mon dernier bout de sucre, je verse le restant de mon carafon, j’y mets le feu, ça me
+                        fait un punch. Total : un café, un mazagran, un gloria, un verre d’eau sucrée, un grog, une fine
+                        et un brulot. Total : sept consommations.
+                    </p>
+                </sp>
+                <sp who="PRESIDENT">
+                    <speaker>LE PRÉSIDENT</speaker>
+                    <p>C'est exact.</p>
+                </sp>
+                <sp who="ALFRED">
+                    <speaker>ALFRED</speaker>
+                    <p>Charmant! Et la fin du compte, combien est-ce que je touche, moi? Six sous! et vous croyez que
+                        [50] ça m’amuse, après que vous m’avez rasé toute la soirée, d’inscrire six sous à mon livre de
+                        caisse?
+                    </p>
+                </sp>
+                <sp who="LAGOUPILLE">
+                    <speaker>LAGOUPILLE</speaker>
+                    <p>Ça vous embête? Eh! bien, prenez une caissière!</p>
+                </sp>
+                <sp who="PRESIDENT">
+                    <speaker>LE PRÉSIDENT</speaker>
+                    <p>Vous reconnaissez avoir frappé le plaignant?</p>
+                </sp>
+                <sp who="LAGOUPILLE">
+                    <speaker>LAGOUPILLE</speaker>
+                    <p>Non M'sieu. Je lui ai mis un marron, voilà tout.</p>
+                </sp>
+                <sp who="PRESIDENT">
+                    <speaker>LE PRÉSIDENT</speaker>
+                    <p>A propos de quoi ?</p>
+                </sp>
+                <sp who="LAGOUPILLE">
+                    <speaker>LAGOUPILLE</speaker>
+                    <p>Il m’avait pris par le bras pour me faire sortir de force, alors je lui ai mis un marron.</p>
+                </sp>
+                <sp who="PRESIDENT">
+                    <speaker>LE PRÉSIDENT</speaker>
+                    <p>Vous ne nous aviez pas dit ça, Monsieur Alfred?</p>
+                </sp>
+                <sp who="ALFRED">
+                    <speaker>ALFRED</speaker>
+                    <p>Mais, Monsieur le Président, il fallait bien que je l’expulse; il ne voulait pas s’en aller.</p>
+                </sp>
+                <sp who="PRESIDENT">
+                    <speaker>LE PRÉSIDENT</speaker>
+                    <p>Il fallait envoyer chercher les agents de la force publique. Vous n’aviez pas le droit de vous
+                        faire [51] justice vous-même. Taisez-vous ! - Maître, vous avez la parole.
+                    </p>
+                </sp>
+                <sp who="BARBEMOLLE">
+                    <speaker>BARBEMOLLE</speaker>
+                    <stage>, se lève</stage>
+                    <p>Plaise au Tribunal adopter mes conclusions, renvoyer mon client des fins de la poursuite et
+                        condamner la partie civile aux dépens.
+                    </p>
+
+                    <p>Messieurs,</p>
+                    <p>S'il en était de la véritable vertu comme il en est de la femme de César, elle ne serait pas
+                        soupçonnée et je ne connaîtrais pas l’honneur - compliqué, de tant d’amertume! - d’avoir à la
+                        défendre aujourd’hui devant vous. Certes, depuis bientôt trente ans, qu’apôtre du Dieu de
+                        vérité, je combats pour la bonne cause et emprunte mon éloquence (si j’ose user d’un pareil
+                        terme), aux seuls élans de mes convictions, j’ai pénétré plus d’une fois les méandres de l’âme
+                        humaine!... A cette heure (
+                        <stage>
+                            <hi rend="i">Fixant du regard M. Alfred</hi>
+                        </stage>
+                        ), j’en touche du doigt les marécages!... Je n’abuserai pas de vos instants. Nul plus que moi
+                        n’en connaît le prix; puis, j’ai hâte de frapper le caillou (
+                        <stage>
+                            <hi rend="i">M. Alfred épouvanté met son chapeau sur la tête</hi>
+                        </stage>
+                        ) d’où va jaillir la lumière. [52]
+                    </p>
+                </sp>
+                <sp who="HUISSIER">
+                    <speaker>L'HUISSIER</speaker>
+                    <stage>, à Alfred</stage>
+                    <p>Votre chapeau!</p>
+                </sp>
+                <sp who="BARBEMOLLE">
+                    <speaker>BARBEMOLLE</speaker>
+                    <p>J'aborderai donc immédiatement et sans autre préambule la discussion des griefs qui nous amènent
+                        à cette barre. M. Lagoupille est employé de l’État.
+                    </p>
+                </sp>
+                <sp who="LAGOUPILLE">
+                    <speaker>LAGOUPILLE</speaker>
+                    <p>Moi? Je suis lampiste!</p>
+                </sp>
+                <sp who="HUISSIER">
+                    <speaker>L'HUISSIER</speaker>
+                    <p>Chut! chut!</p>
+                </sp>
+                <sp who="BARBEMOLLE">
+                    <speaker>BARBEMOLLE</speaker>
+                    <p>Il appartient à l’une de ces grandes administrations que l’Europe entière nous envie - : au
+                        Ministère des affaires étrangères!! où il doit d’occuper un poste de confiance, non à de
+                        misérables intrigues, mais à ses mérites personnels! Ah! c’est que resté veuf après quinz mois
+                        de mariage, avec cinq enfants au berceau, il s’est imposé la mission, non seulement de donner la
+                        becquée quotidienne à ces petites bouches affamées, mais encore de prêcher d’exemple, à ces
+                        défenseurs de demain, l’amour du [53] bien, le culte du travail, la fidélité au devoir et aux
+                        institutions libérales qui nous régissent!
+                    </p>
+                    <p>Ce qu’est la vie de cet homme?</p>
+                    <p>Demandez-le donc à l’aurore! Demandez-le au pesant soleil de midi! Demandez-le au crépuscule du
+                        soir, qui depuis tant d’années, chaque jour, voient perler la sueur à ce front éternellement
+                        courbé sur la tâche !!! « Mais, direz-vous, quel couronnement, à des journées si noblement
+                        remplies? Sans doute, ce chevalier du devoir, les yeux gorgés de volupté, puise dans les
+                        obscénités du vaudeville et de l’opérette, la détente qu’implore à grands cris la lassitude de
+                        son cerveau ? Les glaces du pandemonium où règne en souveraine Terpsichore (j’ai nommé le Moulin
+                        de la Galette), se renvoient de reflets en reflets, les chorégraphiques ébats de cet inlassable
+                        travailleur ? »
+                    </p>
+                    <p>Point!...</p>
+                    <p>Il se rend au café !!! A ce café du <hi rend="i">Pied qui remue</hi>, si humble en sa
+                        tranquillité, qu’on le croirait échappé à un dizain de l’auteur du <hi rend="i">Passant</hi> et
+                        de <hi rend="i">Severo Torelli</hi>.
+                    </p>
+                </sp>
+                <sp who="LAGOUPILLE">
+                    <speaker>LAGOUPILLE</speaker>
+                    <stage>, bas</stage>
+                    <p>Victor Hugo. [54]</p>
+                </sp>
+                <sp who="BARBEMOLLE">
+                    <speaker>BARBEMOLLE</speaker>
+                    <p>Rappelez-vous la définition touchante que vous en a donnée, il y a un instant (
+                        <stage>
+                            <hi rend="i">désignant M. Alfred</hi>
+                        </stage>
+                        ), le sous-gargottier, empoisonneur public : « <hi rend="i">Maison bien notée ; rien que des
+                            habitués ; de braves gens qui viennent, le soir, y faire leur petite partie.</hi> » Là,
+                        saturé d’alcool et de bière, demande-t-il aux fumées de l’ivresse, l’oublie des misères de la
+                        ville et des soucis du lendemain?
+                    </p>
+                    <p>Non! Il prend : Une tasse de café !!! Une, vous entendez bien ? Une seule ! Et ça, Monsieur
+                        Alfred, vous ne le nierez pas ; c’est vous-même qui l’avez dit!
+                    </p>
+                    <p>« N'importe ! votre client est un pilier de brasserie ! » m’objectait tout à l’heure, avec une
+                        partialité que je suis le premier à excuser, comme il sera le premier à le reconnaître,
+                        l’honorable organe du Ministère Public.
+                    </p>
+                </sp>
+                <sp who="SUBSTITUT">
+                    <speaker>LE SUBSTITUT</speaker>
+                    <p>Moi?... Je n’ai pas soufflé mot de cela. Je ne sais pas ce que vous voulez dire.</p>
+                </sp>
+                <sp who="BARBEMOLLE">
+                    <speaker>BARBEMOLLE</speaker>
+                    <p>Le tribunal me saura gré de ne relever que d’un sourire cette dénégation imprévue. [55]</p>
+                </sp>
+                <sp who="SUBSTITUT">
+                    <speaker>LE SUBSTITUT</speaker>
+                    <p>Je vous somme de vous expliquer.</p>
+                </sp>
+                <sp who="BARBEMOLLE">
+                    <speaker>BARBEMOLLE</speaker>
+                    <p>Je continue.</p>
+                </sp>
+                <sp who="SUBSTITUT">
+                    <speaker>LE SUBSTITUT</speaker>
+                    <p>Pas avant d’être entré dans des éclaircissements que je suis en droit d’exiger de vous.</p>
+                </sp>
+                <sp who="BARBEMOLLE">
+                    <speaker>BARBEMOLLE</speaker>
+                    <p>Le président m’a donné la parole ; ce n’est pas vous, Monsieur le substitut, qui m’empêcherez de
+                        m’en servir.
+                    </p>
+                </sp>
+                <sp who="PRESIDENT">
+                    <speaker>LE PRÉSIDENT</speaker>
+                    <p>Voyons, messieurs! Je suis désolé! Monsieur le substitut, je vous en prie! Maître! de grâce...
+                    </p>
+                </sp>
+                <sp who="SUBSTITUT">
+                    <speaker>LE SUBSTITUT</speaker>
+                    <p>L'incident...</p>
+                </sp>
+                <sp who="PRESIDENT">
+                    <speaker>LE PRÉSIDENT</speaker>
+                    <stage>, qui en a assez</stage>
+                    <p>L'incident est clos!</p>
+                </sp>
+                <sp who="BARBEMOLLE">
+                    <speaker>BARBEMOLLE</speaker>
+                    <p>Il aura éclairé, du moins, la religion du magistrat chargé de présider cette audience. A lui de
+                        distinguer entre l’acharnement dont l’accusation fait [56] preuve, et l’esprit de conciliation
+                        dont la défense est animée.
+                    </p>
+                    <p>Je poursuis.</p>
+                    <p>Mon client, dites-vous, est un pilier de brasserie? (
+                        <stage>
+                            <hi rend="i">Muette exaspération du substitut</hi>
+                        </stage>
+                        .) J'y consens. Mais à qui la faute ?
+                    </p>
+                    <p>Au gouvernement, Messieurs; je ne crains pas de le proclamer! Nous avons des salles de travail,
+                        Dieu merci! Nous avons des bibliothèques! Or, vous en défendez l’entrée, vous en interdisez
+                        l’accès, aux heures où le pauvre, précisément, serait à même d’en franchir le seuil! Et vous
+                        reprochez à Lagoupille d’aller chercher pour y assouvir son amour passionné de l’étude,
+                        l’atmosphère pestiférée d’un estaminet de quinzième ordre? Dérision ! Dérision amère ! A ce café
+                        du <emph>Pied qui remue</emph> où il ne vient pas pour boire, il ne vient pas non plus pour
+                        jouer! Il VIENT POUR LIRE LES JOURNAUX! TOUS LES JOURNAUX, SANS EXCEPTION! Les débats l’ont
+                        établi, et cela encore, Monsieur Alfred, vous qui niez tout, vous qui niez toujours, vous ne le
+                        nierez pas, j’espère.
+                    </p>
+                    <p>J'ai fini !</p>
+                    <p>Et voilà l’homme qu’on fait asseoir sur ce banc [57] d’ignominie? l’homme que de misérables
+                        rancunes voudraient livrer à vos rigueurs? Je livre moi à vos dégoûts la bassesse de tels
+                        calculs.
+                    </p>
+                    <p>Je persiste avec confiance dans mes conclusions.</p>
+                </sp>
+
+                <stage>Il se rasseoit.</stage>
+                <sp who="PRESIDENT">
+                    <speaker>LE PRÉSIDENT</speaker>
+                    <p>La parole est au ministère public.</p>
+                </sp>
+                <sp who="SUBSTITUT">
+                    <speaker>LE SUBSTITUT</speaker>
+                    <stage>, qui depuis un instant déjà était plongé dans la lecture de l’<hi rend="i">Officiel</hi> que
+                        lui avait apporté l’huissier vers la fin de la plaidoirie
+                    </stage>
+                    <p>Ça y est!</p>
+                </sp>
+                <sp who="PRESIDENT">
+                    <speaker>LE PRÉSIDENT</speaker>
+                    <p>Quoi?</p>
+                </sp>
+                <sp who="SUBSTITUT">
+                    <speaker>LE SUBSTITUT</speaker>
+                    <p>Je suis révoqué.</p>
+                </sp>
+                <sp who="PRESIDENT">
+                    <speaker>LE PRÉSIDENT</speaker>
+                    <p>Révoqué!</p>
+                </sp>
+                <sp who="SUBSTITUT">
+                    <speaker>LE SUBSTITUT</speaker>
+                    <p>Lisez vous-même.</p>
+                </sp>
+                <sp who="PRESIDENT">
+                    <speaker>LE PRÉSIDENT</speaker>
+                    <stage>, après avoir lu</stage>
+                    <p>C'est ma foi vrai. D'ailleurs, ça n’a rien qui me surprenne. Vous savez ce que je vous ai dit.
+                        Mes condoléances sincères. [58]
+                    </p>
+                </sp>
+                <sp who="BARBEMOLLE">
+                    <speaker>BARBEMOLLE</speaker>
+                    <p>J'y joins les miennes.</p>
+                </sp>
+                <sp who="SUBSTITUT">
+                    <speaker>LE SUBSTITUT</speaker>
+                    <stage>, aigre doux</stage>
+                    <p>Je vous en remercie d’autant plus que vous êtes nommé à ma place.</p>
+                </sp>
+                <sp who="BARBEMOLLE">
+                    <speaker>BARBEMOLLE</speaker>
+                    <p>Moi!</p>
+                </sp>
+                <sp who="SUBSTITUT">
+                    <speaker>LE SUBSTITUT</speaker>
+                    <p>Parfaitement.</p>
+                </sp>
+                <sp who="PRESIDENT">
+                    <speaker>LE PRÉSIDENT</speaker>
+                    <p>C'est exact. Tenez. (
+                        <stage>Il lui passe l’
+                            <hi rend="i">Officiel.</hi>
+                        </stage>
+                        )
+                    </p>
+                </sp>
+                <sp who="BARBEMOLLE">
+                    <speaker>BARBEMOLLE</speaker>
+                    <stage>, lisant</stage>
+                    <p>Décret présidentiel :
+                        <hi rend="i">Me Barbemolle, avocat au Barreau de Paris, est nommé substitut du procureur de la
+                            République, en remplacement de M. Saimpol-Mépié, révoqué.
+                        </hi>
+                    </p>
+                </sp>
+                <sp who="PRESIDENT">
+                    <speaker>LE PRÉSIDENT</speaker>
+                    <p>Tous mes compliments.</p>
+                </sp>
+                <sp who="LAGOUPILLE">
+                    <speaker>LAGOUPILLE</speaker>
+                    <p>Et les miens!</p>
+                </sp>
+                <sp who="BARBEMOLLE">
+                    <speaker>BARBEMOLLE</speaker>
+                    <stage>, au substitut</stage>
+                    <p>Mon cher prédécesseur, voici votre journal. [59]</p>
+                </sp>
+                <sp who="SUBSTITUT">
+                    <speaker>LE SUBSTITUT</speaker>
+                    <p>Voici ma toque.</p>
+                </sp>
+                <sp who="PRESIDENT">
+                    <speaker>LE PRÉSIDENT</speaker>
+                    <p>Comment, vous nous quittez déjà ?</p>
+                </sp>
+                <sp who="SUBSTITUT">
+                    <speaker>LE SUBSTITUT</speaker>
+                    <p>Je serais le dernier des imbéciles si je continuais à servir, fût-ce une minute, un gouvernement
+                        qui se conduit avec moi...
+                    </p>
+                </sp>
+                <sp who="LAGOUPILLE">
+                    <speaker>LAGOUPILLE</speaker>
+                    <p>Comme un cochon !</p>
+                </sp>
+                <sp who="SUBSTITUT">
+                    <speaker>LE SUBSTITUT</speaker>
+                    <p>J'allais le dire. Adieu, je vais traduire Horace. Que le Seigneur vous tienne en santé et en
+                        joie. (
+                        <stage>
+                            <hi rend="i">Il sort.</hi>
+                        </stage>
+                        )
+                    </p>
+                </sp>
+                <sp who="PRESIDENT">
+                    <speaker>LE PRÉSIDENT</speaker>
+                    <p>Serviteur! - Il a l’air vexé.</p>
+                </sp>
+                <sp who="HUISSIER">
+                    <speaker>L'HUISSIER</speaker>
+                    <p>Plutôt!</p>
+                </sp>
+                <sp who="PRESIDENT">
+                    <speaker>LE PRÉSIDENT</speaker>
+                    <p>Tout de même, il n’est pas gentil. Nous voilà obligés de renvoyer à plus tard les débats de
+                        l’affaire Lagoupille. [60]
+                    </p>
+                </sp>
+                <sp who="BARBEMOLLE">
+                    <speaker>BARBEMOLLE</speaker>
+                    <p>Pourquoi?</p>
+                </sp>
+                <sp who="PRESIDENT">
+                    <speaker>LE PRÉSIDENT</speaker>
+                    <p>Je ne puis rendre un jugement qui serait certainement infirmé par la Cour de Cassation, le
+                        tribunal n’étant plus au complet.
+                    </p>
+                </sp>
+                <sp who="BARBEMOLLE">
+                    <speaker>BARBEMOLLE</speaker>
+                    <stage>, très simple</stage>
+                    <p>Je suis là.</p>
+                </sp>
+                <sp who="PRESIDENT">
+                    <speaker>LE PRÉSIDENT</speaker>
+                    <p>Je le vois bien.</p>
+                </sp>
+                <sp who="BARBEMOLLE">
+                    <speaker>BARBEMOLLE</speaker>
+                    <p>Alors?</p>
+                </sp>
+
+                <stage>Un temps.</stage>
+                <sp who="PRESIDENT">
+                    <speaker>LE PRÉSIDENT</speaker>
+                    <p>Je n’ose comprendre.</p>
+                </sp>
+                <sp who="BARBEMOLLE">
+                    <speaker>BARBEMOLLE</speaker>
+                    <p>C'est pourtant clair.</p>
+                </sp>
+                <sp who="PRESIDENT">
+                    <speaker>LE PRÉSIDENT</speaker>
+                    <p>Vous songeriez...</p>
+                </sp>
+                <sp who="BARBEMOLLE">
+                    <speaker>BARBEMOLLE</speaker>
+                    <stage>, avec la plus grande noblesse</stage>
+                    <p>Je croirais manquer à tous mes devoirs, si je ne répondais, dès son premier appel, à la con-
+                        [61]fiance qu’a daigné me témoigner le gouvernement de la République.
+                    </p>
+                </sp>
+                <sp who="PRESIDENT">
+                    <speaker>LE PRÉSIDENT</speaker>
+                    <stage>, estomaqué</stage>
+                    <p>Puisqu’il en est ainsi... (
+                        <stage>
+                            <hi rend="i">désignant le siège, resté libre, de M. Saimpol-Mépié</hi>
+                        </stage>
+                        )... la place est encore chaude.
+                    </p>
+                </sp>
+
+                <stage>Barbemolle sourit, s’incline, après quoi, sa serviette sous le bras, il escalade les degrés de
+                    l’estrade des magistrats.
+                </stage>
+                <sp who="PRESIDENT">
+                    <speaker>LE PRÉSIDENT</speaker>
+                    <p>Vous êtes prêt à requérir?</p>
+                </sp>
+                <sp who="BARBEMOLLE">
+                    <speaker>BARBEMOLLE</speaker>
+                    <p>Je suis aux ordres du tribunal.</p>
+                </sp>
+                <sp who="PRESIDENT">
+                    <speaker>LE PRÉSIDENT</speaker>
+                    <p>Dont acte. L'audience continue. - Monsieur le substitut, vous avez la parole.</p>
+                </sp>
+                <sp who="BARBEMOLLE">
+                    <speaker>BARBEMOLLE</speaker>
+                    <stage>, debout</stage>
+                    <p>Après la plaidoirie si éloquente et si persuasive que vous venez d’entendre, je ne saurais
+                        m’illusionner sur la difficulté de la tâche qui m’incombe. Si loin de la main qu’il
+                        m’apparaisse, j’atteindrai cependant, je l’espère, au but que je poursuis ici; avec l’aide du
+                        Dieu de justice dont je suis l’indigne [62] interprète! « J'emprunte mon éloquence à ma seule
+                        conviction », vous a déclaré le défenseur. J'emprunterai la mienne, je le jure, à ma seule
+                        sincérité.
+                    </p>
+                    <p>J'arrive sans plus de préambule à la discussion des faits.</p>
+                    <p>A l’aide d’habiletés oratoires - que je proclame et réprouve à la fois - mon honorable
+                        contradicteur vous a tracé de Lagoupille une silhouette quelque peu flatteuse, j’oserai dire
+                        quelque peu flattée. Homme de bien! chevalier du devoir! père de cinq enfants en bas âge !
+                        Voici, je l’avoue, des titres peu communs à la clémence du juge éclairé et intègre chargé de
+                        présider ces débats. Quel homme serait-il, en effet, s’il tenait sa porte fermée à la vertu
+                        venant lui demander droit d’asile, ses lettres de créance à la main? Malheureusement entre le
+                        portrait et le modèle, il y a place pour une lamentable, pour une écœurante vérité! Nous avons
+                        assez ri, passons aux choses sérieuses. Les feux d’artifices sont éteints, faisons à présent de
+                        la lumière! Je n’irai pas par quatre chemins. Lagoupille, l’honnête Lagoupille, est ce qui
+                        s’appelle une gouape dans les meilleures sociétés. Lampiste par [63] profession (car il n’est
+                        pas plus fonctionnaire qu’il n’est père de cinq enfants), lampiste, dis-je, par profession, mais
+                        ivrogne par caractère, il est, mon Dieu, comme Grégoire : il passe tout son temps à boire. Et ce
+                        n’est pas lui qui me donnera le dementi? Avec ce tranquille cynisme propre aux alcooliques
+                        invétérés, il vous l’a déclaré lui-même: au seul café du <emph>Pied qui remue</emph> (ab uno
+                        disce omnes), depuis des années, chaque soir, il absorbe sept consommations ! Vous avez bien
+                        entendu; sept consommations par soirée! Soit quarante-neuf par semaine ! deux cent dix par mois!
+                        deux mille cinq cent cinquante-cinq par an; et deux mille cinq cent soixante-deux quand l’année
+                        est bissextile !
+                    </p>
+                    <p>Encore, si la conscience des turpitudes dont il s’abreuve (je chercherais vainement un plus
+                        adequat à la nature de mon sujet) lui criait de les aller cacher, comme on cache une plaie
+                        fétide, en les ténèbres d’un bouge !... Je vous crierais, moi : « Pitié! car toute étincelle
+                        n’est pas morte! Grâce! car en cette pudeur suprême, il nous est permis de saluer un espoir de
+                        rédemption!!! » Mais non! Portant fièrement la honte d’être abject, c’est sous [64] le regard
+                        des honnêtes gens qu’il prétend étaler son vice, en ce café du <hi rend="i">Pied qui remue</hi>,
+                        dont la défense, si éloquemment, tout à l’heure, évoquait la vision charmante, j’oserai presque
+                        dire familiale! Car il faut à la corruption cette triste volupté : corrompre! (
+                        <stage>
+                            <hi rend="i">Désignant Lagoupille du doigt</hi>
+                        </stage>
+                         :) Il faut le lit chaste de la vierge à l’opprobre de cette fille publique! Il faut le calice
+                        de la rose à la bave de cet escargot !
+                    </p>
+                    <p>Bien mieux! fleur de débauche et de fainéantise, incarnation du pâle voyou, dont jadis le poète
+                        des <hi rend="i">Iambes</hi> marqua la hideur au fer rouge, en un vers qui ne périra pas, cet
+                        homme méprisable, taré, essaie d’arracher par surprise, à l’ignorance de la foule, un peu de
+                        cette considération dont est affamée l’infamie ! Tel un porc qui aurait volé pour s’en revêtir
+                        la robe auguste du lion, il ne craint pas de se faire passer pour fonctionnaire de l’État!
+                        souillant ainsi, ah! songez y, songez y, je vous en conjure! l’antique prestige de notre
+                        administration nationale, et sapant d’une main meurtrière les bases mêmes de la société !
+                    </p>
+                    <p>J'ai dit.</p>
+                    <p>Le prévenu, spontanément, a reconnu les faits [65] qui lui sont reprochés. Je n’ai donc pas à en
+                        discuter l’évidence. Je me bornerai à appeler sur lui les sévérités de la loi et à revendiquer
+                        de votre esprit de justice un châtiment exemplaire, au nom des intérêts immenses qui en
+                        dépendent.
+                    </p>
+                </sp>
+                <stage>Il s’assied.</stage>
+                <sp who="PRESIDENT">
+                    <speaker>LE PRÉSIDENT</speaker>
+                    <stage>, à Alfred</stage>
+                    <p>Vous n’avez rien à ajouter?</p>
+                </sp>
+                <sp who="ALFRED">
+                    <speaker>ALFRED</speaker>
+                    <p>Non, Monsieur le Président.</p>
+                </sp>
+                <sp who="PRESIDENT">
+                    <speaker>LE PRÉSIDENT</speaker>
+                    <stage>, à Lagoupille</stage>
+                    <p>Et vous?</p>
+                </sp>
+                <sp who="LAGOUPILLE">
+                    <speaker>LAGOUPILLE</speaker>
+                    <p>Je réclame mes dix francs.</p>
+                </sp>
+                <sp who="BARBEMOLLE">
+                    <speaker>BARBEMOLLE</speaker>
+                    <stage>, plein de dignité</stage>
+                    <p>Louis XII ne paie pas les dettes du duc d’Orléans.</p>
+                </sp>
+                <sp who="LAGOUPILLE">
+                    <speaker>LAGOUPILLE</speaker>
+                    <p>Eh! bien, il se conduit comme un cochon.</p>
+                </sp>
+                <sp who="PRESIDENT">
+                    <speaker>LE PRÉSIDENT</speaker>
+                    <stage>, sévère mais juste</stage>
+                    <p>Vous n’êtes pas ici pour apprécier l’histoire. (
+                        <stage>
+                            <hi rend="i">Il se recouvre et prononce.</hi>
+                        </stage>
+                        ) [66]
+                    </p>
+                    <p>
+                        <hi rend="i">Le tribunal, après en avoir délibéré conformément à la loi ;</hi>
+                    </p>
+                    <p>
+                        <hi rend="i">Attendu qu’Alfred, limonadier à Paris, a introduit une plainte contre Lagoupille,
+                            comme ayant reçu de celui-ci...
+                        </hi>
+                    </p>
+                </sp>
+                <sp who="LAGOUPILLE">
+                    <speaker>LAGOUPILLE</speaker>
+                    <stage>, à mi-voix</stage>
+                    <p>Un marron!</p>
+                </sp>
+                <sp who="PRESIDENT">
+                    <speaker>LE PRÉSIDENT</speaker>
+                    <p><hi rend="i">Un marron</hi>... Euh! Taisez-vous donc, Lagoupille!...
+                        <hi rend="i">un coup de poing en plein visage, qu’il s’est porté partie civile et qu’il réclame
+                            cinq cents francs de dommages et intérêts ;
+                        </hi>
+                    </p>
+                    <p>
+                        <hi rend="i">Attendu qu’il appert clairement des débats que Lagoupille, par le désagrément de
+                            son commerce et ses exigences sans nom, a réussi à mettre en fuite la clientèle ordinaire du
+                            café du<hi rend="i">Pied qui remue</hi> et contribué ainsi, dans une large mesure, à la
+                            déconfiture de cet établissement; que, dans ces conditions, les prétentions d’Alfred ne
+                            paraissent nullement excessives;
+                        </hi>
+                    </p>
+                </sp>
+                <sp who="ALFRED">
+                    <speaker>ALFRED</speaker>
+                    <stage>, à part</stage>
+                    <p>Si j’avais su, j’aurais demandé dix mille francs.</p>
+                </sp>
+                <sp who="PRESIDENT">
+                    <speaker>LE PRÉSIDENT</speaker>
+                    <p><hi rend="i">Attendu enfin que Lagoupille ne nie point s’être [67] livré sur la personne du
+                        limonadier Alfred à la voie de fait que est l’objet de la poursuite; qu’il semble venir de
+                        lui-même se placer sous le coup de la loi et qu’il y aurait lieu, dès lors, de lui faire
+                        application de l’article 311 du Code Pénal ainsi conçu</hi> : « LORSQUE LES COUPS ET VIOLENCES
+                        EXERCÉS N'AURONT OCCASIONNÉ AUCUNE MALADIE, LE COUPABLE SERA PUNI D'UN EMPRISONNEMENT DE SIX
+                        JOURS A DEUX ANS » ;
+                    </p>
+                </sp>
+                <sp who="ALFRED">
+                    <speaker>ALFRED</speaker>
+                    <stage>, à part</stage>
+                    <p>Deux ans de prison ! Deux ans de prison !</p>
+                </sp>
+                <sp who="PRESIDENT">
+                    <speaker>LE PRÉSIDENT</speaker>
+                    <p>
+                        <hi rend="i">Mais, d’autre part, considérant qu’Alfred ne justifie de l’acte de brutalité dont
+                            il aurait été victime, ni par un témoignage, ni par un procès-verbal, ni par un certificat
+                            de médecin ;
+                        </hi>
+                    </p>
+                    <p>
+                        <hi rend="i">Que le juge ne saurait, sans contrevenir gravement à la procédure en usage et
+                            notamment aux articles 154, 155 et 189 du Code d’Instruction Criminelle, accueillir une
+                            réclamation dont le bien fondé n’est établi que par les affirmations de l’intéressé;
+                        </hi>
+                    </p>
+                    <p>
+                        <hi rend="i">Considérant d’ailleurs que si, en réalité, Alfred a reçu...[68]</hi>
+                    </p>
+                </sp>
+                <sp who="LAGOUPILLE">
+                    <speaker>LAGOUPILLE</speaker>
+                    <stage>, à mi-voix</stage>
+                    <p>Un marron...</p>
+                </sp>
+                <sp who="PRESIDENT">
+                    <speaker>LE PRÉSIDENT</speaker>
+                    <p>
+                        <hi rend="i">Un marron!</hi>
+                        je vais vous faire sortir Lagoupille!...
+                        <hi rend="i">un coup de poing dans la figure, il n’a eu que ce qu’il méritait, ayant par ses
+                            provocations, ainsi qu’il l’a reconnu lui-même, contraint et forcé Lagoupille à user de son
+                            droit de légitime défense;
+                        </hi>
+                    </p>
+                </sp>
+                <sp who="LAGOUPILLE">
+                    <speaker>LAGOUPILLE</speaker>
+                    <stage>, à demi-voix</stage>
+                    <p>Très bien !</p>
+                </sp>
+                <sp who="PRESIDENT">
+                    <speaker>LE PRÉSIDENT</speaker>
+                    <p><hi rend="i">Attendu qu’il argue en vain du refus opposé par Lagoupille à ses invitations d’avoir
+                        à quitter sur l’heure le café du</hi>Pied qui remue ;
+                    </p>
+                    <p>
+                        <hi rend="i">Qu'en effet, aux termes de nombreux jugements confirmés par autant d’arrêts de cour
+                            d’appel, un café étant un lieu public, pleine et entière liberté est laissée à tout un
+                            chacun, non seulement d’y pénétrer, mais encore d’y séjourner aussi longuement qu’il juge à
+                            propos, à charge par lui, bien entendu, de n’y faire aucun scandale;
+                        </hi>
+                    </p>
+                </sp>
+                <sp who="LAGOUPILLE">
+                    <speaker>LAGOUPILLE</speaker>
+                    <p>Très bien ! [69]</p>
+                </sp>
+                <sp who="PRESIDENT">
+                    <speaker>LE PRÉSIDENT</speaker>
+                    <p><hi rend="i">Considérant qu’en l’espèce. Lagoupille, en aucune circonstance, ne semble avoir
+                        scandalisé la moralité des clients du café du</hi>Pied qui remue,
+                        <hi rend="i">soit par la licence de ses propos, soit par l’inconvenance de ses gestes, soit par
+                            l’exhibition publique des intimités de son individu; que, par conséquent, en tentant de
+                            l’expulser de force, Alfred a outrepassé les pouvoirs que lui confèrent la jurisprudence et
+                            les règlements de police;
+                        </hi>
+                    </p>
+                    <p>
+                        <hi rend="i">Par ces motifs ;</hi>
+                    </p>
+                    <p>
+                        <hi rend="i">Acquitte Lagoupille ;</hi>
+                    </p>
+                </sp>
+                <sp who="LAGOUPILLE">
+                    <speaker>LAGOUPILLE</speaker>
+                    <p>Très bien!</p>
+                </sp>
+                <sp who="PRESIDENT">
+                    <speaker>LE PRÉSIDENT</speaker>
+                    <p>
+                        <hi rend="i">Déclare Alfred mal fondé en sa plainte; l’en déboute et le condamne aux dépens. »
+                        </hi>
+                        - L'audience est levée.
+                    </p>
+                </sp>
+            </div>
+        </body>
+    </text>
+</TEI>

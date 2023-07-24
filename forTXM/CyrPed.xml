@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title>Le Pédant joué
+COMEDIE</title>
+			</titleStmt>
+			<editionStmt>
+				<respStmt>
+					<resp>transcription</resp>
+					<name>Yunhao Na</name>
+				</respStmt>
+				<respStmt>
+					<resp>édition XML-TEI</resp>
+					<name>Zinaida Geylikman</name>
+				</respStmt>
+			</editionStmt>
+			<publicationStmt>
+				<publisher>Université Sorbonne Nouvelle</publisher>
+				<date>2018</date>
+			</publicationStmt>
+			<sourceDesc>
+				<p>LE PEDANT JOUE, COMEDIE.Par Mr DE CYRANO DE BERGERAC.A Paris, Chez CHARLES DE SERCY, au Palais, dans la salle Dauphine, à la Bonne-foy couronnée. M. DC. LIV. Avec Privilege du Roy</p>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+	<text>
+		<body>
+		</body>
+	</text>
+</TEI>

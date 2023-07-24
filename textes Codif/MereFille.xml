@@ -1,0 +1,824 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_drama.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_drama.rng" type="application/xml"
+        schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Farce de la Mère et de la Fille.</title>
+            </titleStmt>
+            <editionStmt>
+                <edition>Édition électronique
+                    <date>2019</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <p>Publication Information</p>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl>
+                    <title>"Farce nouvelle à cinq personnages, c’est asçavoir : la Mere, la Fille, le Tesmoing,
+                        l’Amoureulx et l’Oficial",
+                    </title>
+                    texte édité d'après le recueil La Vallière (Paris, BnF, Fr. 24341, fol. 103v°-109v°).
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="fr">Français</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div>
+                <argument>
+                    <head>Personnages</head>
+                    <castList>
+                        <castItem xml:id="mere">La Mere</castItem>
+                        <castItem xml:id="fille">La Fille
+                            <roleDesc>Marion</roleDesc>
+                        </castItem>
+                        <castItem xml:id="tesmoing">Le Tesmoing
+                            <roleDesc>Guillot des Noix</roleDesc>
+                        </castItem>
+                        <castItem xml:id="colin">Colin
+                            <roleDesc>L'Amoureulx</roleDesc>
+                        </castItem>
+                        <castItem xml:id="juge">Le Juge
+                            <roleDesc>c'est-à-dire l'Oficial</roleDesc>
+                        </castItem>
+                    </castList>
+                </argument>
+            </div>
+            <div type="scene" n="I">
+                <head>Scène 1</head>
+                <stage type="castlist">La Mere, la Fille</stage>
+
+                <sp who="#mere">
+                    <speaker>La Mere</speaker>
+                    <stage>commence</stage>
+                    <l>Par la croi Dieu, j’aymeroys myeulx</l>
+                    <l>Luy avoir crevé les deulx yeulx</l>
+                    <l>Que je n’en eusses la raisson</l>
+                    <l>Faire en ma fille en ma maisson,</l>
+                    <l>Et puys dire pour tout potage</l>
+                    <l>Y n’y a poinct de tesmoingnage,</l>
+                    <l>Pour le premier, on le voeyra.</l>
+                </sp>
+
+                <sp who="#fille">
+                    <speaker>La Fille</speaker>
+                    <l>Par ma foy, bien faict se sera,</l>
+                    <l>C’est un trompeur, est pas, ma mere ?</l>
+                </sp>
+
+                <sp who="#mere">
+                    <speaker>La Mere</speaker>
+                    <l>A ! que j’ey de douleur amere</l>
+                    <l>De ta fortune, Marion.</l>
+                    <l>Il fault que nous te marion,</l>
+                    <l>Sy debvoyt tout fol enrager.</l>
+                </sp>
+
+                <sp who="#fille">
+                    <speaker>La Fille</speaker>
+                    <l>Et Dea ! Pourquoy vint-il rager</l>
+                    <l>Tant de foys, comme vous savés ?</l>
+                </sp>
+
+                <sp who="#mere">
+                    <speaker>La Mere</speaker>
+                    <l>A ! Marion, pas vous n’avés</l>
+                    <l>L’esprit encor assés propice</l>
+                    <l>Pour vous garder de la malice</l>
+                    <l>De tel deable.</l>
+                </sp>
+
+                <sp who="#fille">
+                    <speaker>La Fille</speaker>
+                    <l>Vous dictes vray.</l>
+                </sp>
+
+                <sp who="#mere">
+                    <speaker> La Mere</speaker>
+                    <l>Sy veulx je sçavoir de vray</l>
+                    <l>Qu’en dira le juge, par Dieu.</l>
+                    <l>Je me suys trouvee en mainct lieu</l>
+                    <l>Où j’ay faict consultation</l>
+                    <l>Du cas, mais la probation</l>
+                    <l>Nous fera gaigner nostre cause,</l>
+                    <l>Avec, se j’entens bien, la clause.</l>
+                    <l>Tu congnoys bien Guillot des Noix ?</l>
+                </sp>
+
+                <sp who="#fille">
+                    <speaker>
+                        <choice>
+                            <sic>La Femme</sic>
+                            <corr>La Fille</corr>
+                        </choice>
+                    </speaker>
+                    <l>Ouy, ma mere, je le congnoys,</l>
+                    <l>C’est celuy que tres bien l’oyst</l>
+                    <l>Quant à sa chambre m’encloyst</l>
+                    <l>Et qu’il disoyt : "ma Marion,</l>
+                    <l>Tres bien ensemble nous serion</l>
+                    <l>Voulés vous pas estre ma femme ?"</l>
+                    <l>Quant luy respondis, sur mon ame,</l>
+                    <l>Que j’en estoys tres bien contente,</l>
+                    <l>Los y fist tout à son entente ;</l>
+                    <l>Car ainsy, vous me l’aviés dict,</l>
+                    <l>Guillot est homme de credict :</l>
+                    <l>On le croiera du premier coup.</l>
+                </sp>
+
+                <sp who="#mere">
+                    <speaker>La Mere</speaker>
+                    <l>C’est tres bien dict à coup, à coup.</l>
+                    <l>Je m’en voys, sans me consister</l>
+                    <l>Chercher sergent pour le citer :</l>
+                    <l>Je croy qu’il n’y faillira pas.</l>
+                </sp>
+
+                <sp who="#fille">
+                    <speaker>La Fille</speaker>
+                    <l>Alon, ma mere, pas à pas.</l>
+                    <l>Sa maison n’est pas loing d’icy.</l>
+                </sp>
+
+            </div>
+            <div type="scene" n="II">
+                <head>Scène 2</head>
+                <stage type="castlist">La Mere, la Fille, le Juge</stage>
+
+                <sp who="#juge">
+                    <speaker>Le Juge
+                        <note place="bottom">Une seconde main a rayé toutes les mentions de "L'Official" dans le corps
+                            du texte et substitué "Le Juge".
+                        </note>
+                    </speaker>
+                    <stage>entre</stage>
+                    <l>Il y a long temps que n’issy</l>
+                    <l>Hors du logis, pour aler veoir</l>
+                    <l>Mes gens et faire mon debvoir. </l>
+                    <l>Je m’y en voy tout maintenant. </l>
+                    <l>Celuy qui est droict maintenant</l>
+                    <l>Est prise de Dieu et des hommes.</l>
+                </sp>
+
+                <stage>La Fille et la Mere parlant ensemble dens la salle, revenant du sergent.</stage>
+
+                <sp who="#fille">
+                    <speaker>La Fille</speaker>
+                    <l>Mere, c’est icy, nous y sommes.  </l>
+                </sp>
+
+                <sp who="#mere">
+                    <speaker>La Mere</speaker>
+                    <l>Ce chemin est beaucoup plus court.</l>
+                </sp>
+
+                <sp who="#fille">
+                    <speaker>La Fille</speaker>
+                    <l>Par mon serment voecy la court,</l>
+                    <l>Je le congnoy, et que de gens !</l>
+                    <l>Que l’on medise des sergens</l>
+                    <l>Qui vouldra, tres bien je m’en loue.</l>
+                    <l>Il ne me sera plus la moue,</l>
+                    <l>Le trompeur. Monsieur le sergent</l>
+                    <l>A esté bien fort diligent</l>
+                    <l>De le cister, voecy la lestre,</l>
+                    <l>Où il ne fault oster ne mectre.</l>
+                    <l>La voelà, la relation.</l>
+                </sp>
+
+                <sp who="#juge">
+                    <speaker>Le Juge</speaker>
+                    <l>Mon Dieu ! Quel exclamation. </l>
+                    <l>D’où vient ce grant bruict et tempeste ?  </l>
+                </sp>
+
+                <sp who="#mere">
+                    <speaker>La Mere</speaker>
+                    <l>Marion, tu es fine beste,</l>
+                    <l>Y fault finement sermonner.  </l>
+                </sp>
+
+                <sp who="#juge">
+                    <speaker>Le Juge</speaker>
+                    <l>Ceulx sy ne me font questionner</l>
+                    <l> De leur procés.</l>
+                </sp>
+
+                <sp who="#mere">
+                    <speaker>La Mere</speaker>
+                    <l>Dieu vous gard, sire.  </l>
+                </sp>
+
+                <sp who="#juge">
+                    <speaker>Le Juge</speaker>
+                    <l>Or sa, qu’avés-vous à me dire ?</l>
+                </sp>
+
+                <sp who="#mere">
+                    <speaker>La Mere</speaker>
+                    <l>Monsieur, la plus grand traÿsson,</l>
+                    <l>Meschanseté et deraisson</l>
+                    <l>Que vous ouystes de vostre age.</l>
+                </sp>
+
+                <sp who="#juge">
+                    <speaker>Le Juge</speaker>
+                    <l>Or bien. Qui est le personnage</l>
+                    <l>Qui vous a faict tel deshonneur ?  </l>
+                </sp>
+
+                <sp who="#mere">
+                    <speaker>La Mere</speaker>
+                    <l>Se n’est pas un trop grand seigneur.</l>
+                    <l>C’est un nommé le beau Colin,</l>
+                    <l>Que le chault mal sainct Mathelin</l>
+                    <l>Luy puisse ronger la cervelle !</l>
+                    <l>J’avoys une fille tres belle :</l>
+                    <l>Le meschant l’a deshonoree,</l>
+                    <l>Et voecy la povre esplouree</l>
+                    <l>Qui de luy justice requiert.</l>
+                </sp>
+
+                <sp who="#juge">
+                    <speaker>Le Juge</speaker>
+                    <l>Est-il cisté comme il apert ?</l>
+                    <l>Aultrement n’y saroys que fere.</l>
+                </sp>
+
+                <sp who="#fille">
+                    <speaker>La Fille</speaker>
+                    <l>Que pour cela on ne differe,</l>
+                    <l>En voecy la relation.</l>
+                </sp>
+
+                <sp who="#mere">
+                    <speaker>La Mere</speaker>
+                    <l>O quelle babillation !</l>
+                    <l>Laisse moy parler, sy tu veulx.</l>
+                    <l> Monsieur, de Colin je me deulx</l>
+                    <l>Qui a ma fille viollee</l>
+                    <l>Puys dict qui ne l’a acollee,</l>
+                    <l>Combien qu’i luy ayt sur bon gage</l>
+                    <l>Promys sa foy en mariage.</l>
+                </sp>
+
+                <sp who="#juge">
+                    <speaker> Le Juge</speaker>
+                    <stage>parlant à la Fille</stage>
+                    <l>Est-il vray ? Or dictes, ma mye.</l>
+                </sp>
+
+                <sp who="#fille">
+                    <speaker>La Fille</speaker>
+                    <l>Je n’estoyes pas sy endormye</l>
+                    <l>Que ne me soyes bien aperceue</l>
+                    <l>D’avoir esté ainsy deceue. </l>
+                    <l>Mais à nul mal je n’y pensoys !  </l>
+                </sp>
+
+                <sp who="#juge">
+                    <speaker>Le Juge</speaker>
+                    <l>Colin, vien cy, où que tu soyes. </l>
+                    <l>Aultrement te mes en deffault.</l>
+                </sp>
+
+            </div>
+            <div type="scene" n="III">
+                <head>Scène 3</head>
+                <stage type="castlist">La Mere, la Fille, le Juge, Colin</stage>
+
+                <sp who="#colin">
+                    <speaker> Le beau Colin</speaker>
+                    <stage>entre</stage>
+                    <l>Il ne fault <add hand="#2">point</add> crier plus hault.
+                    </l>
+                    <l>Me voecy à vostre presence.</l>
+                </sp>
+
+                <sp who="#juge">
+                    <speaker>Le Juge</speaker>
+                    <l>Or vien çà : par ta concience,</l>
+                    <l>As-tu congneu charnellement</l>
+                    <l>Ceste fille icy ?</l>
+                </sp>
+
+                <sp who="#colin">
+                    <speaker>Colin</speaker>
+                    <l>Elle ment,</l>
+                    <l>Je m’en raporte à tout le monde.</l>
+                </sp>
+
+                <sp who="#mere">
+                    <speaker>La Mere</speaker>
+                    <l>Y ment, le malureux immunde,</l>
+                    <l>Je le veulx prouver fermement.</l>
+                </sp>
+
+                <sp who="#colin">
+                    <speaker>Colin</speaker>
+                    <l>Or le prouves donc vistement,</l>
+                    <l>Je vous en donne tout loysir.</l>
+                    <l>Male mort me puisse saisir</l>
+                    <l>Sy je luy fus rien de ma vie.</l>
+                </sp>
+
+                <sp who="#mere">
+                    <speaker>La Mere</speaker>
+                    <l>Par la doulce vierge Marye,</l>
+                    <l>Monsieur, sans atendre plus loing,</l>
+                    <l>Voesy à present mon tesmoing. </l>
+                    <l>Examinés le, s’il vous plaist.</l>
+                </sp>
+
+                <sp who="#juge">
+                    <speaker>  Le Juge</speaker>
+                    <l>Tesmoing, parlés sans plus de plaist,</l>
+                    <l>
+                        <del type="rature" hand="#2">Vous jurerés par la passion</del>
+                    </l>
+                    <l>De Dieu, à la salvation</l>
+                    <l>Ou dannation de vostre ame,</l>
+                    <l>Ou vous puissés estre soublz lame</l>
+                    <l>Dedens quatre jours ensouy</l>
+                    <l>
+                        <del type="rature" hand="#2">Que vous me dirés vray ;</del>
+                    </l>
+                    <l>
+                        <add hand="#2">Vous soiés tout vif enfouy,</add>
+                    </l>
+                    <l>
+                        <add hand="#2">Me dirés-vous pas vray ?</add>
+                    </l>
+                </sp>
+
+            </div>
+            <div type="scene" n="IV">
+                <head>Scène 4</head>
+                <stage type="castlist">La Mere, la Fille, le Juge, Colin, le Tesmoing</stage>
+
+                <sp who="#tesmoing">
+                    <speaker>Le Tesmoing</speaker>
+                    <stage>entre</stage>
+                    <l>Ouy.</l>
+                    <l>
+                        <del type="rature" hand="#2">Le Juge</del>
+                    </l>
+                    <l>
+                        <del type="rature" hand="#2">>Monsieur, je ne suy sy habillé</del>
+                    </l>
+                    <l>Pour en savoir juger sy bien</l>
+                    <l>Je ne vous mentiray de rien.</l>
+                    <l>Je vous diray ce que j’en say.</l>
+                    <l>Au temps passé je commensay</l>
+                    <l>À devenir frisque et dispos,</l>
+                    <l>On mectoyt chopines et pos</l>
+                    <l>Sur la table, et ne servoyt-on</l>
+                    <l>En buffect par un valeton</l>
+                    <l>Comme on faict en ce temps-sy</l>
+                </sp>
+
+                <sp who="#juge">
+                    <speaker>Le Juge</speaker>
+                    <l>Et à quel propos tout cesy ?</l>
+                </sp>
+
+                <sp who="#tesmoing">
+                    <speaker>Le Tesmoing</speaker>
+                    <l>Monsieur, monsieur, sauf vostre grace,</l>
+                    <l>Il ne falloyt farder sa face</l>
+                    <l>Pour sembler belle à son amy.</l>
+                    <l>On ne parloyt mot ne demy</l>
+                    <l>De mules qui ne mengent poinct.  </l>
+                </sp>
+
+                <sp who="#juge">
+                    <speaker>Le Juge</speaker>
+                    <l>Vrayment, voecy un aultre poinct.</l>
+                    <l> Que veulx-tu dire par ce dict ?</l>
+                </sp>
+
+                <sp who="#tesmoing">
+                    <speaker>Le Tesmoing</speaker>
+                    <l>Je dis qu’on chevauche à credict</l>
+                    <l>En espargnant avoyne et foing.</l>
+                    <l>Il n’estoyt poinct sy grand besoing</l>
+                    <l>De denoster robe à vasquine</l>
+                    <l>Pour ma dame la mousequine</l>
+                    <l>Ny de monsieur l’acoustrement</l>
+                    <l>Qui chevauche en cuir seulement</l>
+                    <l>O chamberieres bien faschés</l>
+                    <l>De veoir sy bien enharnachés</l>
+                    <l>Voz metresses de belle crote. </l>
+                    <l>Page, alés querir une hote :</l>
+                    <l>Vous l’emplirés certainnement</l>
+                    <l>Des fenges qui ont plainement</l>
+                    <l>Gasté la robe à vostre maistre. </l>
+                    <l>Par mon ame on deust mener paistre</l>
+                    <l>Ses muletons, muleurs, muliers,</l>
+                    <l>Qui pour ne gaster leurs souliers</l>
+                    <l>Mectent grand peine pour sejour</l>
+                    <l>À faire la tourne-bouelle</l>
+                    <l>Au temps de la dague à rouelle</l>
+                    <l>Et des souliers à la poulaine,</l>
+                    <l>On ne faisoyt telle fredaine</l>
+                    <l>Que telles folyes mi dieulx.  </l>
+                </sp>
+
+                <sp who="#juge">
+                    <speaker>Le Juge</speaker>
+                    <l>Mais qu’esse sy ?</l>
+                </sp>
+
+                <sp who="#tesmoing">
+                    <speaker>Le Tesmoing</speaker>
+                    <l>Je suys des vieulx,</l>
+                    <l>Je parle de long temps, monssieur.</l>
+                </sp>
+
+                <sp who="#juge">
+                    <speaker>Le Juge</speaker>
+                    <l>Vous estes un plaissant rieur</l>
+                    <l>Respondés à ce qu’on demande.</l>
+                </sp>
+
+                <sp who="#tesmoing">
+                    <speaker> Le Tesmoing</speaker>
+                    <l>Monsieur, monsieur, la chosse est grande,</l>
+                    <l>
+                        <del type="rature" hand="#2">Il y fault de plus loing venir</del>
+                    </l>
+                    <l>
+                        <del type="rature" hand="#2">J’ey veu c’on faisoyt convenir</del>
+                    </l>
+                    <l>
+                        <del type="rature" hand="#2">Tout le monde en court de l’eglise</del>
+                    </l>
+                    <l>
+                        <add hand="#2">Je parle d’une bonne guise.</add>
+                    </l>
+                    <l>J’ey veu qu’on ne prenoyt chemisse,</l>
+                    <l>Fort que de deulx moys en deulx moys. </l>
+                    <l>J’ey veu la mesure de boys</l>
+                    <l>Estre pour six beaulx soublz donnee</l>
+                    <l>Qui a bien valu ceste annee</l>
+                    <l>Quarante six : c’est piteulx cas. </l>
+                    <l>J’ey veu qu’i n’estoyt advocas</l>
+                    <l>Que deulx ou troys en ceste ville.</l>
+                    <l>J’ey veu deulx cens cas, voyre mille,</l>
+                    <l>Qui sont au renq des trespassés.</l>
+                </sp>
+
+                <sp who="#juge">
+                    <speaker>Le Juge</speaker>
+                    <l>Encore ! N’esse pas assés ?</l>
+                    <l>Sus, respondés sans faulte nulle.</l>
+                </sp>
+
+                <sp who="#tesmoing">
+                    <speaker>Le Tesmoing</speaker>
+                    <l>J’ey veu qui n’estoyt c’une mulle</l>
+                    <l>Et une seulle damoyselle.</l>
+                    <l> En ceste ville, layde ou belle.</l>
+                    <l> Maintenant on en voidt un cent.</l>
+                    <l>Je ne say pas que cela sent,</l>
+                    <l>Sinon que tous nobles deviennent,</l>
+                    <l>Et sy plus d’aultres en surviennent</l>
+                    <l>À Dieu vous dy la marchandise</l>
+                    <l>J’ey veu qu’on ne parloyt de frise,</l>
+                    <l>De vasquines, de vertugales,</l>
+                    <l>Mais la maladye de Galles</l>
+                    <l>En a trouvé l’invention.</l>
+                    <l>J’ey veu qu’on disoyt un syon,</l>
+                    <l>Maintenant c’est un casaquin</l>
+                    <l>Dont est venu le damasquin</l>
+                    <l>Qu’en grave en espee ou dague. </l>
+                    <l>Pour vray, ma dame saincte brague</l>
+                    <l>En fust la premiere inventrice. </l>
+                    <l>J’ey veu qu’on ne trouvoyt nourice</l>
+                    <l>Dedens la ville de Rouen. </l>
+                    <l>Mais j’aseure par sainct Ouen</l>
+                    <l>Que pour une on en trouve douse,</l>
+                    <l>D’où vient que tout chacun se house</l>
+                    <l>Pour se pourmerner à l’eglise</l>
+                    <l>Par mon ame, quant je m’avise</l>
+                    <l>Tout est tourné à la rebours. </l>
+                    <l>Les moutons d’or n’ont plus le cours.</l>
+                    <l>On ne parle que de ducas,</l>
+                    <l>Et pour l’or à douze caras</l>
+                    <l>On en faict bien à .x. et huict. </l>
+                    <l>J’ey veu qu’on ne blesoyt de nuict</l>
+                    <l>Les pasans, comme l’on veoyt fere.</l>
+                    <l> Maintenant tout est à refaire.</l>
+                    <l>Et tourné sen desus desoublz. </l>
+                    <l>Du temps qu’on disoyt mesuroulx</l>
+                    <l>On ne parloyt poinct de catere.</l>
+                    <l> Maintenant n’y a can ne terre</l>
+                    <l>Qui ne soyt toute catereuse. </l>
+                    <l>O que la femme estoyt heureuse</l>
+                    <l>Et riche, qui, au temps passé,</l>
+                    <l>Portoyt en son cul rebrassé</l>
+                    <l>De belle sarge ou ostadine !</l>
+                    <l>O qu’elle sembloÿt godine,</l>
+                    <l>Qui avoyt en toute saison</l>
+                    <l>Robe de drap en sa maison,</l>
+                    <l>Fouree de beaulx dos de gris</l>
+                    <l>Ou de grignos ; ventre sainct-gris,</l>
+                    <l>Y m’est advis que je les voy</l>
+                </sp>
+
+                <sp who="#juge">
+                    <speaker>Le Juge</speaker>
+                    <l>Je croy qu’il est tout hors de soy.</l>
+                    <l>Mon amy,
+                        <del type="rature" hand="#2">parole</del>
+                        <add hand="#2">repons</add>
+                        à propos
+                    </l>
+                    <l>Je croy qu’avés rinché les pos,</l>
+                    <l>Je ne parle du temps jadis,</l>
+                    <l>Respondés à mes propres dis.</l>
+                    <l>Avés-vous veu le beau Colin</l>
+                    <l>Avoir faict le heurte-belin</l>
+                    <l>Avec ceste fille presente ?</l>
+                </sp>
+
+                <sp who="#tesmoing">
+                    <speaker>Le Tesmoing</speaker>
+                    <l>Vous ne voulés pas que je mente,</l>
+                    <l>Ausy ne veulx-je, mon seigneur :</l>
+                    <l>Acoustés, voecy le greigneur</l>
+                    <l>Compte que vous oÿstes onques.</l>
+                </sp>
+
+                <sp who="#juge">
+                    <speaker>  Le Juge</speaker>
+                    <l>Or sus, amy, despesches doncques,</l>
+                    <l>Je ne veuil estre icy messuy.</l>
+                </sp>
+
+                <sp who="#tesmoing">
+                    <speaker> Le Tesmoing</speaker>
+                    <l>Encor ne say-ge où j’en suy</l>
+                    <l>Atendés, monsieur, je disoys</l>
+                    <l>Que le monde est cru de .x. fois</l>
+                    <l>Plus grand qu’il n’estoyt de mon temps,</l>
+                    <l>Et pour ce bien je n’entens</l>
+                    <l>Car tout est changé comme on voyt,</l>
+                    <l>Sy on le faict comme on souloyt</l>
+                    <l>Je ne say que je vous doys dire,</l>
+                    <l>Mais sy vous dirais-ge sans rire</l>
+                    <l>Et sans mentir que sy on faict</l>
+                    <l>D’oeuvre des noces en effaict</l>
+                    <l>Comme on faisoyt au temps passé,</l>
+                    <l>Tout en est moulu et cassé</l>
+                    <l>Je le juge certainnement.  </l>
+                </sp>
+
+                <sp who="#juge">
+                    <speaker>Le Juge</speaker>
+                    <l>Tu le pen<corr>s</corr>es donc vrayment ?
+                    </l>
+                </sp>
+
+                <sp who="#tesmoing">
+                    <speaker>Le Tesmoing</speaker>
+                    <l>Ouy, monsieur, et sy le tesmoingne,</l>
+                    <l>Sy on faict ainsy la besongne,</l>
+                    <l>Comme on faisoyt quant je fus né. </l>
+                </sp>
+
+                <sp who="#juge">
+                    <speaker>Le Juge</speaker>
+                    <l>C’est honnestement tesmoingné. </l>
+                    <l>Tu les vis donc tous deulx ensemble ?</l>
+                </sp>
+
+                <sp who="#tesmoing">
+                    <speaker> Le Tesmoing</speaker>
+                    <l>Ouy monsieur, comme il me semble,</l>
+                    <l>Mais Marion estoyt desoublz</l>
+                </sp>
+
+                <sp who="#juge">
+                    <speaker>Le Juge</speaker>
+                    <l>Quans escus, quans testons ou soublz</l>
+                    <l>Luy baila-il ?</l>
+                </sp>
+
+                <sp who="#tesmoing">
+                    <speaker>Le Tesmoing</speaker>
+                    <l>Je n’en say rien,</l>
+                    <l>
+                        <del type="rature" hand="#2">Mais</del>
+                        <add hand="#2">Toutefois</add>
+                        je vous diray bien
+                    </l>
+                    <l>Et jure sur ma conscïence</l>
+                    <l> Qu’el prenoyt tout en pacience</l>
+                    <l>Et sans crier fort haultement :</l>
+                    <l>« Faictes, dict el, tout bellement</l>
+                    <l>Colin, vous estes bel et sage.</l>
+                    <l>Mais c’est à nom de mariage,</l>
+                    <l>Entendés-vous, mon doulx amy ? »</l>
+                    <l>Colin ne faisoyt l’endormy</l>
+                    <l>Mais ce mot un peu luy despleust.</l>
+                </sp>
+
+                <sp who="#juge">
+                    <speaker>Le Juge</speaker>
+                    <l>Toutefoys en fin le voulust,</l>
+                    <l>Feist il pas ?</l>
+                </sp>
+
+                <sp who="#tesmoing">
+                    <speaker>  Le Tesmoing</speaker>
+                    <l>Ouy,
+                        <del type="rature" hand="#2">monsieur</del>
+                        <add hand="#2">ouy</add>
+                        sans faulte,
+                    </l>
+                    <l>Car elle avoyt la jambe haulte,</l>
+                    <l>L’une sur l’aultre fermement,</l>
+                    <l>Qui n’estoyt grand esbatement</l>
+                    <l>Au pauvre Colin qui mouroyt.</l>
+                    <l>Mais elle dict qu’il ne seroyt</l>
+                    <l>Rien qui fust sans qu’il fist promesse</l>
+                    <l>De l’espousser,
+                        <del type="rature" hand="#2">à la grand</del>
+                        <add hand="#2">et sans</add>
+                        finesse,
+                    </l>
+                    <l>En l’eglise de leur vilage. </l>
+                    <l>Colin disoyt : « huy, huy, formage »,</l>
+                    <l>Contrefaisant la basse voix.</l>
+                    <l>Un formage, par saincte croix !</l>
+                    <l>Pour un fourmage n’en feray</l>
+                    <l>Un coup, tant que viue seray,</l>
+                    <l>Dict-elle. Se <del type="rature" hand="#2">que</del> voyant Colin,
+                    </l>
+                    <l>Se laisa mener en belin</l>
+                    <l>Et bender tout à son bel aise</l>
+                    <l>Y vous la tatonne, y la baise,</l>
+                    <l>Y vous la couche sur le dos,</l>
+                    <l>Et aprés cinq ou sis bons mos</l>
+                    <l>Feist entrer Genfray au bisaq.</l>
+                    <l>Le chalic faisoyt tic et taq</l>
+                    <l>Cric, crac, cric, croq, c’estoyt merveille.  </l>
+                </sp>
+
+                <sp who="#juge">
+                    <speaker>Le Juge</speaker>
+                    <l>Par où l’oyes-tu ?</l>
+                </sp>
+
+                <sp who="#tesmoing">
+                    <speaker>Le Tesmoing</speaker>
+                    <l>Par l’oreille,</l>
+                    <l>Car on n’ot pas du bouct du nes !</l>
+                    <l>J’avoys rompu le boult d’un ays</l>
+                    <l>D’entre leur maison et la mienne,</l>
+                    <l>Bien que chascuns m’apartienne</l>
+                    <l>Et par là voyes clerement</l>
+                    <l>Tout leur joly contentement</l>
+                    <l>Que je vous ay cy racompté.</l>
+                </sp>
+
+                <sp who="#juge">
+                    <speaker>Le Juge</speaker>
+                    <l>Vraiment, tu m’en as bien compté</l>
+                    <l>Faictes aprocher les partyes.</l>
+                </sp>
+
+                <sp who="#mere">
+                    <speaker>La Mere</speaker>
+                    <l>Et bien, serons nous departyes ?</l>
+                    <l> Avons-nous bien prouvé le cas ?</l>
+                </sp>
+
+                <sp who="#juge">
+                    <speaker>  Le Juge</speaker>
+                    <l>Poinct ne <del type="rature" hand="#2">vous</del> fault avoir d’avocas,
+                    </l>
+                    <l>Car la matiere est totes claire.</l>
+                </sp>
+
+                <sp who="#fille">
+                    <speaker>La Fille</speaker>
+                    <l>Qu’en esse ?</l>
+                </sp>
+
+                <sp who="#juge">
+                    <speaker>Le Juge</speaker>
+                    <l>Vous voulés vous taire ?</l>
+                    <l>Nous disons Colin avoir tort</l>
+                    <l>Et de se doibt estre bien fort</l>
+                    <l>Blasmé, et en payer l’amende,</l>
+                    <l>Oultre combien qu’il se deffende,</l>
+                    <l>Mais à tort d’avoir rien promys.</l>
+                    <l>À Marion nous l’avons mys</l>
+                    <l>
+                        <add hand="#2">Et metons, pour bien ordonner,</add>
+                    </l>
+                    <l>À cent soublz, sans plus sermonner</l>
+                    <l>D’amende et le condampne aussy</l>
+                    <l>De demander grace et mercy</l>
+                    <l>À Marion à deulx genoulx,</l>
+                    <l>Nues jambes, entendés-vous ? Et <del type="rature" hand="#2">sy</del> payera à la justice
+                    </l>
+                    <l>Les frais, sans que sortir y puisse</l>
+                    <l>De prisson, premier que payer.</l>
+                </sp>
+
+                <sp who="#mere">
+                    <speaker>La Mere</speaker>
+                    <l>Or sus, as-tu bel abayer ?</l>
+                </sp>
+
+                <sp who="#juge">
+                    <speaker>Le Juge</speaker>
+                    <l>Tout beau et sy la condamne</l>
+                    <l>D’estre
+                        <del type="rature" hand="#2">en son eglise amené</del>
+                        <add hand="#2">en ce jour d’huy mené</add>
+                    </l>
+                    <l>Avecq<add hand="#2">ues</add> un tabour et loure
+                    </l>
+                    <l>Et là sans que plus loing on coure,</l>
+                    <l>Il espoussera Marion</l>
+                    <l>En grande consolation.</l>
+                    <l>Voeylà ma sentence donnee</l>
+                </sp>
+
+                <sp who="#fille">
+                    <speaker>La Fille</speaker>
+                    <l>Dieu vous envoye bonne journee,</l>
+                    <l>Tant vous estes homme de bien.</l>
+                </sp>
+
+                <sp who="#colin">
+                    <speaker>Colin</speaker>
+                    <l>Un gros vilain estron de chien</l>
+                    <l>Luy puisse estouper les babines !</l>
+                    <l>Voylà des frauldes feminines !</l>
+                    <l>J’en ay.</l>
+                </sp>
+
+                <sp who="#tesmoing">
+                    <speaker>Le Tesmoing</speaker>
+                    <l>Yl convient prendre en gray.</l>
+                </sp>
+
+                <sp who="#colin">
+                    <speaker>Colin</speaker>
+                    <l>
+                        <del type="rature" hand="#2">Que l’on te puisse pendre</del>
+                        <add hand="#2">Qu’au gibet sois-tu estranglé !</add>
+                    </l>
+                    <l>C’est par toy que je suys ainsy</l>
+                </sp>
+
+                <sp who="#tesmoing">
+                    <speaker>Le Tesmoing</speaker>
+                    <l>Pourquoy luy faisoys tu ausy</l>
+                    <l>Messieurs, Colin qui veult promectre</l>
+                    <l>Soyt par foy, par tesmoingtz ou lestre</l>
+                    <l>Y doibt sa parolle tenir</l>
+                    <l>Car on doibt quelque jour venir</l>
+                    <l>Devant le tres souverain juge</l>
+                    <l>Qui <corr>les</corr> vis et trespassés juge
+                    </l>
+                    <l>Et qui menteur trouvé sera</l>
+                    <l>Par ses meffaictz le jugera</l>
+                    <l>Il n’est donc qu’estre veritable</l>
+                    <l>Et en foy tres constant et stable</l>
+                    <l>Nous ne pensons avoir dict chosse </l>
+                    <l>Où aulcuns puissent faire glosse</l>
+                    <l>Sy on s’en sent pique au poinct,</l>
+                    <l>Messieurs, on ne l’
+                        <choice>
+                            <sic>entendons</sic>
+                            <corr>entendra</corr>
+                        </choice>
+                        poinct
+                    </l>
+                    <l>Mais prions le Dieu supernel</l>
+                    <l>Vous donner repos eternel</l>
+                    <l>En prenant congé de ce lieu</l>
+                    <l>Une chanson pour dire adieu.</l>
+                </sp>
+
+                <p>Finis –– .iii.cc. .iiii.xx. lignes</p>
+            </div>
+
+        </body>
+    </text>
+</TEI>

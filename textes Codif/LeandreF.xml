@@ -1,0 +1,623 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_drama.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_drama.rng" type="application/xml"
+        schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Title</title>
+            </titleStmt>
+            <editionStmt>
+                <edition>Université Sorbonne Nouvelle</edition>
+                <respStmt>
+                    <name></name>
+                    <resp>transcription</resp>
+                </respStmt>
+                <respStmt>
+                    <name>Emma Belkacemi-Molinier</name>
+                    <resp>édition XML-TEI</resp>
+                </respStmt>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>Université Sorbonne Nouvelle</publisher>
+                <date when="2021"/>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Pièce éditée d'après "Théâtre des boulevards, ou recueil de parades. Tome premier. A Mahon, de
+                    l'imprimerie de Gilles Langlois, à l'Enseigne de l'Etrille. 1756"
+                </p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <front>
+            <div>
+                <p>LEANDRE, FIACRE. PARADE.</p>
+            </div>
+            <castList>
+                <head>ACTEURS.</head>
+                <castItem xml:id="leandre">LEANDRE,
+                    <roleDesc>Amant d’Isabelle.</roleDesc>
+                </castItem>
+                <castItem xml:id="isabelle">ISABELLE,
+                    <roleDesc>Fille de Villebrequin.</roleDesc>
+                </castItem>
+                <castItem xml:id="cassandre">CASSANDRE,
+                    <roleDesc>Amoureux d’Isabelle.</roleDesc>
+                </castItem>
+                <castItem xml:id="villebrequin">VILLEBREQUIN,
+                    <roleDesc>Pere d’Isabelle.</roleDesc>
+                </castItem>
+                <castItem xml:id="gilles">GILLES,
+                    <roleDesc>Valet de Cassandre.</roleDesc>
+                </castItem>
+            </castList>
+        </front>
+        <body>
+            <div type="scene" n="1">
+                <head>SCENE PREMIERE.</head>
+                <stage>LEANDRE, ISABELLE.</stage>
+                <sp who="#leandre">
+                    <speaker>LEANDRE</speaker>
+                    <p>Quoi ! charmante z’Isabelle, j’apprens que vous allez t’épouser Monsieur Cassandre. Où est la foi
+                        que vous m’avez promise ? Où est l’amour, où est le bien que vous me portiez ?
+                    </p>
+                </sp>
+                <sp who="#isabelle">
+                    <speaker>ISABELLE</speaker>
+                    <p>Taisez-vous donc, mon cher Liandre ; si vous ne voulez t’empêcher mon établissement ; car enfin
+                        je vous aime plus que lui, mais il a plus de moyen que vous.
+                    </p>
+                </sp>
+                <sp who="#leandre">
+                    <speaker>LEANDRE</speaker>
+                    <p>Mamselle, tout cela z’est bel et bon, mais enfin il vaut mieux faire plaisir d’un pied à une
+                        honête personne, que d’un doigt à un sot et à un vieux comme il est.
+                    </p>
+                </sp>
+                <sp who="#isabelle">
+                    <speaker>ISABELLE</speaker>
+                    <p>Mais vraiment, mon cher Liandre, je sens bien ce qu’en vaut l’aune. Aussi ce n’est point la
+                        badinerie qui me fait prendre le parti, c’est l’envie d’avoir de quoi, je compte bien toujours
+                        vous voir.
+                    </p>
+                </sp>
+                <sp who="#leandre">
+                    <speaker>LEANDRE</speaker>
+                    <p>Non, Mamselle, je ne veux point que vous soyez Madame Cassandre. Je veux moi même
+                        faire votre fortune, et il ne sera pas dit que l’on m’aura passé le bec par la
+                        plume.
+                    </p>
+                </sp>
+                <sp who="#isabelle">
+                    <speaker>ISABELLE</speaker>
+                    <p>Mais, mon Pere, charmant Liandre, que dira-t-il ?</p>
+                </sp>
+                <sp who="#leandre">
+                    <speaker>LEANDRE</speaker>
+                    <p>J’aurai toujours pour sa personne beaucoup de consideration, mais je lui donnerai vingt coups de
+                        pieds dans le ventre, s’il ne fait pas ce que je veux.
+                    </p>
+                </sp>
+                <sp who="#isabelle">
+                    <speaker>ISABELLE</speaker>
+                    <p>Vous êtes assurément bien le maître de faire ce qu’il vous plaira, si vous croyez que ce soit
+                        pour le mieux.
+                    </p>
+                </sp>
+                <sp who="#leandre">
+                    <speaker>LEANDRE</speaker>
+                    <p>Je sçais que Monsieur Cassandre va venir pour vous épouser, faites comme si de rien n’étoit, et
+                        laissez-moi faire.
+                    </p>
+                </sp>
+                <sp who="#isabelle">
+                    <speaker>ISABELLE</speaker>
+                    <p>Oui, mon cher z’Amant, vous ferez toujours comme vous voudrez et tant qu’il vous plaira.</p>
+                </sp>
+            </div>
+
+            <div type="scene" n="2">
+                <head>SCENE II.</head>
+                <stage>CASSANDRE, GILLES.</stage>
+                <sp who="#cassandre">
+                    <speaker>CASSANDRE</speaker>
+                    <p>Enfin je viens ici pour épouser.</p>
+                </sp>
+                <sp who="#gilles">
+                    <speaker>GILLES</speaker>
+                    <p>Oui, mais non pas pour épousseter.</p>
+                </sp>
+                <sp who="#cassandre">
+                    <speaker>CASSANDRE</speaker>
+                    <p>Veux-tu bien m’écouter ? Je veux faire une fin.</p>
+                </sp>
+                <sp who="#gilles">
+                    <speaker>GILLES</speaker>
+                    <p>Pardienne, Monsieur, elle est toute faitte, et vous voulez stapendant épouser Mamselle
+                        z’Isabelle.
+                    </p>
+                </sp>
+                <sp who="#cassandre">
+                    <speaker>CASSANDRE</speaker>
+                    <p>Oui bien assurément.</p>
+                </sp>
+                <sp who="#gilles">
+                    <speaker>GILLES</speaker>
+                    <p>Je ne parle pas pour elle, mais les filles de ce pays sont quelquefois si sçavantes, qu’elles
+                        n’apprennent rien de nouveau la premiere nuit de leurs nôces.
+                    </p>
+                </sp>
+                <sp who="#cassandre">
+                    <speaker>CASSANDRE</speaker>
+                    <p>Oh nous sçavons cela, mais il y a fille et fille.</p>
+                </sp>
+                <sp who="#gilles">
+                    <speaker>GILLES</speaker>
+                    <p>Oui, Monsieur, il y en a de la grande et petite espéce : mais, Monsieur, voulez-vous sçavoir ce
+                        qui vient par-tout ?
+                    </p>
+                </sp>
+                <sp who="#cassandre">
+                    <speaker>CASSANDRE</speaker>
+                    <p>Oui dea, je suis toujours bien aise de m’instruire.</p>
+                </sp>
+                <sp who="#gilles">
+                    <speaker>GILLES</speaker>
+                    <p>Monsieur, ce sont des cornes ; car il n’y a point de terre qui ne produise des cocus.</p>
+                </sp>
+                <sp who="#cassandre">
+                    <speaker>CASSANDRE</speaker>
+                    <p>C’est vraiment bien le tems de me tenir ces propos.</p>
+                </sp>
+                <sp who="#gilles">
+                    <speaker>GILLES</speaker>
+                    <p>Si vous voulez j’imposerai silence à mes paroles, mais aussi voulez-vous que j’attende que vous
+                        ayez voyagé en Cornouailles, et que l’on vous appelle Monsieur Corneille.
+                    </p>
+                </sp>
+                <sp who="#cassandre">
+                    <speaker>CASSANDRE</speaker>
+                    <p>Ce malheur ne peut m’arriver, z’Isabelle est belle, elle est sage, elle est fille de mon bon ami
+                        Villebrequin.
+                    </p>
+                </sp>
+                <sp who="#gilles">
+                    <speaker>GILLES</speaker>
+                    <p>Oui elle est belle, mais un homme qui a une belle femme, tout le monde est son cousin.</p>
+                </sp>
+                <sp who="#cassandre">
+                    <speaker>CASSANDRE</speaker>
+                    <p>Hé bien tant mieux, on me fera plus d’honneur.</p>
+                </sp>
+                <sp who="#gilles">
+                    <speaker>GILLES</speaker>
+                    <p>Mais pardienne, ne sçavez-vous donc pas qu’une bonne chevre, une bonne mule, et une bonne femme,
+                        sont trois mauvaises bêtes.
+                    </p>
+                </sp>
+                <sp who="#cassandre">
+                    <speaker>CASSANDRE</speaker>
+                    <p>Enfin, je te demande conseil, mais ce n’est pas pour me contredire.</p>
+                </sp>
+                <sp who="#gilles">
+                    <speaker>GILLES</speaker>
+                    <p>Monsieur, puisque vous le prenez par-là, je vous baise bien les mains ; baisez-moi les fesses.
+                    </p>
+                </sp>
+                <sp who="#cassandre">
+                    <speaker>CASSANDRE</speaker>
+                    <p>Tout cela est bon ; va t’en dire à mon compere Villebrequin que je l’attens ici pour lui faire
+                        visite comme l’honnêteté le desire.
+                    </p>
+                </sp>
+                <sp who="#gilles">
+                    <speaker>GILLES</speaker>
+                    <p>J’y vesse, mais pardienne, par les mamelles de mon cul ; vous faites là une grande folie. <stage>
+                        (appercevant Villebrequin.)
+                    </stage> Taye, taye, taye, Monsieur Villebrequin.
+                    </p>
+                </sp>
+            </div>
+
+            <div type="scene" n="3">
+                <head>SCENE III.</head>
+                <stage>VILLEBREQUIN, CASSANDRE, GILLES.</stage>
+                <sp who="#gilles">
+                    <speaker>GILLES</speaker>
+                    <stage>à Villebrequin.</stage>
+                    <p>Voilà Monsieur Cassandre qui vient pour vous trousser son compliment, et pour trousser Mamselle
+                        z’Isabelle.
+                    </p>
+                </sp>
+                <sp who="#villebrequin">
+                    <speaker>VILLEBREQUIN</speaker>
+                    <p>Ah ! bon jour mon Compere et mon bon ami.</p>
+                </sp>
+                <sp who="#cassandre">
+                    <speaker>CASSANDRE</speaker>
+                    <p>Vous me voyez frais, gaillard, et dispôt, et je viens pour terminer la petite affaire dont nous
+                        avons parlé.
+                    </p>
+                </sp>
+                <sp who="#villebrequin">
+                    <speaker>VILLEBREQUIN</speaker>
+                    <p>Et quand la voulez-vous faire ?</p>
+                </sp>
+                <sp who="#cassandre">
+                    <speaker>CASSANDRE</speaker>
+                    <p>Tout à l’heure.</p>
+                </sp>
+                <sp who="#villebrequin">
+                    <speaker>VILLEBREQUIN</speaker>
+                    <p>J’y consens. Isabelle, hola ; oh, Isabelle.</p>
+                </sp>
+            </div>
+
+            <div type="scene" n="4">
+                <head>SCENE IV.</head>
+                <stage>VILLEBREQUIN, ISABELLE, CASSANDRE, GILLES.</stage>
+                <sp who="#isabelle">
+                    <speaker>ISABELLE</speaker>
+                    <p>Plaît-il mon Pere ? Qu’est-ce que vos commandemens m’ordonnent ?</p>
+                </sp>
+                <sp who="#cassandre">
+                    <speaker>CASSANDRE</speaker>
+                    <p>Qu’elle est bien élevée ! Quelle modestie !</p>
+                </sp>
+                <sp who="#villebrequin">
+                    <speaker>VILLEBREQUIN</speaker>
+                    <p>Saluez mon bon ami Monsieur Cassandre, il vient pour vous prendre à femme.</p>
+                </sp>
+                <sp who="#isabelle">
+                    <speaker>ISABELLE</speaker>
+                    <p>Ah ! mon cher Papa, je ne pourrai jamais.</p>
+                </sp>
+                <sp who="#gilles">
+                    <speaker>GILLES</speaker>
+                    <p>Pardienne, c’est lui bien plutôt qui ne le pourra pas.</p>
+                </sp>
+                <sp who="#cassandre">
+                    <speaker>CASSANDRE</speaker>
+                    <p>Madmoiselle, vous voyez un homme qui voudroit avoir tout l’or d’un pays pour le soumettre à vos
+                        pieds, et pour mériter votre consentement.
+                    </p>
+                </sp>
+                <sp who="#isabelle">
+                    <speaker>ISABELLE</speaker>
+                    <p>Monsieur, tout ce que mon cher Papa ordonne, je le fais toujours.</p>
+                </sp>
+                <sp who="#cassandre">
+                    <speaker>CASSANDRE</speaker>
+                    <p>Vous me charmez ; <stage>(à Villebrequin)</stage> allons donc mon beau-pere.
+                    </p>
+                </sp>
+                <sp who="#gilles">
+                    <speaker>GILLES</speaker>
+                    <p>Monsieur Villebrequin n’est donc plus votre Compere, vous verrez que c’est Mamselle.</p>
+                </sp>
+                <sp who="#cassandre">
+                    <speaker>CASSANDRE</speaker>
+                    <p>Oui, je t’assure, qu’elle m’est tout ce qu’on peut être pour moi.</p>
+                </sp>
+                <sp who="#villebrequin">
+                    <speaker>VILLEBREQUIN</speaker>
+                    <p>Tenez, ma fille, voilà mon bourson, allez acheter tout ce qu’il vous faudra, prenez un fiacre
+                        pour avoir plutôt fait, <stage>(à Cassandre)</stage> vous verrez tout ce qu’elle achetera.
+                    </p>
+                </sp>
+                <sp who="#cassandre">
+                    <speaker>CASSANDRE</speaker>
+                    <p>Si vous voulez prendre ma bourse aussi ?</p>
+                </sp>
+                <sp who="#villebrequin">
+                    <speaker>VILLEBREQUIN</speaker>
+                    <p>Non, laissez, vous vous mocquez de moi. Elle a suffisamment de quoi, je lui donne plus de quinze
+                        francs. Vous verrez, vous verrez, vous dis-je, laissez la faire.
+                    </p>
+                </sp>
+                <sp who="#isabelle">
+                    <speaker>ISABELLE</speaker>
+                    <p>Oui, mon cher Papa, je m’y en vais, ne vous impatientez pas.</p>
+                </sp>
+            </div>
+
+            <div type="scene" n="5">
+                <head>SCENE V.</head>
+                <stage>VILLEBREQUIN, CASSANDRE, GILLES.</stage>
+                <sp who="#cassandre">
+                    <speaker>CASSANDRE</speaker>
+                    <p>En vérité votre Isabelle est une charmante personne.</p>
+                </sp>
+                <sp who="#villebrequin">
+                    <speaker>VILLEBREQUIN</speaker>
+                    <p>Il est vrai, c’est une créature qui est fort bonne ; toutes nos voisines la montrent pour
+                        exemple.
+                    </p>
+                </sp>
+                <sp who="#gilles">
+                    <speaker>GILLES</speaker>
+                    <p>Et tous nos voisins la montent.</p>
+                </sp>
+                <sp who="#villebrequin">
+                    <speaker>VILLEBREQUIN</speaker>
+                    <p>Jamais de bruit avec elle, c’est la complaisance même.</p>
+                </sp>
+                <sp who="#gilles">
+                    <speaker>GILLES</speaker>
+                    <p>Oui, quand on fait ce qu’elle veut.</p>
+                </sp>
+                <sp who="#cassandre">
+                    <speaker>CASSANDRE</speaker>
+                    <p>Que je vais vivre une vie agréable et joyeuse !</p>
+                </sp>
+                <sp who="#gilles">
+                    <speaker>GILLES</speaker>
+                    <p>Et cornue.</p>
+                </sp>
+                <sp who="#cassandre">
+                    <speaker>CASSANDRE</speaker>
+                    <p>Te tairas-tu z’insolent. Par mon ame, si j’entendois ce que tu dis, je crois que je te
+                        battrois.
+                    </p>
+                </sp>
+                <sp who="#villebrequin">
+                    <speaker>VILLEBREQUIN</speaker>
+                    <stage>à Gilles.</stage>
+                    <p>Va t’en, mon ami, voir quand le fiacre sera de retour, et viens nous avertir.</p>
+                </sp>
+                <sp who="#cassandre">
+                    <speaker>CASSANDRE</speaker>
+                    <p>Va je te prie, car je brûle d’impatience de la revoir.</p>
+                </sp>
+                <sp who="#gilles">
+                    <speaker>GILLES,</speaker>
+                    <stage>en s’en allant et faisant les cornes.</stage>
+                    <p>Je vous prens toujours à témoin que ce n’est pas ma faute, si vous en faites la folie.</p>
+                </sp>
+                <sp who="#cassandre">
+                    <speaker>CASSANDRE</speaker>
+                    <p>Très-assurement je te battrai, si tu ne m’obéis pas, et si tu parles encore.</p>
+                </sp>
+            </div>
+
+            <div type="scene" n="6">
+                <head>SCENE VI.</head>
+                <stage>CASSANDRE, VILLEBREQUIN.</stage>
+                <sp who="#cassandre">
+                    <speaker>CASSANDRE</speaker>
+                    <p>Je vous demande excuse pour ce mien serviteur, il a de l’esprit, mais il ne sçait pas toujours ce
+                        qu’il dit.
+                    </p>
+                </sp>
+                <sp who="#villebrequin">
+                    <speaker>VILLEBREQUIN</speaker>
+                    <p>Oh ! vous vous mocquez, ces sortes de gens ne peuvent z’avoir autant de bien disance, ni tant
+                        d’esprit que nous en avons... Enfin vous êtes donc content de ma charmante z’Isabelle.
+                    </p>
+                </sp>
+                <sp who="#cassandre">
+                    <speaker>CASSANDRE</speaker>
+                    <p>On ne peut z’avoir plus de joie t’au cœur que vous m’en donnez, mon cher beau-pere.</p>
+                </sp>
+            </div>
+
+            <div type="scene" n="7">
+                <head>SCENE VII.</head>
+                <stage>CASSANDRE, VILLEBREQUIN, GILLES.</stage>
+                <sp who="#gilles">
+                    <speaker>GILLES</speaker>
+                    <p>Monsieur, Monsieur.</p>
+                </sp>
+                <sp who="#cassandre">
+                    <speaker>CASSANDRE</speaker>
+                    <p>He bien ?</p>
+                </sp>
+                <sp who="#gilles">
+                    <speaker>GILLES</speaker>
+                    <p>Le fiacre est à la porte.</p>
+                </sp>
+                <sp who="#villebrequin">
+                    <speaker>VILLEBREQUIN</speaker>
+                    <p>Allons donc au-devant de ma fille.</p>
+                </sp>
+                <sp who="#gilles">
+                    <speaker>GILLES</speaker>
+                    <p>Monsieur, je ne crois pas que cela vous soit nécessaire, non plus qu’à elle.</p>
+                </sp>
+                <sp who="#villebrequin">
+                    <speaker>VILLEBREQUIN</speaker>
+                    <p>Eh pourquoi donc ?</p>
+                </sp>
+                <sp who="#gilles">
+                    <speaker>GILLES</speaker>
+                    <p>Ecoutez-moi bien.</p>
+                </sp>
+                <sp who="#cassandre">
+                    <speaker>CASSANDRE</speaker>
+                    <p>Que nous va-t-il dire ?</p>
+                </sp>
+                <sp who="#gilles">
+                    <speaker>GILLES</speaker>
+                    <p>Le carrosse est bien à la porte comme je viens de vous le dire ; les glaces de bois sont bien
+                        fermées, le fiacre va bien, mais les chevaux ne marchent point.
+                    </p>
+                </sp>
+                <sp who="#villebrequin">
+                    <speaker>VILLEBREQUIN</speaker>
+                    <p>Comment ! Qu’est-ce que cela veut dire ?</p>
+                </sp>
+                <sp who="#cassandre">
+                    <speaker>CASSANDRE</speaker>
+                    <p>Cela me paroit incompréhensible.</p>
+                </sp>
+                <sp who="#gilles">
+                    <speaker>GILLES</speaker>
+                    <p>Oh pardienne, je le comprens bien moi.</p>
+                </sp>
+                <sp who="#villebrequin">
+                    <speaker>VILLEBREQUIN</speaker>
+                    <p>Expliques-toi donc.</p>
+                </sp>
+                <sp who="#cassandre">
+                    <speaker>CASSANDRE</speaker>
+                    <p>Parle donc promptement.</p>
+                </sp>
+                <sp who="#gilles">
+                    <speaker>GILLES</speaker>
+                    <p>Par le masque de mon derriere, je crois qu’ils faisoient le manége dans le carosse.</p>
+                </sp>
+                <sp who="#cassandre">
+                    <speaker>CASSANDRE</speaker>
+                    <p>Comment ?</p>
+                </sp>
+                <sp who="#gilles">
+                    <speaker>GILLES</speaker>
+                    <p>Pardienne oui. Le manége se fait là sans éperons, et les écuiers n’ont besoin que d’une baguette
+                        de six ou sept pouces de long.
+                    </p>
+                </sp>
+                <sp who="#villebrequin">
+                    <speaker>VILLEBREQUIN</speaker>
+                    <p>Je commence à me douter de ce qu’il veut dire, mais je ne puis le croire. Je m’en vais voir
+                        qu’est-ce que c’est. Attendez-moi ici.
+                    </p>
+                </sp>
+            </div>
+
+            <div type="scene" n="8">
+                <head>SCENE VIII.</head>
+                <sp who="#cassandre">
+                    <speaker>CASSANDRE</speaker>
+                    <stage>seul.</stage>
+                    <p>Tout ceci commence à me mettre z’un tant soit peu en cervelle à me donner du souci.
+                        Gilles auroit-il raison ? Mais non, une personne t’aussi-bien élevée, aussi
+                        modeste comme Mamselle z’Isabelle, et la fille du Compere Villebrequin... Oh non,
+                        cela n’est pas possible.
+                    </p>
+                </sp>
+            </div>
+
+            <div type="scene" n="9">
+                <head>SCENE IX.</head>
+                <stage>VILLEBREQUIN, CASSANDRE, ISABELLE, GILLES, LEANDRE en Fiacre.</stage>
+                <sp who="#villebrequin">
+                    <speaker>VILLEBREQUIN</speaker>
+                    <p>La voici que je vous ramene.</p>
+                </sp>
+                <sp who="#gilles">
+                    <speaker>GILLES</speaker>
+                    <p>Pardienne, il les a fait sortir tous deux du carrosse.</p>
+                </sp>
+                <sp who="#cassandre">
+                    <speaker>CASSANDRE</speaker>
+                    <p>Qui ?</p>
+                </sp>
+                <sp who="#gilles">
+                    <speaker>GILLES</speaker>
+                    <p>Pardienne, le Fiacre et vot’Maîtresse.</p>
+                </sp>
+                <sp who="#isabelle">
+                    <speaker>ISABELLE</speaker>
+                    <p>Je causois avec lui, je faisois mon marché.</p>
+                </sp>
+                <sp who="#villebrequin">
+                    <speaker>VILLEBREQUIN</speaker>
+                    <p>Cela est vrai, ils étoient tous deux dans le carrosse. <stage>(Au Fiacre)</stage> Mais mon ami
+                        que voulez-vous de plus ? Est-ce que vous n’êtes pas content ?
+                    </p>
+                </sp>
+                <sp who="#leandre">
+                    <speaker>LEANDRE</speaker>
+                    <stage>en Fiacre.</stage>
+                    <p>Non mordi, je ne le suis pas, j’en veux encore, je veux avoir mon reste. <stage>(Il fait claquer
+                        son fouet. Lazi de peur de Gilles et des autres.)
+                    </stage> Et le premier qui branche ici, je lui casse mon fouet sur le corps.
+                    </p>
+                </sp>
+                <sp who="#gilles">
+                    <speaker>GILLES</speaker>
+                    <p>Sainte merde !</p>
+                </sp>
+                <sp who="#cassandre">
+                    <speaker>CASSANDRE</speaker>
+                    <p>Jerusalem.</p>
+                </sp>
+                <sp who="#villebrequin">
+                    <speaker>VILLEBREQUIN</speaker>
+                    <p>Ma fille donne-lui tout ce qu’il demandera, et qu’il nous laisse en repos.</p>
+                </sp>
+                <sp who="#isabelle">
+                    <speaker>ISABELLE</speaker>
+                    <p>Mon cher papa, je lui en ai donné tant qu’il a voulu ; ce n’est pas ma faute, je vous en
+                        assure s’il en veut encore.
+                    </p>
+                </sp>
+                <sp who="#leandre">
+                    <speaker>LEANDRE</speaker>
+                    <p>Non, Monsieur, je n’en ai point z’assez. Je ne suis point tel que je parois figuré à vos yeux.
+                        J’ai emprunté le carrosse d’un de mes amis, pour témoigner à la charmante z’Isabelle combien
+                        j’ai de passion pour elle. Je suis Monsieur Leandre.
+                    </p>
+                </sp>
+                <sp who="#villebrequin">
+                    <speaker>VILLEBREQUIN</speaker>
+                    <p>Monsieur, vous êtes bien le maître.</p>
+                </sp>
+                <sp who="#cassandre">
+                    <speaker>CASSANDRE</speaker>
+                    <p>Monsieur, je vous laisse tout mon droit.</p>
+                </sp>
+                <sp who="#gilles">
+                    <speaker>GILLES</speaker>
+                    <p>Pardienne, Monsieur, vous ne laissez pas grand chose.</p>
+                </sp>
+                <sp who="#leandre">
+                    <speaker>LEANDRE</speaker>
+                    <p>Allons profiter d’un déguisement, qui m’a fait vous obtenir de Messieurs vos parens.</p>
+                </sp>
+                <sp who="#villebrequin">
+                    <speaker>VILLEBREQUIN</speaker>
+                    <p>Allons faire la nôce. Voulez-vous venir avec nous, mon Compere ?</p>
+                </sp>
+                <sp who="#cassandre">
+                    <speaker>CASSANDRE</speaker>
+                    <p>Pour le présent, je vous suis bien obligé.</p>
+                </sp>
+            </div>
+
+            <div type="scene" n="10">
+                <head>SCENE DERNIERE.</head>
+                <stage>CASSANDRE, GILLES.</stage>
+                <sp who="#gilles">
+                    <speaker>GILLES</speaker>
+                    <p>Pardienne, Monsieur, j’avois bien raison, ce n’étoit pas ma faute.</p>
+                </sp>
+                <sp who="#cassandre">
+                    <speaker>CASSANDRE</speaker>
+                    <p>Tais-toi, tu me sens le vieux battu.</p>
+                </sp>
+                <sp who="#gilles">
+                    <speaker>GILLES</speaker>
+                    <p>Et vous le vieux cocu.</p>
+                </sp>
+                <sp who="#cassandre">
+                    <speaker>CASSANDRE</speaker>
+                    <p>Oh pour le coup, si je n’avois peur de casser mon bâton...</p>
+                </sp>
+                <sp who="#gilles">
+                    <speaker>GILLES</speaker>
+                    <p>Donnez, donnez, je ne crains que les coups de votre tête, car elle est trop bien armée.</p>
+                </sp>
+                <sp who="#cassandre">
+                    <speaker>CASSANDRE</speaker>
+                    <stage>voulant battre Gilles.</stage>
+                    <p>Voilà pour toi.</p>
+                </sp>
+                <stage>(Gilles s’enfuit, et Cassandre court après.)</stage>
+                <p>FIN.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

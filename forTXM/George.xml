@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title>George le Veau</title>
+			</titleStmt>
+			<editionStmt>
+			</editionStmt>
+			<publicationStmt>
+				<publisher>N/A</publisher>
+				<date>N/A</date>
+			</publicationStmt>
+			<sourceDesc>
+				<p>Farce nouvelle tres bonne et fort joyeuse de George le Veau, à quatre personnaiges, c'est assavoir : George le Veau, sa Femme, le Curé, et son Clerc, imprimé à Lyon chez Barnabé Chaussard (d'après "Le recueil du British Museum, fac-similé des soixante-quatre pièces de l'original", préparé par Halina Lewicka, Genève, Slatkine reprints, 1970).</p>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+	<text>
+		<body>
+		</body>
+	</text>
+</TEI>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title>Minute du procès de Jeanne d'Arc</title>
+			</titleStmt>
+			<editionStmt>
+			</editionStmt>
+			<publicationStmt>
+				<publisher>à voir</publisher>
+				<date>N/A</date>
+			</publicationStmt>
+			<sourceDesc>
+				<p>Édité d'après le manuscrit Orléans 518</p>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+	<text>
+		<body>
+		</body>
+	</text>
+</TEI>

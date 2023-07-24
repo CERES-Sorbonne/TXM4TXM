@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title>LE MEDECIN MALGRE' LUY</title>
+			</titleStmt>
+			<editionStmt>
+				<respStmt>
+					<resp>édition XML-TEI</resp>
+					<name>Zornitsa Pavlova</name>
+				</respStmt>
+				<respStmt>
+					<resp>relecture</resp>
+					<name>Gabriella Parussa</name>
+				</respStmt>
+				<respStmt>
+					<resp>correction XML-TEI</resp>
+					<name>Chiara Mainardi</name>
+				</respStmt>
+			</editionStmt>
+			<publicationStmt>
+				<publisher>Université Sorbonne Nouvelle</publisher>
+				<date>2020</date>
+			</publicationStmt>
+			<sourceDesc>
+				<p>BNF RES-YF-3141 Les oeuvres de Monsieur de Moliere. Tome III. A Paris, Chez Claude Barbin, au Palais, sur le second Perron de la S. Chapelle. 1673. Avec privilege du Roy. Université Sorbonne Nouvelle</p>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+	<text>
+		<body>
+		</body>
+	</text>
+</TEI>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title>Farce du Munyer de qui le deable emporte l’ame en Enffer (Farce du Meunier)</title>
+			</titleStmt>
+			<editionStmt>
+			</editionStmt>
+			<publicationStmt>
+				<publisher>N/A</publisher>
+				<date>N/A</date>
+			</publicationStmt>
+			<sourceDesc>
+				<p>"Farce du Munyer de qui le deable emporte l’ame en Enffer", contenue dans le "Mystère de saint Martin", par André de La Vigne, texte transcrit d'après le ms. Paris, BNF, Fr. 24332, fol. 241r°-254v° et corrigé d'après l'édition d'André Tissier ("Recueil de farces (1450-1550)", Genève, Droz, t. 4, 1989, p. 169-243).</p>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+	<text>
+		<body>
+		</body>
+	</text>
+</TEI>

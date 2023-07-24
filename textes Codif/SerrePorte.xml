@@ -1,0 +1,1688 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_drama.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_drama.rng" type="application/xml"
+        schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Farce de Serre Porte, ou Fin Verjus, ou Le Savetier, le Moine et la Femme.</title>
+            </titleStmt>
+            <editionStmt>
+                <edition>Édition électronique
+                    <date>2019</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <p>Publication Information</p>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl>
+                    <title>Farce nouvelle tres bonne et fort joyeuse à quattre personnages, c'est assavoir : Le
+                        Savetier, Le Moyne, La Femme, Le Portier. Serre Porte
+                    </title>
+                    (d'après "Le Recueil de Florence, 53 farces imprimées à Paris vers 1515", édité par Jelle Koopmans,
+                    Orléans, Paradigme, 2011).
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="fr">Français</language>
+                <language ident="lat">Latin</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div>
+                <argument>
+                    <head>Personnages</head>
+                    <castList>
+                        <castItem xml:id="savetier">Le Savetier</castItem>
+                        <castItem xml:id="moine">Le Moine</castItem>
+                        <castItem xml:id="femme">La Femme</castItem>
+                        <castItem xml:id="portier">Le Portier</castItem>
+                    </castList>
+                </argument>
+            </div>
+
+            <div type="scene" n="I">
+                <head>Scène 1</head>
+                <stage type="castlist">Le Savetier, Le Moyne</stage>
+
+                <sp who="#savetier">
+                    <speaker>Le Savetier</speaker>
+                    <stage>commence en chantant</stage>
+                    <l>"L’autre jour jouer m’aloye</l>
+                    <l>L’oree d’ung pré herbu</l>
+                    <l>Je ne sçay que je queroye</l>
+                    <l>Ne que j’avoye perdu."</l>
+                    <l>Par mon serment, se j’eusse beu</l>
+                    <l>Une fois ou croqué la pie,</l>
+                    <l>Je chantasse mieulx q’une pie</l>
+                    <l>Ne fait quant se lieve au matin. </l>
+                    <l>Venez çà ! Y a-il celuy</l>
+                    <l>De vous qui s’en veuille venir ?</l>
+                    <l>Ne me faictes plus si tenir,</l>
+                    <l>Venez vous en avecques moy.</l>
+                    <stage>Il chante</stage>
+                    <l>"En ce moys de may, hauvay,</l>
+                    <l>Doit-on faire amye ?"</l>
+                    <l>Par ma foy, voicy compagnie</l>
+                    <l>Qui vient : c’est ung maistre moyne</l>
+                    <l>Qui sera tres bien propre et ydoine</l>
+                    <l>À moy conduire audit lieu</l>
+                    <l>À de matin. Ha, bon gré bieu,</l>
+                    <l>Pas n’est celuy que je cuidoye...</l>
+                    <l>Si est ! Qu’il en ait froide joye,</l>
+                    <l>C’est frere Pierre Serre Porte !</l>
+                    <l>Et non est, le diable l’emporte :</l>
+                    <l>Il a trop sade visaige</l>
+                    <l>Touteffois pert, à son usaige,</l>
+                    <l>De boire matin voulentiers.</l>
+                    <l>Je m’en vois prendre mes sentiers</l>
+                    <l>Vers luy.
+                        <foreign xml:lang="lat">Bona dies, pater !</foreign>
+                    </l>
+                </sp>
+
+                <sp who="#moine">
+                    <speaker>Le Moyne</speaker>
+                    <l>
+                        <foreign xml:lang="lat">Et vobis etiam, frater !</foreign>
+                    </l>
+                    <l>
+                        <foreign xml:lang="lat">Quid vultis michi dare ?</foreign>
+                    </l>
+                </sp>
+
+                <sp who="#savetier">
+                    <speaker>Le Savetier</speaker>
+                    <l>
+                        <foreign xml:lang="lat">Per Deum, nescio vere,</foreign>
+                    </l>
+                    <l>Je n’entens point
+                        <foreign xml:lang="lat">latinatis</foreign>
+                    </l>
+                    <l>Ce se n’est
+                        <foreign xml:lang="lat">ita veniatis</foreign>
+                    </l>
+                    <l>
+                        <foreign xml:lang="lat">Bona dies monachorum</foreign>
+                    </l>
+                    <l>Pour tant que
+                        <foreign xml:lang="lat">Beati quorum</foreign>
+                    </l>
+                    <l>Vault
+                        <choice>
+                            <sic>meulx</sic>
+                            <corr>mieulx</corr>
+                        </choice>
+                        que
+                        <foreign xml:lang="lat">bona journus</foreign>
+                    </l>
+                </sp>
+
+                <sp who="#moine">
+                    <speaker>Le Moyne</speaker>
+                    <l>On n’en treuve si, se jour, nulz,</l>
+                    <l>Par ma foy, ne soir ne matin,</l>
+                    <l>Qui use de si bon latin</l>
+                    <l>Que vous avez si recité !</l>
+                </sp>
+
+                <sp who="#savetier">
+                    <speaker>Le Savetier</speaker>
+                    <l>À Paris y a grant cité</l>
+                    <l>Mais je y ay fait des escolliers</l>
+                    <l>Taire tout coy tres voulentiers,</l>
+                    <l>Si treffort que c’estoit merveille.</l>
+                </sp>
+
+                <sp who="#moine">
+                    <speaker>Le Moyne</speaker>
+                    <stage>
+                        <choice>
+                            <corr>[a part]</corr>
+                        </choice>
+                    </stage>
+                    <l>Il em porte bien les oreilles,</l>
+                    <l>D’estre des dames d’Aigremont !</l>
+                </sp>
+
+                <sp who="#savetier">
+                    <speaker>Le Savetier</speaker>
+                    <l>Que dictes-vous ?</l>
+                </sp>
+
+                <sp who="#moine">
+                    <speaker>Le Moyne</speaker>
+                    <l>Ung bonnet ront</l>
+                    <l>Si vous seroit bien duisant, beau sire</l>
+                </sp>
+
+                <sp who="#savetier">
+                    <speaker>Le Savetier</speaker>
+                    <l>Il ne tint que au faire et au dire</l>
+                    <l>Que ne fu en Logeotruie</l>
+                    <l>Bachelier, mais par ma follye</l>
+                    <l>Je dy que point ne le seroye</l>
+                    <l>Et que, par le soleil qui roye,</l>
+                    <l>Vous y estiés, se m’est advis.</l>
+                </sp>
+
+                <sp who="#moine">
+                    <speaker>Le Moyne</speaker>
+                    <l>Sainct Jehan ! Voirement je le vis</l>
+                    <l>Où vous fustes examiné,</l>
+                    <l> A Petit Pont.</l>
+                </sp>
+
+                <sp who="#savetier">
+                    <speaker>Le Sa
+                        <choice>
+                            <corr>vetier</corr>
+                        </choice>
+                    </speaker>
+                    <l>
+                        <foreign xml:lang="lat">Ha, domine,</foreign>
+                    </l>
+                    <l>Par
+                        <foreign xml:lang="lat">Deum, vere dicatis</foreign>
+                    </l>
+                    <l>
+                        <foreign xml:lang="lat">Et quomodo</foreign>
+                        vous <foreign xml:lang="lat">vadatis</foreign> ?
+                    </l>
+                    <l>Vous portez-vous bien, frere Pierre ?</l>
+                </sp>
+
+                <sp who="#moine">
+                    <speaker>Le Moy
+                        <choice>
+                            <corr>ne</corr>
+                        </choice>
+                    </speaker>
+                    <l>Ouy, vraiement.</l>
+                </sp>
+
+                <sp who="#savetier">
+                    <speaker>Le Sa
+                        <choice>
+                            <corr>vetier</corr>
+                        </choice>
+                    </speaker>
+                    <stage>[à part]</stage>
+                    <l>Tué d’une pierre</l>
+                    <l>Ayez vous la teste assommee !</l>
+                    <stage>[au moyne]</stage>
+                    <l>Je ne vous vy de la journee :</l>
+                    <l>Où dyable avez-vous esté ?</l>
+                </sp>
+
+                <sp who="#moine">
+                    <speaker>Le Moyne</speaker>
+                    <l>J’ay presché yver et esté</l>
+                    <l>En plusieurs lieux en ce pays,</l>
+                    <l>Je vous promet.</l>
+                </sp>
+
+                <sp who="#savetier">
+                    <speaker>Le Sa
+                        <choice>
+                            <corr>vetier</corr>
+                        </choice>
+                    </speaker>
+                    <l>Je m’esbahys</l>
+                    <l>De vous veoir cy endroit, par Dieu</l>
+                    <l>Ne souvient-il vous point du lieu</l>
+                    <l>Où vous fustes une fois prins ?</l>
+                </sp>
+
+                <sp who="#moine">
+                    <speaker>Le Moyne</speaker>
+                    <l>Il ne fault point parler du pris.</l>
+                    <l>Bien m’en souvient, par saint Remy</l>
+                </sp>
+
+                <sp who="#savetier">
+                    <speaker>Le Sa
+                        <choice>
+                            <corr>vetier</corr>
+                        </choice>
+                    </speaker>
+                    <l>Je vous y fu ung bon amy,</l>
+                    <l>Ne fu pas ?</l>
+                </sp>
+
+                <sp who="#moine">
+                    <speaker>Le Moyne</speaker>
+                    <l>Ouy, seurement</l>
+                </sp>
+
+                <sp who="#savetier">
+                    <speaker>Le Sa
+                        <choice>
+                            <corr>vetier</corr>
+                        </choice>
+                    </speaker>
+                    <l>G’y estoye congneu vrayement</l>
+                    <l>Plus que homme qui soit soubz la nue.</l>
+                </sp>
+
+                <sp who="#moine">
+                    <speaker>Le Moyne</speaker>
+                    <l>Sà, je paieray ma bien venue,</l>
+                    <l>Tout pour l’amour du temps passé !</l>
+                </sp>
+
+                <sp who="#savetier">
+                    <speaker>Le Sa
+                        <choice>
+                            <corr>vetier</corr>
+                        </choice>
+                    </speaker>
+                    <l>Par saint Jehan, ce n’est pas tancé !</l>
+                    <l>Quant il vous plaira, je suis prest.</l>
+                    <l>Où irons-nous ?</l>
+                </sp>
+
+                <sp who="#moine">
+                    <speaker>Le Moyne</speaker>
+                    <l>Sans arrest,</l>
+                    <l>Le Portier de nostre maison</l>
+                    <l>A bon vin selon la saison</l>
+                    <l>Et si n’est que à quatre deniers.</l>
+                </sp>
+
+                <sp who="#savetier">
+                    <speaker>Le Savetier</speaker>
+                    <l>Vivent tous gentilz taverniers,</l>
+                    <l>Et tout pour l’amour du raisin !</l>
+                </sp>
+
+            </div>
+            <div type="scene" n="II">
+                <head>Scène 2</head>
+                <stage type="castlist">Le Savetier, Le Moyne, Le Portier</stage>
+
+                <sp who="#savetier">
+                    <speaker>Le Savetier</speaker>
+                    <l>Portier !</l>
+                </sp>
+
+                <sp who="#portier">
+                    <speaker>Le Portier</speaker>
+                    <l>Qui est-ce là, voisin,</l>
+                    <l>Qui a-il ?</l>
+                </sp>
+
+                <sp who="#savetier">
+                    <speaker>Le Save
+                        <choice>
+                            <corr>tier</corr>
+                        </choice>
+                    </speaker>
+                    <l>Nouvelle t’aporte :</l>
+                    <l>C’est frere Pierre Serreporte</l>
+                    <l>Et moy aussi qui venons boire. </l>
+                    <l>Ou nom du benoist Roy de Gloire,</l>
+                    <l>Mon amy, donne nous bon vin,</l>
+                    <l>Je t’en pry.</l>
+                </sp>
+
+                <sp who="#portier">
+                    <speaker>Le Portier</speaker>
+                    <l>Par le Roy divin</l>
+                    <l>Vous en aurés de plain tonneau.</l>
+                </sp>
+
+                <sp who="#savetier">
+                    <speaker>Le Sa
+                        <choice>
+                            <corr>vetier</corr>
+                        </choice>
+                    </speaker>
+                    <l>Or sà, qui a-il de nouveau,</l>
+                    <l>Frere Pierre, sçavez-vous rien ?</l>
+                </sp>
+
+                <sp who="#moine">
+                    <speaker>Le Moyne</speaker>
+                    <l>Par mon serment, je ne sçay rien,</l>
+                    <l>Sinon que on m’a dit don je vien</l>
+                    <l>Que vous
+                        <choice>
+                            <corr>vous</corr>
+                        </choice>
+                        estes marié !
+                    </l>
+                </sp>
+
+                <sp who="#savetier">
+                    <speaker>Le Sa
+                        <choice>
+                            <corr>vetier</corr>
+                        </choice>
+                    </speaker>
+                    <l>Il est vray, et ay espousay</l>
+                    <l>La plus gente, la plus joyeuse,</l>
+                    <l>La plus plaisant et gratieuse</l>
+                    <l>Qui fut oncques de mere nee.</l>
+                    <l>Elle doit estre bien aymee,</l>
+                    <l>Je ne luy suis en rien rebelle.</l>
+                </sp>
+
+                <sp who="#moine">
+                    <speaker>Le Moyne</speaker>
+                    <l>Beau sire, est-elle si belle,</l>
+                    <l>Si gente de corps et de vis ?</l>
+                </sp>
+
+                <sp who="#savetier">
+                    <speaker>Le sa
+                        <choice>
+                            <corr>vetier</corr>
+                        </choice>
+                    </speaker>
+                    <l>Par le sainct bieu de paradis,</l>
+                    <l>Pour complaire à toute gent,</l>
+                    <l>Elle vous a ung corps tant gent,</l>
+                    <l>Ung nez faictifz, bouche riant</l>
+                    <l>Et est faicte comme de sire,</l>
+                    <l>Et si ne demande que rire.</l>
+                    <l>Se je vueil plourer, elle pleure.</l>
+                    <l> Rire et plourer tout à une heure :</l>
+                    <l>Je fois d’elle ce que je veulx.</l>
+                </sp>
+
+                <sp who="#moine">
+                    <speaker>Le Moyne</speaker>
+                    <l>Par la mort, tu es bien eureux ! </l>
+                    <l>Helas, que ne puis je ainsi faire !</l>
+                </sp>
+
+                <sp who="#savetier">
+                    <speaker>Le Sa
+                        <choice>
+                            <corr>vetier</corr>
+                        </choice>
+                    </speaker>
+                    <l>Encor elle est de tel affaire</l>
+                    <l>Que se je suis en quelque lieu,</l>
+                    <l>Elle y viendra, et y fust Dieu,</l>
+                    <l>Et devant tout chascun me baise.</l>
+                </sp>
+
+                <sp who="#moine">
+                    <speaker>Le Moy
+                        <choice>
+                            <corr>ne</corr>
+                        </choice>
+                    </speaker>
+                    <l>Ha, ribault ! Et que tu es aise</l>
+                    <l>Quant en ce point elle t’acolle.</l>
+                </sp>
+
+                <sp who="#savetier">
+                    <speaker>Le Savetier</speaker>
+                    <l>Saint Jehan ! Il semble qu’elle soit folle</l>
+                    <l>Quant elle vien, car par saint Pol,</l>
+                    <l>Elle me vient saillir au col</l>
+                    <l>Par tel façon et par tel guise :</l>
+                    <l>Oncques Dieu ne fut en Eglise</l>
+                    <l>Ainsi festoyé que je suis.</l>
+                </sp>
+
+                <sp who="#moine">
+                    <speaker>Le Moyne</speaker>
+                    <l>Et je te pry tant que je puis,</l>
+                    <l>Au moins, que pour ma bien venue</l>
+                    <l>Je baise ung petit nue à nue</l>
+                    <l>Sa bouchete tant seulement.</l>
+                </sp>
+
+                <sp who="#savetier">
+                    <speaker>Le Sa
+                        <corr>vetier</corr>
+                    </speaker>
+                    <stage>[à part]</stage>
+                    <l>Baiser, par mon sainct sacrement !</l>
+                    <stage>[Au moine]</stage>
+                    <l>Voulentiers vous la baiserez,</l>
+                    <l>Mais vecy comment vous ferez</l>
+                    <l>De peur que ne vous escondisse :</l>
+                    <l>Despouillez moy froc et pelisse</l>
+                    <l>Et vestez mon habillement,</l>
+                    <l>Puis elle viendra hastivement</l>
+                    <l>Vous baiser, cuydant que soit moy.</l>
+                </sp>
+
+                <sp who="#moine">
+                    <speaker>Le Moyne</speaker>
+                    <l>Dictes-vous ?</l>
+                </sp>
+
+                <sp who="#savetier">
+                    <speaker>Le Sa
+                        <corr>vetier</corr>
+                    </speaker>
+                    <l>Ouy, pour vray !</l>
+                    <l>Faictes ainsi que je vous ay dit.</l>
+                </sp>
+
+                <sp who="#moine">
+                    <speaker>Le Moy
+                        <corr>ne</corr>
+                    </speaker>
+                    <l>Je puisse estre de Dieu mauldit</l>
+                    <l>Se maintenant sic il corr ne sera fait.</l>
+                    <l>Mon cueur sera du tout refait</l>
+                    <l>Se puis baiser sa doulce face.</l>
+                </sp>
+
+            </div>
+            <div type="scene" n="III">
+                <head>Scène 3</head>
+                <stage type="castlist">La Femme</stage>
+
+                <sp who="#femme">
+                    <speaker>La Femme</speaker>
+                    <l>Saincte doulce Dame de Grace !</l>
+                    <l>Que dyable est ja devenu</l>
+                    <l>Mon mary ? Il ne s’est tenu</l>
+                    <l>Gueres longuement à l’ouvrage. </l>
+                    <l>Je pry (à) Dieu que <corr>de</corr> malle rage
+                    </l>
+                    <l>Puist il avoir le cueur transsy :</l>
+                    <l>Regardez comme il est gaudy !</l>
+                    <l>Je n’ay mye ung tant seul blanc</l>
+                    <l>Qu’i ne porte à la taverne.</l>
+                    <l>Saint Jehan, se je ne le gouverne</l>
+                    <l>Au gré de la fille ma mere,</l>
+                    <l>Je pry Dieu que la mort amere</l>
+                    <l>Enfin sans peché si me tienne.</l>
+                </sp>
+
+            </div>
+            <div type="scene" n="IV">
+                <head>Scène 4</head>
+                <stage type="castlist">Le Moyne, le Savetier</stage>
+
+                <sp who="#moine">
+                    <speaker> Le Moyne</speaker>
+                    <l>Suis-je bien ?</l>
+                </sp>
+
+                <sp who="#savetier">
+                    <speaker>Le Sa
+                        <corr>vetier</corr>
+                    </speaker>
+                    <l>Ouy, par saint Estienne,</l>
+                    <l>Si bien à point qu’i n’y fault rien,</l>
+                    <l>Mais venez çà ! Gardez vous bien</l>
+                    <l>Que mot n’ysse de votre bouche</l>
+                    <l>Quelque chose qu’elle vous touche,</l>
+                    <l>Jusques à tant que tout à son aise</l>
+                    <l>Vous ayt acollé.</l>
+                </sp>
+
+                <sp who="#moine">
+                    <speaker>Le Moyne</speaker>
+                    <l>Par saint Nichaise !</l>
+                    <l>Je la lairray faire à son vueil.</l>
+                </sp>
+
+                <sp who="#savetier">
+                    <speaker>Le Savetier</speaker>
+                    <l>Ne la guignez mye de l’ueil,</l>
+                    <l>Par saint Pol, je me courceroye.</l>
+                </sp>
+
+                <sp who="#moine">
+                    <speaker>Le Moyne</speaker>
+                    <l>Pensez que bien courcé seroye</l>
+                    <l>D’y penser à mal, par ma foy.</l>
+                </sp>
+
+            </div>
+            <div type="scene" n="V">
+                <head>Scène 5</head>
+                <stage type="castlist">La Femme, le Portier</stage>
+
+                <sp who="#femme">
+                    <speaker>La Femme</speaker>
+                    <l>Hola !</l>
+                </sp>
+
+                <sp who="#portier">
+                    <speaker>Le Portier</speaker>
+                    <l>Qui est-ce là ?</l>
+                </sp>
+
+                <sp who="#femme">
+                    <speaker>La Femme</speaker>
+                    <l>Parlez à moy !</l>
+                </sp>
+
+                <sp who="#portier">
+                    <speaker>Le Portier</speaker>
+                    <l>Que demandez-vous ?</l>
+                </sp>
+
+                <sp who="#femme">
+                    <speaker>La Femme</speaker>
+                    <l>Fin Vertjus,</l>
+                    <l>Mon mary, est-il point ceans</l>
+                    <l>Venu boire depuis une heure ?</l>
+                </sp>
+
+                <sp who="#portier">
+                    <speaker>Le Portier</speaker>
+                    <l>Fin Vertjus ? Se Dieu me sequeure,</l>
+                    <l>Je ne sçay pas bien qui il est.</l>
+                </sp>
+
+                <sp who="#femme">
+                    <speaker>La Femme</speaker>
+                    <l>Vous ne sçavez vostre gibet !</l>
+                    <l>Vous contrefaictes le railleur.</l>
+                </sp>
+
+                <sp who="#portier">
+                    <speaker>Le por
+                        <corr>tier</corr>
+                    </speaker>
+                    <l>Il y a là ung esmailleur</l>
+                    <l>De hanaps à pié : est-ce luy ?</l>
+                </sp>
+
+                <sp who="#femme">
+                    <speaker>La Femme</speaker>
+                    <l>Ouy, vrayement.</l>
+                </sp>
+
+                <sp who="#portier">
+                    <speaker> Le Portier</speaker>
+                    <l>Par le jour d’huy,</l>
+                    <l>Je ne le congnoissoie mye.</l>
+                    <l>Or, allez, ma tres doulce amye :</l>
+                    <l>Vous le trouverez où il disne.</l>
+                </sp>
+
+            </div>
+            <div type="scene" n="VI">
+                <head>Scène 6</head>
+                <stage type="castlist">Le Moyne, le Savetier, sa Femme</stage>
+
+                <sp who="#femme">
+                    <speaker>La Femme</speaker>
+                    <stage>frape sur Le Moyne cuydant que ce soit son mary et dit :</stage>
+                    <l>Je requier à la Vierge digne</l>
+                    <l>Que estrangler se puist du disner.</l>
+                    <l>Venez-vous icy resigner</l>
+                    <l>Vostre office, paillart infemme ?</l>
+                    <l>Tenez, tenez !</l>
+                </sp>
+
+                <sp who="#moine">
+                    <speaker>Le Moyne</speaker>
+                    <l>Ha, Nostre Dame !</l>
+                    <l>Qu’est-ce cy ? C’est ung ennemy !</l>
+                </sp>
+
+                <sp who="#femme">
+                    <speaker>La Femme</speaker>
+                    <stage>frappe</stage>
+                    <l>Non est, par Dieu, c’est vostre femme !</l>
+                </sp>
+
+                <sp who="#moine">
+                    <speaker>Le Moyne</speaker>
+                    <l>Je n’ay plus ne sens ne demy !</l>
+                </sp>
+
+                <sp who="#savetier">
+                    <speaker>Le Sa
+                        <corr>vetier</corr>
+                    </speaker>
+                    <l>Taisez vous bon gré sainct Remy,</l>
+                    <l>Elle entendra vostre parolle !</l>
+                </sp>
+
+                <sp who="#moine">
+                    <speaker>Le Moyne</speaker>
+                    <l>Et bon gré Dieu, elle m’affolle !</l>
+                    <l>Aÿ, le ventre !</l>
+                </sp>
+
+                <sp who="#savetier">
+                    <speaker>Le Savetier</speaker>
+                    <l>Et taisez vous !</l>
+                </sp>
+
+                <sp who="#moine">
+                    <speaker>Le Moyne</speaker>
+                    <l>Sang bieu, elle me rompt de coups !</l>
+                    <l>Qu<corr>e</corr> bon gré saint Jehan de Boulongne !
+                    </l>
+                </sp>
+
+                <sp who="#femme">
+                    <speaker>La Femme</speaker>
+                    <stage>frappe</stage>
+                    <l>A’vous bien humé, nostre yvrongne,</l>
+                    <l>Infame plain de deshonneur ?</l>
+                    <l>Certes, ce ne fust pour l’honneur</l>
+                    <l>De se bon seigneur si present,</l>
+                    <l>Je vous fisse le plus doulant</l>
+                    <l>Qui fut oncques en vostre lignaige !</l>
+                </sp>
+
+            </div>
+            <div type="scene" n="VII">
+                <head>Scène 7</head>
+                <stage type="castlist">Le Moyne, le Savetier</stage>
+
+                <sp who="#moine">
+                    <speaker>Le Moyne</speaker>
+                    <l>Je pry Dieu que male rage</l>
+                    <l>Vous puisse abatre, belle dame !</l>
+                    <l>Mais esse si la bonne femme</l>
+                    <l>Que vous m’avez dit, Fin Vertjus ?</l>
+                    <l>Par my le col soit-il pendus</l>
+                    <l>Qui savoit le vostre penser.</l>
+                </sp>
+
+                <sp who="#savetier">
+                    <speaker>Le Savetier</speaker>
+                    <l>Ha, pour Dieu, ne vueilez tenser.</l>
+                    <l>Je ne sçay dont cecy luy vient</l>
+                    <l>Ce se n’est qu’i luy vient souvent</l>
+                    <l>De son advertin qui la tiengne</l>
+                    <l>Deux ou trois fois la sepmaine.</l>
+                    <l>En ce point, elle est gouvernee</l>
+                    <l>Comme femme desordonnee.</l>
+                    <l>L’a prinse aujourd’huy somme toute.</l>
+                </sp>
+
+                <sp who="#moine">
+                    <speaker>Le Moyne</speaker>
+                    <l>Ha, que la sanglante goute</l>
+                    <l>La tienne, car mon corps s’en sent !</l>
+                    <l>Voiez vous : ung povre innocent</l>
+                    <l>A souvent le pire.</l>
+                </sp>
+
+                <sp who="#savetier">
+                    <speaker>Le Savetier</speaker>
+                    <l>Ha, qui mal s’entent</l>
+                    <l>Brief sus luy descent</l>
+                    <l>Ung cas qui l’empire.</l>
+                </sp>
+
+                <sp who="#moine">
+                    <speaker>Le Moyne</speaker>
+                    <l>À verité dire</l>
+                    <l>Je ne m’en puis rire</l>
+                    <l>La chose m’est dure.</l>
+                </sp>
+
+                <sp who="#savetier">
+                    <speaker>Le Savetier</speaker>
+                    <l>Par mon ame, sire,</l>
+                    <l>Voiez le martire</l>
+                    <l>Que d’elle j’endure.</l>
+                </sp>
+
+                <sp who="#moine">
+                    <speaker>Le Moyne</speaker>
+                    <l>Comment ? Tu disois</l>
+                    <l>Que d’elle faisois</l>
+                    <l>Tout à ton vouloir !</l>
+                </sp>
+
+                <sp who="#savetier">
+                    <speaker>Le Savetier</speaker>
+                    <l>Si veu ne l’eussiez,</l>
+                    <l>Pas ne creussiez</l>
+                    <l>Pour nesung avoir.</l>
+                </sp>
+
+                <sp who="#moine">
+                    <speaker>Le Moyne</speaker>
+                    <l>Le diable y puisse part avoir</l>
+                    <l>Et qui en ce lieu l’a mandee !</l>
+                    <l>J’ay la teste toute affollee</l>
+                    <l>De horrions ! Dieu la confonde !</l>
+                </sp>
+
+                <sp who="#savetier">
+                    <speaker>Le Savetier</speaker>
+                    <stage>[à part]</stage>
+                    <l>Vecy le meilleur tour du monde. </l>
+                    <l>Bien savoye, par ces deux mains,</l>
+                    <l>Qu’en la fin n’en auroit ja mains</l>
+                    <l>Puis qu’avoit mon abit vestu.</l>
+                </sp>
+
+                <sp who="#moine">
+                    <speaker>Le Moyne</speaker>
+                    <l>Au moins j’ay esté bien batu,</l>
+                    <l>Je m’en loue tres grandement,</l>
+                    <l>Mais se tu veulx, par mon serment,</l>
+                    <l>Je trouveray bien la maniere</l>
+                    <l>Pour la pugnir !</l>
+                </sp>
+
+                <sp who="#savetier">
+                    <speaker>Le Savetier</speaker>
+                    <l>Comment ?</l>
+                </sp>
+
+                <sp who="#moine">
+                    <speaker>Le Moyne</speaker>
+                    <l>Vecy dequoy :</l>
+                    <l>Tu luy diras que vienne à moy</l>
+                    <l>Se confesser, et sans doubtance</l>
+                    <l>Je luy donray tel penitance</l>
+                    <l>Que mercy elle te crira.</l>
+                </sp>
+
+                <sp who="#savetier">
+                    <speaker>Le Savetier</speaker>
+                    <l>Par saincte Marie, non fera</l>
+                    <l>Et l’eust juré Dieu et sainct Gille.</l>
+                </sp>
+
+                <sp who="#moine">
+                    <speaker>Le Moyne</speaker>
+                    <l>Tout aussi vray que l’evangille</l>
+                    <l>Elle le fera, j’en suis seur.</l>
+                </sp>
+
+                <sp who="#savetier">
+                    <speaker>Le Savetier</speaker>
+                    <l>Il n’y eust onques confesseur</l>
+                    <l>Qui luy sceust par bieu faire dire.</l>
+                </sp>
+
+                <sp who="#moine">
+                    <speaker>Le Moyne</speaker>
+                    <l>Et elle le fera, beau sire,</l>
+                    <l>Par ung moyen que luy diray,</l>
+                    <l>Car entendant je luy feray</l>
+                    <l>Qu’il fault qu’elle voise au saint Pere</l>
+                    <l>Pour la honte et vitupere</l>
+                    <l>Qu’elle m’a fait. Entens-tu bien ?</l>
+                </sp>
+
+                <sp who="#savetier">
+                    <speaker>Le Savetier</speaker>
+                    <l>Par bieu, c’est dit d’homme de bien</l>
+                    <l>Et plain de tresgrant sentement.</l>
+                    <l>Et je la vois, par mon serment,</l>
+                    <l>Faire venir par devers vous.</l>
+                </sp>
+
+                <sp who="#moine">
+                    <speaker>Le Moyne</speaker>
+                    <l>Or allez !</l>
+                </sp>
+
+            </div>
+            <div type="scene" n="VIII">
+                <head>Scène 8</head>
+                <stage type="castlist">Le Savetier, seul</stage>
+
+                <sp who="#savetier">
+                    <speaker>Le Savetier</speaker>
+                    <l>Quant je pense aux coups</l>
+                    <l>Que ce povr<corr>e</corr> homme, à voir dire,
+                    </l>
+                    <l>A souffert, j’ay grant fain de rire :</l>
+                    <l>Comme il a esté attrappé !</l>
+                </sp>
+
+            </div>
+            <div type="scene" n="IX">
+                <head>Scène 9</head>
+                <stage type="castlist">Le Moine, seul</stage>
+
+                <sp who="#moine">
+                    <speaker>Le Moyne</speaker>
+                    <l>Fin Vertjus m’a ennuyt trompé,</l>
+                    <l>Mais se je puis par voye aulcune</l>
+                    <l>Je luy en rendray bien d’une</l>
+                    <l>De quoy il ne se doubte mye.</l>
+                    <l>Car par bieu, je feray amye</l>
+                    <l>De sa femme, s’en puis finer.</l>
+                    <l>On doit en tout temps affiner</l>
+                    <l>Ung tel homme fin comme il est. </l>
+                    <l>Je m’en voys sans plus d’arrest</l>
+                    <l>L’actendre ; elle n’arrestera goute.</l>
+                </sp>
+
+            </div>
+            <div type="scene" n="X">
+                <head>Scène 10</head>
+                <stage type="castlist">Le Savetier, sa Femme</stage>
+
+                <sp who="#femme">
+                    <speaker>La Femme</speaker>
+                    <l>D’où venez-vous ? Que male goute</l>
+                    <l>Vous envoie Dieu, sanglant yvronge !</l>
+                    <l>Mais beau sire, où est la besongne</l>
+                    <l>Que vous avez faicte toute jour ?</l>
+                </sp>
+
+                <sp who="#savetier">
+                    <speaker>Le Savetier</speaker>
+                    <l>Sçavez-vous qu'il est sans sejour ?</l>
+                    <l>Allez vous en tost confesser !</l>
+                </sp>
+
+                <sp who="#femme">
+                    <speaker>La Femme</speaker>
+                    <l>Confesser ?</l>
+                </sp>
+
+                <sp who="#savetier">
+                    <speaker>
+                        <choice>
+                            <sic>La</sic>
+                            <corr>Le</corr>
+                        </choice>
+                        Savetier
+                    </speaker>
+                    <l>Voire (confesser) !</l>
+                </sp>
+
+                <sp who="#femme">
+                    <speaker>La Femme</speaker>
+                    <l>Sans cesser,</l>
+                    <l>Tousjours tu te farceras de moy.</l>
+                    <l>Or t’en souvienne !</l>
+                </sp>
+
+                <sp who="#savetier">
+                    <speaker>Le Savetier</speaker>
+                    <l>Par ma foy !</l>
+                    <l>Vous avez bien batu ung prestre !</l>
+                </sp>
+
+                <sp who="#femme">
+                    <speaker>La Femme</speaker>
+                    <l>Ung prestre ?</l>
+                </sp>
+
+                <sp who="#savetier">
+                    <speaker> Le Savetier</speaker>
+                    <l>Et (voire), par le Roy celeste</l>
+                    <l>Je ne dy rien que verité.</l>
+                </sp>
+
+                <sp who="#femme">
+                    <speaker>  La Femme</speaker>
+                    <l>Ung prestre !
+                        <foreign xml:lang="lat">Benedicite !</foreign>
+                    </l>
+                    <l>Et qui est-il ?</l>
+                </sp>
+
+                <sp who="#savetier">
+                    <speaker>Le Savetier</speaker>
+                    <l>Par saint Anthoyne,</l>
+                    <l>S’a esté ung maistre moyne</l>
+                    <l>Qui buvoit avec moy orains.</l>
+                </sp>
+
+                <sp who="#femme">
+                    <speaker>La Femme</speaker>
+                    <l>Saint Pol, s’a esté sur voz rains</l>
+                    <l>Que j’ay frappé, non pas sur luy !</l>
+                    <l>Je <corr>le</corr> sçay bien.
+                    </l>
+                </sp>
+
+                <sp who="#savetier">
+                    <speaker>Le Savetier</speaker>
+                    <l>Par le jour d’huy,</l>
+                    <l>Vous y avez mal advisé !</l>
+                </sp>
+
+                <sp who="#femme">
+                    <speaker>La Femme</speaker>
+                    <l>Il estoit donques deguisé </l>
+                    <l>Pour prendre vostre habillement.</l>
+                </sp>
+
+                <sp who="#savetier">
+                    <speaker>Le Savetier</speaker>
+                    <l>Saint Jehan, voire !</l>
+                </sp>
+
+                <sp who="#femme">
+                    <speaker>La Femme</speaker>
+                    <l>Dea ! comment</l>
+                    <l>Av’ous trouvé tel tromperie ?</l>
+                </sp>
+
+                <sp who="#savetier">
+                    <speaker>Le Savetier</speaker>
+                    <l>Comment ? Dea, par saincte Marie,</l>
+                    <l>Il m’a tellement charié</l>
+                    <l>Demandant si j’estoye marié</l>
+                    <l>Et je luy respondy que ouy.</l>
+                    <l>Adonc il fut tout esjouy,</l>
+                    <l>Voire, mais par saint Pol, c’estoit</l>
+                    <l>De la grant joye qu’il avoit</l>
+                    <l>De baiser vostre doulce face.</l>
+                </sp>
+
+                <sp who="#femme">
+                    <speaker>La Femme</speaker>
+                    <l>Et par bieu, vecy bonne farce !</l>
+                    <l>Je suis donques excommuniee !</l>
+                </sp>
+
+                <sp who="#savetier">
+                    <speaker>Le Savetier</speaker>
+                    <l>La chose n’est pas publiee</l>
+                    <l>Car il n’y avoit qu’antre nous.</l>
+                    <l>Mais allés vous mectre à genoux</l>
+                    <l>Devant luy et vous confesser,</l>
+                    <l>À celle fin que vous penser</l>
+                    <l>Avoir vostre absolution.</l>
+                    <l> Touteffois pour conclusion</l>
+                    <l>Garder vous bien de ses tours :</l>
+                    <l>Se il vous vouloit prier d’amours</l>
+                    <l>Que le me dictes aussitost.</l>
+                </sp>
+
+                <sp who="#femme">
+                    <speaker>La Femme</speaker>
+                    <l>Et, par bieu, vous estes bien sot :</l>
+                    <l>Moynes sont-ilz de tel nature ?</l>
+                </sp>
+
+                <sp who="#savetier">
+                    <speaker>Le Savetier</speaker>
+                    <l>Le corps bieu, à toutes adventures</l>
+                    <l>Je n’y ay pas trop de fiance.</l>
+                </sp>
+
+                <sp who="#femme">
+                    <speaker>La Femme</speaker>
+                    <l>Sachez, se il fait signifiance</l>
+                    <l>De me dire fors que tout bien,</l>
+                    <l>Que je vous diray tout.</l>
+                </sp>
+
+                <sp who="#savetier">
+                    <speaker>Le Savetier</speaker>
+                    <l>C’est bien.</l>
+                    <l>Dictes, revenez ung peu çà. </l>
+                    <l>Je sçay de vray qu’i vous dira</l>
+                    <l>Ung mot que vous vueil dire si,</l>
+                    <l>C’est que vous me criez mercy. </l>
+                    <l>Gardez que ne l’oubliez pas.</l>
+                </sp>
+
+                <sp who="#femme">
+                    <speaker>La Femme</speaker>
+                    <l>Mercy, sire, par saint Thomas,</l>
+                    <l>Se jamais jour je ne devoye</l>
+                    <l>Avoir mercy, mieulx aimeroye</l>
+                    <l>Vous veoir bouter en terre basse</l>
+                    <l>Que mercy je vous demandasse</l>
+                    <l>Pour rien qu’on me die et compte.</l>
+                </sp>
+
+                <sp who="#savetier">
+                    <speaker>Le Savetier</speaker>
+                    <l>N’esse pas bien là mon compte ?</l>
+                </sp>
+
+                <sp who="#femme">
+                    <speaker>La Femme</speaker>
+                    <l>Ne vous actendez (pas) que le face !</l>
+                </sp>
+
+                <sp who="#savetier">
+                    <speaker>Le Savetier</speaker>
+                    <l>Par le corps bieu, la Chicheface</l>
+                    <l>N’a garde de vous menger,</l>
+                    <l>Car je puis seurement juger</l>
+                    <l>Que vous estez fiere et rebelle.</l>
+                </sp>
+
+            </div>
+            <div type="scene" n="XI">
+                <head>Scène 11</head>
+                <stage type="castlist">La Femme, Le Moine</stage>
+
+                <sp who="#femme">
+                    <speaker>La Femme</speaker>
+                    <l>Dieu vous gard, sire !</l>
+                </sp>
+
+                <sp who="#moine">
+                    <speaker>Le Moyne</speaker>
+                    <l>Dieu vous gard, belle,</l>
+                    <l>Et tout (ce) que vostre cueur desire.</l>
+                </sp>
+
+                <sp who="#femme">
+                    <speaker>La Femme</speaker>
+                    <l>Certes, mon seigneur</l>
+                    <l>Je suis bien marrie en mon cueur.</l>
+                </sp>
+
+                <sp who="#moine">
+                    <speaker>  Le Moyne</speaker>
+                    <l>Pourquoy ?</l>
+                </sp>
+
+                <sp who="#femme">
+                    <speaker> La Femme</speaker>
+                    <l>Car mon mary m’a dit (ainsi)</l>
+                    <l>Que vous buviez avecques luy</l>
+                    <l>Et qu’aviez (vestu) son habillement.</l>
+                    <l>Mais je vous jure mon serment</l>
+                    <l>Que j’ay esté et suis dolente,</l>
+                    <l>Et d’autre part je suis contente</l>
+                    <l>D’en porter telle penitence</l>
+                    <l>Qui vous plaira.</l>
+                </sp>
+
+                <sp who="#moine">
+                    <speaker>Le Moyne</speaker>
+                    <l>Sans doubtance</l>
+                    <l>Celuy seroit maugracieux</l>
+                    <l>Qui le regart de voz deux yeulx</l>
+                    <l>Se il estoit mal content de vous ;</l>
+                    <l>Non obstant, mon fin cueur doulx,</l>
+                    <l>Conseil en aurés si endroit.</l>
+                </sp>
+
+                <sp who="#femme">
+                    <speaker>La Femme</speaker>
+                    <l>Et pourquoy ?</l>
+                </sp>
+
+                <sp who="#moine">
+                    <speaker>Le Moyne</speaker>
+                    <l>Qui vouldroit</l>
+                    <l>Juger le cas, ma doulce seur,</l>
+                    <l>Il vous fauldroit aller à Romme. </l>
+                    <l>Je trouveray
+                        <choice>
+                            <sic>naguière</sic>
+                            <corr>magniere</corr>
+                        </choice>
+                        comme
+                    </l>
+                    <l>Vous n’irés point, se à vous ne tient.</l>
+                </sp>
+
+                <sp who="#femme">
+                    <speaker>La Femme</speaker>
+                    <l>Je feray ce qu’il appartient</l>
+                    <l>Envers vous, je vous sy convient</l>
+                    <l>En signe de confession,</l>
+                    <l>Me donnez absolution</l>
+                    <l>Du desplaisir que vous ay fait.</l>
+                </sp>
+
+                <sp who="#moine">
+                    <speaker>Le Moyne</speaker>
+                    <l>Certes, affin qu’a vostre fait</l>
+                    <l>Plus amplement je remedie,</l>
+                    <l>Il conviendra que j’estudie</l>
+                    <l>En mon livre premierement.</l>
+                </sp>
+
+                <sp who="#femme">
+                    <speaker>La Femme</speaker>
+                    <l>Dictes-vous ?</l>
+                </sp>
+
+                <sp who="#moine">
+                    <speaker>Le Moyne</speaker>
+                    <l>Oüy, seurement.</l>
+                    <l>Il m’y convient estudier.</l>
+                </sp>
+
+                <sp who="#femme">
+                    <speaker>  La Femme</speaker>
+                    <l>Vueillez vous donc expedier,</l>
+                    <l>Si m’en iray à mon affaire.  </l>
+                </sp>
+
+                <sp who="#moine">
+                    <speaker>Le Moy
+                        <corr>ne</corr>
+                    </speaker>
+                    <l>Certes, il ne se pourroit faire</l>
+                    <l>Pour le mal qui s’en peut ensuivre</l>
+                </sp>
+
+                <sp who="#femme">
+                    <speaker>La Femme</speaker>
+                    <l>Et pourquoy ?</l>
+                </sp>
+
+                <sp who="#moine">
+                    <speaker>Le Moyne</speaker>
+                    <l>Je n’ay pas mon livre</l>
+                    <l>Ouquel convient que j’estudie.</l>
+                </sp>
+
+                <sp who="#femme">
+                    <speaker>La Femme</speaker>
+                    <l>Et où est-il ?</l>
+                </sp>
+
+                <sp who="#moine">
+                    <speaker>Le Moyne</speaker>
+                    <l>En mon estudie.</l>
+                    <l>Et pour tant se
+                        <choice>
+                            <sic>il</sic>
+                            <corr>ne</corr>
+                        </choice>
+                        vous ennuyt,
+                    </l>
+                    <l>Rendez vous y encores nuyt</l>
+                    <l>Et là endroit vous absouldré.</l>
+                </sp>
+
+                <sp who="#femme">
+                    <speaker>La Femme</speaker>
+                    <l>Helas, frere ! Je n’oseray :</l>
+                    <l>De mon mary seroye escousse.</l>
+                </sp>
+
+                <sp who="#moine">
+                    <speaker>Le Moyne</speaker>
+                    <l>Vous ne serez point absoulte</l>
+                    <l>Se n’y venez. Vecy merveille :</l>
+                    <l>Faictes ce que je vous conseille</l>
+                    <l>Pour le sauvement de vostre ame.</l>
+                    <l> G’y ay absoulte mainte femme</l>
+                    <l>Et mainte notable bourgoise.</l>
+                </sp>
+
+                <sp who="#femme">
+                    <speaker>La Femme</speaker>
+                    <l>A, dea ! Puis qu’i fault que g’y voyse,</l>
+                    <l>Dictes moy où est vostre chambre.</l>
+                </sp>
+
+                <sp who="#moine">
+                    <speaker>Le Moyne</speaker>
+                    <l>Je le vous diray.</l>
+                    <l>Tot droit à ung degré de pierre.</l>
+                </sp>
+
+                <sp who="#femme">
+                    <speaker>La Femme</speaker>
+                    <l>Comment av’ous nom ?</l>
+                </sp>
+
+                <sp who="#moine">
+                    <speaker>Le Moyne</speaker>
+                    <l>Frere Pierre</l>
+                    <l>Foy que doy Dieu. </l>
+                    <l>Ne cuydez pas que ce soit jeu.</l>
+                </sp>
+
+            </div>
+            <div type="scene" n="XII">
+                <head>Scène 12</head>
+                <stage type="castlist">Le Moine, le Portier</stage>
+
+                <sp who="#moine">
+                    <speaker>[Le Moyne]</speaker>
+                    <l>Je vous auray par beaux baratz.</l>
+                    <l>Helas, quant entre mes deux bras</l>
+                    <l>La tendré, je seray refait.</l>
+                    <l>Velà Le Portier, c’est mon fait ;</l>
+                    <l>Je luy vois compter de bonne erre.</l>
+                    <l> Portier !</l>
+                </sp>
+
+                <sp who="#portier">
+                    <speaker>Le Portier</speaker>
+                    <l>Que vous plaist, frere Pierre ?</l>
+                    <l>Vous plaist-il chose que je puisse ?</l>
+                </sp>
+
+                <sp who="#moine">
+                    <speaker>Le Moy
+                        <corr>ne</corr>
+                    </speaker>
+                    <l>Je te pry, fay moy ung service,</l>
+                    <l>Mais garde bien qu’i n’en soit bruit.</l>
+                    <l>Il doit venir encores nuyt</l>
+                    <l>Une gratieuse bourgoise</l>
+                    <l>En ma chambre sans faire noyse,</l>
+                    <l>Entens-tu bien, pour confesser.</l>
+                    <l>Je te pry, vien la adresser</l>
+                    <l>À moy sans faire mention.</l>
+                </sp>
+
+                <sp who="#portier">
+                    <speaker>Le Portier</speaker>
+                    <l>Homme ! J’entens : c’est provision !</l>
+                    <l>Il sera fait, par saincte Avoie.</l>
+                </sp>
+
+                <sp who="#moine">
+                    <speaker>Le Moy
+                        <corr>ne</corr>
+                    </speaker>
+                    <l>Mais garde bien qu’on ne la voye</l>
+                    <l>Quant tu la bouteras dedans :</l>
+                    <l>Se seroit pour yssir du sens</l>
+                    <l>Se le prieur la congnoissoit.</l>
+                    <l>Entens-tu bien ?</l>
+                </sp>
+
+            </div>
+            <div type="scene" n="XIII">
+                <head>Scène 13</head>
+                <stage type="castlist">Le Savetier, sa Femme</stage>
+
+                <sp who="#femme">
+                    <speaker>La Femme</speaker>
+                    <l>Dieu y soit !</l>
+                    <l>N’ay-je pas beaucop demouré ?</l>
+                </sp>
+
+                <sp who="#savetier">
+                    <speaker> Le Savetier</speaker>
+                    <l>Nostre seigneur soit aouré !</l>
+                    <l>Vous me semblez maintenant doulce. </l>
+                    <l>Or avant, estes-vous absoulte</l>
+                    <l>De voz pechez, ma doulce seur ?</l>
+                </sp>
+
+                <sp who="#femme">
+                    <speaker>La Femme</speaker>
+                    <l>Dieu me gard de maleur !</l>
+                    <l>Certes, il m’a dit que mes faultes</l>
+                    <l>Sont si horribles et si faulces</l>
+                    <l>Que n’en seroie point delivre</l>
+                    <l>S’il n’estudioit en son livre,</l>
+                    <l>Et pour toute conclusion,</l>
+                    <l>Je n’auray absolution</l>
+                    <l>Se je ne vois encores nuyt</l>
+                    <l>En sa chambre entre sept et huit :</l>
+                    <l>À ceste heure me doit absouldre.</l>
+                </sp>
+
+                <sp who="#savetier">
+                    <speaker>Le Sa
+                        <corr>vetier</corr>
+                    </speaker>
+                    <l>Ha, dame ! Que la malle fouldre</l>
+                    <l>Luy puisse relier la teste. </l>
+                    <l>Il ne fut oncques à tel feste</l>
+                    <l>Se je le tenoye, par ma foy.</l>
+                </sp>
+
+                <sp who="#femme">
+                    <speaker>La Femme</speaker>
+                    <l>N’en soiez de rien en esmoy :</l>
+                    <l>J’ay trouvé trop bonne façon</l>
+                    <l>Pour le pugnir.</l>
+                </sp>
+
+                <sp who="#savetier">
+                    <speaker>Le Sa
+                        <corr>vetier</corr>
+                    </speaker>
+                    <l>Helas, et qu’est-ce ?</l>
+                </sp>
+
+                <sp who="#femme">
+                    <speaker>La Femme</speaker>
+                    <l>Attendez, je le vous diray :</l>
+                    <l>Ma robe je vous vestiray.</l>
+                    <l> Quant ainsi habillé serez</l>
+                    <l>En sa chambre vous en yrés. </l>
+                    <l>Je sçay de vray, quant vous verra</l>
+                    <l>Ainsi habillé, il cuydera</l>
+                    <l>Que se sois je, j’en suis certaine.</l>
+                    <l>Pour Dieu, serrez luy bien la vaine</l>
+                    <l>Si tres asprement qu’il s’en loue !</l>
+                </sp>
+
+                <sp who="#savetier">
+                    <speaker>Le Sa
+                        <corr>vetier</corr>
+                    </speaker>
+                    <l>Je luy feray manger de l’oue</l>
+                    <l>Par le sang que beuf respendit !</l>
+                </sp>
+
+                <sp who="#femme">
+                    <speaker>La Femme</speaker>
+                    <l>Faictes bien ce que vous ay dit</l>
+                    <l>Et contrefaictes bien la femme !</l>
+                </sp>
+
+                <sp who="#savetier">
+                    <speaker>Le Sa
+                        <corr>vetier</corr>
+                    </speaker>
+                    <stage>en femme</stage>
+                    <l>Si feray je, par Nostre Dame. </l>
+                    <l>Je sçay tout ce qu’il en peult estre.</l>
+                    <l>Où est sa chambre et son estre</l>
+                    <l>Je n’y sçay ne voye ne sentier.</l>
+                </sp>
+
+                <sp who="#femme">
+                    <speaker>La Femme</speaker>
+                    <l>Vous devez trouver le portier,</l>
+                    <l>Qui jusques là vous conduira.</l>
+                </sp>
+
+                <sp who="#savetier">
+                    <speaker>Le Sa
+                        <corr>vetier</corr>
+                    </speaker>
+                    <l>Par le sang bieu, il en aura</l>
+                    <l>Sus la cousture de sa chappe</l>
+                    <l>Avant que jamais il m’eschappe,</l>
+                    <l>Ou il sera plus fort que moy !</l>
+                </sp>
+
+            </div>
+            <div type="scene" n="XIV">
+                <head>Scène 14</head>
+                <stage type="castlist">Le Savetier, le Portier</stage>
+
+                <sp who="#savetier">
+                    <speaker>[Le Savetier]</speaker>
+                    <l>Velà le portier, bien le voy :</l>
+                    <l>C’est il qui me doit adresser.</l>
+                </sp>
+
+                <sp who="#portier">
+                    <speaker>Le Por
+                        <corr>tier</corr>
+                    </speaker>
+                    <l>Belle, où allez-vous ?</l>
+                </sp>
+
+                <sp who="#savetier">
+                    <speaker>Le Sa
+                        <corr>vetier</corr>
+                    </speaker>
+                    <stage>en femme</stage>
+                    <l>Confesser</l>
+                    <l>À frere Pierre. Où est sa chambre ?</l>
+                </sp>
+
+                <sp who="#portier">
+                    <speaker>Le Portier</speaker>
+                    <l>Ha, voirement, je me remembre,</l>
+                    <l>Je vous y meneray tout droit.</l>
+                    <l>Attendez le icy endroit :</l>
+                    <l> Il est allé dire complie,</l>
+                    <l>Mais venez çà, ma doulce amye,</l>
+                    <l>Ung baiser pour commencement !</l>
+                </sp>
+
+                <sp who="#savetier">
+                    <speaker>Le Sa
+                        <corr>vetier</corr>
+                    </speaker>
+                    <stage><corr>en</corr> fe
+                        <corr>mme</corr>
+                    </stage>
+                    <l>Dea, j’ay bien autre pensement,</l>
+                    <l>Car maintenant il n’est pas heure.</l>
+                </sp>
+
+                <sp who="#portier">
+                    <speaker>Le Por
+                        <corr>tier</corr>
+                    </speaker>
+                    <l>Il convient que je vous labeure,</l>
+                    <l>Puis que avons temps et espace ;</l>
+                    <l>Il sera fait !</l>
+                </sp>
+
+                <sp who="#savetier">
+                    <speaker>Le Sa
+                        <corr>vetier</corr>
+                    </speaker>
+                    <l>Sauf vostre grace,</l>
+                    <l>Tirez vous ung peu plus là !</l>
+                </sp>
+
+                <sp who="#portier">
+                    <speaker>Le Por
+                        <corr>tier</corr>
+                    </speaker>
+                    <l>Et comment ? Dea, esse cela ?</l>
+                    <l>Par sainct Jehan, par là passerez</l>
+                    <l>Et jamais vous n’eschapperez</l>
+                    <l>De ceans se ne faulx à traire.</l>
+                </sp>
+
+            </div>
+            <div type="scene" n="XV">
+                <head>Scène 15</head>
+                <stage type="castlist">Le Moine, le Savetier</stage>
+
+                <sp who="#moine">
+                    <speaker>Le Moyne</speaker>
+                    <l>Il est heure de me retraire</l>
+                    <l>En ma chambre, car je me doubte</l>
+                    <l>Que celle où j’ay ma joye toute</l>
+                    <l>Ne soit de cest heure venue.</l>
+                    <l> Velà la, je l’ay bien congneue</l>
+                    <l>Sans plus à sa philosomye.</l>
+                    <l>Bien viennez, ma tres doulce amye !</l>
+                    <l>Acollez moy, mon cueur joyeulx !</l>
+                </sp>
+
+                <sp who="#savetier">
+                    <speaker>Le Sa
+                        <corr>vetier</corr>
+                    </speaker>
+                    <stage>en femme</stage>
+                    <l>Hee, laissez moi !</l>
+                </sp>
+
+                <sp who="#moine">
+                    <speaker>Le Moyne</speaker>
+                    <l>Une fois ou deux,</l>
+                    <l>Cela ne sera pas du compte !</l>
+                </sp>
+
+                <sp who="#savetier">
+                    <speaker>Le Sa
+                        <corr>vetier</corr>
+                    </speaker>
+                    <l>Et comment ? N’av’ous point de honte ?</l>
+                    <l>Regardez bien que vous ferés !</l>
+                </sp>
+
+                <sp who="#moine">
+                    <speaker>Le Moyne</speaker>
+                    <l>Par saint Pere, vous coucherés</l>
+                    <l>Ennuyt ceans et au matin,</l>
+                    <l>Je vous bailleray sans hutin</l>
+                    <l>Vostre absolution planiere.</l>
+                </sp>
+
+                <sp who="#savetier">
+                    <speaker>Le Sa
+                        <corr>vetier</corr>
+                    </speaker>
+                    <l>Et comment ? Esse la maniere,</l>
+                    <l>Se je vien par devotion</l>
+                    <l>Demander absolucion</l>
+                    <l>De tenir femmes en ostage ?</l>
+                </sp>
+
+                <sp who="#moine">
+                    <speaker>Le Moyne</speaker>
+                    <l>Ouy, vrayement, c’est mon usage.</l>
+                </sp>
+
+                <sp who="#savetier">
+                    <speaker>Le Savetier</speaker>
+                    <stage>frappe</stage>
+                    <l>Ha, sire, vous n’estes pas saige !</l>
+                    <l>Vous en aurés de ce baston !</l>
+                    <l>Voullez-vous mectre dissension</l>
+                    <l>En mariage ?</l>
+                </sp>
+
+                <sp who="#moine">
+                    <speaker>Le Moyne</speaker>
+                    <l>Ouy, vrayement, c’est nostre usage.</l>
+                </sp>
+
+                <sp who="#savetier">
+                    <speaker>Le Savetier</speaker>
+                    <l>Vous en aurez sur le visage,</l>
+                    <l>Par le sang bieu, frere frapart !</l>
+                </sp>
+
+                <sp who="#moine">
+                    <speaker> Le Moyne</speaker>
+                    <l>Ha, que le grant diable y ait part !</l>
+                    <l>Quelle femme j’ay si trouvé ?</l>
+                </sp>
+
+                <sp who="#savetier">
+                    <speaker>Le Savetier</speaker>
+                    <l>Mon baston sera esprouvé</l>
+                    <l>Sus vostre dos. Taste se il blesse !</l>
+                </sp>
+
+                <sp who="#moine">
+                    <speaker> Le Moyne</speaker>
+                    <l>Je croy que c’est une diablesse !</l>
+                    <l>Oncques je ne fuz si infames !</l>
+                </sp>
+
+                <sp who="#savetier">
+                    <speaker> Le Savetier</speaker>
+                    <l>Confessez vous ainsi les femmes</l>
+                    <l>Et puis se les voullez absouldre ?</l>
+                </sp>
+
+                <sp who="#moine">
+                    <speaker> Le Moyne</speaker>
+                    <l>Ha, ma dame, que male fouldre</l>
+                    <l>Vous puisse relier la teste</l>
+                    <l>Oncques je ne fu à tel feste,</l>
+                    <l>Par ma foy, ne si en mal aise.</l>
+                </sp>
+
+            </div>
+            <div type="scene" n="XVI">
+                <head>Scène 16</head>
+                <stage type="castlist">Le Savetier, le Portier</stage>
+
+                <sp who="#portier">
+                    <speaker>Le Portier</speaker>
+                    <l>Sang bieu que maistre Pierre est aise</l>
+                    <l>Maintenant avec celle gouge.</l>
+                    <l>Sainct Jehan, elle sera bien rouge</l>
+                    <l>Si elle m’eschappe sans parler.</l>
+                    <l>Ho ho, je vous deffens l’aller,</l>
+                    <l>Car il fault... vous m’entendez bien !</l>
+                </sp>
+
+                <sp who="#savetier">
+                    <speaker>Le Savetier</speaker>
+                    <l>Dea, je ne vous demande rien,</l>
+                    <l>Laisser moy aller mon chemin.</l>
+                </sp>
+
+                <sp who="#portier">
+                    <speaker>Le Portier</speaker>
+                    <l>On me tiendroit bien pour Jenyn</l>
+                    <l>Se vous m’eschappiez en ce point.</l>
+                </sp>
+
+                <sp who="#savetier">
+                    <speaker>Le Savetier</speaker>
+                    <stage>en frappant</stage>
+                    <l>Je vous pry, ne m’arrestez point,</l>
+                    <l>Il m’en fault aller tout batant !</l>
+                </sp>
+
+                <sp who="#portier">
+                    <speaker>Le Portier</speaker>
+                    <l>Et, par bieu, j’en auray autant</l>
+                    <l>Que frere Pierre, c’est raison.</l>
+                </sp>
+
+                <sp who="#savetier">
+                    <speaker>Le Savetier</speaker>
+                    <stage>frape</stage>
+                    <l>Et par saint Pierre, s’aurez mon :</l>
+                    <l>Servi serez tout d’ung potage</l>
+                    <l>Tous deux.</l>
+                </sp>
+
+                <sp who="#portier">
+                    <speaker>Le Portier</speaker>
+                    <l>Esse davantage</l>
+                    <l>Que vous en faictes tel largesse ?</l>
+                </sp>
+
+                <sp who="#savetier">
+                    <speaker>Le Savetier</speaker>
+                    <l>Quant femmes viennent à confesse,</l>
+                    <l>Les doit-on arrester ainsi ?</l>
+                </sp>
+
+                <sp who="#portier">
+                    <speaker>Le Portier</speaker>
+                    <l>Helas, dame, pour Dieu mercy.</l>
+                    <stage>[À part]</stage>
+                    <l>Sang bieu, comme elle est rebelle !</l>
+                </sp>
+
+                <sp who="#savetier">
+                    <speaker>Le Savetier</speaker>
+                    <l>Qu’en dis-tu ?</l>
+                </sp>
+
+                <sp who="#portier">
+                    <speaker>Le Portier</speaker>
+                    <l>Que vous estez belle</l>
+                    <l>Et bonne, par mon sacrement.</l>
+                    <l>Se je n’eusse esquarry vrayement</l>
+                    <l>J’eusse encor eu je ne sçay quoy.</l>
+                </sp>
+
+                <sp who="#savetier">
+                    <speaker>Le Savetier</speaker>
+                    <l>Ilz sont tres bien estrillez, se croy :</l>
+                    <l>En ce point les doit on pugnir.</l>
+                    <l>À Dieu, jusques au revenir.</l>
+                    <l> Prenez en gré, nous vous prion,</l>
+                    <l>À Dieu, car nous nous en allon.</l>
+                </sp>
+
+                <p> FINIS</p>
+
+            </div>
+        </body>
+    </text>
+</TEI>

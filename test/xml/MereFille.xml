@@ -1,0 +1,3998 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title>Farce de la Mère et de la Fille.</title>
+			</titleStmt>
+			<editionStmt>
+				<edition>
+					<date>2019</date>
+Édition électronique				</edition>
+			</editionStmt>
+			<publicationStmt>
+				<p>Publication Information</p>
+			</publicationStmt>
+			<sourceDesc>
+				<bibl>
+					<title>"Farce nouvelle à cinq personnages, c’est asçavoir : la Mere, la Fille, le Tesmoing,
+ l’Amoureulx et l’Oficial",</title>
+texte édité d'après le recueil La Vallière (Paris, BnF, Fr. 24341, fol. 103v°-109v°).				</bibl>
+			</sourceDesc>
+		</fileDesc>
+		<profileDesc>
+			<langUsage>
+				<language ident="fr">Français</language>
+			</langUsage>
+		</profileDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<div>
+				<argument>
+					<castList>
+						<castItem xml:id="mere">
+							<w pos="DET" dep="det" lemma="le" entity="">La</w>
+							<w pos="NOUN" dep="ROOT" lemma="mere" entity="LOC">Mere</w>
+						</castItem>
+						<castItem xml:id="fille">
+							<w pos="DET" dep="det" lemma="le" entity="MISC">La</w>
+							<w pos="PROPN" dep="ROOT" lemma="Fille" entity="MISC">Fille</w>
+						</castItem>
+						<castItem xml:id="tesmoing">
+							<w pos="DET" dep="det" lemma="le" entity="MISC">Le</w>
+							<w pos="PROPN" dep="ROOT" lemma="Tesmoing" entity="MISC">Tesmoing</w>
+						</castItem>
+						<castItem xml:id="colin">
+							<w pos="PROPN" dep="ROOT" lemma="Colin" entity="">Colin</w>
+						</castItem>
+						<castItem xml:id="juge">
+							<w pos="DET" dep="det" lemma="le" entity="MISC">Le</w>
+							<w pos="NOUN" dep="ROOT" lemma="juge" entity="MISC">Juge</w>
+						</castItem>
+					</castList>
+					<head>
+						<w pos="PROPN" dep="ROOT" lemma="Personnages" entity="MISC">Personnages</w>
+					</head>
+				</argument>
+			</div>
+			<div type="scene" n="I">
+				<stage type="castlist">
+					<w pos="DET" dep="det" lemma="le" entity="">La</w>
+					<w pos="NOUN" dep="ROOT" lemma="mere" entity="LOC">Mere</w>
+					<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+					<w pos="DET" dep="det" lemma="le" entity="">la</w>
+					<w pos="PROPN" dep="conj" lemma="Fille" entity="MISC">Fille</w>
+				</stage>
+				<sp who="#mere">
+					<l>
+						<w pos="ADP" dep="case" lemma="par" entity="">Par</w>
+						<w pos="DET" dep="det" lemma="le" entity="">la</w>
+						<w pos="NOUN" dep="ROOT" lemma="croi" entity="MISC">croi</w>
+						<w pos="PROPN" dep="nmod" lemma="Dieu" entity="MISC">Dieu</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+						<w pos="PROPN" dep="nsubj:pass" lemma="j’" entity="PER">j’</w>
+						<w pos="VERB" dep="appos" lemma="aymeroys" entity="PER">aymeroys</w>
+						<w pos="NOUN" dep="flat:name" lemma="myeul" entity="">myeulx</w>
+					</l>
+					<l>
+						<w pos="PROPN" dep="nsubj" lemma="Luy" entity="LOC">Luy</w>
+						<w pos="AUX" dep="aux:tense" lemma="avoir" entity="">avoir</w>
+						<w pos="VERB" dep="ROOT" lemma="crever" entity="">crevé</w>
+						<w pos="DET" dep="det" lemma="le" entity="">les</w>
+						<w pos="NOUN" dep="obj" lemma="deul" entity="">deulx</w>
+						<w pos="ADJ" dep="amod" lemma="yeulx" entity="">yeulx</w>
+					</l>
+					<l>
+						<w pos="SCONJ" dep="mark" lemma="que" entity="MISC">Que</w>
+						<w pos="PRON" dep="nsubj" lemma="je" entity="MISC">je</w>
+						<w pos="VERB" dep="ROOT" lemma="n’" entity="MISC">n’</w>
+						<w pos="ADP" dep="case" lemma="en" entity="">en</w>
+						<w pos="NOUN" dep="xcomp" lemma="eusse" entity="">eusses</w>
+						<w pos="DET" dep="det" lemma="le" entity="">la</w>
+						<w pos="NOUN" dep="obj" lemma="raisson" entity="">raisson</w>
+					</l>
+					<l>
+						<w pos="VERB" dep="ROOT" lemma="faire" entity="">Faire</w>
+						<w pos="ADP" dep="case" lemma="en" entity="">en</w>
+						<w pos="DET" dep="det" lemma="mon" entity="">ma</w>
+						<w pos="NOUN" dep="obl:arg" lemma="fille" entity="">fille</w>
+						<w pos="ADP" dep="case" lemma="en" entity="">en</w>
+						<w pos="DET" dep="det" lemma="mon" entity="">ma</w>
+						<w pos="NOUN" dep="nmod" lemma="maisson" entity="">maisson</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+					</l>
+					<l>
+						<w pos="CCONJ" dep="cc" lemma="et" entity="">Et</w>
+						<w pos="VERB" dep="ROOT" lemma="puy" entity="">puys</w>
+						<w pos="VERB" dep="xcomp" lemma="dire" entity="">dire</w>
+						<w pos="ADP" dep="case" lemma="pour" entity="">pour</w>
+						<w pos="DET" dep="det" lemma="tout" entity="">tout</w>
+						<w pos="NOUN" dep="obl:mod" lemma="potage" entity="">potage</w>
+					</l>
+					<l>
+						<w pos="ADP" dep="case" lemma="y" entity="PER">Y</w>
+						<w pos="PROPN" dep="ROOT" lemma="n’" entity="PER">n’</w>
+						<w pos="PRON" dep="punct" lemma="y" entity="">y</w>
+						<w pos="VERB" dep="aux:tense" lemma="avoir" entity="">a</w>
+						<w pos="ADJ" dep="amod" lemma="poinct" entity="">poinct</w>
+						<w pos="ADP" dep="case" lemma="de" entity="">de</w>
+						<w pos="NOUN" dep="obl:arg" lemma="tesmoingnage" entity="">tesmoingnage</w>
+						<w pos="PUNCT" dep="ROOT" lemma="," entity="">,</w>
+					</l>
+					<l>
+						<w pos="ADP" dep="case" lemma="pour" entity="">Pour</w>
+						<w pos="DET" dep="det" lemma="le" entity="">le</w>
+						<w pos="ADJ" dep="obl:mod" lemma="premier" entity="">premier</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+						<w pos="PRON" dep="nsubj" lemma="on" entity="">on</w>
+						<w pos="DET" dep="det" lemma="le" entity="">le</w>
+						<w pos="NOUN" dep="ROOT" lemma="voeyra" entity="">voeyra</w>
+						<w pos="PUNCT" dep="punct" lemma="." entity="">.</w>
+					</l>
+					<stage>
+						<w pos="NOUN" dep="ROOT" lemma="commence" entity="">commence</w>
+					</stage>
+				</sp>
+				<sp who="#fille">
+					<l>
+						<w pos="ADP" dep="case" lemma="par" entity="">Par</w>
+						<w pos="DET" dep="det" lemma="mon" entity="">ma</w>
+						<w pos="NOUN" dep="obl:mod" lemma="foy" entity="">foy</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+						<w pos="ADV" dep="advmod" lemma="bien" entity="">bien</w>
+						<w pos="PRON" dep="ROOT" lemma="faict" entity="">faict</w>
+						<w pos="PRON" dep="expl:comp" lemma="se" entity="">se</w>
+						<w pos="VERB" dep="dep" lemma="être" entity="">sera</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+					</l>
+					<l>
+						<w pos="ADJ" dep="nsubj" lemma="c’" entity="MISC">C’</w>
+						<w pos="AUX" dep="cop" lemma="être" entity="">est</w>
+						<w pos="DET" dep="det" lemma="un" entity="">un</w>
+						<w pos="NOUN" dep="ROOT" lemma="trompeur" entity="">trompeur</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+						<w pos="AUX" dep="cop" lemma="être" entity="">est</w>
+						<w pos="ADV" dep="advmod" lemma="pas" entity="">pas</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+						<w pos="DET" dep="det" lemma="mon" entity="">ma</w>
+						<w pos="NOUN" dep="conj" lemma="mere" entity="">mere</w>
+						<w pos="PUNCT" dep="punct" lemma="?" entity="">?</w>
+					</l>
+					<speaker>
+						<w pos="DET" dep="det" lemma="le" entity="MISC">La</w>
+						<w pos="PROPN" dep="ROOT" lemma="Fille" entity="MISC">Fille</w>
+					</speaker>
+				</sp>
+				<sp who="#mere">
+					<l>
+						<w pos="NOUN" dep="ROOT" lemma="a" entity="">A</w>
+						<w pos="PUNCT" dep="punct" lemma="!" entity="">!</w>
+						<w pos="SCONJ" dep="ROOT" lemma="que" entity="">que</w>
+						<w pos="PROPN" dep="dep" lemma="j’" entity="LOC">j’</w>
+						<w pos="ADP" dep="flat:foreign" lemma="ey" entity="">ey</w>
+						<w pos="ADP" dep="case" lemma="de" entity="">de</w>
+						<w pos="NOUN" dep="obl:arg" lemma="douleur" entity="">douleur</w>
+						<w pos="ADV" dep="fixed" lemma="amere" entity="">amere</w>
+					</l>
+					<l>
+						<w pos="ADP" dep="case" lemma="de" entity="">De</w>
+						<w pos="ADP" dep="det" lemma="ton" entity="">ta</w>
+						<w pos="NOUN" dep="ROOT" lemma="fortune" entity="">fortune</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+						<w pos="NOUN" dep="nmod" lemma="marion" entity="MISC">Marion</w>
+						<w pos="PUNCT" dep="punct" lemma="." entity="">.</w>
+					</l>
+					<l>
+						<w pos="PRON" dep="expl:subj" lemma="il" entity="">Il</w>
+						<w pos="VERB" dep="ROOT" lemma="fault" entity="">fault</w>
+						<w pos="SCONJ" dep="mark" lemma="que" entity="">que</w>
+						<w pos="PRON" dep="nsubj" lemma="nous" entity="">nous</w>
+						<w pos="PRON" dep="dep" lemma="te" entity="">te</w>
+						<w pos="NOUN" dep="obj" lemma="marion" entity="">marion</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+					</l>
+					<l>
+						<w pos="DET" dep="det" lemma="sy" entity="">Sy</w>
+						<w pos="NOUN" dep="ROOT" lemma="debvoyt" entity="">debvoyt</w>
+						<w pos="DET" dep="advmod" lemma="tout" entity="">tout</w>
+						<w pos="ADJ" dep="fixed" lemma="fol" entity="">fol</w>
+						<w pos="ADJ" dep="amod" lemma="enrager" entity="">enrager</w>
+						<w pos="PUNCT" dep="punct" lemma="." entity="">.</w>
+					</l>
+					<speaker>
+						<w pos="DET" dep="det" lemma="le" entity="">La</w>
+						<w pos="NOUN" dep="ROOT" lemma="mere" entity="LOC">Mere</w>
+					</speaker>
+				</sp>
+				<sp who="#fille">
+					<l>
+						<w pos="CCONJ" dep="cc" lemma="et" entity="">Et</w>
+						<w pos="NOUN" dep="ROOT" lemma="dea" entity="">Dea</w>
+						<w pos="PUNCT" dep="ROOT" lemma="!" entity="">!</w>
+						<w pos="PROPN" dep="nsubj" lemma="Pourquoy" entity="">Pourquoy</w>
+						<w pos="VERB" dep="ROOT" lemma="venir" entity="">vint</w>
+						<w pos="PRON" dep="dep" lemma="il" entity="">-il</w>
+						<w pos="VERB" dep="xcomp" lemma="rager" entity="">rager</w>
+					</l>
+					<l>
+						<w pos="ADV" dep="advmod" lemma="tant" entity="">Tant</w>
+						<w pos="ADP" dep="case" lemma="de" entity="">de</w>
+						<w pos="NOUN" dep="ROOT" lemma="foy" entity="">foys</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+						<w pos="SCONJ" dep="mark" lemma="comme" entity="">comme</w>
+						<w pos="PRON" dep="nsubj" lemma="vous" entity="">vous</w>
+						<w pos="NOUN" dep="ROOT" lemma="savé" entity="">savés</w>
+						<w pos="PUNCT" dep="punct" lemma="?" entity="">?</w>
+					</l>
+					<speaker>
+						<w pos="DET" dep="det" lemma="le" entity="MISC">La</w>
+						<w pos="PROPN" dep="ROOT" lemma="Fille" entity="MISC">Fille</w>
+					</speaker>
+				</sp>
+				<sp who="#mere">
+					<l>
+						<w pos="NOUN" dep="ROOT" lemma="a" entity="MISC">A</w>
+						<w pos="PUNCT" dep="punct" lemma="!" entity="MISC">!</w>
+						<w pos="NOUN" dep="ROOT" lemma="marion" entity="">Marion</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+						<w pos="ADV" dep="advmod" lemma="pas" entity="">pas</w>
+						<w pos="PRON" dep="iobj" lemma="vous" entity="">vous</w>
+						<w pos="VERB" dep="ROOT" lemma="n’" entity="PER">n’</w>
+						<w pos="VERB" dep="acl" lemma="aver" entity="">avés</w>
+					</l>
+					<l>
+						<w pos="PRON" dep="det" lemma="l’" entity="PER">L’</w>
+						<w pos="VERB" dep="ROOT" lemma="esprit" entity="">esprit</w>
+						<w pos="ADV" dep="advmod" lemma="encor" entity="">encor</w>
+						<w pos="VERB" dep="xcomp" lemma="asser" entity="">assés</w>
+						<w pos="NOUN" dep="ROOT" lemma="propice" entity="">propice</w>
+					</l>
+					<l>
+						<w pos="ADP" dep="mark" lemma="pour" entity="">Pour</w>
+						<w pos="PRON" dep="iobj" lemma="vous" entity="">vous</w>
+						<w pos="VERB" dep="ROOT" lemma="garder" entity="">garder</w>
+						<w pos="ADP" dep="case" lemma="de" entity="">de</w>
+						<w pos="DET" dep="det" lemma="le" entity="">la</w>
+						<w pos="NOUN" dep="obl:arg" lemma="malice" entity="">malice</w>
+					</l>
+					<l>
+						<w pos="ADP" dep="case" lemma="de" entity="">De</w>
+						<w pos="ADJ" dep="amod" lemma="tel" entity="">tel</w>
+						<w pos="ADJ" dep="ROOT" lemma="deabl" entity="">deable</w>
+						<w pos="PUNCT" dep="punct" lemma="." entity="">.</w>
+					</l>
+					<speaker>
+						<w pos="DET" dep="det" lemma="le" entity="">La</w>
+						<w pos="NOUN" dep="ROOT" lemma="mere" entity="LOC">Mere</w>
+					</speaker>
+				</sp>
+				<sp who="#fille">
+					<l>
+						<w pos="PRON" dep="nsubj" lemma="vous" entity="">Vous</w>
+						<w pos="ADJ" dep="ROOT" lemma="dicte" entity="">dictes</w>
+						<w pos="VERB" dep="xcomp" lemma="vray" entity="">vray</w>
+						<w pos="PUNCT" dep="punct" lemma="." entity="">.</w>
+					</l>
+				</sp>
+				<sp who="#mere">
+					<l>
+						<w pos="DET" dep="det" lemma="sy" entity="">Sy</w>
+						<w pos="NOUN" dep="nsubj" lemma="veul" entity="">veulx</w>
+						<w pos="PRON" dep="nsubj" lemma="je" entity="">je</w>
+						<w pos="VERB" dep="ROOT" lemma="sçavoir" entity="">sçavoir</w>
+						<w pos="ADP" dep="det" lemma="de" entity="">de</w>
+						<w pos="NOUN" dep="xcomp" lemma="vray" entity="">vray</w>
+					</l>
+					<l>
+						<w pos="PRON" dep="nsubj" lemma="qu’" entity="">Qu’</w>
+						<w pos="PRON" dep="iobj" lemma="en" entity="">en</w>
+						<w pos="VERB" dep="ROOT" lemma="dire" entity="">dira</w>
+						<w pos="DET" dep="det" lemma="le" entity="">le</w>
+						<w pos="NOUN" dep="obj" lemma="juge" entity="">juge</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+						<w pos="ADP" dep="case" lemma="par" entity="">par</w>
+						<w pos="PROPN" dep="obl:mod" lemma="Dieu" entity="MISC">Dieu</w>
+						<w pos="PUNCT" dep="punct" lemma="." entity="">.</w>
+					</l>
+					<l>
+						<w pos="PRON" dep="nsubj" lemma="je" entity="">Je</w>
+						<w pos="PRON" dep="expl:comp" lemma="me" entity="">me</w>
+						<w pos="VERB" dep="ROOT" lemma="suys" entity="">suys</w>
+						<w pos="ADJ" dep="amod" lemma="trouve" entity="">trouvee</w>
+						<w pos="ADP" dep="case" lemma="en" entity="">en</w>
+						<w pos="NOUN" dep="obl:mod" lemma="mainct" entity="">mainct</w>
+						<w pos="NOUN" dep="nmod" lemma="lieu" entity="">lieu</w>
+					</l>
+					<l>
+						<w pos="ADV" dep="dep" lemma="où" entity="">Où</w>
+						<w pos="PROPN" dep="flat:name" lemma="j’" entity="LOC">j’</w>
+						<w pos="PRON" dep="case" lemma="ay" entity="">ay</w>
+						<w pos="NOUN" dep="ROOT" lemma="faict" entity="">faict</w>
+						<w pos="NOUN" dep="amod" lemma="consultation" entity="">consultation</w>
+					</l>
+					<l>
+						<w pos="ADP" dep="case" lemma="de" entity="">Du</w>
+						<w pos="NOUN" dep="ROOT" lemma="cas" entity="">cas</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+						<w pos="CCONJ" dep="cc" lemma="mais" entity="">mais</w>
+						<w pos="DET" dep="det" lemma="le" entity="">la</w>
+						<w pos="NOUN" dep="conj" lemma="probation" entity="">probation</w>
+					</l>
+					<l>
+						<w pos="PRON" dep="nsubj" lemma="nous" entity="">Nous</w>
+						<w pos="VERB" dep="ROOT" lemma="faire" entity="">fera</w>
+						<w pos="VERB" dep="xcomp" lemma="gaigner" entity="">gaigner</w>
+						<w pos="VERB" dep="ccomp" lemma="nostre" entity="">nostre</w>
+						<w pos="NOUN" dep="obj" lemma="cause" entity="">cause</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+					</l>
+					<l>
+						<w pos="ADP" dep="case" lemma="avec" entity="">Avec</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+						<w pos="PRON" dep="det" lemma="se" entity="">se</w>
+						<w pos="X" dep="amod" lemma="j’" entity="LOC">j’</w>
+						<w pos="VERB" dep="dep" lemma="entens" entity="">entens</w>
+						<w pos="ADV" dep="advmod" lemma="bien" entity="">bien</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+						<w pos="DET" dep="det" lemma="le" entity="">la</w>
+						<w pos="NOUN" dep="ROOT" lemma="clause" entity="">clause</w>
+						<w pos="PUNCT" dep="punct" lemma="." entity="">.</w>
+					</l>
+					<l>
+						<w pos="ADJ" dep="advmod" lemma="taire" entity="">Tu</w>
+						<w pos="VERB" dep="ROOT" lemma="congnoys" entity="">congnoys</w>
+						<w pos="ADV" dep="advmod" lemma="bien" entity="">bien</w>
+						<w pos="PROPN" dep="obj" lemma="Guillot" entity="PER">Guillot</w>
+						<w pos="ADP" dep="case" lemma="de" entity="PER">des</w>
+						<w pos="NOUN" dep="nmod" lemma="noix" entity="PER">Noix</w>
+						<w pos="PUNCT" dep="punct" lemma="?" entity="">?</w>
+					</l>
+					<speaker>
+						<w pos="DET" dep="det" lemma="le" entity="">La</w>
+						<w pos="NOUN" dep="ROOT" lemma="mere" entity="LOC">Mere</w>
+					</speaker>
+				</sp>
+				<sp who="#fille">
+					<speaker>
+						<choice>
+							<corr>
+								<w pos="DET" dep="det" lemma="le" entity="MISC">La</w>
+								<w pos="PROPN" dep="ROOT" lemma="Fille" entity="MISC">Fille</w>
+							</corr>
+						</choice>
+					</speaker>
+					<l>
+						<w pos="PROPN" dep="ROOT" lemma="Ouy" entity="LOC">Ouy</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+						<w pos="DET" dep="det" lemma="mon" entity="">ma</w>
+						<w pos="NOUN" dep="conj" lemma="mere" entity="">mere</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+						<w pos="PRON" dep="nsubj" lemma="je" entity="">je</w>
+						<w pos="PRON" dep="det" lemma="le" entity="">le</w>
+						<w pos="NOUN" dep="conj" lemma="congnoy" entity="">congnoys</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+					</l>
+					<l>
+						<w pos="ADJ" dep="nsubj" lemma="c’" entity="MISC">C’</w>
+						<w pos="AUX" dep="cop" lemma="être" entity="">est</w>
+						<w pos="ADJ" dep="ROOT" lemma="celuy" entity="">celuy</w>
+						<w pos="SCONJ" dep="mark" lemma="que" entity="">que</w>
+						<w pos="NOUN" dep="nsubj" lemma="tre" entity="">tres</w>
+						<w pos="ADV" dep="advmod" lemma="bien" entity="">bien</w>
+						<w pos="ADJ" dep="amod" lemma="l’" entity="ORG">l’</w>
+						<w pos="ADJ" dep="ccomp" lemma="oyst" entity="">oyst</w>
+					</l>
+					<l>
+						<w pos="ADV" dep="case" lemma="quant" entity="">Quant</w>
+						<w pos="ADP" dep="fixed" lemma="à" entity="">à</w>
+						<w pos="DET" dep="det" lemma="son" entity="">sa</w>
+						<w pos="NOUN" dep="ROOT" lemma="chambre" entity="">chambre</w>
+						<w pos="NOUN" dep="amod" lemma="m’" entity="PER">m’</w>
+						<w pos="ADJ" dep="amod" lemma="encloyst" entity="">encloyst</w>
+					</l>
+					<l>
+						<w pos="CCONJ" dep="cc" lemma="et" entity="">Et</w>
+						<w pos="SCONJ" dep="nsubj" lemma="qu’" entity="LOC">qu’</w>
+						<w pos="PRON" dep="expl:subj" lemma="il" entity="">il</w>
+						<w pos="VERB" dep="ROOT" lemma="disoyt" entity="">disoyt</w>
+						<w pos="PUNCT" dep="punct" lemma=":" entity="">:</w>
+						<w pos="PUNCT" dep="punct" lemma='"' entity="">"</w>
+						<w pos="DET" dep="det" lemma="mon" entity="">ma</w>
+						<w pos="NOUN" dep="obl:mod" lemma="marion" entity="">Marion</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+					</l>
+					<l>
+						<w pos="NOUN" dep="det" lemma="tre" entity="">Tres</w>
+						<w pos="ADV" dep="advmod" lemma="bien" entity="">bien</w>
+						<w pos="NOUN" dep="nsubj" lemma="ensemble" entity="">ensemble</w>
+						<w pos="PRON" dep="nsubj" lemma="nous" entity="">nous</w>
+						<w pos="VERB" dep="ROOT" lemma="serion" entity="">serion</w>
+					</l>
+					<l>
+						<w pos="PROPN" dep="nsubj" lemma="Voulés" entity="">Voulés</w>
+						<w pos="PRON" dep="iobj" lemma="vous" entity="">vous</w>
+						<w pos="ADV" dep="advmod" lemma="pas" entity="">pas</w>
+						<w pos="VERB" dep="ROOT" lemma="estre" entity="">estre</w>
+						<w pos="DET" dep="det" lemma="mon" entity="">ma</w>
+						<w pos="NOUN" dep="obj" lemma="femme" entity="">femme</w>
+						<w pos="PUNCT" dep="punct" lemma="?" entity="">?</w>
+						<w pos="PUNCT" dep="ROOT" lemma='"' entity="">"</w>
+					</l>
+					<l>
+						<w pos="ADV" dep="case" lemma="quant" entity="">Quant</w>
+						<w pos="PROPN" dep="dep" lemma="luy" entity="">luy</w>
+						<w pos="NOUN" dep="ROOT" lemma="respondi" entity="">respondis</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+						<w pos="ADP" dep="case" lemma="sur" entity="">sur</w>
+						<w pos="DET" dep="det" lemma="mon" entity="">mon</w>
+						<w pos="NOUN" dep="nmod" lemma="ame" entity="">ame</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+					</l>
+					<l>
+						<w pos="SCONJ" dep="mark" lemma="que" entity="">Que</w>
+						<w pos="PROPN" dep="nsubj" lemma="j’" entity="LOC">j’</w>
+						<w pos="ADP" dep="case" lemma="en" entity="">en</w>
+						<w pos="NOUN" dep="ROOT" lemma="estoy" entity="">estoys</w>
+						<w pos="ADJ" dep="amod" lemma="tre" entity="">tres</w>
+						<w pos="ADV" dep="advmod" lemma="bien" entity="">bien</w>
+						<w pos="ADJ" dep="amod" lemma="content" entity="">contente</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+					</l>
+					<l>
+						<w pos="PROPN" dep="nsubj" lemma="Los" entity="">Los</w>
+						<w pos="PRON" dep="iobj" lemma="y" entity="">y</w>
+						<w pos="VERB" dep="ROOT" lemma="fist" entity="">fist</w>
+						<w pos="ADV" dep="advmod" lemma="tout" entity="">tout</w>
+						<w pos="ADP" dep="fixed" lemma="à" entity="">à</w>
+						<w pos="DET" dep="det" lemma="son" entity="">son</w>
+						<w pos="NOUN" dep="obj" lemma="entente" entity="">entente</w>
+						<w pos="PUNCT" dep="punct" lemma=";" entity="">;</w>
+					</l>
+					<l>
+						<w pos="CCONJ" dep="cc" lemma="car" entity="">Car</w>
+						<w pos="PROPN" dep="nsubj" lemma="ainsy" entity="">ainsy</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+						<w pos="PRON" dep="nsubj" lemma="vous" entity="">vous</w>
+						<w pos="PRON" dep="iobj" lemma="me" entity="">me</w>
+						<w pos="NOUN" dep="nsubj" lemma="l’" entity="ORG">l’</w>
+						<w pos="ADJ" dep="amod" lemma="avié" entity="">aviés</w>
+						<w pos="NOUN" dep="ROOT" lemma="dict" entity="">dict</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+					</l>
+					<l>
+						<w pos="PROPN" dep="nsubj" lemma="Guillot" entity="PER">Guillot</w>
+						<w pos="AUX" dep="cop" lemma="être" entity="">est</w>
+						<w pos="NOUN" dep="ROOT" lemma="homme" entity="">homme</w>
+						<w pos="ADP" dep="case" lemma="de" entity="">de</w>
+						<w pos="PROPN" dep="nmod" lemma="credict" entity="">credict</w>
+						<w pos="PUNCT" dep="punct" lemma=":" entity="">:</w>
+					</l>
+					<l>
+						<w pos="PRON" dep="nsubj" lemma="on" entity="">On</w>
+						<w pos="PRON" dep="obj" lemma="le" entity="">le</w>
+						<w pos="VERB" dep="ROOT" lemma="croierer" entity="">croiera</w>
+						<w pos="ADP" dep="case" lemma="de" entity="">du</w>
+						<w pos="ADJ" dep="amod" lemma="premier" entity="">premier</w>
+						<w pos="NOUN" dep="obj" lemma="coup" entity="">coup</w>
+						<w pos="PUNCT" dep="punct" lemma="." entity="">.</w>
+					</l>
+				</sp>
+				<sp who="#mere">
+					<l>
+						<w pos="ADJ" dep="nsubj" lemma="c’" entity="MISC">C’</w>
+						<w pos="AUX" dep="cop" lemma="être" entity="">est</w>
+						<w pos="ADJ" dep="amod" lemma="tre" entity="">tres</w>
+						<w pos="ADV" dep="advmod" lemma="bien" entity="">bien</w>
+						<w pos="NOUN" dep="ROOT" lemma="dict" entity="">dict</w>
+						<w pos="ADP" dep="case" lemma="à" entity="">à</w>
+						<w pos="NOUN" dep="obl:arg" lemma="coup" entity="">coup</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+						<w pos="ADP" dep="case" lemma="à" entity="">à</w>
+						<w pos="NOUN" dep="dep" lemma="coup" entity="">coup</w>
+						<w pos="PUNCT" dep="punct" lemma="." entity="">.</w>
+					</l>
+					<l>
+						<w pos="PRON" dep="nsubj" lemma="je" entity="">Je</w>
+						<w pos="VERB" dep="ROOT" lemma="m’" entity="PER">m’</w>
+						<w pos="ADP" dep="case" lemma="en" entity="">en</w>
+						<w pos="NOUN" dep="obl:mod" lemma="voy" entity="">voys</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+						<w pos="ADP" dep="mark" lemma="sans" entity="">sans</w>
+						<w pos="PRON" dep="iobj" lemma="me" entity="">me</w>
+						<w pos="VERB" dep="advcl" lemma="consister" entity="">consister</w>
+					</l>
+					<l>
+						<w pos="VERB" dep="ROOT" lemma="chercher" entity="">Chercher</w>
+						<w pos="ADV" dep="advmod" lemma="sergent" entity="">sergent</w>
+						<w pos="ADP" dep="mark" lemma="pour" entity="">pour</w>
+						<w pos="DET" dep="det" lemma="le" entity="">le</w>
+						<w pos="VERB" dep="advcl" lemma="citer" entity="">citer</w>
+						<w pos="PUNCT" dep="punct" lemma=":" entity="">:</w>
+					</l>
+					<l>
+						<w pos="PRON" dep="nsubj" lemma="je" entity="">Je</w>
+						<w pos="VERB" dep="ROOT" lemma="croy" entity="">croy</w>
+						<w pos="SCONJ" dep="mark" lemma="qu’" entity="">qu’</w>
+						<w pos="PRON" dep="expl:subj" lemma="il" entity="">il</w>
+						<w pos="VERB" dep="ccomp" lemma="n’" entity="PER">n’</w>
+						<w pos="PRON" dep="case" lemma="y" entity="">y</w>
+						<w pos="VERB" dep="obl:arg" lemma="faillir" entity="">faillira</w>
+						<w pos="ADV" dep="amod" lemma="pas" entity="">pas</w>
+						<w pos="PUNCT" dep="punct" lemma="." entity="">.</w>
+					</l>
+					<speaker>
+						<w pos="DET" dep="det" lemma="le" entity="">La</w>
+						<w pos="NOUN" dep="ROOT" lemma="mere" entity="LOC">Mere</w>
+					</speaker>
+				</sp>
+				<sp who="#fille">
+					<l>
+						<w pos="PROPN" dep="ROOT" lemma="Alon" entity="LOC">Alon</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+						<w pos="DET" dep="det" lemma="mon" entity="">ma</w>
+						<w pos="NOUN" dep="ROOT" lemma="mere" entity="">mere</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+						<w pos="ADV" dep="advmod" lemma="pas" entity="">pas</w>
+						<w pos="ADP" dep="fixed" lemma="à" entity="">à</w>
+						<w pos="ADV" dep="fixed" lemma="pas" entity="">pas</w>
+						<w pos="PUNCT" dep="ROOT" lemma="." entity="">.</w>
+					</l>
+					<l>
+						<w pos="DET" dep="det" lemma="son" entity="">Sa</w>
+						<w pos="NOUN" dep="nsubj:pass" lemma="maison" entity="">maison</w>
+						<w pos="NOUN" dep="nmod" lemma="n’" entity="PER">n’</w>
+						<w pos="AUX" dep="aux:pass" lemma="être" entity="">est</w>
+						<w pos="ADV" dep="advmod" lemma="pas" entity="">pas</w>
+						<w pos="VERB" dep="ROOT" lemma="loing" entity="">loing</w>
+						<w pos="ADV" dep="advmod" lemma="d’" entity="MISC">d’</w>
+						<w pos="ADJ" dep="xcomp" lemma="icy" entity="MISC">icy</w>
+						<w pos="PUNCT" dep="punct" lemma="." entity="">.</w>
+					</l>
+					<speaker>
+						<w pos="DET" dep="det" lemma="le" entity="MISC">La</w>
+						<w pos="PROPN" dep="ROOT" lemma="Fille" entity="MISC">Fille</w>
+					</speaker>
+				</sp>
+				<head>
+					<w pos="NOUN" dep="ROOT" lemma="scène" entity="">Scène</w>
+					<w pos="NUM" dep="ROOT" lemma="1" entity="">1</w>
+				</head>
+			</div>
+			<div type="scene" n="II">
+				<stage type="castlist">
+					<w pos="DET" dep="det" lemma="le" entity="">La</w>
+					<w pos="NOUN" dep="ROOT" lemma="mere" entity="LOC">Mere</w>
+					<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+					<w pos="DET" dep="det" lemma="le" entity="">la</w>
+					<w pos="PROPN" dep="conj" lemma="Fille" entity="MISC">Fille</w>
+					<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+					<w pos="DET" dep="det" lemma="le" entity="">le</w>
+					<w pos="NOUN" dep="conj" lemma="juge" entity="">Juge</w>
+				</stage>
+				<stage>
+					<w pos="DET" dep="det" lemma="le" entity="MISC">La</w>
+					<w pos="NOUN" dep="nsubj" lemma="fille" entity="MISC">Fille</w>
+					<w pos="CCONJ" dep="cc" lemma="et" entity="MISC">et</w>
+					<w pos="DET" dep="det" lemma="le" entity="MISC">la</w>
+					<w pos="NOUN" dep="conj" lemma="mere" entity="MISC">Mere</w>
+					<w pos="VERB" dep="ROOT" lemma="parler" entity="">parlant</w>
+					<w pos="ADJ" dep="obj" lemma="ensembl" entity="">ensemble</w>
+					<w pos="ADJ" dep="obj" lemma="den" entity="">dens</w>
+					<w pos="DET" dep="det" lemma="le" entity="">la</w>
+					<w pos="NOUN" dep="obj" lemma="salle" entity="">salle</w>
+					<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+					<w pos="VERB" dep="advcl" lemma="revenir" entity="">revenant</w>
+					<w pos="ADP" dep="case" lemma="de" entity="">du</w>
+					<w pos="NOUN" dep="obl:arg" lemma="sergent" entity="">sergent</w>
+					<w pos="PUNCT" dep="punct" lemma="." entity="">.</w>
+				</stage>
+				<sp who="#juge">
+					<speaker>
+						<note place="bottom">
+							<w pos="DET" dep="det" lemma="un" entity="">Une</w>
+							<w pos="ADJ" dep="amod" lemma="second" entity="">seconde</w>
+							<w pos="NOUN" dep="nsubj" lemma="main" entity="">main</w>
+							<w pos="AUX" dep="aux:tense" lemma="avoir" entity="">a</w>
+							<w pos="VERB" dep="ROOT" lemma="rayer" entity="">rayé</w>
+							<w pos="ADJ" dep="amod" lemma="tout" entity="">toutes</w>
+							<w pos="DET" dep="det" lemma="le" entity="">les</w>
+							<w pos="NOUN" dep="obj" lemma="mention" entity="">mentions</w>
+							<w pos="ADP" dep="case" lemma="de" entity="">de</w>
+							<w pos="PUNCT" dep="punct" lemma='"' entity="">"</w>
+							<w pos="DET" dep="nmod" lemma="le" entity="MISC">L'</w>
+							<w pos="PROPN" dep="nmod" lemma="Official" entity="MISC">Official</w>
+							<w pos="PUNCT" dep="punct" lemma='"' entity="">"</w>
+							<w pos="ADP" dep="case" lemma="dans" entity="">dans</w>
+							<w pos="DET" dep="det" lemma="le" entity="">le</w>
+							<w pos="NOUN" dep="obl:mod" lemma="corps" entity="">corps</w>
+							<w pos="ADP" dep="case" lemma="de" entity="">du</w>
+							<w pos="NOUN" dep="nmod" lemma="texte" entity="">texte</w>
+							<w pos="CCONJ" dep="cc" lemma="et" entity="">et</w>
+							<w pos="VERB" dep="conj" lemma="substituer" entity="">substitué</w>
+							<w pos="PUNCT" dep="punct" lemma='"' entity="">"</w>
+							<w pos="DET" dep="det" lemma="le" entity="ORG">Le</w>
+							<w pos="NOUN" dep="obj" lemma="juge" entity="ORG">Juge</w>
+							<w pos="PUNCT" dep="punct" lemma='"' entity="">"</w>
+							<w pos="PUNCT" dep="punct" lemma="." entity="">.</w>
+						</note>
+						<w pos="DET" dep="det" lemma="le" entity="MISC">Le</w>
+						<w pos="NOUN" dep="ROOT" lemma="juge" entity="MISC">Juge</w>
+					</speaker>
+					<l>
+						<w pos="PRON" dep="case" lemma="il" entity="">Il</w>
+						<w pos="PRON" dep="fixed" lemma="y" entity="">y</w>
+						<w pos="AUX" dep="fixed" lemma="avoir" entity="">a</w>
+						<w pos="ADJ" dep="amod" lemma="long" entity="">long</w>
+						<w pos="NOUN" dep="ROOT" lemma="temps" entity="">temps</w>
+						<w pos="SCONJ" dep="mark" lemma="que" entity="">que</w>
+						<w pos="NOUN" dep="acl:relcl" lemma="n’" entity="PER">n’</w>
+						<w pos="PROPN" dep="flat:name" lemma="issy" entity="">issy</w>
+					</l>
+					<l>
+						<w pos="ADP" dep="case" lemma="hors" entity="">Hors</w>
+						<w pos="ADP" dep="case" lemma="de" entity="">du</w>
+						<w pos="NOUN" dep="ROOT" lemma="logis" entity="">logis</w>
+						<w pos="PUNCT" dep="ROOT" lemma="," entity="">,</w>
+						<w pos="ADP" dep="mark" lemma="pour" entity="">pour</w>
+						<w pos="VERB" dep="ROOT" lemma="aler" entity="">aler</w>
+						<w pos="VERB" dep="xcomp" lemma="veoir" entity="">veoir</w>
+					</l>
+					<l>
+						<w pos="PROPN" dep="ROOT" lemma="Mes" entity="MISC">Mes</w>
+						<w pos="NOUN" dep="flat:name" lemma="gens" entity="MISC">gens</w>
+						<w pos="CCONJ" dep="cc" lemma="et" entity="">et</w>
+						<w pos="VERB" dep="conj" lemma="faire" entity="">faire</w>
+						<w pos="DET" dep="obj" lemma="mon" entity="">mon</w>
+						<w pos="NOUN" dep="xcomp" lemma="debvoir" entity="">debvoir</w>
+						<w pos="PUNCT" dep="punct" lemma="." entity="">.</w>
+					</l>
+					<l>
+						<w pos="PRON" dep="nsubj" lemma="je" entity="">Je</w>
+						<w pos="VERB" dep="ROOT" lemma="m’" entity="PER">m’</w>
+						<w pos="PRON" dep="obl:arg" lemma="y" entity="">y</w>
+						<w pos="ADP" dep="case" lemma="en" entity="">en</w>
+						<w pos="ADV" dep="obl:mod" lemma="voy" entity="">voy</w>
+						<w pos="ADV" dep="advmod" lemma="tout" entity="">tout</w>
+						<w pos="ADV" dep="advmod" lemma="maintenant" entity="">maintenant</w>
+						<w pos="PUNCT" dep="punct" lemma="." entity="">.</w>
+					</l>
+					<l>
+						<w pos="PROPN" dep="ROOT" lemma="Celuy" entity="ORG">Celuy</w>
+						<w pos="PRON" dep="nsubj" lemma="qui" entity="">qui</w>
+						<w pos="AUX" dep="aux:pass" lemma="être" entity="">est</w>
+						<w pos="VERB" dep="acl:relcl" lemma="droict" entity="">droict</w>
+						<w pos="ADV" dep="advmod" lemma="maintenant" entity="">maintenant</w>
+					</l>
+					<l>
+						<w pos="AUX" dep="cop" lemma="être" entity="">Est</w>
+						<w pos="NOUN" dep="ROOT" lemma="prise" entity="">prise</w>
+						<w pos="ADP" dep="case" lemma="de" entity="">de</w>
+						<w pos="PROPN" dep="nmod" lemma="Dieu" entity="MISC">Dieu</w>
+						<w pos="CCONJ" dep="cc" lemma="et" entity="">et</w>
+						<w pos="ADP" dep="case" lemma="de" entity="">des</w>
+						<w pos="NOUN" dep="conj" lemma="homme" entity="">hommes</w>
+						<w pos="PUNCT" dep="punct" lemma="." entity="">.</w>
+					</l>
+					<stage>
+						<w pos="ADP" dep="ROOT" lemma="entrer" entity="">entre</w>
+					</stage>
+				</sp>
+				<sp who="#fille">
+					<l>
+						<w pos="NOUN" dep="nsubj:pass" lemma="mere" entity="LOC">Mere</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+						<w pos="NOUN" dep="nmod" lemma="c’" entity="MISC">c’</w>
+						<w pos="AUX" dep="aux:pass" lemma="être" entity="">est</w>
+						<w pos="VERB" dep="advcl" lemma="icy" entity="">icy</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+						<w pos="PRON" dep="nsubj" lemma="nous" entity="">nous</w>
+						<w pos="PRON" dep="expl:comp" lemma="y" entity="">y</w>
+						<w pos="NOUN" dep="ROOT" lemma="somme" entity="">sommes</w>
+						<w pos="PUNCT" dep="punct" lemma="." entity="">.</w>
+					</l>
+				</sp>
+				<sp who="#mere">
+					<l>
+						<w pos="DET" dep="det" lemma="ce" entity="">Ce</w>
+						<w pos="NOUN" dep="nsubj" lemma="chemin" entity="">chemin</w>
+						<w pos="AUX" dep="cop" lemma="être" entity="">est</w>
+						<w pos="ADV" dep="advmod" lemma="beaucoup" entity="">beaucoup</w>
+						<w pos="ADV" dep="advmod" lemma="plus" entity="">plus</w>
+						<w pos="ADJ" dep="ROOT" lemma="court" entity="">court</w>
+						<w pos="PUNCT" dep="punct" lemma="." entity="">.</w>
+					</l>
+				</sp>
+				<sp who="#fille">
+					<l>
+						<w pos="ADP" dep="case" lemma="par" entity="">Par</w>
+						<w pos="DET" dep="det" lemma="mon" entity="">mon</w>
+						<w pos="NOUN" dep="ROOT" lemma="serment" entity="">serment</w>
+						<w pos="ADJ" dep="amod" lemma="voecy" entity="">voecy</w>
+						<w pos="PRON" dep="obj" lemma="le" entity="">la</w>
+						<w pos="VERB" dep="advmod" lemma="courir" entity="">court</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+					</l>
+					<l>
+						<w pos="PRON" dep="nsubj" lemma="je" entity="">Je</w>
+						<w pos="DET" dep="obj" lemma="le" entity="">le</w>
+						<w pos="NOUN" dep="ROOT" lemma="congnoy" entity="">congnoy</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+						<w pos="CCONJ" dep="cc" lemma="et" entity="">et</w>
+						<w pos="SCONJ" dep="advmod" lemma="que" entity="">que</w>
+						<w pos="ADP" dep="case" lemma="de" entity="">de</w>
+						<w pos="NOUN" dep="conj" lemma="gens" entity="">gens</w>
+						<w pos="PUNCT" dep="punct" lemma="!" entity="">!</w>
+					</l>
+					<l>
+						<w pos="SCONJ" dep="mark" lemma="que" entity="">Que</w>
+						<w pos="NOUN" dep="nsubj" lemma="l’" entity="LOC">l’</w>
+						<w pos="PRON" dep="nsubj" lemma="on" entity="">on</w>
+						<w pos="VERB" dep="ROOT" lemma="medise" entity="">medise</w>
+						<w pos="ADP" dep="case" lemma="de" entity="">des</w>
+						<w pos="NOUN" dep="obj" lemma="sergen" entity="">sergens</w>
+					</l>
+					<l>
+						<w pos="PRON" dep="nsubj" lemma="qui" entity="">Qui</w>
+						<w pos="VERB" dep="ROOT" lemma="vouldrer" entity="">vouldra</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+						<w pos="NOUN" dep="dep" lemma="tre" entity="">tres</w>
+						<w pos="ADV" dep="fixed" lemma="bien" entity="">bien</w>
+						<w pos="PRON" dep="nsubj" lemma="je" entity="">je</w>
+						<w pos="VERB" dep="ccomp" lemma="m’" entity="PER">m’</w>
+						<w pos="ADP" dep="mark" lemma="en" entity="">en</w>
+						<w pos="ADV" dep="obl:mod" lemma="louer" entity="">loue</w>
+						<w pos="PUNCT" dep="punct" lemma="." entity="">.</w>
+					</l>
+					<l>
+						<w pos="PRON" dep="expl:subj" lemma="il" entity="">Il</w>
+						<w pos="ADV" dep="advmod" lemma="ne" entity="">ne</w>
+						<w pos="PRON" dep="expl:comp" lemma="me" entity="">me</w>
+						<w pos="VERB" dep="ROOT" lemma="être" entity="">sera</w>
+						<w pos="ADV" dep="advmod" lemma="plus" entity="">plus</w>
+						<w pos="DET" dep="det" lemma="le" entity="">la</w>
+						<w pos="NOUN" dep="obj" lemma="moue" entity="">moue</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+					</l>
+					<l>
+						<w pos="DET" dep="det" lemma="le" entity="">Le</w>
+						<w pos="NOUN" dep="ROOT" lemma="trompeur" entity="">trompeur</w>
+						<w pos="PUNCT" dep="punct" lemma="." entity="">.</w>
+						<w pos="NOUN" dep="ROOT" lemma="Monsieur" entity="PER">Monsieur</w>
+						<w pos="DET" dep="det" lemma="le" entity="">le</w>
+						<w pos="NOUN" dep="nmod" lemma="sergent" entity="">sergent</w>
+					</l>
+					<l>
+						<w pos="AUX" dep="case" lemma="avoir" entity="">A</w>
+						<w pos="VERB" dep="ROOT" lemma="ester" entity="">esté</w>
+						<w pos="ADV" dep="advmod" lemma="bien" entity="">bien</w>
+						<w pos="ADV" dep="advmod" lemma="fort" entity="">fort</w>
+						<w pos="ADV" dep="advmod" lemma="diligent" entity="">diligent</w>
+					</l>
+					<l>
+						<w pos="ADP" dep="mark" lemma="de" entity="">De</w>
+						<w pos="PRON" dep="obj" lemma="le" entity="">le</w>
+						<w pos="NOUN" dep="ROOT" lemma="cister" entity="">cister</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+						<w pos="ADJ" dep="conj" lemma="voecy" entity="PER">voecy</w>
+						<w pos="DET" dep="det" lemma="le" entity="PER">la</w>
+						<w pos="NOUN" dep="obj" lemma="lestre" entity="PER">lestre</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+					</l>
+					<l>
+						<w pos="ADV" dep="mark" lemma="où" entity="">Où</w>
+						<w pos="PRON" dep="nsubj" lemma="il" entity="">il</w>
+						<w pos="ADV" dep="advmod" lemma="ne" entity="">ne</w>
+						<w pos="ADV" dep="advmod" lemma="fault" entity="">fault</w>
+						<w pos="VERB" dep="ROOT" lemma="oster" entity="">oster</w>
+						<w pos="ADV" dep="advmod" lemma="ne" entity="">ne</w>
+						<w pos="ADJ" dep="xcomp" lemma="mectr" entity="">mectre</w>
+						<w pos="PUNCT" dep="punct" lemma="." entity="">.</w>
+					</l>
+					<l>
+						<w pos="DET" dep="det" lemma="le" entity="">La</w>
+						<w pos="PROPN" dep="ROOT" lemma="voelà" entity="">voelà</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+						<w pos="DET" dep="det" lemma="le" entity="">la</w>
+						<w pos="NOUN" dep="dep" lemma="relation" entity="">relation</w>
+						<w pos="PUNCT" dep="ROOT" lemma="." entity="">.</w>
+					</l>
+					<speaker>
+						<w pos="DET" dep="det" lemma="le" entity="MISC">La</w>
+						<w pos="PROPN" dep="ROOT" lemma="Fille" entity="MISC">Fille</w>
+					</speaker>
+				</sp>
+				<sp who="#juge">
+					<l>
+						<w pos="DET" dep="det" lemma="mon" entity="MISC">Mon</w>
+						<w pos="PROPN" dep="ROOT" lemma="Dieu" entity="MISC">Dieu</w>
+						<w pos="PUNCT" dep="punct" lemma="!" entity="MISC">!</w>
+						<w pos="DET" dep="det" lemma="quel" entity="">Quel</w>
+						<w pos="NOUN" dep="ROOT" lemma="exclamation" entity="">exclamation</w>
+						<w pos="PUNCT" dep="punct" lemma="." entity="">.</w>
+					</l>
+					<l>
+						<w pos="ADV" dep="ROOT" lemma="d’" entity="PER">D’</w>
+						<w pos="PRON" dep="iobj" lemma="où" entity="">où</w>
+						<w pos="VERB" dep="acl:relcl" lemma="venir" entity="">vient</w>
+						<w pos="DET" dep="det" lemma="ce" entity="">ce</w>
+						<w pos="ADJ" dep="amod" lemma="grant" entity="">grant</w>
+						<w pos="NOUN" dep="obj" lemma="bruict" entity="">bruict</w>
+						<w pos="CCONJ" dep="cc" lemma="et" entity="">et</w>
+						<w pos="VERB" dep="conj" lemma="tempeste" entity="">tempeste</w>
+						<w pos="PUNCT" dep="punct" lemma="?" entity="">?</w>
+					</l>
+					<speaker>
+						<w pos="DET" dep="det" lemma="le" entity="MISC">Le</w>
+						<w pos="NOUN" dep="ROOT" lemma="juge" entity="MISC">Juge</w>
+					</speaker>
+				</sp>
+				<sp who="#mere">
+					<l>
+						<w pos="NOUN" dep="ROOT" lemma="marion" entity="">Marion</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+						<w pos="VERB" dep="case" lemma="taire" entity="">tu</w>
+						<w pos="ADP" dep="det" lemma="être" entity="">es</w>
+						<w pos="NOUN" dep="nmod" lemma="fine" entity="">fine</w>
+						<w pos="ADJ" dep="amod" lemma="best" entity="">beste</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+					</l>
+					<l>
+						<w pos="NOUN" dep="ROOT" lemma="y" entity="">Y</w>
+						<w pos="ADV" dep="dep" lemma="fault" entity="">fault</w>
+						<w pos="ADV" dep="advmod" lemma="finement" entity="">finement</w>
+						<w pos="VERB" dep="xcomp" lemma="sermonner" entity="">sermonner</w>
+						<w pos="PUNCT" dep="punct" lemma="." entity="">.</w>
+					</l>
+					<speaker>
+						<w pos="DET" dep="det" lemma="le" entity="">La</w>
+						<w pos="NOUN" dep="ROOT" lemma="mere" entity="LOC">Mere</w>
+					</speaker>
+				</sp>
+				<sp who="#juge">
+					<l>
+						<w pos="NOUN" dep="nsubj" lemma="ceul" entity="PER">Ceulx</w>
+						<w pos="NOUN" dep="iobj" lemma="sy" entity="">sy</w>
+						<w pos="ADV" dep="advmod" lemma="ne" entity="">ne</w>
+						<w pos="PRON" dep="iobj" lemma="me" entity="">me</w>
+						<w pos="VERB" dep="ROOT" lemma="faire" entity="">font</w>
+						<w pos="VERB" dep="advmod" lemma="questionner" entity="">questionner</w>
+					</l>
+					<l>
+						<w pos="ADP" dep="case" lemma="de" entity="">De</w>
+						<w pos="DET" dep="det" lemma="son" entity="">leur</w>
+						<w pos="NOUN" dep="ROOT" lemma="procé" entity="">procés</w>
+						<w pos="PUNCT" dep="punct" lemma="." entity="">.</w>
+					</l>
+					<speaker>
+						<w pos="DET" dep="det" lemma="le" entity="MISC">Le</w>
+						<w pos="NOUN" dep="ROOT" lemma="juge" entity="MISC">Juge</w>
+					</speaker>
+				</sp>
+				<sp who="#mere">
+					<l>
+						<w pos="PROPN" dep="ROOT" lemma="Dieu" entity="">Dieu</w>
+						<w pos="PRON" dep="nsubj" lemma="vous" entity="">vous</w>
+						<w pos="ADJ" dep="ROOT" lemma="gard" entity="">gard</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+						<w pos="ADJ" dep="conj" lemma="sir" entity="">sire</w>
+						<w pos="PUNCT" dep="punct" lemma="." entity="">.</w>
+					</l>
+				</sp>
+				<sp who="#juge">
+					<l>
+						<w pos="CCONJ" dep="cc" lemma="or" entity="">Or</w>
+						<w pos="DET" dep="det" lemma="son" entity="">sa</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+						<w pos="PRON" dep="nsubj" lemma="qu’" entity="PER">qu’</w>
+						<w pos="VERB" dep="ROOT" lemma="aver" entity="">avés</w>
+						<w pos="PRON" dep="advmod" lemma="vous" entity="">-vous</w>
+						<w pos="ADP" dep="mark" lemma="à" entity="">à</w>
+						<w pos="PRON" dep="iobj" lemma="me" entity="">me</w>
+						<w pos="VERB" dep="xcomp" lemma="dire" entity="">dire</w>
+						<w pos="PUNCT" dep="punct" lemma="?" entity="">?</w>
+					</l>
+				</sp>
+				<sp who="#mere">
+					<l>
+						<w pos="NOUN" dep="ROOT" lemma="Monsieur" entity="PER">Monsieur</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+						<w pos="DET" dep="det" lemma="le" entity="">la</w>
+						<w pos="ADV" dep="advmod" lemma="plus" entity="">plus</w>
+						<w pos="ADJ" dep="amod" lemma="grand" entity="">grand</w>
+						<w pos="NOUN" dep="nmod" lemma="traÿsson" entity="">traÿsson</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+					</l>
+					<l>
+						<w pos="PROPN" dep="ROOT" lemma="Meschanseté" entity="PER">Meschanseté</w>
+						<w pos="CCONJ" dep="cc" lemma="et" entity="">et</w>
+						<w pos="PROPN" dep="conj" lemma="deraisson" entity="">deraisson</w>
+					</l>
+					<l>
+						<w pos="SCONJ" dep="mark" lemma="que" entity="">Que</w>
+						<w pos="PRON" dep="nsubj" lemma="vous" entity="">vous</w>
+						<w pos="ADJ" dep="ROOT" lemma="ouyste" entity="">ouystes</w>
+						<w pos="ADP" dep="case" lemma="de" entity="">de</w>
+						<w pos="VERB" dep="amod" lemma="vostre" entity="">vostre</w>
+						<w pos="NOUN" dep="obl:arg" lemma="age" entity="">age</w>
+						<w pos="PUNCT" dep="punct" lemma="." entity="">.</w>
+					</l>
+					<speaker>
+						<w pos="DET" dep="det" lemma="le" entity="">La</w>
+						<w pos="NOUN" dep="ROOT" lemma="mere" entity="LOC">Mere</w>
+					</speaker>
+				</sp>
+				<sp who="#juge">
+					<l>
+						<w pos="CCONJ" dep="cc" lemma="or" entity="">Or</w>
+						<w pos="ADV" dep="ROOT" lemma="bien" entity="">bien</w>
+						<w pos="PUNCT" dep="ROOT" lemma="." entity="">.</w>
+						<w pos="PRON" dep="nsubj" lemma="qui" entity="">Qui</w>
+						<w pos="AUX" dep="cop" lemma="être" entity="">est</w>
+						<w pos="DET" dep="det" lemma="le" entity="">le</w>
+						<w pos="NOUN" dep="ROOT" lemma="personnage" entity="">personnage</w>
+					</l>
+					<l>
+						<w pos="PRON" dep="nsubj" lemma="qui" entity="">Qui</w>
+						<w pos="PRON" dep="iobj" lemma="vous" entity="">vous</w>
+						<w pos="AUX" dep="aux:tense" lemma="avoir" entity="">a</w>
+						<w pos="VERB" dep="ROOT" lemma="faict" entity="">faict</w>
+						<w pos="ADJ" dep="advmod" lemma="tel" entity="">tel</w>
+						<w pos="NOUN" dep="obj" lemma="deshonneur" entity="">deshonneur</w>
+						<w pos="PUNCT" dep="punct" lemma="?" entity="">?</w>
+					</l>
+					<speaker>
+						<w pos="DET" dep="det" lemma="le" entity="MISC">Le</w>
+						<w pos="NOUN" dep="ROOT" lemma="juge" entity="MISC">Juge</w>
+					</speaker>
+				</sp>
+				<sp who="#mere">
+					<l>
+						<w pos="AUX" dep="det" lemma="se" entity="">Se</w>
+						<w pos="NOUN" dep="nsubj" lemma="n’" entity="PER">n’</w>
+						<w pos="AUX" dep="cop" lemma="être" entity="">est</w>
+						<w pos="ADV" dep="advmod" lemma="pas" entity="">pas</w>
+						<w pos="DET" dep="det" lemma="un" entity="">un</w>
+						<w pos="ADV" dep="advmod" lemma="trop" entity="">trop</w>
+						<w pos="ADJ" dep="amod" lemma="grand" entity="">grand</w>
+						<w pos="NOUN" dep="ROOT" lemma="seigneur" entity="">seigneur</w>
+						<w pos="PUNCT" dep="punct" lemma="." entity="">.</w>
+					</l>
+					<l>
+						<w pos="ADJ" dep="nsubj" lemma="c’" entity="MISC">C’</w>
+						<w pos="AUX" dep="cop" lemma="être" entity="">est</w>
+						<w pos="DET" dep="det" lemma="un" entity="">un</w>
+						<w pos="NOUN" dep="ROOT" lemma="nommé" entity="">nommé</w>
+						<w pos="DET" dep="det" lemma="le" entity="">le</w>
+						<w pos="NOUN" dep="nmod" lemma="beau" entity="">beau</w>
+						<w pos="PROPN" dep="flat:name" lemma="Colin" entity="MISC">Colin</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+					</l>
+					<l>
+						<w pos="SCONJ" dep="mark" lemma="que" entity="">Que</w>
+						<w pos="DET" dep="det" lemma="le" entity="">le</w>
+						<w pos="NOUN" dep="ROOT" lemma="chault" entity="">chault</w>
+						<w pos="ADV" dep="punct" lemma="mal" entity="">mal</w>
+						<w pos="ADJ" dep="amod" lemma="sainct" entity="">sainct</w>
+						<w pos="PROPN" dep="flat:name" lemma="Mathelin" entity="ORG">Mathelin</w>
+					</l>
+					<l>
+						<w pos="PROPN" dep="nsubj" lemma="Luy" entity="PER">Luy</w>
+						<w pos="VERB" dep="ROOT" lemma="pouvoir" entity="">puisse</w>
+						<w pos="VERB" dep="xcomp" lemma="ronger" entity="">ronger</w>
+						<w pos="DET" dep="det" lemma="le" entity="">la</w>
+						<w pos="NOUN" dep="obj" lemma="cervelle" entity="">cervelle</w>
+						<w pos="PUNCT" dep="punct" lemma="!" entity="">!</w>
+					</l>
+					<l>
+						<w pos="PROPN" dep="nsubj" lemma="J’" entity="MISC">J’</w>
+						<w pos="VERB" dep="ROOT" lemma="avoys" entity="">avoys</w>
+						<w pos="DET" dep="det" lemma="un" entity="">une</w>
+						<w pos="NOUN" dep="obj" lemma="fille" entity="">fille</w>
+						<w pos="ADJ" dep="amod" lemma="tre" entity="">tres</w>
+						<w pos="ADJ" dep="amod" lemma="bel" entity="">belle</w>
+						<w pos="PUNCT" dep="punct" lemma=":" entity="">:</w>
+					</l>
+					<l>
+						<w pos="DET" dep="det" lemma="le" entity="">Le</w>
+						<w pos="NOUN" dep="nsubj" lemma="meschant" entity="">meschant</w>
+						<w pos="ADJ" dep="flat:name" lemma="l’" entity="LOC">l’</w>
+						<w pos="AUX" dep="aux:tense" lemma="avoir" entity="">a</w>
+						<w pos="X" dep="ROOT" lemma="deshonoree" entity="">deshonoree</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+					</l>
+					<l>
+						<w pos="CCONJ" dep="cc" lemma="et" entity="">Et</w>
+						<w pos="ADJ" dep="ROOT" lemma="voecy" entity="LOC">voecy</w>
+						<w pos="DET" dep="det" lemma="le" entity="">la</w>
+						<w pos="ADJ" dep="amod" lemma="povr" entity="">povre</w>
+						<w pos="NOUN" dep="obj" lemma="esplouree" entity="">esplouree</w>
+					</l>
+					<l>
+						<w pos="PRON" dep="nsubj" lemma="qui" entity="">Qui</w>
+						<w pos="ADP" dep="case" lemma="de" entity="">de</w>
+						<w pos="PROPN" dep="det" lemma="luy" entity="LOC">luy</w>
+						<w pos="NOUN" dep="nmod" lemma="justice" entity="">justice</w>
+						<w pos="VERB" dep="ROOT" lemma="requérir" entity="">requiert</w>
+						<w pos="PUNCT" dep="punct" lemma="." entity="">.</w>
+					</l>
+					<speaker>
+						<w pos="DET" dep="det" lemma="le" entity="">La</w>
+						<w pos="NOUN" dep="ROOT" lemma="mere" entity="LOC">Mere</w>
+					</speaker>
+				</sp>
+				<sp who="#juge">
+					<l>
+						<w pos="CCONJ" dep="det" lemma="est-il" entity="">Est-il</w>
+						<w pos="VERB" dep="ROOT" lemma="cister" entity="">cisté</w>
+						<w pos="SCONJ" dep="mark" lemma="comme" entity="">comme</w>
+						<w pos="PRON" dep="expl:subj" lemma="il" entity="">il</w>
+						<w pos="VERB" dep="advcl" lemma="apert" entity="">apert</w>
+						<w pos="PUNCT" dep="punct" lemma="?" entity="">?</w>
+					</l>
+					<l>
+						<w pos="NOUN" dep="ROOT" lemma="aultrement" entity="">Aultrement</w>
+						<w pos="ADJ" dep="expl:subj" lemma="n’" entity="PER">n’</w>
+						<w pos="PRON" dep="case" lemma="y" entity="">y</w>
+						<w pos="VERB" dep="ROOT" lemma="saroys" entity="">saroys</w>
+						<w pos="SCONJ" dep="mark" lemma="que" entity="">que</w>
+						<w pos="PROPN" dep="nmod" lemma="fere" entity="">fere</w>
+						<w pos="PUNCT" dep="punct" lemma="." entity="">.</w>
+					</l>
+					<speaker>
+						<w pos="DET" dep="det" lemma="le" entity="MISC">Le</w>
+						<w pos="NOUN" dep="ROOT" lemma="juge" entity="MISC">Juge</w>
+					</speaker>
+				</sp>
+				<sp who="#fille">
+					<l>
+						<w pos="ADV" dep="mark" lemma="que" entity="">Que</w>
+						<w pos="ADP" dep="case" lemma="pour" entity="">pour</w>
+						<w pos="PRON" dep="obl:mod" lemma="celer" entity="">cela</w>
+						<w pos="PRON" dep="nsubj" lemma="on" entity="">on</w>
+						<w pos="ADV" dep="advmod" lemma="ne" entity="">ne</w>
+						<w pos="VERB" dep="ROOT" lemma="differe" entity="">differe</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+					</l>
+					<l>
+						<w pos="ADP" dep="case" lemma="en" entity="">En</w>
+						<w pos="ADJ" dep="nmod" lemma="voecy" entity="LOC">voecy</w>
+						<w pos="DET" dep="det" lemma="le" entity="">la</w>
+						<w pos="NOUN" dep="ROOT" lemma="relation" entity="">relation</w>
+						<w pos="PUNCT" dep="punct" lemma="." entity="">.</w>
+					</l>
+					<speaker>
+						<w pos="DET" dep="det" lemma="le" entity="MISC">La</w>
+						<w pos="PROPN" dep="ROOT" lemma="Fille" entity="MISC">Fille</w>
+					</speaker>
+				</sp>
+				<sp who="#mere">
+					<l>
+						<w pos="NOUN" dep="ROOT" lemma="o" entity="">O</w>
+						<w pos="DET" dep="det" lemma="quel" entity="">quelle</w>
+						<w pos="NOUN" dep="ROOT" lemma="babillation" entity="">babillation</w>
+						<w pos="PUNCT" dep="punct" lemma="!" entity="">!</w>
+					</l>
+					<l>
+						<w pos="VERB" dep="dep" lemma="laisse" entity="">Laisse</w>
+						<w pos="DET" dep="ROOT" lemma="moy" entity="">moy</w>
+						<w pos="VERB" dep="dep" lemma="parler" entity="">parler</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+						<w pos="ADP" dep="case" lemma="sy" entity="">sy</w>
+						<w pos="ADJ" dep="amod" lemma="taire" entity="">tu</w>
+						<w pos="NOUN" dep="ccomp" lemma="veul" entity="">veulx</w>
+						<w pos="PUNCT" dep="punct" lemma="." entity="">.</w>
+					</l>
+					<l>
+						<w pos="NOUN" dep="nsubj" lemma="Monsieur" entity="PER">Monsieur</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+						<w pos="ADP" dep="case" lemma="de" entity="">de</w>
+						<w pos="PROPN" dep="nmod" lemma="Colin" entity="MISC">Colin</w>
+						<w pos="PRON" dep="nsubj" lemma="je" entity="MISC">je</w>
+						<w pos="PRON" dep="expl:comp" lemma="me" entity="MISC">me</w>
+						<w pos="VERB" dep="ROOT" lemma="deulx" entity="MISC">deulx</w>
+					</l>
+					<l>
+						<w pos="PRON" dep="nsubj" lemma="qui" entity="">Qui</w>
+						<w pos="VERB" dep="cop" lemma="avoir" entity="">a</w>
+						<w pos="DET" dep="det" lemma="mon" entity="">ma</w>
+						<w pos="NOUN" dep="ROOT" lemma="fille" entity="">fille</w>
+						<w pos="ADJ" dep="amod" lemma="violle" entity="">viollee</w>
+					</l>
+					<l>
+						<w pos="NOUN" dep="ROOT" lemma="puy" entity="">Puys</w>
+						<w pos="VERB" dep="flat:name" lemma="dict" entity="">dict</w>
+						<w pos="PRON" dep="nsubj" lemma="qui" entity="">qui</w>
+						<w pos="ADV" dep="advmod" lemma="ne" entity="">ne</w>
+						<w pos="ADJ" dep="nsubj" lemma="l’" entity="LOC">l’</w>
+						<w pos="AUX" dep="aux:tense" lemma="avoir" entity="">a</w>
+						<w pos="VERB" dep="acl:relcl" lemma="acollee" entity="">acollee</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+					</l>
+					<l>
+						<w pos="ADV" dep="advmod" lemma="combien" entity="LOC">Combien</w>
+						<w pos="PROPN" dep="nsubj" lemma="qu’" entity="PER">qu’</w>
+						<w pos="ADJ" dep="amod" lemma="i" entity="PER">i</w>
+						<w pos="AUX" dep="nummod" lemma="luy" entity="PER">luy</w>
+						<w pos="VERB" dep="ROOT" lemma="ayt" entity="">ayt</w>
+						<w pos="ADP" dep="case" lemma="sur" entity="">sur</w>
+						<w pos="ADJ" dep="amod" lemma="bon" entity="">bon</w>
+						<w pos="NOUN" dep="nmod" lemma="gage" entity="">gage</w>
+					</l>
+					<l>
+						<w pos="PROPN" dep="ROOT" lemma="Promys" entity="PER">Promys</w>
+						<w pos="DET" dep="det" lemma="son" entity="">sa</w>
+						<w pos="NOUN" dep="ROOT" lemma="foy" entity="">foy</w>
+						<w pos="ADP" dep="case" lemma="en" entity="">en</w>
+						<w pos="NOUN" dep="nmod" lemma="mariage" entity="">mariage</w>
+						<w pos="PUNCT" dep="punct" lemma="." entity="">.</w>
+					</l>
+					<speaker>
+						<w pos="DET" dep="det" lemma="le" entity="">La</w>
+						<w pos="NOUN" dep="ROOT" lemma="mere" entity="LOC">Mere</w>
+					</speaker>
+				</sp>
+				<sp who="#juge">
+					<l>
+						<w pos="DET" dep="det" lemma="est-il" entity="">Est-il</w>
+						<w pos="VERB" dep="ROOT" lemma="vray" entity="">vray</w>
+						<w pos="PUNCT" dep="punct" lemma="?" entity="">?</w>
+						<w pos="CCONJ" dep="cc" lemma="or" entity="">Or</w>
+						<w pos="ADJ" dep="ROOT" lemma="dicte" entity="">dictes</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+						<w pos="DET" dep="det" lemma="mon" entity="">ma</w>
+						<w pos="ADJ" dep="conj" lemma="my" entity="">mye</w>
+						<w pos="PUNCT" dep="punct" lemma="." entity="">.</w>
+					</l>
+				</sp>
+				<sp who="#fille">
+					<l>
+						<w pos="PRON" dep="nsubj" lemma="je" entity="">Je</w>
+						<w pos="VERB" dep="ROOT" lemma="n’" entity="">n’</w>
+						<w pos="VERB" dep="advmod" lemma="estoyer" entity="">estoyes</w>
+						<w pos="ADV" dep="advmod" lemma="pas" entity="">pas</w>
+						<w pos="PRON" dep="det" lemma="sy" entity="">sy</w>
+						<w pos="VERB" dep="obj" lemma="endormye" entity="">endormye</w>
+					</l>
+					<l>
+						<w pos="SCONJ" dep="mark" lemma="que" entity="">Que</w>
+						<w pos="ADV" dep="nsubj" lemma="ne" entity="">ne</w>
+						<w pos="PRON" dep="iobj" lemma="me" entity="">me</w>
+						<w pos="VERB" dep="ROOT" lemma="soyer" entity="">soyes</w>
+						<w pos="ADV" dep="advmod" lemma="bien" entity="">bien</w>
+						<w pos="NOUN" dep="xcomp" lemma="aperceue" entity="">aperceue</w>
+					</l>
+					<l>
+						<w pos="ADV" dep="advmod" lemma="d’" entity="PER">D’</w>
+						<w pos="AUX" dep="aux:tense" lemma="avoir" entity="">avoir</w>
+						<w pos="VERB" dep="ROOT" lemma="ester" entity="">esté</w>
+						<w pos="PROPN" dep="obj" lemma="ainsy" entity="">ainsy</w>
+						<w pos="VERB" dep="amod" lemma="deceue" entity="">deceue</w>
+						<w pos="PUNCT" dep="punct" lemma="." entity="">.</w>
+					</l>
+					<l>
+						<w pos="CCONJ" dep="cc" lemma="mais" entity="">Mais</w>
+						<w pos="ADP" dep="case" lemma="à" entity="">à</w>
+						<w pos="ADJ" dep="amod" lemma="nul" entity="">nul</w>
+						<w pos="NOUN" dep="advmod" lemma="mal" entity="">mal</w>
+						<w pos="PRON" dep="nsubj" lemma="je" entity="">je</w>
+						<w pos="VERB" dep="ROOT" lemma="n’" entity="PER">n’</w>
+						<w pos="PRON" dep="iobj" lemma="y" entity="">y</w>
+						<w pos="ADJ" dep="xcomp" lemma="pensoy" entity="">pensoys</w>
+						<w pos="PUNCT" dep="punct" lemma="!" entity="">!</w>
+					</l>
+					<speaker>
+						<w pos="DET" dep="det" lemma="le" entity="MISC">La</w>
+						<w pos="PROPN" dep="ROOT" lemma="Fille" entity="MISC">Fille</w>
+					</speaker>
+				</sp>
+				<sp who="#juge">
+					<l>
+						<w pos="PROPN" dep="ROOT" lemma="Colin" entity="">Colin</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+						<w pos="NOUN" dep="conj" lemma="vien" entity="">vien</w>
+						<w pos="PROPN" dep="flat:name" lemma="cy" entity="">cy</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+						<w pos="PRON" dep="iobj" lemma="où" entity="">où</w>
+						<w pos="SCONJ" dep="mark" lemma="que" entity="">que</w>
+						<w pos="DET" dep="nummod" lemma="tu" entity="">tu</w>
+						<w pos="NOUN" dep="acl:relcl" lemma="soye" entity="">soyes</w>
+						<w pos="PUNCT" dep="ROOT" lemma="." entity="">.</w>
+					</l>
+					<l>
+						<w pos="NOUN" dep="nsubj" lemma="aultrement" entity="">Aultrement</w>
+						<w pos="VERB" dep="ROOT" lemma="te" entity="">te</w>
+						<w pos="DET" dep="obj" lemma="mon" entity="">mes</w>
+						<w pos="ADP" dep="case" lemma="en" entity="">en</w>
+						<w pos="PROPN" dep="nmod" lemma="deffault" entity="">deffault</w>
+						<w pos="PUNCT" dep="punct" lemma="." entity="">.</w>
+					</l>
+					<speaker>
+						<w pos="DET" dep="det" lemma="le" entity="MISC">Le</w>
+						<w pos="NOUN" dep="ROOT" lemma="juge" entity="MISC">Juge</w>
+					</speaker>
+				</sp>
+				<head>
+					<w pos="NOUN" dep="ROOT" lemma="scène" entity="MISC">Scène</w>
+					<w pos="NUM" dep="nummod" lemma="2" entity="MISC">2</w>
+				</head>
+			</div>
+			<div type="scene" n="III">
+				<stage type="castlist">
+					<w pos="DET" dep="det" lemma="le" entity="">La</w>
+					<w pos="NOUN" dep="ROOT" lemma="mere" entity="LOC">Mere</w>
+					<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+					<w pos="DET" dep="det" lemma="le" entity="">la</w>
+					<w pos="PROPN" dep="conj" lemma="Fille" entity="LOC">Fille</w>
+					<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+					<w pos="DET" dep="det" lemma="le" entity="">le</w>
+					<w pos="NOUN" dep="conj" lemma="juge" entity="ORG">Juge</w>
+					<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+					<w pos="PROPN" dep="appos" lemma="Colin" entity="">Colin</w>
+				</stage>
+				<sp who="#colin">
+					<l>
+						<add hand="#2">
+							<w pos="NOUN" dep="ROOT" lemma="point" entity="">point</w>
+						</add>
+						<w pos="PRON" dep="expl:subj" lemma="il" entity="">Il</w>
+						<w pos="ADV" dep="advmod" lemma="ne" entity="">ne</w>
+						<w pos="AUX" dep="dep" lemma="fault" entity="">fault</w>
+						<w pos="ADJ" dep="ROOT" lemma="crier" entity="">crier</w>
+						<w pos="ADV" dep="advmod" lemma="plus" entity="">plus</w>
+						<w pos="PROPN" dep="obl:mod" lemma="hault" entity="">hault</w>
+						<w pos="PUNCT" dep="punct" lemma="." entity="">.</w>
+					</l>
+					<l>
+						<w pos="NOUN" dep="ROOT" lemma="me" entity="">Me</w>
+						<w pos="ADJ" dep="amod" lemma="voecy" entity="">voecy</w>
+						<w pos="ADP" dep="case" lemma="à" entity="">à</w>
+						<w pos="ADJ" dep="amod" lemma="vostr" entity="">vostre</w>
+						<w pos="NOUN" dep="obl:arg" lemma="presence" entity="">presence</w>
+						<w pos="PUNCT" dep="punct" lemma="." entity="">.</w>
+					</l>
+					<stage>
+						<w pos="ADP" dep="ROOT" lemma="entrer" entity="">entre</w>
+					</stage>
+				</sp>
+				<sp who="#juge">
+					<l>
+						<w pos="CCONJ" dep="cc" lemma="or" entity="">Or</w>
+						<w pos="NOUN" dep="nummod" lemma="vien" entity="">vien</w>
+						<w pos="NOUN" dep="ROOT" lemma="çà" entity="">çà</w>
+						<w pos="PUNCT" dep="punct" lemma=":" entity="">:</w>
+						<w pos="ADP" dep="case" lemma="par" entity="">par</w>
+						<w pos="CCONJ" dep="det" lemma="ton" entity="">ta</w>
+						<w pos="NOUN" dep="nmod" lemma="concience" entity="">concience</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+					</l>
+					<l>
+						<w pos="PROPN" dep="ROOT" lemma="As" entity="">As</w>
+						<w pos="NOUN" dep="ROOT" lemma="-" entity="">-</w>
+						<w pos="ADV" dep="amod" lemma="tu" entity="">tu</w>
+						<w pos="NOUN" dep="ROOT" lemma="congneu" entity="">congneu</w>
+						<w pos="VERB" dep="ROOT" lemma="charnellemer" entity="">charnellement</w>
+					</l>
+					<l>
+						<w pos="NOUN" dep="ROOT" lemma="ceste" entity="PER">Ceste</w>
+						<w pos="ADJ" dep="amod" lemma="fille" entity="">fille</w>
+						<w pos="VERB" dep="amod" lemma="icy" entity="">icy</w>
+						<w pos="PUNCT" dep="punct" lemma="?" entity="">?</w>
+					</l>
+					<speaker>
+						<w pos="DET" dep="det" lemma="le" entity="MISC">Le</w>
+						<w pos="NOUN" dep="ROOT" lemma="juge" entity="MISC">Juge</w>
+					</speaker>
+				</sp>
+				<sp who="#colin">
+					<l>
+						<w pos="PRON" dep="nsubj" lemma="lui" entity="">Elle</w>
+						<w pos="VERB" dep="ROOT" lemma="mentir" entity="">ment</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+					</l>
+					<l>
+						<w pos="PRON" dep="nsubj" lemma="je" entity="">Je</w>
+						<w pos="VERB" dep="ROOT" lemma="m’" entity="PER">m’</w>
+						<w pos="ADP" dep="case" lemma="en" entity="">en</w>
+						<w pos="NOUN" dep="obl:mod" lemma="raporte" entity="">raporte</w>
+						<w pos="ADP" dep="case" lemma="à" entity="">à</w>
+						<w pos="ADJ" dep="fixed" lemma="tout" entity="">tout</w>
+						<w pos="DET" dep="det" lemma="le" entity="">le</w>
+						<w pos="NOUN" dep="obl:arg" lemma="monde" entity="">monde</w>
+						<w pos="PUNCT" dep="punct" lemma="." entity="">.</w>
+					</l>
+					<speaker>
+						<w pos="PROPN" dep="ROOT" lemma="Colin" entity="">Colin</w>
+					</speaker>
+				</sp>
+				<sp who="#mere">
+					<l>
+						<w pos="NOUN" dep="det" lemma="y" entity="">Y</w>
+						<w pos="VERB" dep="ROOT" lemma="mentir" entity="">ment</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+						<w pos="DET" dep="det" lemma="le" entity="">le</w>
+						<w pos="NOUN" dep="conj" lemma="malureu" entity="">malureux</w>
+						<w pos="ADJ" dep="amod" lemma="immund" entity="">immunde</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+					</l>
+					<l>
+						<w pos="PRON" dep="nsubj" lemma="je" entity="">Je</w>
+						<w pos="DET" dep="det" lemma="le" entity="">le</w>
+						<w pos="NOUN" dep="ROOT" lemma="veul" entity="">veulx</w>
+						<w pos="VERB" dep="xcomp" lemma="prouver" entity="">prouver</w>
+						<w pos="ADV" dep="advmod" lemma="fermement" entity="">fermement</w>
+						<w pos="PUNCT" dep="punct" lemma="." entity="">.</w>
+					</l>
+					<speaker>
+						<w pos="DET" dep="det" lemma="le" entity="">La</w>
+						<w pos="NOUN" dep="ROOT" lemma="mere" entity="LOC">Mere</w>
+					</speaker>
+				</sp>
+				<sp who="#colin">
+					<l>
+						<w pos="CCONJ" dep="cc" lemma="or" entity="">Or</w>
+						<w pos="DET" dep="det" lemma="le" entity="">le</w>
+						<w pos="NOUN" dep="ROOT" lemma="prouve" entity="">prouves</w>
+						<w pos="ADV" dep="advmod" lemma="donc" entity="">donc</w>
+						<w pos="ADV" dep="advmod" lemma="vistement" entity="">vistement</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+					</l>
+					<l>
+						<w pos="PRON" dep="nsubj" lemma="je" entity="">Je</w>
+						<w pos="PRON" dep="iobj" lemma="vous" entity="">vous</w>
+						<w pos="PRON" dep="iobj" lemma="en" entity="">en</w>
+						<w pos="VERB" dep="ROOT" lemma="donne" entity="">donne</w>
+						<w pos="ADV" dep="det" lemma="tout" entity="">tout</w>
+						<w pos="NOUN" dep="obj" lemma="loysir" entity="">loysir</w>
+						<w pos="PUNCT" dep="punct" lemma="." entity="">.</w>
+					</l>
+					<l>
+						<w pos="NUM" dep="nsubj" lemma="Male" entity="">Male</w>
+						<w pos="NOUN" dep="amod" lemma="mort" entity="">mort</w>
+						<w pos="PRON" dep="iobj" lemma="me" entity="">me</w>
+						<w pos="VERB" dep="ROOT" lemma="pouvoir" entity="">puisse</w>
+						<w pos="VERB" dep="xcomp" lemma="saisir" entity="">saisir</w>
+					</l>
+					<l>
+						<w pos="DET" dep="det" lemma="sy" entity="">Sy</w>
+						<w pos="PRON" dep="nsubj" lemma="je" entity="">je</w>
+						<w pos="VERB" dep="ROOT" lemma="luy" entity="">luy</w>
+						<w pos="NOUN" dep="obj" lemma="fu" entity="">fus</w>
+						<w pos="PRON" dep="nmod" lemma="rien" entity="">rien</w>
+						<w pos="ADP" dep="case" lemma="de" entity="">de</w>
+						<w pos="DET" dep="det" lemma="mon" entity="">ma</w>
+						<w pos="NOUN" dep="nmod" lemma="vie" entity="">vie</w>
+						<w pos="PUNCT" dep="punct" lemma="." entity="">.</w>
+					</l>
+					<speaker>
+						<w pos="PROPN" dep="ROOT" lemma="Colin" entity="">Colin</w>
+					</speaker>
+				</sp>
+				<sp who="#mere">
+					<l>
+						<w pos="ADP" dep="case" lemma="par" entity="">Par</w>
+						<w pos="DET" dep="det" lemma="le" entity="">la</w>
+						<w pos="NOUN" dep="ROOT" lemma="doulce" entity="">doulce</w>
+						<w pos="NOUN" dep="nmod" lemma="vierge" entity="">vierge</w>
+						<w pos="PROPN" dep="flat:name" lemma="Marye" entity="">Marye</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+					</l>
+					<l>
+						<w pos="NOUN" dep="ROOT" lemma="Monsieur" entity="PER">Monsieur</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+						<w pos="ADP" dep="mark" lemma="sans" entity="">sans</w>
+						<w pos="VERB" dep="ROOT" lemma="atendre" entity="">atendre</w>
+						<w pos="ADV" dep="advmod" lemma="plus" entity="">plus</w>
+						<w pos="ADJ" dep="amod" lemma="loing" entity="">loing</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+					</l>
+					<l>
+						<w pos="NOUN" dep="ROOT" lemma="voesy" entity="">Voesy</w>
+						<w pos="ADP" dep="mark" lemma="à" entity="">à</w>
+						<w pos="ADV" dep="ROOT" lemma="present" entity="">present</w>
+						<w pos="DET" dep="det" lemma="mon" entity="">mon</w>
+						<w pos="NOUN" dep="obj" lemma="tesmoing" entity="">tesmoing</w>
+						<w pos="PUNCT" dep="punct" lemma="." entity="">.</w>
+					</l>
+					<l>
+						<w pos="VERB" dep="ROOT" lemma="examiner" entity="">Examinés</w>
+						<w pos="DET" dep="obj" lemma="le" entity="">le</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+						<w pos="ADV" dep="advmod" lemma="s’" entity="PER">s’</w>
+						<w pos="PRON" dep="expl:subj" lemma="il" entity="">il</w>
+						<w pos="PRON" dep="iobj" lemma="vous" entity="">vous</w>
+						<w pos="VERB" dep="ROOT" lemma="plaist" entity="">plaist</w>
+						<w pos="PUNCT" dep="punct" lemma="." entity="">.</w>
+					</l>
+					<speaker>
+						<w pos="DET" dep="det" lemma="le" entity="">La</w>
+						<w pos="NOUN" dep="ROOT" lemma="mere" entity="LOC">Mere</w>
+					</speaker>
+				</sp>
+				<sp who="#juge">
+					<l>
+						<w pos="PROPN" dep="ROOT" lemma="Tesmoing" entity="PER">Tesmoing</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+						<w pos="VERB" dep="acl" lemma="parler" entity="">parlés</w>
+						<w pos="ADP" dep="mark" lemma="sans" entity="">sans</w>
+						<w pos="ADV" dep="obl:mod" lemma="plus" entity="">plus</w>
+						<w pos="ADP" dep="case" lemma="de" entity="">de</w>
+						<w pos="NOUN" dep="obl:arg" lemma="plaist" entity="">plaist</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+					</l>
+					<l>
+						<del type="rature" hand="#2">
+							<w pos="PRON" dep="ROOT" lemma="vous" entity="">Vous</w>
+							<w pos="VERB" dep="acl" lemma="jurerer" entity="">jurerés</w>
+							<w pos="ADP" dep="case" lemma="par" entity="">par</w>
+							<w pos="DET" dep="det" lemma="le" entity="">la</w>
+							<w pos="NOUN" dep="obl:agent" lemma="passion" entity="">passion</w>
+						</del>
+					</l>
+					<l>
+						<w pos="ADP" dep="case" lemma="de" entity="">De</w>
+						<w pos="PROPN" dep="ROOT" lemma="Dieu" entity="MISC">Dieu</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+						<w pos="ADP" dep="case" lemma="à" entity="">à</w>
+						<w pos="DET" dep="det" lemma="le" entity="">la</w>
+						<w pos="NOUN" dep="ROOT" lemma="salvation" entity="">salvation</w>
+					</l>
+					<l>
+						<w pos="CCONJ" dep="cc" lemma="ou" entity="">Ou</w>
+						<w pos="NOUN" dep="ROOT" lemma="dannation" entity="">dannation</w>
+						<w pos="ADP" dep="case" lemma="de" entity="">de</w>
+						<w pos="VERB" dep="fixed" lemma="vostre" entity="">vostre</w>
+						<w pos="NOUN" dep="nmod" lemma="ame" entity="">ame</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+					</l>
+					<l>
+						<w pos="CCONJ" dep="cc" lemma="ou" entity="">Ou</w>
+						<w pos="PRON" dep="nsubj" lemma="vous" entity="">vous</w>
+						<w pos="VERB" dep="ROOT" lemma="puisser" entity="">puissés</w>
+						<w pos="ADJ" dep="obj" lemma="estr" entity="">estre</w>
+						<w pos="VERB" dep="xcomp" lemma="soublz" entity="">soublz</w>
+						<w pos="NOUN" dep="obj" lemma="lame" entity="">lame</w>
+					</l>
+					<l>
+						<w pos="PROPN" dep="ROOT" lemma="Dedens" entity="LOC">Dedens</w>
+						<w pos="NUM" dep="nummod" lemma="quatre" entity="">quatre</w>
+						<w pos="NOUN" dep="nmod" lemma="jour" entity="">jours</w>
+						<w pos="VERB" dep="nmod" lemma="ensouy" entity="">ensouy</w>
+					</l>
+					<l>
+						<del type="rature" hand="#2">
+							<w pos="SCONJ" dep="mark" lemma="que" entity="">Que</w>
+							<w pos="PRON" dep="nsubj" lemma="vous" entity="">vous</w>
+							<w pos="PRON" dep="iobj" lemma="me" entity="">me</w>
+							<w pos="VERB" dep="ROOT" lemma="direr" entity="">dirés</w>
+							<w pos="VERB" dep="xcomp" lemma="vray" entity="">vray</w>
+							<w pos="PUNCT" dep="punct" lemma=";" entity="">;</w>
+						</del>
+					</l>
+					<l>
+						<add hand="#2">
+							<w pos="PRON" dep="nsubj" lemma="vous" entity="">Vous</w>
+							<w pos="ADJ" dep="ROOT" lemma="soié" entity="">soiés</w>
+							<w pos="DET" dep="det" lemma="tout" entity="">tout</w>
+							<w pos="NOUN" dep="obj" lemma="vif" entity="">vif</w>
+							<w pos="ADJ" dep="conj" lemma="enfouy" entity="">enfouy</w>
+							<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+						</add>
+					</l>
+					<l>
+						<add hand="#2">
+							<w pos="NOUN" dep="nsubj" lemma="me" entity="">Me</w>
+							<w pos="VERB" dep="ROOT" lemma="direr" entity="">dirés</w>
+							<w pos="PRON" dep="dep" lemma="vous" entity="">-vous</w>
+							<w pos="ADV" dep="advmod" lemma="pas" entity="">pas</w>
+							<w pos="VERB" dep="xcomp" lemma="vray" entity="">vray</w>
+							<w pos="PUNCT" dep="punct" lemma="?" entity="">?</w>
+						</add>
+					</l>
+					<speaker>
+						<w pos="DET" dep="det" lemma="le" entity="MISC">Le</w>
+						<w pos="NOUN" dep="ROOT" lemma="juge" entity="MISC">Juge</w>
+					</speaker>
+				</sp>
+				<head>
+					<w pos="NOUN" dep="ROOT" lemma="scène" entity="MISC">Scène</w>
+					<w pos="NUM" dep="nummod" lemma="3" entity="MISC">3</w>
+				</head>
+			</div>
+			<div type="scene" n="IV">
+				<stage type="castlist">
+					<w pos="DET" dep="det" lemma="le" entity="">La</w>
+					<w pos="NOUN" dep="ROOT" lemma="mere" entity="LOC">Mere</w>
+					<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+					<w pos="DET" dep="det" lemma="le" entity="">la</w>
+					<w pos="PROPN" dep="conj" lemma="Fille" entity="LOC">Fille</w>
+					<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+					<w pos="DET" dep="det" lemma="le" entity="">le</w>
+					<w pos="NOUN" dep="conj" lemma="juge" entity="ORG">Juge</w>
+					<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+					<w pos="PROPN" dep="appos" lemma="Colin" entity="">Colin</w>
+					<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+					<w pos="DET" dep="det" lemma="le" entity="">le</w>
+					<w pos="PROPN" dep="conj" lemma="Tesmoing" entity="MISC">Tesmoing</w>
+				</stage>
+				<sp who="#tesmoing">
+					<l>
+						<w pos="PROPN" dep="ROOT" lemma="Ouy" entity="LOC">Ouy</w>
+						<w pos="PUNCT" dep="punct" lemma="." entity="">.</w>
+					</l>
+					<l>
+						<del type="rature" hand="#2">
+							<w pos="DET" dep="det" lemma="le" entity="MISC">Le</w>
+							<w pos="NOUN" dep="ROOT" lemma="juge" entity="MISC">Juge</w>
+						</del>
+					</l>
+					<l>
+						<del type="rature" hand="#2">
+							<w pos="PROPN" dep="obl:mod" lemma="&gt;" entity="">&gt;</w>
+							<w pos="NOUN" dep="obl:mod" lemma="Monsieur" entity="PER">Monsieur</w>
+							<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+							<w pos="PRON" dep="nsubj" lemma="je" entity="">je</w>
+							<w pos="ADV" dep="advmod" lemma="ne" entity="">ne</w>
+							<w pos="AUX" dep="ROOT" lemma="suy" entity="">suy</w>
+							<w pos="PRON" dep="det" lemma="sy" entity="">sy</w>
+							<w pos="VERB" dep="obl:arg" lemma="habiller" entity="">habillé</w>
+						</del>
+					</l>
+					<l>
+						<w pos="ADP" dep="mark" lemma="pour" entity="">Pour</w>
+						<w pos="PRON" dep="mark" lemma="en" entity="">en</w>
+						<w pos="VERB" dep="dep" lemma="savoir" entity="">savoir</w>
+						<w pos="VERB" dep="ROOT" lemma="juger" entity="">juger</w>
+						<w pos="DET" dep="advmod" lemma="sy" entity="">sy</w>
+						<w pos="ADV" dep="fixed" lemma="bien" entity="">bien</w>
+					</l>
+					<l>
+						<w pos="PRON" dep="nsubj" lemma="je" entity="">Je</w>
+						<w pos="ADV" dep="advmod" lemma="ne" entity="">ne</w>
+						<w pos="PRON" dep="iobj" lemma="vous" entity="">vous</w>
+						<w pos="VERB" dep="ROOT" lemma="mentiray" entity="">mentiray</w>
+						<w pos="ADP" dep="det" lemma="de" entity="">de</w>
+						<w pos="PRON" dep="obl:arg" lemma="rien" entity="">rien</w>
+						<w pos="PUNCT" dep="punct" lemma="." entity="">.</w>
+					</l>
+					<l>
+						<w pos="PRON" dep="nsubj" lemma="je" entity="">Je</w>
+						<w pos="PRON" dep="iobj" lemma="vous" entity="">vous</w>
+						<w pos="VERB" dep="ROOT" lemma="diray" entity="">diray</w>
+						<w pos="PRON" dep="obj" lemma="ce" entity="">ce</w>
+						<w pos="PRON" dep="mark" lemma="que" entity="">que</w>
+						<w pos="PROPN" dep="acl:relcl" lemma="j’" entity="LOC">j’</w>
+						<w pos="ADP" dep="case" lemma="en" entity="">en</w>
+						<w pos="NOUN" dep="flat:foreign" lemma="say" entity="">say</w>
+						<w pos="PUNCT" dep="punct" lemma="." entity="">.</w>
+					</l>
+					<l>
+						<w pos="ADP" dep="case" lemma="au" entity="">Au</w>
+						<w pos="NOUN" dep="obl:mod" lemma="temps" entity="">temps</w>
+						<w pos="VERB" dep="ROOT" lemma="passer" entity="">passé</w>
+						<w pos="PRON" dep="nsubj" lemma="je" entity="">je</w>
+						<w pos="VERB" dep="ROOT" lemma="commensay" entity="">commensay</w>
+					</l>
+					<l>
+						<w pos="ADP" dep="mark" lemma="à" entity="">À</w>
+						<w pos="VERB" dep="ROOT" lemma="devenir" entity="">devenir</w>
+						<w pos="ADJ" dep="obj" lemma="frisqu" entity="">frisque</w>
+						<w pos="CCONJ" dep="cc" lemma="et" entity="">et</w>
+						<w pos="NOUN" dep="conj" lemma="dispo" entity="">dispos</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+					</l>
+					<l>
+						<w pos="DET" dep="det" lemma="on" entity="">On</w>
+						<w pos="NOUN" dep="ROOT" lemma="mectoyt" entity="">mectoyt</w>
+						<w pos="NOUN" dep="flat:name" lemma="chopine" entity="">chopines</w>
+						<w pos="CCONJ" dep="cc" lemma="et" entity="">et</w>
+						<w pos="NOUN" dep="conj" lemma="po" entity="">pos</w>
+					</l>
+					<l>
+						<w pos="ADP" dep="case" lemma="sur" entity="">Sur</w>
+						<w pos="DET" dep="det" lemma="le" entity="">la</w>
+						<w pos="NOUN" dep="ROOT" lemma="table" entity="">table</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+						<w pos="CCONJ" dep="cc" lemma="et" entity="">et</w>
+						<w pos="ADV" dep="advmod" lemma="ne" entity="">ne</w>
+						<w pos="VERB" dep="conj" lemma="servoyt" entity="">servoyt</w>
+						<w pos="PRON" dep="dep" lemma="on" entity="">-on</w>
+					</l>
+					<l>
+						<w pos="ADP" dep="case" lemma="en" entity="">En</w>
+						<w pos="NOUN" dep="ROOT" lemma="buffect" entity="">buffect</w>
+						<w pos="ADP" dep="case" lemma="par" entity="">par</w>
+						<w pos="DET" dep="det" lemma="un" entity="">un</w>
+						<w pos="NOUN" dep="ROOT" lemma="valeton" entity="">valeton</w>
+					</l>
+					<l>
+						<w pos="SCONJ" dep="mark" lemma="comme" entity="">Comme</w>
+						<w pos="PRON" dep="nsubj" lemma="on" entity="">on</w>
+						<w pos="VERB" dep="ROOT" lemma="faict" entity="">faict</w>
+						<w pos="ADP" dep="case" lemma="en" entity="">en</w>
+						<w pos="DET" dep="det" lemma="ce" entity="">ce</w>
+						<w pos="NOUN" dep="obl:mod" lemma="temps" entity="">temps</w>
+						<w pos="NOUN" dep="obl:arg" lemma="-" entity="">-</w>
+						<w pos="PRON" dep="punct" lemma="sy" entity="">sy</w>
+					</l>
+					<stage>
+						<w pos="ADP" dep="ROOT" lemma="entrer" entity="">entre</w>
+					</stage>
+				</sp>
+				<sp who="#juge">
+					<l>
+						<w pos="CCONJ" dep="cc" lemma="et" entity="">Et</w>
+						<w pos="ADP" dep="case" lemma="à" entity="">à</w>
+						<w pos="DET" dep="nummod" lemma="quel" entity="">quel</w>
+						<w pos="NOUN" dep="nmod" lemma="propos" entity="">propos</w>
+						<w pos="DET" dep="det" lemma="tout" entity="">tout</w>
+						<w pos="NOUN" dep="ROOT" lemma="cesy" entity="">cesy</w>
+						<w pos="PUNCT" dep="punct" lemma="?" entity="">?</w>
+					</l>
+				</sp>
+				<sp who="#tesmoing">
+					<l>
+						<w pos="NOUN" dep="ROOT" lemma="Monsieur" entity="PER">Monsieur</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+						<w pos="NOUN" dep="conj" lemma="Monsieur" entity="PER">monsieur</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+						<w pos="ADP" dep="case" lemma="sauf" entity="">sauf</w>
+						<w pos="VERB" dep="amod" lemma="vostre" entity="">vostre</w>
+						<w pos="NOUN" dep="nmod" lemma="grace" entity="">grace</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+					</l>
+					<l>
+						<w pos="PRON" dep="expl:subj" lemma="il" entity="">Il</w>
+						<w pos="ADV" dep="advmod" lemma="ne" entity="">ne</w>
+						<w pos="VERB" dep="ROOT" lemma="falloyt" entity="">falloyt</w>
+						<w pos="VERB" dep="xcomp" lemma="farder" entity="">farder</w>
+						<w pos="DET" dep="det" lemma="son" entity="">sa</w>
+						<w pos="NOUN" dep="obj" lemma="face" entity="">face</w>
+					</l>
+					<l>
+						<w pos="ADP" dep="mark" lemma="pour" entity="">Pour</w>
+						<w pos="VERB" dep="ROOT" lemma="sembler" entity="">sembler</w>
+						<w pos="ADJ" dep="advmod" lemma="bel" entity="">belle</w>
+						<w pos="ADP" dep="case" lemma="à" entity="">à</w>
+						<w pos="DET" dep="det" lemma="son" entity="">son</w>
+						<w pos="NOUN" dep="obl:arg" lemma="amy" entity="">amy</w>
+						<w pos="PUNCT" dep="punct" lemma="." entity="">.</w>
+					</l>
+					<l>
+						<w pos="PRON" dep="nsubj" lemma="on" entity="">On</w>
+						<w pos="ADV" dep="advmod" lemma="ne" entity="">ne</w>
+						<w pos="VERB" dep="ROOT" lemma="parloyt" entity="">parloyt</w>
+						<w pos="NOUN" dep="obj" lemma="mot" entity="">mot</w>
+						<w pos="ADV" dep="advmod" lemma="ne" entity="">ne</w>
+						<w pos="VERB" dep="conj" lemma="demy" entity="">demy</w>
+					</l>
+					<l>
+						<w pos="ADP" dep="case" lemma="de" entity="">De</w>
+						<w pos="NOUN" dep="ROOT" lemma="mule" entity="">mules</w>
+						<w pos="PRON" dep="nsubj" lemma="qui" entity="">qui</w>
+						<w pos="ADV" dep="advmod" lemma="ne" entity="">ne</w>
+						<w pos="VERB" dep="acl:relcl" lemma="menger" entity="">mengent</w>
+						<w pos="ADJ" dep="advmod" lemma="poinct" entity="">poinct</w>
+						<w pos="PUNCT" dep="punct" lemma="." entity="">.</w>
+					</l>
+					<speaker>
+						<w pos="DET" dep="det" lemma="le" entity="MISC">Le</w>
+						<w pos="PROPN" dep="ROOT" lemma="Tesmoing" entity="MISC">Tesmoing</w>
+					</speaker>
+				</sp>
+				<sp who="#juge">
+					<l>
+						<w pos="PROPN" dep="ROOT" lemma="Vrayment" entity="LOC">Vrayment</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+						<w pos="ADJ" dep="conj" lemma="voecy" entity="LOC">voecy</w>
+						<w pos="DET" dep="det" lemma="un" entity="">un</w>
+						<w pos="NOUN" dep="conj" lemma="aultre" entity="">aultre</w>
+						<w pos="ADJ" dep="amod" lemma="poinct" entity="">poinct</w>
+						<w pos="PUNCT" dep="punct" lemma="." entity="">.</w>
+					</l>
+					<l>
+						<w pos="SCONJ" dep="mark" lemma="que" entity="">Que</w>
+						<w pos="NOUN" dep="ROOT" lemma="veul" entity="PER">veulx</w>
+						<w pos="NOUN" dep="nmod" lemma="-" entity="PER">-</w>
+						<w pos="ADV" dep="advmod" lemma="tu" entity="PER">tu</w>
+						<w pos="VERB" dep="acl" lemma="dire" entity="">dire</w>
+						<w pos="ADP" dep="case" lemma="par" entity="">par</w>
+						<w pos="DET" dep="det" lemma="ce" entity="">ce</w>
+						<w pos="NOUN" dep="obl:mod" lemma="dict" entity="">dict</w>
+						<w pos="PUNCT" dep="punct" lemma="?" entity="">?</w>
+					</l>
+					<speaker>
+						<w pos="DET" dep="det" lemma="le" entity="MISC">Le</w>
+						<w pos="NOUN" dep="ROOT" lemma="juge" entity="MISC">Juge</w>
+					</speaker>
+				</sp>
+				<sp who="#tesmoing">
+					<l>
+						<w pos="PRON" dep="nsubj" lemma="je" entity="">Je</w>
+						<w pos="ADP" dep="case" lemma="dire" entity="">dis</w>
+						<w pos="PROPN" dep="nmod" lemma="qu’" entity="">qu’</w>
+						<w pos="PRON" dep="nsubj" lemma="on" entity="">on</w>
+						<w pos="VERB" dep="ROOT" lemma="chevaucher" entity="">chevauche</w>
+						<w pos="ADP" dep="case" lemma="à" entity="">à</w>
+						<w pos="PROPN" dep="obl:arg" lemma="credict" entity="">credict</w>
+					</l>
+					<l>
+						<w pos="ADP" dep="mark" lemma="en" entity="">En</w>
+						<w pos="VERB" dep="ROOT" lemma="espargner" entity="">espargnant</w>
+						<w pos="ADJ" dep="xcomp" lemma="avoyn" entity="">avoyne</w>
+						<w pos="CCONJ" dep="cc" lemma="et" entity="">et</w>
+						<w pos="VERB" dep="conj" lemma="foing" entity="">foing</w>
+						<w pos="PUNCT" dep="punct" lemma="." entity="">.</w>
+					</l>
+					<l>
+						<w pos="PRON" dep="det" lemma="il" entity="">Il</w>
+						<w pos="VERB" dep="ROOT" lemma="n’" entity="PER">n’</w>
+						<w pos="ADJ" dep="obj" lemma="estoyt" entity="">estoyt</w>
+						<w pos="ADJ" dep="amod" lemma="poinct" entity="">poinct</w>
+						<w pos="DET" dep="det" lemma="sy" entity="">sy</w>
+						<w pos="ADJ" dep="amod" lemma="grand" entity="">grand</w>
+						<w pos="NOUN" dep="obl:arg" lemma="besoing" entity="">besoing</w>
+					</l>
+					<l>
+						<w pos="ADP" dep="mark" lemma="de" entity="">De</w>
+						<w pos="VERB" dep="ROOT" lemma="denoster" entity="">denoster</w>
+						<w pos="ADJ" dep="obj" lemma="rob" entity="">robe</w>
+						<w pos="ADP" dep="case" lemma="à" entity="">à</w>
+						<w pos="NOUN" dep="obl:mod" lemma="vasquine" entity="">vasquine</w>
+					</l>
+					<l>
+						<w pos="ADP" dep="case" lemma="pour" entity="">Pour</w>
+						<w pos="DET" dep="det" lemma="mon" entity="">ma</w>
+						<w pos="NOUN" dep="case" lemma="dame" entity="">dame</w>
+						<w pos="DET" dep="det" lemma="le" entity="">la</w>
+						<w pos="NOUN" dep="ROOT" lemma="mousequine" entity="">mousequine</w>
+					</l>
+					<l>
+						<w pos="ADP" dep="ROOT" lemma="ny" entity="">Ny</w>
+						<w pos="ADP" dep="case" lemma="de" entity="">de</w>
+						<w pos="NOUN" dep="nmod" lemma="Monsieur" entity="">monsieur</w>
+						<w pos="ADJ" dep="amod" lemma="l’" entity="">l’</w>
+						<w pos="ADV" dep="fixed" lemma="acoustrement" entity="">acoustrement</w>
+					</l>
+					<l>
+						<w pos="PRON" dep="nsubj" lemma="qui" entity="">Qui</w>
+						<w pos="VERB" dep="ROOT" lemma="chevaucher" entity="">chevauche</w>
+						<w pos="ADP" dep="case" lemma="en" entity="">en</w>
+						<w pos="NOUN" dep="obl:mod" lemma="cuir" entity="">cuir</w>
+						<w pos="ADV" dep="advmod" lemma="seulement" entity="">seulement</w>
+					</l>
+					<l>
+						<w pos="NOUN" dep="det" lemma="o" entity="">O</w>
+						<w pos="ADJ" dep="ROOT" lemma="chamberiere" entity="">chamberieres</w>
+						<w pos="ADV" dep="advmod" lemma="bien" entity="">bien</w>
+						<w pos="VERB" dep="acl" lemma="fascher" entity="">faschés</w>
+					</l>
+					<l>
+						<w pos="ADP" dep="mark" lemma="de" entity="">De</w>
+						<w pos="VERB" dep="ROOT" lemma="veoir" entity="">veoir</w>
+						<w pos="DET" dep="det" lemma="sy" entity="">sy</w>
+						<w pos="ADV" dep="advmod" lemma="bien" entity="">bien</w>
+						<w pos="VERB" dep="obj" lemma="enharnacher" entity="">enharnachés</w>
+					</l>
+					<l>
+						<w pos="X" dep="ROOT" lemma="Voz" entity="PER">Voz</w>
+						<w pos="ADJ" dep="amod" lemma="metresse" entity="PER">metresses</w>
+						<w pos="ADP" dep="case" lemma="de" entity="PER">de</w>
+						<w pos="ADJ" dep="amod" lemma="bel" entity="PER">belle</w>
+						<w pos="NOUN" dep="nmod" lemma="crote" entity="PER">crote</w>
+						<w pos="PUNCT" dep="punct" lemma="." entity="">.</w>
+					</l>
+					<l>
+						<w pos="NOUN" dep="ROOT" lemma="page" entity="">Page</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+						<w pos="NOUN" dep="acl" lemma="alé" entity="">alés</w>
+						<w pos="VERB" dep="amod" lemma="querir" entity="">querir</w>
+						<w pos="DET" dep="det" lemma="un" entity="">une</w>
+						<w pos="NOUN" dep="obj" lemma="hote" entity="">hote</w>
+						<w pos="PUNCT" dep="punct" lemma=":" entity="">:</w>
+					</l>
+					<l>
+						<w pos="PRON" dep="nsubj" lemma="vous" entity="LOC">Vous</w>
+						<w pos="NOUN" dep="flat:name" lemma="l’" entity="LOC">l’</w>
+						<w pos="VERB" dep="ROOT" lemma="emplirer" entity="">emplirés</w>
+						<w pos="ADV" dep="advmod" lemma="certainnement" entity="">certainnement</w>
+					</l>
+					<l>
+						<w pos="DET" dep="det" lemma="un" entity="">Des</w>
+						<w pos="NOUN" dep="ROOT" lemma="fenge" entity="">fenges</w>
+						<w pos="PRON" dep="nsubj" lemma="qui" entity="">qui</w>
+						<w pos="AUX" dep="aux:tense" lemma="avoir" entity="">ont</w>
+						<w pos="ADV" dep="acl:relcl" lemma="plainement" entity="">plainement</w>
+					</l>
+					<l>
+						<w pos="PROPN" dep="ROOT" lemma="Gasté" entity="PER">Gasté</w>
+						<w pos="DET" dep="det" lemma="le" entity="">la</w>
+						<w pos="NOUN" dep="dep" lemma="robe" entity="">robe</w>
+						<w pos="ADP" dep="mark" lemma="à" entity="">à</w>
+						<w pos="ADJ" dep="amod" lemma="vostr" entity="">vostre</w>
+						<w pos="NOUN" dep="amod" lemma="maistre" entity="">maistre</w>
+						<w pos="PUNCT" dep="punct" lemma="." entity="">.</w>
+					</l>
+					<l>
+						<w pos="ADP" dep="case" lemma="par" entity="">Par</w>
+						<w pos="DET" dep="det" lemma="mon" entity="">mon</w>
+						<w pos="NOUN" dep="obl:mod" lemma="ame" entity="">ame</w>
+						<w pos="PRON" dep="nsubj" lemma="on" entity="">on</w>
+						<w pos="VERB" dep="ROOT" lemma="deust" entity="">deust</w>
+						<w pos="VERB" dep="xcomp" lemma="mener" entity="">mener</w>
+						<w pos="VERB" dep="xcomp" lemma="paistre" entity="">paistre</w>
+					</l>
+					<l>
+						<w pos="DET" dep="det" lemma="son" entity="">Ses</w>
+						<w pos="NOUN" dep="ROOT" lemma="muleton" entity="">muletons</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+						<w pos="NOUN" dep="conj" lemma="muleur" entity="">muleurs</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+						<w pos="NOUN" dep="nmod" lemma="mulier" entity="">muliers</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+					</l>
+					<l>
+						<w pos="PRON" dep="nsubj" lemma="qui" entity="">Qui</w>
+						<w pos="ADP" dep="mark" lemma="pour" entity="">pour</w>
+						<w pos="ADV" dep="advmod" lemma="ne" entity="">ne</w>
+						<w pos="VERB" dep="ROOT" lemma="gaster" entity="">gaster</w>
+						<w pos="DET" dep="det" lemma="leur" entity="">leurs</w>
+						<w pos="NOUN" dep="obj" lemma="soulier" entity="">souliers</w>
+					</l>
+					<l>
+						<w pos="PROPN" dep="ROOT" lemma="Mectent" entity="">Mectent</w>
+						<w pos="ADJ" dep="amod" lemma="grand" entity="">grand</w>
+						<w pos="NOUN" dep="nmod" lemma="peine" entity="">peine</w>
+						<w pos="ADP" dep="case" lemma="pour" entity="">pour</w>
+						<w pos="NOUN" dep="nmod" lemma="sejour" entity="">sejour</w>
+					</l>
+					<l>
+						<w pos="ADP" dep="mark" lemma="à" entity="">À</w>
+						<w pos="VERB" dep="ROOT" lemma="faire" entity="">faire</w>
+						<w pos="DET" dep="det" lemma="le" entity="">la</w>
+						<w pos="NOUN" dep="obj" lemma="tourne-bouelle" entity="">tourne-bouelle</w>
+					</l>
+					<l>
+						<w pos="ADP" dep="case" lemma="au" entity="">Au</w>
+						<w pos="NOUN" dep="ROOT" lemma="temps" entity="">temps</w>
+						<w pos="ADP" dep="case" lemma="de" entity="">de</w>
+						<w pos="DET" dep="det" lemma="le" entity="">la</w>
+						<w pos="NOUN" dep="nmod" lemma="dague" entity="">dague</w>
+						<w pos="ADP" dep="case" lemma="à" entity="">à</w>
+						<w pos="NOUN" dep="ROOT" lemma="rouelle" entity="">rouelle</w>
+					</l>
+					<l>
+						<w pos="CCONJ" dep="cc" lemma="et" entity="">Et</w>
+						<w pos="DET" dep="det" lemma="un" entity="">des</w>
+						<w pos="NOUN" dep="ROOT" lemma="soulier" entity="">souliers</w>
+						<w pos="ADP" dep="case" lemma="à" entity="">à</w>
+						<w pos="DET" dep="det" lemma="le" entity="">la</w>
+						<w pos="NOUN" dep="nmod" lemma="poulaine" entity="">poulaine</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+					</l>
+					<l>
+						<w pos="PRON" dep="nsubj" lemma="on" entity="">On</w>
+						<w pos="ADV" dep="advmod" lemma="ne" entity="">ne</w>
+						<w pos="VERB" dep="ROOT" lemma="faisoyt" entity="">faisoyt</w>
+						<w pos="ADJ" dep="amod" lemma="tel" entity="">telle</w>
+						<w pos="ADJ" dep="amod" lemma="fredain" entity="">fredaine</w>
+					</l>
+					<l>
+						<w pos="SCONJ" dep="mark" lemma="que" entity="">Que</w>
+						<w pos="DET" dep="det" lemma="tel" entity="">telles</w>
+						<w pos="ADJ" dep="ROOT" lemma="folye" entity="">folyes</w>
+						<w pos="DET" dep="det" lemma="mi" entity="">mi</w>
+						<w pos="NOUN" dep="obj" lemma="dieul" entity="">dieulx</w>
+						<w pos="PUNCT" dep="punct" lemma="." entity="">.</w>
+					</l>
+					<speaker>
+						<w pos="DET" dep="det" lemma="le" entity="MISC">Le</w>
+						<w pos="PROPN" dep="ROOT" lemma="Tesmoing" entity="MISC">Tesmoing</w>
+					</speaker>
+				</sp>
+				<sp who="#juge">
+					<l>
+						<w pos="CCONJ" dep="cc" lemma="mais" entity="">Mais</w>
+						<w pos="PRON" dep="nsubj" lemma="qu’" entity="PER">qu’</w>
+						<w pos="VERB" dep="ROOT" lemma="esse" entity="">esse</w>
+						<w pos="DET" dep="xcomp" lemma="sy" entity="">sy</w>
+						<w pos="PUNCT" dep="punct" lemma="?" entity="">?</w>
+					</l>
+				</sp>
+				<sp who="#tesmoing">
+					<l>
+						<w pos="PRON" dep="nsubj" lemma="je" entity="">Je</w>
+						<w pos="VERB" dep="ROOT" lemma="suys" entity="">suys</w>
+						<w pos="ADP" dep="case" lemma="de" entity="">des</w>
+						<w pos="NOUN" dep="obj" lemma="vieul" entity="">vieulx</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+					</l>
+					<l>
+						<w pos="PRON" dep="nsubj" lemma="je" entity="">Je</w>
+						<w pos="VERB" dep="ROOT" lemma="parler" entity="">parle</w>
+						<w pos="ADP" dep="case" lemma="de" entity="">de</w>
+						<w pos="ADJ" dep="amod" lemma="long" entity="">long</w>
+						<w pos="NOUN" dep="obl:arg" lemma="temps" entity="">temps</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+						<w pos="NOUN" dep="appos" lemma="monssieur" entity="">monssieur</w>
+						<w pos="PUNCT" dep="punct" lemma="." entity="">.</w>
+					</l>
+					<speaker>
+						<w pos="DET" dep="det" lemma="le" entity="MISC">Le</w>
+						<w pos="PROPN" dep="ROOT" lemma="Tesmoing" entity="MISC">Tesmoing</w>
+					</speaker>
+				</sp>
+				<sp who="#juge">
+					<l>
+						<w pos="PRON" dep="nsubj" lemma="vous" entity="">Vous</w>
+						<w pos="VERB" dep="ROOT" lemma="ester" entity="">estes</w>
+						<w pos="DET" dep="det" lemma="un" entity="">un</w>
+						<w pos="ADJ" dep="amod" lemma="plaissant" entity="">plaissant</w>
+						<w pos="NOUN" dep="obj" lemma="rieur" entity="">rieur</w>
+					</l>
+					<l>
+						<w pos="PROPN" dep="ROOT" lemma="Respondés" entity="">Respondés</w>
+						<w pos="ADP" dep="case" lemma="à" entity="">à</w>
+						<w pos="PRON" dep="nmod" lemma="ce" entity="">ce</w>
+						<w pos="PRON" dep="nsubj" lemma="qu’" entity="">qu’</w>
+						<w pos="PRON" dep="nsubj" lemma="on" entity="">on</w>
+						<w pos="VERB" dep="acl:relcl" lemma="demande" entity="">demande</w>
+						<w pos="PUNCT" dep="punct" lemma="." entity="">.</w>
+					</l>
+					<speaker>
+						<w pos="DET" dep="det" lemma="le" entity="MISC">Le</w>
+						<w pos="NOUN" dep="ROOT" lemma="juge" entity="MISC">Juge</w>
+					</speaker>
+				</sp>
+				<sp who="#tesmoing">
+					<l>
+						<w pos="NOUN" dep="vocative" lemma="Monsieur" entity="PER">Monsieur</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+						<w pos="NOUN" dep="conj" lemma="Monsieur" entity="">monsieur</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+						<w pos="DET" dep="det" lemma="le" entity="">la</w>
+						<w pos="NOUN" dep="nsubj" lemma="chosse" entity="">chosse</w>
+						<w pos="AUX" dep="cop" lemma="être" entity="">est</w>
+						<w pos="ADJ" dep="ROOT" lemma="grand" entity="">grande</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+					</l>
+					<l>
+						<del type="rature" hand="#2">
+							<w pos="PRON" dep="expl:subj" lemma="il" entity="">Il</w>
+							<w pos="PRON" dep="iobj" lemma="y" entity="">y</w>
+							<w pos="VERB" dep="ROOT" lemma="fault" entity="">fault</w>
+							<w pos="ADP" dep="case" lemma="de" entity="">de</w>
+							<w pos="ADV" dep="advmod" lemma="plus" entity="">plus</w>
+							<w pos="VERB" dep="obl:arg" lemma="loing" entity="">loing</w>
+							<w pos="VERB" dep="acl" lemma="venir" entity="">venir</w>
+						</del>
+					</l>
+					<l>
+						<del type="rature" hand="#2">
+							<w pos="PROPN" dep="dep" lemma="J’" entity="">J’</w>
+							<w pos="ADP" dep="case" lemma="ey" entity="">ey</w>
+							<w pos="NOUN" dep="nsubj" lemma="veu" entity="">veu</w>
+							<w pos="ADJ" dep="flat:name" lemma="c’" entity="MISC">c’</w>
+							<w pos="PRON" dep="nsubj" lemma="on" entity="">on</w>
+							<w pos="VERB" dep="ROOT" lemma="faisoyt" entity="">faisoyt</w>
+							<w pos="VERB" dep="xcomp" lemma="convenir" entity="">convenir</w>
+						</del>
+					</l>
+					<l>
+						<del type="rature" hand="#2">
+							<w pos="ADJ" dep="amod" lemma="tout" entity="">Tout</w>
+							<w pos="DET" dep="det" lemma="le" entity="">le</w>
+							<w pos="NOUN" dep="nsubj" lemma="monde" entity="">monde</w>
+							<w pos="ADP" dep="acl" lemma="en" entity="">en</w>
+							<w pos="ADJ" dep="fixed" lemma="court" entity="">court</w>
+							<w pos="ADP" dep="case" lemma="de" entity="">de</w>
+							<w pos="NOUN" dep="dep" lemma="l’" entity="LOC">l’</w>
+							<w pos="VERB" dep="ROOT" lemma="eglise" entity="">eglise</w>
+						</del>
+					</l>
+					<l>
+						<add hand="#2">
+							<w pos="PRON" dep="nsubj" lemma="je" entity="">Je</w>
+							<w pos="VERB" dep="ROOT" lemma="parler" entity="">parle</w>
+							<w pos="ADV" dep="advmod" lemma="d’" entity="">d’</w>
+							<w pos="DET" dep="det" lemma="un" entity="">une</w>
+							<w pos="ADJ" dep="amod" lemma="bon" entity="">bonne</w>
+							<w pos="ADJ" dep="obj" lemma="guis" entity="">guise</w>
+							<w pos="PUNCT" dep="punct" lemma="." entity="">.</w>
+						</add>
+					</l>
+					<l>
+						<w pos="PROPN" dep="advmod" lemma="J’" entity="">J’</w>
+						<w pos="X" dep="case" lemma="ey" entity="">ey</w>
+						<w pos="PROPN" dep="nsubj" lemma="veu" entity="">veu</w>
+						<w pos="PROPN" dep="dep" lemma="qu’" entity="">qu’</w>
+						<w pos="PRON" dep="nsubj" lemma="on" entity="">on</w>
+						<w pos="ADV" dep="advmod" lemma="ne" entity="">ne</w>
+						<w pos="VERB" dep="acl:relcl" lemma="prenoyt" entity="">prenoyt</w>
+						<w pos="ADJ" dep="ROOT" lemma="chemiss" entity="">chemisse</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+					</l>
+					<l>
+						<w pos="ADV" dep="ROOT" lemma="fort" entity="">Fort</w>
+						<w pos="SCONJ" dep="fixed" lemma="que" entity="">que</w>
+						<w pos="ADP" dep="case" lemma="de" entity="">de</w>
+						<w pos="NOUN" dep="dep" lemma="deul" entity="">deulx</w>
+						<w pos="VERB" dep="acl" lemma="moys" entity="">moys</w>
+						<w pos="ADP" dep="case" lemma="en" entity="">en</w>
+						<w pos="NOUN" dep="obl:mod" lemma="deul" entity="">deulx</w>
+						<w pos="ADJ" dep="amod" lemma="moy" entity="">moys</w>
+						<w pos="PUNCT" dep="punct" lemma="." entity="">.</w>
+					</l>
+					<l>
+						<w pos="PROPN" dep="dep" lemma="J’" entity="">J’</w>
+						<w pos="X" dep="dep" lemma="ey" entity="">ey</w>
+						<w pos="X" dep="ROOT" lemma="veu" entity="">veu</w>
+						<w pos="DET" dep="det" lemma="le" entity="">la</w>
+						<w pos="NOUN" dep="obj" lemma="mesure" entity="">mesure</w>
+						<w pos="ADP" dep="case" lemma="de" entity="">de</w>
+						<w pos="NOUN" dep="nmod" lemma="boy" entity="">boys</w>
+					</l>
+					<l>
+						<w pos="NOUN" dep="ROOT" lemma="estre" entity="">Estre</w>
+						<w pos="ADP" dep="case" lemma="pour" entity="">pour</w>
+						<w pos="NUM" dep="nummod" lemma="six" entity="">six</w>
+						<w pos="NOUN" dep="obl:mod" lemma="beaul" entity="">beaulx</w>
+						<w pos="ADJ" dep="ROOT" lemma="soublz" entity="">soublz</w>
+						<w pos="ADJ" dep="flat:name" lemma="donne" entity="">donnee</w>
+					</l>
+					<l>
+						<w pos="PRON" dep="nsubj" lemma="qui" entity="">Qui</w>
+						<w pos="AUX" dep="cop" lemma="avoir" entity="">a</w>
+						<w pos="ADV" dep="advmod" lemma="bien" entity="">bien</w>
+						<w pos="NOUN" dep="amod" lemma="valu" entity="">valu</w>
+						<w pos="ADJ" dep="ROOT" lemma="cest" entity="">ceste</w>
+						<w pos="ADV" dep="ROOT" lemma="annee" entity="">annee</w>
+					</l>
+					<l>
+						<w pos="NUM" dep="nummod" lemma="Quarante" entity="">Quarante</w>
+						<w pos="PRON" dep="obl:mod" lemma="six" entity="">six</w>
+						<w pos="PUNCT" dep="punct" lemma=":" entity="">:</w>
+						<w pos="NOUN" dep="nsubj" lemma="c’" entity="MISC">c’</w>
+						<w pos="AUX" dep="cop" lemma="être" entity="">est</w>
+						<w pos="ADJ" dep="ROOT" lemma="piteulx" entity="">piteulx</w>
+						<w pos="ADJ" dep="obl:arg" lemma="ca" entity="">cas</w>
+						<w pos="PUNCT" dep="punct" lemma="." entity="">.</w>
+					</l>
+					<l>
+						<w pos="PROPN" dep="dep" lemma="J’" entity="">J’</w>
+						<w pos="X" dep="dep" lemma="ey" entity="">ey</w>
+						<w pos="PRON" dep="obl:mod" lemma="veu" entity="">veu</w>
+						<w pos="PROPN" dep="ROOT" lemma="qu’" entity="PER">qu’</w>
+						<w pos="ADJ" dep="amod" lemma="i" entity="PER">i</w>
+						<w pos="NOUN" dep="ROOT" lemma="n’" entity="PER">n’</w>
+						<w pos="NOUN" dep="ROOT" lemma="estoyt" entity="">estoyt</w>
+						<w pos="PROPN" dep="ROOT" lemma="advocas" entity="">advocas</w>
+					</l>
+					<l>
+						<w pos="SCONJ" dep="det" lemma="que" entity="">Que</w>
+						<w pos="NOUN" dep="ROOT" lemma="deul" entity="">deulx</w>
+						<w pos="CCONJ" dep="cc" lemma="ou" entity="">ou</w>
+						<w pos="ADJ" dep="conj" lemma="troy" entity="">troys</w>
+						<w pos="ADP" dep="case" lemma="en" entity="">en</w>
+						<w pos="NOUN" dep="nmod" lemma="ceste" entity="">ceste</w>
+						<w pos="NOUN" dep="nmod" lemma="ville" entity="">ville</w>
+						<w pos="PUNCT" dep="punct" lemma="." entity="">.</w>
+					</l>
+					<l>
+						<w pos="PROPN" dep="ROOT" lemma="J’" entity="">J’</w>
+						<w pos="ADP" dep="case" lemma="ey" entity="">ey</w>
+						<w pos="NUM" dep="nummod" lemma="veu" entity="">veu</w>
+						<w pos="NOUN" dep="appos" lemma="deul" entity="">deulx</w>
+						<w pos="ADJ" dep="amod" lemma="cen" entity="">cens</w>
+						<w pos="NOUN" dep="obl:mod" lemma="cas" entity="">cas</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+						<w pos="PRON" dep="ROOT" lemma="voyre" entity="PER">voyre</w>
+						<w pos="ADJ" dep="flat:name" lemma="mill" entity="PER">mille</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+					</l>
+					<l>
+						<w pos="PRON" dep="nsubj" lemma="qui" entity="">Qui</w>
+						<w pos="AUX" dep="cop" lemma="être" entity="">sont</w>
+						<w pos="ADP" dep="case" lemma="au" entity="">au</w>
+						<w pos="NOUN" dep="ROOT" lemma="renq" entity="">renq</w>
+						<w pos="ADP" dep="case" lemma="de" entity="">des</w>
+						<w pos="NOUN" dep="obj" lemma="trespassé" entity="">trespassés</w>
+						<w pos="PUNCT" dep="punct" lemma="." entity="">.</w>
+					</l>
+					<speaker>
+						<w pos="DET" dep="det" lemma="le" entity="MISC">Le</w>
+						<w pos="PROPN" dep="ROOT" lemma="Tesmoing" entity="MISC">Tesmoing</w>
+					</speaker>
+				</sp>
+				<sp who="#juge">
+					<l>
+						<w pos="ADV" dep="ROOT" lemma="encore" entity="">Encore</w>
+						<w pos="PUNCT" dep="punct" lemma="!" entity="">!</w>
+						<w pos="PRON" dep="nsubj" lemma="n’" entity="">N’</w>
+						<w pos="ADJ" dep="ROOT" lemma="ess" entity="">esse</w>
+						<w pos="ADV" dep="advmod" lemma="pas" entity="">pas</w>
+						<w pos="VERB" dep="xcomp" lemma="asser" entity="">assés</w>
+						<w pos="PUNCT" dep="punct" lemma="?" entity="">?</w>
+					</l>
+					<l>
+						<w pos="PROPN" dep="ROOT" lemma="Sus" entity="PER">Sus</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+						<w pos="VERB" dep="ROOT" lemma="responder" entity="">respondés</w>
+						<w pos="ADP" dep="case" lemma="sans" entity="">sans</w>
+						<w pos="NOUN" dep="obl:mod" lemma="faulte" entity="">faulte</w>
+						<w pos="ADJ" dep="amod" lemma="nul" entity="">nulle</w>
+						<w pos="PUNCT" dep="punct" lemma="." entity="">.</w>
+					</l>
+					<speaker>
+						<w pos="DET" dep="det" lemma="le" entity="MISC">Le</w>
+						<w pos="NOUN" dep="ROOT" lemma="juge" entity="MISC">Juge</w>
+					</speaker>
+				</sp>
+				<sp who="#tesmoing">
+					<l>
+						<w pos="PROPN" dep="ROOT" lemma="J’" entity="">J’</w>
+						<w pos="ADP" dep="case" lemma="ey" entity="">ey</w>
+						<w pos="PROPN" dep="obl:mod" lemma="veu" entity="">veu</w>
+						<w pos="PRON" dep="nsubj" lemma="qui" entity="">qui</w>
+						<w pos="VERB" dep="acl:relcl" lemma="n’" entity="PER">n’</w>
+						<w pos="ADJ" dep="obj" lemma="estoyt" entity="">estoyt</w>
+						<w pos="NOUN" dep="dep" lemma="c’" entity="MISC">c’</w>
+						<w pos="DET" dep="det" lemma="un" entity="">une</w>
+						<w pos="NOUN" dep="ROOT" lemma="mulle" entity="">mulle</w>
+					</l>
+					<l>
+						<w pos="CCONJ" dep="cc" lemma="et" entity="">Et</w>
+						<w pos="DET" dep="det" lemma="un" entity="">une</w>
+						<w pos="NOUN" dep="ROOT" lemma="seulle" entity="">seulle</w>
+						<w pos="ADJ" dep="amod" lemma="damoysell" entity="">damoyselle</w>
+						<w pos="PUNCT" dep="ROOT" lemma="." entity="">.</w>
+					</l>
+					<l>
+						<w pos="ADP" dep="case" lemma="en" entity="">En</w>
+						<w pos="ADJ" dep="ROOT" lemma="cest" entity="">ceste</w>
+						<w pos="NOUN" dep="nmod" lemma="ville" entity="">ville</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+						<w pos="NOUN" dep="conj" lemma="layde" entity="">layde</w>
+						<w pos="CCONJ" dep="cc" lemma="ou" entity="">ou</w>
+						<w pos="ADJ" dep="conj" lemma="bel" entity="">belle</w>
+						<w pos="PUNCT" dep="punct" lemma="." entity="">.</w>
+					</l>
+					<l>
+						<w pos="PROPN" dep="advmod" lemma="Maintenant" entity="">Maintenant</w>
+						<w pos="PRON" dep="nsubj" lemma="on" entity="">on</w>
+						<w pos="PRON" dep="dep" lemma="en" entity="">en</w>
+						<w pos="VERB" dep="ROOT" lemma="voidt" entity="">voidt</w>
+						<w pos="DET" dep="det" lemma="un" entity="">un</w>
+						<w pos="NOUN" dep="obj" lemma="cent" entity="">cent</w>
+						<w pos="PUNCT" dep="punct" lemma="." entity="">.</w>
+					</l>
+					<l>
+						<w pos="PRON" dep="nsubj" lemma="je" entity="">Je</w>
+						<w pos="ADV" dep="advmod" lemma="ne" entity="">ne</w>
+						<w pos="ADJ" dep="ROOT" lemma="say" entity="">say</w>
+						<w pos="ADV" dep="advmod" lemma="pas" entity="">pas</w>
+						<w pos="SCONJ" dep="mark" lemma="que" entity="">que</w>
+						<w pos="PRON" dep="nsubj" lemma="celer" entity="">cela</w>
+						<w pos="VERB" dep="ccomp" lemma="sentir" entity="">sent</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+					</l>
+					<l>
+						<w pos="ADV" dep="ROOT" lemma="sinon" entity="PER">Sinon</w>
+						<w pos="SCONJ" dep="mark" lemma="que" entity="">que</w>
+						<w pos="ADJ" dep="det" lemma="tout" entity="">tous</w>
+						<w pos="NOUN" dep="nsubj" lemma="noble" entity="">nobles</w>
+						<w pos="VERB" dep="acl:relcl" lemma="devenir" entity="">deviennent</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+					</l>
+					<l>
+						<w pos="CCONJ" dep="cc" lemma="et" entity="">Et</w>
+						<w pos="ADP" dep="advmod" lemma="sy" entity="">sy</w>
+						<w pos="ADV" dep="advmod" lemma="plus" entity="">plus</w>
+						<w pos="ADV" dep="advmod" lemma="d’" entity="">d’</w>
+						<w pos="ADJ" dep="ROOT" lemma="aultre" entity="">aultres</w>
+						<w pos="ADP" dep="case" lemma="en" entity="">en</w>
+						<w pos="VERB" dep="ROOT" lemma="survenir" entity="">surviennent</w>
+					</l>
+					<l>
+						<w pos="ADP" dep="case" lemma="à" entity="">À</w>
+						<w pos="PROPN" dep="obl:mod" lemma="Dieu" entity="MISC">Dieu</w>
+						<w pos="PRON" dep="nsubj" lemma="vous" entity="">vous</w>
+						<w pos="ADP" dep="ROOT" lemma="dy" entity="">dy</w>
+						<w pos="DET" dep="det" lemma="le" entity="">la</w>
+						<w pos="NOUN" dep="obj" lemma="marchandise" entity="">marchandise</w>
+					</l>
+					<l>
+						<w pos="PROPN" dep="advcl" lemma="J’" entity="">J’</w>
+						<w pos="X" dep="case" lemma="ey" entity="">ey</w>
+						<w pos="PROPN" dep="dep" lemma="veu" entity="">veu</w>
+						<w pos="PROPN" dep="dep" lemma="qu’" entity="">qu’</w>
+						<w pos="PRON" dep="nsubj" lemma="on" entity="">on</w>
+						<w pos="ADV" dep="advmod" lemma="ne" entity="">ne</w>
+						<w pos="VERB" dep="ROOT" lemma="parloyt" entity="">parloyt</w>
+						<w pos="ADP" dep="case" lemma="de" entity="">de</w>
+						<w pos="NOUN" dep="obj" lemma="frise" entity="">frise</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+					</l>
+					<l>
+						<w pos="DET" dep="det" lemma="de" entity="">De</w>
+						<w pos="NOUN" dep="ROOT" lemma="vasquine" entity="">vasquines</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+						<w pos="ADP" dep="case" lemma="de" entity="">de</w>
+						<w pos="NOUN" dep="nmod" lemma="vertugale" entity="LOC">vertugales</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+					</l>
+					<l>
+						<w pos="CCONJ" dep="cc" lemma="mais" entity="">Mais</w>
+						<w pos="DET" dep="det" lemma="le" entity="">la</w>
+						<w pos="NOUN" dep="ROOT" lemma="maladye" entity="">maladye</w>
+						<w pos="ADP" dep="case" lemma="de" entity="">de</w>
+						<w pos="PROPN" dep="nmod" lemma="Galles" entity="">Galles</w>
+					</l>
+					<l>
+						<w pos="ADP" dep="mark" lemma="en" entity="">En</w>
+						<w pos="AUX" dep="aux:tense" lemma="avoir" entity="">a</w>
+						<w pos="VERB" dep="ROOT" lemma="trouver" entity="">trouvé</w>
+						<w pos="ADJ" dep="advmod" lemma="l’" entity="">l’</w>
+						<w pos="NOUN" dep="xcomp" lemma="invention" entity="">invention</w>
+						<w pos="PUNCT" dep="punct" lemma="." entity="">.</w>
+					</l>
+					<l>
+						<w pos="PROPN" dep="ROOT" lemma="J’" entity="">J’</w>
+						<w pos="X" dep="case" lemma="ey" entity="">ey</w>
+						<w pos="PROPN" dep="obl:mod" lemma="veu" entity="">veu</w>
+						<w pos="PRON" dep="nsubj" lemma="qu’" entity="">qu’</w>
+						<w pos="PRON" dep="nsubj" lemma="on" entity="">on</w>
+						<w pos="VERB" dep="acl:relcl" lemma="disoyt" entity="">disoyt</w>
+						<w pos="DET" dep="det" lemma="un" entity="">un</w>
+						<w pos="NOUN" dep="obj" lemma="syon" entity="">syon</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+					</l>
+					<l>
+						<w pos="NOUN" dep="nsubj" lemma="maintenant" entity="">Maintenant</w>
+						<w pos="ADJ" dep="flat:name" lemma="c’" entity="MISC">c’</w>
+						<w pos="AUX" dep="cop" lemma="être" entity="">est</w>
+						<w pos="DET" dep="det" lemma="un" entity="">un</w>
+						<w pos="NOUN" dep="ROOT" lemma="casaquin" entity="">casaquin</w>
+					</l>
+					<l>
+						<w pos="PRON" dep="nsubj" lemma="dont" entity="">Dont</w>
+						<w pos="AUX" dep="aux:tense" lemma="être" entity="">est</w>
+						<w pos="VERB" dep="ROOT" lemma="venir" entity="">venu</w>
+						<w pos="DET" dep="det" lemma="le" entity="">le</w>
+						<w pos="NOUN" dep="obj" lemma="damasquin" entity="">damasquin</w>
+					</l>
+					<l>
+						<w pos="PRON" dep="ROOT" lemma="qu’" entity="">Qu’</w>
+						<w pos="ADP" dep="case" lemma="en" entity="">en</w>
+						<w pos="ADJ" dep="obl:arg" lemma="grave" entity="">grave</w>
+						<w pos="ADP" dep="case" lemma="en" entity="">en</w>
+						<w pos="NOUN" dep="nmod" lemma="espee" entity="">espee</w>
+						<w pos="CCONJ" dep="cc" lemma="ou" entity="">ou</w>
+						<w pos="ADJ" dep="conj" lemma="dagu" entity="">dague</w>
+						<w pos="PUNCT" dep="punct" lemma="." entity="">.</w>
+					</l>
+					<l>
+						<w pos="ADP" dep="case" lemma="pour" entity="">Pour</w>
+						<w pos="NOUN" dep="obl:mod" lemma="vray" entity="">vray</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+						<w pos="DET" dep="det" lemma="mon" entity="">ma</w>
+						<w pos="ADV" dep="ROOT" lemma="dame" entity="">dame</w>
+						<w pos="ADV" dep="amod" lemma="saincte" entity="">saincte</w>
+						<w pos="ADV" dep="fixed" lemma="brague" entity="PER">brague</w>
+					</l>
+					<l>
+						<w pos="ADP" dep="case" lemma="en" entity="">En</w>
+						<w pos="NOUN" dep="ROOT" lemma="fust" entity="PER">fust</w>
+						<w pos="DET" dep="det" lemma="le" entity="">la</w>
+						<w pos="NOUN" dep="obj" lemma="premiere" entity="">premiere</w>
+						<w pos="NOUN" dep="amod" lemma="inventeur" entity="">inventrice</w>
+						<w pos="PUNCT" dep="punct" lemma="." entity="">.</w>
+					</l>
+					<l>
+						<w pos="PROPN" dep="ROOT" lemma="J’" entity="">J’</w>
+						<w pos="X" dep="case" lemma="ey" entity="">ey</w>
+						<w pos="PROPN" dep="obl:mod" lemma="veu" entity="">veu</w>
+						<w pos="PROPN" dep="nsubj" lemma="qu’" entity="">qu’</w>
+						<w pos="PRON" dep="nsubj" lemma="on" entity="">on</w>
+						<w pos="ADV" dep="advmod" lemma="ne" entity="">ne</w>
+						<w pos="VERB" dep="acl:relcl" lemma="trouvoyt" entity="">trouvoyt</w>
+						<w pos="ADJ" dep="obj" lemma="nouric" entity="">nourice</w>
+					</l>
+					<l>
+						<w pos="PROPN" dep="ROOT" lemma="Dedens" entity="LOC">Dedens</w>
+						<w pos="DET" dep="det" lemma="le" entity="">la</w>
+						<w pos="NOUN" dep="ROOT" lemma="ville" entity="">ville</w>
+						<w pos="ADP" dep="case" lemma="de" entity="">de</w>
+						<w pos="PROPN" dep="nmod" lemma="Rouen" entity="LOC">Rouen</w>
+						<w pos="PUNCT" dep="punct" lemma="." entity="">.</w>
+					</l>
+					<l>
+						<w pos="CCONJ" dep="cc" lemma="mais" entity="">Mais</w>
+						<w pos="PROPN" dep="advmod" lemma="j’" entity="LOC">j’</w>
+						<w pos="VERB" dep="ROOT" lemma="aseure" entity="">aseure</w>
+						<w pos="ADP" dep="case" lemma="par" entity="">par</w>
+						<w pos="PROPN" dep="obl:agent" lemma="sainct" entity="PER">sainct</w>
+						<w pos="PROPN" dep="obj" lemma="Ouen" entity="PER">Ouen</w>
+					</l>
+					<l>
+						<w pos="ADV" dep="advmod" lemma="que" entity="">Que</w>
+						<w pos="ADP" dep="case" lemma="pour" entity="">pour</w>
+						<w pos="DET" dep="det" lemma="un" entity="">une</w>
+						<w pos="PRON" dep="nsubj" lemma="on" entity="">on</w>
+						<w pos="PRON" dep="case" lemma="en" entity="">en</w>
+						<w pos="NOUN" dep="ROOT" lemma="trouve" entity="">trouve</w>
+						<w pos="ADJ" dep="amod" lemma="dous" entity="">douse</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+					</l>
+					<l>
+						<w pos="ADV" dep="ROOT" lemma="d’" entity="PER">D’</w>
+						<w pos="PRON" dep="iobj" lemma="où" entity="">où</w>
+						<w pos="VERB" dep="acl:relcl" lemma="venir" entity="">vient</w>
+						<w pos="SCONJ" dep="mark" lemma="que" entity="">que</w>
+						<w pos="ADV" dep="advmod" lemma="tout" entity="">tout</w>
+						<w pos="PRON" dep="nsubj" lemma="chacun" entity="">chacun</w>
+						<w pos="PRON" dep="expl:comp" lemma="se" entity="">se</w>
+						<w pos="VERB" dep="ccomp" lemma="house" entity="">house</w>
+					</l>
+					<l>
+						<w pos="ADP" dep="mark" lemma="pour" entity="">Pour</w>
+						<w pos="PRON" dep="expl:comp" lemma="se" entity="">se</w>
+						<w pos="VERB" dep="ROOT" lemma="pourmerner" entity="">pourmerner</w>
+						<w pos="ADP" dep="case" lemma="à" entity="">à</w>
+						<w pos="NOUN" dep="obl:arg" lemma="l’" entity="ORG">l’</w>
+						<w pos="NOUN" dep="advmod" lemma="eglise" entity="">eglise</w>
+					</l>
+					<l>
+						<w pos="ADP" dep="case" lemma="par" entity="">Par</w>
+						<w pos="DET" dep="det" lemma="mon" entity="">mon</w>
+						<w pos="NOUN" dep="obl:mod" lemma="ame" entity="">ame</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+						<w pos="ADV" dep="mark" lemma="quant" entity="">quant</w>
+						<w pos="PRON" dep="det" lemma="je" entity="">je</w>
+						<w pos="NOUN" dep="ROOT" lemma="m’" entity="PER">m’</w>
+						<w pos="ADJ" dep="xcomp" lemma="avis" entity="">avise</w>
+					</l>
+					<l>
+						<w pos="ADV" dep="nsubj:pass" lemma="tout" entity="">Tout</w>
+						<w pos="AUX" dep="aux:pass" lemma="être" entity="">est</w>
+						<w pos="VERB" dep="ROOT" lemma="tourner" entity="">tourné</w>
+						<w pos="ADP" dep="case" lemma="à" entity="">à</w>
+						<w pos="DET" dep="det" lemma="le" entity="">la</w>
+						<w pos="NOUN" dep="obl:arg" lemma="rebours" entity="">rebours</w>
+						<w pos="PUNCT" dep="punct" lemma="." entity="">.</w>
+					</l>
+					<l>
+						<w pos="DET" dep="det" lemma="le" entity="">Les</w>
+						<w pos="NOUN" dep="nsubj" lemma="mouton" entity="">moutons</w>
+						<w pos="ADV" dep="punct" lemma="d’" entity="">d’</w>
+						<w pos="CCONJ" dep="cc" lemma="or" entity="">or</w>
+						<w pos="PRON" dep="conj" lemma="n’" entity="PER">n’</w>
+						<w pos="AUX" dep="ROOT" lemma="avoir" entity="">ont</w>
+						<w pos="ADV" dep="advmod" lemma="plus" entity="">plus</w>
+						<w pos="DET" dep="det" lemma="le" entity="">le</w>
+						<w pos="NOUN" dep="obj" lemma="cours" entity="">cours</w>
+						<w pos="PUNCT" dep="punct" lemma="." entity="">.</w>
+					</l>
+					<l>
+						<w pos="PRON" dep="nsubj" lemma="on" entity="">On</w>
+						<w pos="ADV" dep="advmod" lemma="ne" entity="">ne</w>
+						<w pos="VERB" dep="ROOT" lemma="parler" entity="">parle</w>
+						<w pos="SCONJ" dep="mark" lemma="que" entity="">que</w>
+						<w pos="ADP" dep="case" lemma="de" entity="">de</w>
+						<w pos="PROPN" dep="ccomp" lemma="ducas" entity="">ducas</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+					</l>
+					<l>
+						<w pos="CCONJ" dep="cc" lemma="et" entity="">Et</w>
+						<w pos="ADP" dep="case" lemma="pour" entity="">pour</w>
+						<w pos="NOUN" dep="ROOT" lemma="l’" entity="LOC">l’</w>
+						<w pos="CCONJ" dep="cc" lemma="or" entity="">or</w>
+						<w pos="ADP" dep="case" lemma="à" entity="">à</w>
+						<w pos="NOUN" dep="conj" lemma="douze" entity="">douze</w>
+						<w pos="ADV" dep="fixed" lemma="caras" entity="">caras</w>
+					</l>
+					<l>
+						<w pos="PRON" dep="nsubj" lemma="on" entity="">On</w>
+						<w pos="PRON" dep="iobj" lemma="en" entity="">en</w>
+						<w pos="VERB" dep="ROOT" lemma="faict" entity="">faict</w>
+						<w pos="ADV" dep="advmod" lemma="bien" entity="">bien</w>
+						<w pos="ADP" dep="case" lemma="à" entity="">à</w>
+						<w pos="PROPN" dep="obl:arg" lemma=".x" entity="">.x</w>
+						<w pos="PUNCT" dep="punct" lemma="." entity="">.</w>
+						<w pos="CCONJ" dep="cc" lemma="et" entity="">et</w>
+						<w pos="NOUN" dep="ROOT" lemma="huict" entity="">huict</w>
+						<w pos="PUNCT" dep="punct" lemma="." entity="">.</w>
+					</l>
+					<l>
+						<w pos="PROPN" dep="advcl" lemma="J’" entity="">J’</w>
+						<w pos="X" dep="case" lemma="ey" entity="">ey</w>
+						<w pos="PROPN" dep="dep" lemma="veu" entity="">veu</w>
+						<w pos="PROPN" dep="dep" lemma="qu’" entity="">qu’</w>
+						<w pos="PRON" dep="nsubj" lemma="on" entity="">on</w>
+						<w pos="ADV" dep="advmod" lemma="ne" entity="">ne</w>
+						<w pos="VERB" dep="ROOT" lemma="blesoyt" entity="">blesoyt</w>
+						<w pos="ADP" dep="case" lemma="de" entity="">de</w>
+						<w pos="NOUN" dep="nmod" lemma="nuict" entity="">nuict</w>
+					</l>
+					<l>
+						<w pos="DET" dep="det" lemma="le" entity="">Les</w>
+						<w pos="NOUN" dep="nsubj" lemma="pasan" entity="">pasans</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+						<w pos="ADP" dep="case" lemma="comme" entity="">comme</w>
+						<w pos="NOUN" dep="nsubj" lemma="l’" entity="ORG">l’</w>
+						<w pos="PRON" dep="nsubj" lemma="on" entity="">on</w>
+						<w pos="VERB" dep="ROOT" lemma="veoyt" entity="">veoyt</w>
+						<w pos="ADJ" dep="obj" lemma="fer" entity="">fere</w>
+						<w pos="PUNCT" dep="punct" lemma="." entity="">.</w>
+					</l>
+					<l>
+						<w pos="ADV" dep="advmod" lemma="maintenant" entity="">Maintenant</w>
+						<w pos="ADV" dep="advmod" lemma="tout" entity="">tout</w>
+						<w pos="AUX" dep="cop" lemma="être" entity="">est</w>
+						<w pos="ADP" dep="case" lemma="à" entity="">à</w>
+						<w pos="NOUN" dep="ROOT" lemma="refaire" entity="">refaire</w>
+						<w pos="PUNCT" dep="punct" lemma="." entity="">.</w>
+					</l>
+					<l>
+						<w pos="CCONJ" dep="cc" lemma="et" entity="">Et</w>
+						<w pos="VERB" dep="ROOT" lemma="tourner" entity="">tourné</w>
+						<w pos="DET" dep="det" lemma="sen" entity="">sen</w>
+						<w pos="NOUN" dep="obj" lemma="desu" entity="">desus</w>
+						<w pos="ADJ" dep="amod" lemma="desoublz" entity="">desoublz</w>
+						<w pos="PUNCT" dep="punct" lemma="." entity="">.</w>
+					</l>
+					<l>
+						<w pos="ADP" dep="case" lemma="de" entity="">Du</w>
+						<w pos="NOUN" dep="ROOT" lemma="temps" entity="">temps</w>
+						<w pos="PRON" dep="nsubj" lemma="qu’" entity="">qu’</w>
+						<w pos="PRON" dep="nsubj" lemma="on" entity="">on</w>
+						<w pos="VERB" dep="acl:relcl" lemma="disoyt" entity="">disoyt</w>
+						<w pos="ADJ" dep="advmod" lemma="mesuroulx" entity="">mesuroulx</w>
+					</l>
+					<l>
+						<w pos="PRON" dep="nsubj" lemma="on" entity="">On</w>
+						<w pos="ADV" dep="advmod" lemma="ne" entity="">ne</w>
+						<w pos="VERB" dep="ROOT" lemma="parloyt" entity="">parloyt</w>
+						<w pos="ADJ" dep="amod" lemma="poinct" entity="">poinct</w>
+						<w pos="ADP" dep="case" lemma="de" entity="">de</w>
+						<w pos="NOUN" dep="obl:arg" lemma="catere" entity="PER">catere</w>
+						<w pos="PUNCT" dep="punct" lemma="." entity="">.</w>
+					</l>
+					<l>
+						<w pos="NOUN" dep="nsubj" lemma="maintenant" entity="">Maintenant</w>
+						<w pos="ADJ" dep="flat:name" lemma="n’" entity="PER">n’</w>
+						<w pos="PRON" dep="dep" lemma="y" entity="">y</w>
+						<w pos="VERB" dep="aux:tense" lemma="avoir" entity="">a</w>
+						<w pos="ADV" dep="advmod" lemma="can" entity="">can</w>
+						<w pos="ADV" dep="advmod" lemma="ne" entity="">ne</w>
+						<w pos="VERB" dep="ROOT" lemma="terrer" entity="">terre</w>
+					</l>
+					<l>
+						<w pos="PRON" dep="nsubj" lemma="qui" entity="">Qui</w>
+						<w pos="ADV" dep="advmod" lemma="ne" entity="">ne</w>
+						<w pos="VERB" dep="ROOT" lemma="soyt" entity="">soyt</w>
+						<w pos="DET" dep="det" lemma="tout" entity="">toute</w>
+						<w pos="NOUN" dep="obj" lemma="catereuse" entity="">catereuse</w>
+						<w pos="PUNCT" dep="punct" lemma="." entity="">.</w>
+					</l>
+					<l>
+						<w pos="NOUN" dep="ROOT" lemma="o" entity="">O</w>
+						<w pos="SCONJ" dep="ROOT" lemma="que" entity="">que</w>
+						<w pos="DET" dep="det" lemma="le" entity="">la</w>
+						<w pos="NOUN" dep="dep" lemma="femme" entity="">femme</w>
+						<w pos="NOUN" dep="amod" lemma="estoyt" entity="">estoyt</w>
+						<w pos="ADJ" dep="amod" lemma="heureux" entity="">heureuse</w>
+					</l>
+					<l>
+						<w pos="CCONJ" dep="cc" lemma="et" entity="">Et</w>
+						<w pos="ADJ" dep="ROOT" lemma="riche" entity="">riche</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+						<w pos="PRON" dep="nsubj" lemma="qui" entity="">qui</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+						<w pos="ADP" dep="case" lemma="au" entity="">au</w>
+						<w pos="NOUN" dep="obl:mod" lemma="temps" entity="">temps</w>
+						<w pos="VERB" dep="acl:relcl" lemma="passer" entity="">passé</w>
+						<w pos="PUNCT" dep="ROOT" lemma="," entity="">,</w>
+					</l>
+					<l>
+						<w pos="PROPN" dep="ROOT" lemma="Portoyt" entity="PER">Portoyt</w>
+						<w pos="ADP" dep="case" lemma="en" entity="">en</w>
+						<w pos="DET" dep="det" lemma="son" entity="">son</w>
+						<w pos="NOUN" dep="ROOT" lemma="cul" entity="">cul</w>
+						<w pos="VERB" dep="acl" lemma="rebrasser" entity="">rebrassé</w>
+					</l>
+					<l>
+						<w pos="ADP" dep="det" lemma="de" entity="">De</w>
+						<w pos="ADJ" dep="amod" lemma="bel" entity="">belle</w>
+						<w pos="NOUN" dep="ROOT" lemma="sarge" entity="">sarge</w>
+						<w pos="CCONJ" dep="cc" lemma="ou" entity="">ou</w>
+						<w pos="NOUN" dep="conj" lemma="ostadine" entity="">ostadine</w>
+						<w pos="PUNCT" dep="punct" lemma="!" entity="">!</w>
+					</l>
+					<l>
+						<w pos="NOUN" dep="ROOT" lemma="o" entity="">O</w>
+						<w pos="PRON" dep="dep" lemma="qu’" entity="">qu’</w>
+						<w pos="PRON" dep="nsubj" lemma="lui" entity="">elle</w>
+						<w pos="VERB" dep="ROOT" lemma="sembloÿt" entity="">sembloÿt</w>
+						<w pos="ADJ" dep="xcomp" lemma="godin" entity="">godine</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+					</l>
+					<l>
+						<w pos="PRON" dep="nsubj" lemma="qui" entity="">Qui</w>
+						<w pos="VERB" dep="ROOT" lemma="avoyt" entity="">avoyt</w>
+						<w pos="ADP" dep="case" lemma="en" entity="">en</w>
+						<w pos="DET" dep="det" lemma="tout" entity="">toute</w>
+						<w pos="NOUN" dep="obl:mod" lemma="saison" entity="">saison</w>
+					</l>
+					<l>
+						<w pos="NOUN" dep="ROOT" lemma="robe" entity="LOC">Robe</w>
+						<w pos="ADP" dep="case" lemma="de" entity="">de</w>
+						<w pos="NOUN" dep="nmod" lemma="drap" entity="PER">drap</w>
+						<w pos="ADP" dep="case" lemma="en" entity="">en</w>
+						<w pos="DET" dep="det" lemma="son" entity="">sa</w>
+						<w pos="NOUN" dep="nmod" lemma="maison" entity="">maison</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+					</l>
+					<l>
+						<w pos="PROPN" dep="ROOT" lemma="Fouree" entity="PER">Fouree</w>
+						<w pos="ADP" dep="case" lemma="de" entity="">de</w>
+						<w pos="NOUN" dep="nmod" lemma="beaul" entity="">beaulx</w>
+						<w pos="ADJ" dep="amod" lemma="do" entity="">dos</w>
+						<w pos="ADP" dep="case" lemma="de" entity="">de</w>
+						<w pos="NOUN" dep="nmod" lemma="gris" entity="">gris</w>
+					</l>
+					<l>
+						<w pos="CCONJ" dep="cc" lemma="ou" entity="">Ou</w>
+						<w pos="ADP" dep="case" lemma="de" entity="">de</w>
+						<w pos="NOUN" dep="ROOT" lemma="grigno" entity="">grignos</w>
+						<w pos="PUNCT" dep="punct" lemma=";" entity="">;</w>
+						<w pos="NOUN" dep="ROOT" lemma="ventre" entity="">ventre</w>
+						<w pos="PROPN" dep="nmod" lemma="sainct" entity="LOC">sainct</w>
+						<w pos="PROPN" dep="nmod" lemma="-" entity="LOC">-</w>
+						<w pos="ADJ" dep="nmod" lemma="gris" entity="LOC">gris</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+					</l>
+					<l>
+						<w pos="NOUN" dep="case" lemma="y" entity="PER">Y</w>
+						<w pos="NOUN" dep="ROOT" lemma="m’" entity="PER">m’</w>
+						<w pos="AUX" dep="aux:pass" lemma="être" entity="">est</w>
+						<w pos="VERB" dep="ROOT" lemma="advis" entity="">advis</w>
+						<w pos="SCONJ" dep="mark" lemma="que" entity="">que</w>
+						<w pos="PRON" dep="nsubj" lemma="je" entity="">je</w>
+						<w pos="DET" dep="det" lemma="le" entity="">les</w>
+						<w pos="NOUN" dep="dep" lemma="voy" entity="">voy</w>
+					</l>
+					<speaker>
+						<w pos="DET" dep="det" lemma="le" entity="MISC">Le</w>
+						<w pos="PROPN" dep="ROOT" lemma="Tesmoing" entity="MISC">Tesmoing</w>
+					</speaker>
+				</sp>
+				<sp who="#juge">
+					<l>
+						<w pos="PRON" dep="nsubj" lemma="je" entity="">Je</w>
+						<w pos="VERB" dep="ROOT" lemma="croy" entity="">croy</w>
+						<w pos="SCONJ" dep="dep" lemma="qu’" entity="">qu’</w>
+						<w pos="PRON" dep="punct" lemma="il" entity="">il</w>
+						<w pos="AUX" dep="ccomp" lemma="être" entity="">est</w>
+						<w pos="ADV" dep="advmod" lemma="tout" entity="">tout</w>
+						<w pos="ADP" dep="fixed" lemma="hors" entity="">hors</w>
+						<w pos="ADP" dep="case" lemma="de" entity="">de</w>
+						<w pos="NOUN" dep="dep" lemma="soy" entity="">soy</w>
+						<w pos="PUNCT" dep="punct" lemma="." entity="">.</w>
+					</l>
+					<l>
+						<del type="rature" hand="#2">
+							<w pos="NOUN" dep="ROOT" lemma="parole" entity="">parole</w>
+						</del>
+						<add hand="#2">
+							<w pos="NOUN" dep="ROOT" lemma="repon" entity="">repons</w>
+						</add>
+						<w pos="DET" dep="det" lemma="mon" entity="">Mon</w>
+						<w pos="NOUN" dep="ROOT" lemma="amy" entity="">amy</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+						<w pos="ADP" dep="case" lemma="à" entity="">à</w>
+						<w pos="NOUN" dep="ROOT" lemma="propos" entity="">propos</w>
+					</l>
+					<l>
+						<w pos="PRON" dep="nsubj" lemma="je" entity="">Je</w>
+						<w pos="VERB" dep="ROOT" lemma="croy" entity="">croy</w>
+						<w pos="PRON" dep="nsubj" lemma="qu’" entity="PER">qu’</w>
+						<w pos="NOUN" dep="acl:relcl" lemma="avé" entity="">avés</w>
+						<w pos="VERB" dep="acl" lemma="rincher" entity="">rinché</w>
+						<w pos="DET" dep="det" lemma="le" entity="">les</w>
+						<w pos="NOUN" dep="obj" lemma="po" entity="">pos</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+					</l>
+					<l>
+						<w pos="PRON" dep="nsubj" lemma="je" entity="">Je</w>
+						<w pos="ADV" dep="advmod" lemma="ne" entity="">ne</w>
+						<w pos="VERB" dep="ROOT" lemma="parler" entity="">parle</w>
+						<w pos="ADP" dep="case" lemma="de" entity="">du</w>
+						<w pos="NOUN" dep="obl:arg" lemma="temps" entity="">temps</w>
+						<w pos="PROPN" dep="nmod" lemma="jadis" entity="">jadis</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+					</l>
+					<l>
+						<w pos="PROPN" dep="ROOT" lemma="Respondés" entity="">Respondés</w>
+						<w pos="ADP" dep="case" lemma="à" entity="">à</w>
+						<w pos="DET" dep="det" lemma="mon" entity="">mes</w>
+						<w pos="NOUN" dep="nmod" lemma="propre" entity="">propres</w>
+						<w pos="ADV" dep="nmod" lemma="dire" entity="">dis</w>
+						<w pos="PUNCT" dep="punct" lemma="." entity="">.</w>
+					</l>
+					<l>
+						<w pos="NOUN" dep="ROOT" lemma="avé" entity="">Avés</w>
+						<w pos="PRON" dep="dep" lemma="vous" entity="">-vous</w>
+						<w pos="PRON" dep="flat:foreign" lemma="veu" entity="">veu</w>
+						<w pos="DET" dep="det" lemma="le" entity="">le</w>
+						<w pos="NOUN" dep="appos" lemma="beau" entity="">beau</w>
+						<w pos="PROPN" dep="nmod" lemma="Colin" entity="MISC">Colin</w>
+					</l>
+					<l>
+						<w pos="AUX" dep="aux:tense" lemma="avoir" entity="">Avoir</w>
+						<w pos="VERB" dep="ROOT" lemma="faict" entity="">faict</w>
+						<w pos="DET" dep="det" lemma="le" entity="">le</w>
+						<w pos="ADV" dep="obl:mod" lemma="heurter" entity="">heurte</w>
+						<w pos="PROPN" dep="obl:arg" lemma="-" entity="">-</w>
+						<w pos="PROPN" dep="obl:mod" lemma="belin" entity="">belin</w>
+					</l>
+					<l>
+						<w pos="ADP" dep="case" lemma="avec" entity="">Avec</w>
+						<w pos="NOUN" dep="ROOT" lemma="ceste" entity="">ceste</w>
+						<w pos="NOUN" dep="amod" lemma="fille" entity="">fille</w>
+						<w pos="ADJ" dep="amod" lemma="present" entity="">presente</w>
+						<w pos="PUNCT" dep="ROOT" lemma="?" entity="">?</w>
+					</l>
+					<speaker>
+						<w pos="DET" dep="det" lemma="le" entity="MISC">Le</w>
+						<w pos="NOUN" dep="ROOT" lemma="juge" entity="MISC">Juge</w>
+					</speaker>
+				</sp>
+				<sp who="#tesmoing">
+					<l>
+						<w pos="PRON" dep="nsubj" lemma="vous" entity="">Vous</w>
+						<w pos="ADV" dep="advmod" lemma="ne" entity="">ne</w>
+						<w pos="VERB" dep="ROOT" lemma="vouler" entity="">voulés</w>
+						<w pos="ADV" dep="advmod" lemma="pas" entity="">pas</w>
+						<w pos="SCONJ" dep="mark" lemma="que" entity="">que</w>
+						<w pos="PRON" dep="nsubj" lemma="je" entity="">je</w>
+						<w pos="VERB" dep="ccomp" lemma="mentir" entity="">mente</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+					</l>
+					<l>
+						<w pos="NOUN" dep="nsubj" lemma="ausy" entity="PER">Ausy</w>
+						<w pos="ADV" dep="advmod" lemma="ne" entity="">ne</w>
+						<w pos="VERB" dep="ROOT" lemma="veulx" entity="">veulx</w>
+						<w pos="ADJ" dep="advmod" lemma="-j" entity="">-je</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+						<w pos="DET" dep="det" lemma="mon" entity="">mon</w>
+						<w pos="NOUN" dep="obj" lemma="seigneur" entity="">seigneur</w>
+						<w pos="PUNCT" dep="punct" lemma=":" entity="">:</w>
+					</l>
+					<l>
+						<w pos="NOUN" dep="ROOT" lemma="acousté" entity="">Acoustés</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+						<w pos="ADJ" dep="conj" lemma="voecy" entity="">voecy</w>
+						<w pos="DET" dep="det" lemma="le" entity="">le</w>
+						<w pos="NOUN" dep="ROOT" lemma="greigneur" entity="">greigneur</w>
+					</l>
+					<l>
+						<w pos="NOUN" dep="ROOT" lemma="compte" entity="">Compte</w>
+						<w pos="PRON" dep="mark" lemma="que" entity="">que</w>
+						<w pos="PRON" dep="nsubj" lemma="vous" entity="">vous</w>
+						<w pos="ADJ" dep="acl:relcl" lemma="oÿste" entity="">oÿstes</w>
+						<w pos="ADJ" dep="xcomp" lemma="onque" entity="">onques</w>
+						<w pos="PUNCT" dep="punct" lemma="." entity="">.</w>
+					</l>
+					<speaker>
+						<w pos="DET" dep="det" lemma="le" entity="MISC">Le</w>
+						<w pos="PROPN" dep="ROOT" lemma="Tesmoing" entity="MISC">Tesmoing</w>
+					</speaker>
+				</sp>
+				<sp who="#juge">
+					<l>
+						<w pos="CCONJ" dep="cc" lemma="or" entity="">Or</w>
+						<w pos="ADV" dep="ROOT" lemma="sus" entity="">sus</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+						<w pos="NOUN" dep="conj" lemma="amy" entity="">amy</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+						<w pos="NOUN" dep="conj" lemma="despesche" entity="">despesches</w>
+						<w pos="ADJ" dep="amod" lemma="doncque" entity="">doncques</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+					</l>
+					<l>
+						<w pos="PRON" dep="nsubj" lemma="je" entity="">Je</w>
+						<w pos="ADV" dep="advmod" lemma="ne" entity="">ne</w>
+						<w pos="VERB" dep="ROOT" lemma="veuil" entity="">veuil</w>
+						<w pos="ADJ" dep="obj" lemma="estr" entity="MISC">estre</w>
+						<w pos="ADJ" dep="amod" lemma="icy" entity="MISC">icy</w>
+						<w pos="ADJ" dep="obl:arg" lemma="messuy" entity="MISC">messuy</w>
+						<w pos="PUNCT" dep="punct" lemma="." entity="">.</w>
+					</l>
+					<speaker>
+						<w pos="DET" dep="det" lemma="le" entity="MISC">Le</w>
+						<w pos="NOUN" dep="ROOT" lemma="juge" entity="MISC">Juge</w>
+					</speaker>
+				</sp>
+				<sp who="#tesmoing">
+					<l>
+						<w pos="PROPN" dep="ROOT" lemma="Encor" entity="ORG">Encor</w>
+						<w pos="ADV" dep="advmod" lemma="ne" entity="">ne</w>
+						<w pos="ADJ" dep="flat:name" lemma="say" entity="">say</w>
+						<w pos="PROPN" dep="flat:name" lemma="-" entity="">-</w>
+						<w pos="PROPN" dep="flat:name" lemma="ge" entity="">ge</w>
+						<w pos="PRON" dep="dep" lemma="où" entity="">où</w>
+						<w pos="PROPN" dep="acl:relcl" lemma="j’" entity="LOC">j’</w>
+						<w pos="PRON" dep="punct" lemma="en" entity="">en</w>
+						<w pos="ADJ" dep="fixed" lemma="suy" entity="">suy</w>
+					</l>
+					<l>
+						<w pos="PROPN" dep="ROOT" lemma="Atendés" entity="">Atendés</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+						<w pos="NOUN" dep="obl:mod" lemma="Monsieur" entity="">monsieur</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+						<w pos="PRON" dep="nsubj" lemma="je" entity="">je</w>
+						<w pos="VERB" dep="conj" lemma="disoys" entity="">disoys</w>
+					</l>
+					<l>
+						<w pos="SCONJ" dep="mark" lemma="que" entity="">Que</w>
+						<w pos="DET" dep="det" lemma="le" entity="">le</w>
+						<w pos="NOUN" dep="nsubj:pass" lemma="monde" entity="">monde</w>
+						<w pos="AUX" dep="aux:pass" lemma="être" entity="">est</w>
+						<w pos="VERB" dep="ROOT" lemma="croire" entity="">cru</w>
+						<w pos="ADP" dep="case" lemma="de" entity="">de</w>
+						<w pos="PROPN" dep="obl:arg" lemma=".x" entity="">.x</w>
+						<w pos="PUNCT" dep="punct" lemma="." entity="">.</w>
+						<w pos="NOUN" dep="ROOT" lemma="fois" entity="">fois</w>
+					</l>
+					<l>
+						<w pos="ADV" dep="advmod" lemma="plus" entity="">Plus</w>
+						<w pos="ADJ" dep="amod" lemma="grand" entity="">grand</w>
+						<w pos="SCONJ" dep="ROOT" lemma="qu’" entity="">qu’</w>
+						<w pos="PRON" dep="nsubj" lemma="il" entity="">il</w>
+						<w pos="VERB" dep="acl" lemma="n’" entity="PER">n’</w>
+						<w pos="ADJ" dep="appos" lemma="estoyt" entity="">estoyt</w>
+						<w pos="ADP" dep="case" lemma="de" entity="">de</w>
+						<w pos="DET" dep="det" lemma="mon" entity="">mon</w>
+						<w pos="NOUN" dep="nmod" lemma="temps" entity="">temps</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+					</l>
+					<l>
+						<w pos="CCONJ" dep="cc" lemma="et" entity="">Et</w>
+						<w pos="ADP" dep="case" lemma="pour" entity="">pour</w>
+						<w pos="DET" dep="det" lemma="ce" entity="">ce</w>
+						<w pos="ADV" dep="advmod" lemma="bien" entity="">bien</w>
+						<w pos="PRON" dep="nsubj" lemma="je" entity="">je</w>
+						<w pos="VERB" dep="ROOT" lemma="n’" entity="MISC">n’</w>
+						<w pos="ADJ" dep="amod" lemma="enten" entity="">entens</w>
+					</l>
+					<l>
+						<w pos="CCONJ" dep="cc" lemma="car" entity="">Car</w>
+						<w pos="PRON" dep="advmod" lemma="tout" entity="">tout</w>
+						<w pos="AUX" dep="aux:pass" lemma="être" entity="">est</w>
+						<w pos="VERB" dep="ROOT" lemma="changer" entity="">changé</w>
+						<w pos="ADP" dep="mark" lemma="comme" entity="">comme</w>
+						<w pos="PRON" dep="nsubj" lemma="on" entity="">on</w>
+						<w pos="VERB" dep="ccomp" lemma="voyt" entity="">voyt</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+					</l>
+					<l>
+						<w pos="DET" dep="det" lemma="sy" entity="">Sy</w>
+						<w pos="PRON" dep="nsubj" lemma="on" entity="">on</w>
+						<w pos="PRON" dep="obj" lemma="le" entity="">le</w>
+						<w pos="NOUN" dep="ROOT" lemma="faict" entity="">faict</w>
+						<w pos="ADP" dep="mark" lemma="comme" entity="">comme</w>
+						<w pos="PRON" dep="nsubj" lemma="on" entity="">on</w>
+						<w pos="VERB" dep="nmod" lemma="souloyt" entity="">souloyt</w>
+					</l>
+					<l>
+						<w pos="PRON" dep="nsubj" lemma="je" entity="">Je</w>
+						<w pos="ADV" dep="advmod" lemma="ne" entity="">ne</w>
+						<w pos="ADJ" dep="ROOT" lemma="say" entity="">say</w>
+						<w pos="SCONJ" dep="mark" lemma="que" entity="">que</w>
+						<w pos="PRON" dep="nsubj" lemma="je" entity="">je</w>
+						<w pos="PRON" dep="iobj" lemma="vous" entity="">vous</w>
+						<w pos="VERB" dep="ccomp" lemma="doys" entity="">doys</w>
+						<w pos="VERB" dep="xcomp" lemma="dire" entity="">dire</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+					</l>
+					<l>
+						<w pos="CCONJ" dep="cc" lemma="mais" entity="">Mais</w>
+						<w pos="DET" dep="det" lemma="sy" entity="">sy</w>
+						<w pos="PRON" dep="nsubj" lemma="vous" entity="">vous</w>
+						<w pos="VERB" dep="ROOT" lemma="dire" entity="">dirais</w>
+						<w pos="PROPN" dep="ROOT" lemma="-" entity="">-</w>
+						<w pos="ADP" dep="case" lemma="ge" entity="">ge</w>
+						<w pos="ADP" dep="case" lemma="sans" entity="">sans</w>
+						<w pos="NOUN" dep="ROOT" lemma="rire" entity="">rire</w>
+					</l>
+					<l>
+						<w pos="CCONJ" dep="cc" lemma="et" entity="">Et</w>
+						<w pos="ADP" dep="advmod" lemma="sans" entity="">sans</w>
+						<w pos="VERB" dep="fixed" lemma="mentir" entity="">mentir</w>
+						<w pos="SCONJ" dep="mark" lemma="que" entity="">que</w>
+						<w pos="PRON" dep="nsubj" lemma="sy" entity="">sy</w>
+						<w pos="PRON" dep="nsubj" lemma="on" entity="">on</w>
+						<w pos="VERB" dep="ROOT" lemma="faict" entity="">faict</w>
+					</l>
+					<l>
+						<w pos="ADV" dep="advmod" lemma="d’" entity="PER">D’</w>
+						<w pos="NOUN" dep="ROOT" lemma="oeuvre" entity="">oeuvre</w>
+						<w pos="ADP" dep="case" lemma="de" entity="">des</w>
+						<w pos="NOUN" dep="nmod" lemma="noce" entity="">noces</w>
+						<w pos="ADP" dep="case" lemma="en" entity="">en</w>
+						<w pos="VERB" dep="ROOT" lemma="effaict" entity="">effaict</w>
+					</l>
+					<l>
+						<w pos="SCONJ" dep="mark" lemma="comme" entity="">Comme</w>
+						<w pos="PRON" dep="nsubj" lemma="on" entity="">on</w>
+						<w pos="VERB" dep="ROOT" lemma="faisoyt" entity="">faisoyt</w>
+						<w pos="ADP" dep="case" lemma="au" entity="">au</w>
+						<w pos="NOUN" dep="obl:arg" lemma="temps" entity="">temps</w>
+						<w pos="VERB" dep="amod" lemma="passer" entity="">passé</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+					</l>
+					<l>
+						<w pos="ADV" dep="advmod" lemma="tout" entity="">Tout</w>
+						<w pos="PRON" dep="fixed" lemma="en" entity="">en</w>
+						<w pos="AUX" dep="aux:tense" lemma="être" entity="">est</w>
+						<w pos="VERB" dep="ROOT" lemma="moudre" entity="">moulu</w>
+						<w pos="CCONJ" dep="cc" lemma="et" entity="">et</w>
+						<w pos="ADJ" dep="conj" lemma="cassé" entity="">cassé</w>
+					</l>
+					<l>
+						<w pos="PRON" dep="nsubj" lemma="je" entity="">Je</w>
+						<w pos="DET" dep="det" lemma="le" entity="">le</w>
+						<w pos="NOUN" dep="ROOT" lemma="juge" entity="">juge</w>
+						<w pos="ADV" dep="advmod" lemma="certainnement" entity="">certainnement</w>
+						<w pos="PUNCT" dep="punct" lemma="." entity="">.</w>
+					</l>
+					<speaker>
+						<w pos="DET" dep="det" lemma="le" entity="MISC">Le</w>
+						<w pos="PROPN" dep="ROOT" lemma="Tesmoing" entity="MISC">Tesmoing</w>
+					</speaker>
+				</sp>
+				<sp who="#juge">
+					<l>
+						<w pos="ADJ" dep="amod" lemma="taire" entity="">Tu</w>
+						<w pos="DET" dep="det" lemma="le" entity="">le</w>
+						<w pos="NOUN" dep="nsubj" lemma="pene" entity="">penes</w>
+						<w pos="ADV" dep="advmod" lemma="donc" entity="">donc</w>
+						<w pos="ADJ" dep="ROOT" lemma="vrayment" entity="">vrayment</w>
+						<w pos="PUNCT" dep="punct" lemma="?" entity="">?</w>
+					</l>
+					<speaker>
+						<w pos="DET" dep="det" lemma="le" entity="MISC">Le</w>
+						<w pos="NOUN" dep="ROOT" lemma="juge" entity="MISC">Juge</w>
+					</speaker>
+				</sp>
+				<sp who="#tesmoing">
+					<l>
+						<w pos="PROPN" dep="ROOT" lemma="Ouy" entity="LOC">Ouy</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+						<w pos="NOUN" dep="conj" lemma="Monsieur" entity="">monsieur</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+						<w pos="CCONJ" dep="cc" lemma="et" entity="">et</w>
+						<w pos="NOUN" dep="case" lemma="sy" entity="">sy</w>
+						<w pos="DET" dep="det" lemma="le" entity="">le</w>
+						<w pos="NOUN" dep="conj" lemma="tesmoingne" entity="">tesmoingne</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+					</l>
+					<l>
+						<w pos="DET" dep="nsubj" lemma="sy" entity="">Sy</w>
+						<w pos="PRON" dep="nsubj" lemma="on" entity="">on</w>
+						<w pos="VERB" dep="ROOT" lemma="faict" entity="">faict</w>
+						<w pos="ADJ" dep="obj" lemma="ainsy" entity="">ainsy</w>
+						<w pos="DET" dep="det" lemma="le" entity="">la</w>
+						<w pos="NOUN" dep="obj" lemma="besongne" entity="">besongne</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+					</l>
+					<l>
+						<w pos="SCONJ" dep="mark" lemma="comme" entity="">Comme</w>
+						<w pos="PRON" dep="nsubj" lemma="on" entity="">on</w>
+						<w pos="VERB" dep="ROOT" lemma="faisoyt" entity="">faisoyt</w>
+						<w pos="ADV" dep="advmod" lemma="quant" entity="">quant</w>
+						<w pos="PRON" dep="nmod" lemma="je" entity="">je</w>
+						<w pos="PRON" dep="amod" lemma="être" entity="">fus</w>
+						<w pos="VERB" dep="ROOT" lemma="naître" entity="">né</w>
+						<w pos="PUNCT" dep="punct" lemma="." entity="">.</w>
+					</l>
+					<speaker>
+						<w pos="DET" dep="det" lemma="le" entity="MISC">Le</w>
+						<w pos="PROPN" dep="ROOT" lemma="Tesmoing" entity="MISC">Tesmoing</w>
+					</speaker>
+				</sp>
+				<sp who="#juge">
+					<l>
+						<w pos="ADJ" dep="nsubj:pass" lemma="c’" entity="MISC">C’</w>
+						<w pos="AUX" dep="aux:pass" lemma="être" entity="">est</w>
+						<w pos="AUX" dep="aux:pass" lemma="honnestement" entity="">honnestement</w>
+						<w pos="VERB" dep="ROOT" lemma="tesmoingner" entity="">tesmoingné</w>
+						<w pos="PUNCT" dep="punct" lemma="." entity="">.</w>
+					</l>
+					<l>
+						<w pos="ADJ" dep="amod" lemma="taire" entity="">Tu</w>
+						<w pos="DET" dep="det" lemma="le" entity="">les</w>
+						<w pos="NOUN" dep="ROOT" lemma="vis" entity="">vis</w>
+						<w pos="ADV" dep="advmod" lemma="donc" entity="">donc</w>
+						<w pos="ADJ" dep="det" lemma="tout" entity="">tous</w>
+						<w pos="NOUN" dep="amod" lemma="deul" entity="">deulx</w>
+						<w pos="ADJ" dep="amod" lemma="ensembl" entity="">ensemble</w>
+						<w pos="PUNCT" dep="punct" lemma="?" entity="">?</w>
+					</l>
+					<speaker>
+						<w pos="DET" dep="det" lemma="le" entity="MISC">Le</w>
+						<w pos="NOUN" dep="ROOT" lemma="juge" entity="MISC">Juge</w>
+					</speaker>
+				</sp>
+				<sp who="#tesmoing">
+					<l>
+						<w pos="DET" dep="det" lemma="ouy" entity="MISC">Ouy</w>
+						<w pos="NOUN" dep="obl:mod" lemma="Monsieur" entity="MISC">monsieur</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+						<w pos="SCONJ" dep="mark" lemma="comme" entity="">comme</w>
+						<w pos="PRON" dep="expl:subj" lemma="il" entity="">il</w>
+						<w pos="PRON" dep="iobj" lemma="me" entity="">me</w>
+						<w pos="VERB" dep="ROOT" lemma="sembler" entity="">semble</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+					</l>
+					<l>
+						<w pos="CCONJ" dep="cc" lemma="mais" entity="">Mais</w>
+						<w pos="NOUN" dep="ROOT" lemma="marion" entity="PER">Marion</w>
+						<w pos="ADJ" dep="amod" lemma="estoyt" entity="">estoyt</w>
+						<w pos="ADJ" dep="amod" lemma="desoublz" entity="">desoublz</w>
+					</l>
+					<speaker>
+						<w pos="DET" dep="det" lemma="le" entity="MISC">Le</w>
+						<w pos="PROPN" dep="ROOT" lemma="Tesmoing" entity="MISC">Tesmoing</w>
+					</speaker>
+				</sp>
+				<sp who="#juge">
+					<l>
+						<w pos="NOUN" dep="ROOT" lemma="quan" entity="PER">Quans</w>
+						<w pos="VERB" dep="amod" lemma="escus" entity="PER">escus</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+						<w pos="NOUN" dep="conj" lemma="quan" entity="">quans</w>
+						<w pos="ADJ" dep="amod" lemma="teston" entity="">testons</w>
+						<w pos="CCONJ" dep="cc" lemma="ou" entity="">ou</w>
+						<w pos="ADJ" dep="conj" lemma="soublz" entity="">soublz</w>
+					</l>
+					<l>
+						<w pos="PROPN" dep="det" lemma="Luy" entity="">Luy</w>
+						<w pos="PROPN" dep="ROOT" lemma="baila" entity="">baila</w>
+						<w pos="PRON" dep="dep" lemma="il" entity="">-il</w>
+						<w pos="PUNCT" dep="punct" lemma="?" entity="">?</w>
+					</l>
+					<speaker>
+						<w pos="DET" dep="det" lemma="le" entity="MISC">Le</w>
+						<w pos="NOUN" dep="ROOT" lemma="juge" entity="MISC">Juge</w>
+					</speaker>
+				</sp>
+				<sp who="#tesmoing">
+					<l>
+						<w pos="PRON" dep="nsubj" lemma="je" entity="">Je</w>
+						<w pos="VERB" dep="ROOT" lemma="n’" entity="">n’</w>
+						<w pos="ADP" dep="case" lemma="en" entity="">en</w>
+						<w pos="ADJ" dep="obl:arg" lemma="say" entity="">say</w>
+						<w pos="PRON" dep="obj" lemma="rien" entity="">rien</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+					</l>
+					<l>
+						<del type="rature" hand="#2">
+							<w pos="CCONJ" dep="ROOT" lemma="mais" entity="">Mais</w>
+						</del>
+						<add hand="#2">
+							<w pos="ADV" dep="ROOT" lemma="toutefois" entity="">Toutefois</w>
+						</add>
+						<w pos="PRON" dep="nsubj" lemma="je" entity="">je</w>
+						<w pos="PRON" dep="iobj" lemma="vous" entity="">vous</w>
+						<w pos="VERB" dep="ROOT" lemma="diray" entity="">diray</w>
+						<w pos="ADV" dep="advmod" lemma="bien" entity="">bien</w>
+					</l>
+					<l>
+						<w pos="CCONJ" dep="cc" lemma="et" entity="">Et</w>
+						<w pos="VERB" dep="ROOT" lemma="jurer" entity="">jure</w>
+						<w pos="ADP" dep="case" lemma="sur" entity="">sur</w>
+						<w pos="DET" dep="det" lemma="mon" entity="">ma</w>
+						<w pos="NOUN" dep="obl:arg" lemma="conscïence" entity="">conscïence</w>
+					</l>
+					<l>
+						<w pos="PRON" dep="nsubj" lemma="qu’" entity="MISC">Qu’</w>
+						<w pos="ADV" dep="advmod" lemma="el" entity="MISC">el</w>
+						<w pos="VERB" dep="ROOT" lemma="prenoyt" entity="MISC">prenoyt</w>
+						<w pos="ADV" dep="advmod" lemma="tout" entity="">tout</w>
+						<w pos="ADP" dep="case" lemma="en" entity="">en</w>
+						<w pos="NOUN" dep="obl:mod" lemma="pacience" entity="">pacience</w>
+					</l>
+					<l>
+						<w pos="CCONJ" dep="cc" lemma="et" entity="">Et</w>
+						<w pos="ADP" dep="case" lemma="sans" entity="">sans</w>
+						<w pos="NOUN" dep="obl:mod" lemma="crier" entity="">crier</w>
+						<w pos="ADV" dep="advmod" lemma="fort" entity="">fort</w>
+						<w pos="VERB" dep="ROOT" lemma="haultemer" entity="">haultement</w>
+						<w pos="PUNCT" dep="punct" lemma=":" entity="">:</w>
+					</l>
+					<l>
+						<w pos="NOUN" dep="ROOT" lemma="«" entity="">«</w>
+						<w pos="PROPN" dep="ROOT" lemma="Faictes" entity="LOC">Faictes</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+						<w pos="VERB" dep="conj" lemma="dict" entity="LOC">dict</w>
+						<w pos="VERB" dep="advmod" lemma="el" entity="LOC">el</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+						<w pos="DET" dep="det" lemma="tout" entity="">tout</w>
+						<w pos="NOUN" dep="obl:mod" lemma="bellement" entity="">bellement</w>
+					</l>
+					<l>
+						<w pos="PROPN" dep="ROOT" lemma="Colin" entity="">Colin</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+						<w pos="PRON" dep="nsubj" lemma="vous" entity="">vous</w>
+						<w pos="VERB" dep="ROOT" lemma="ester" entity="">estes</w>
+						<w pos="VERB" dep="xcomp" lemma="bel" entity="">bel</w>
+						<w pos="CCONJ" dep="cc" lemma="et" entity="">et</w>
+						<w pos="NOUN" dep="conj" lemma="sage" entity="">sage</w>
+						<w pos="PUNCT" dep="punct" lemma="." entity="">.</w>
+					</l>
+					<l>
+						<w pos="CCONJ" dep="cc" lemma="mais" entity="">Mais</w>
+						<w pos="ADJ" dep="ROOT" lemma="c’" entity="MISC">c’</w>
+						<w pos="AUX" dep="punct" lemma="être" entity="">est</w>
+						<w pos="ADP" dep="case" lemma="à" entity="">à</w>
+						<w pos="NOUN" dep="dep" lemma="nom" entity="">nom</w>
+						<w pos="ADP" dep="case" lemma="de" entity="">de</w>
+						<w pos="NOUN" dep="nmod" lemma="mariage" entity="">mariage</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+					</l>
+					<l>
+						<w pos="PROPN" dep="ROOT" lemma="Entendés" entity="">Entendés</w>
+						<w pos="PROPN" dep="dep" lemma="-vous" entity="">-vous</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+						<w pos="DET" dep="det" lemma="mon" entity="">mon</w>
+						<w pos="NOUN" dep="ROOT" lemma="doul" entity="">doulx</w>
+						<w pos="ADJ" dep="amod" lemma="amy" entity="">amy</w>
+						<w pos="PUNCT" dep="punct" lemma="?" entity="">?</w>
+						<w pos="PUNCT" dep="ROOT" lemma="»" entity="">»</w>
+					</l>
+					<l>
+						<w pos="PROPN" dep="nsubj" lemma="Colin" entity="">Colin</w>
+						<w pos="ADV" dep="advmod" lemma="ne" entity="">ne</w>
+						<w pos="ADJ" dep="ROOT" lemma="faisoyt" entity="">faisoyt</w>
+						<w pos="ADJ" dep="obj" lemma="l’" entity="ORG">l’</w>
+						<w pos="PROPN" dep="obj" lemma="endormy" entity="ORG">endormy</w>
+					</l>
+					<l>
+						<w pos="CCONJ" dep="cc" lemma="mais" entity="">Mais</w>
+						<w pos="DET" dep="det" lemma="ce" entity="">ce</w>
+						<w pos="NOUN" dep="ROOT" lemma="mot" entity="">mot</w>
+						<w pos="DET" dep="advmod" lemma="un" entity="">un</w>
+						<w pos="ADV" dep="fixed" lemma="peu" entity="">peu</w>
+						<w pos="DET" dep="det" lemma="luy" entity="">luy</w>
+						<w pos="NOUN" dep="obj" lemma="despleust" entity="PER">despleust</w>
+						<w pos="PUNCT" dep="punct" lemma="." entity="">.</w>
+					</l>
+					<speaker>
+						<w pos="DET" dep="det" lemma="le" entity="MISC">Le</w>
+						<w pos="PROPN" dep="ROOT" lemma="Tesmoing" entity="MISC">Tesmoing</w>
+					</speaker>
+				</sp>
+				<sp who="#juge">
+					<l>
+						<w pos="PROPN" dep="ROOT" lemma="Toutefoys" entity="">Toutefoys</w>
+						<w pos="ADP" dep="case" lemma="en" entity="">en</w>
+						<w pos="NOUN" dep="obl:mod" lemma="fin" entity="">fin</w>
+						<w pos="PRON" dep="det" lemma="le" entity="">le</w>
+						<w pos="NOUN" dep="ROOT" lemma="voulust" entity="">voulust</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+					</l>
+					<l>
+						<w pos="VERB" dep="ROOT" lemma="feist" entity="">Feist</w>
+						<w pos="PRON" dep="nsubj" lemma="il" entity="">il</w>
+						<w pos="ADV" dep="ROOT" lemma="pas" entity="">pas</w>
+						<w pos="PUNCT" dep="ROOT" lemma="?" entity="">?</w>
+					</l>
+					<speaker>
+						<w pos="DET" dep="det" lemma="le" entity="MISC">Le</w>
+						<w pos="NOUN" dep="ROOT" lemma="juge" entity="MISC">Juge</w>
+					</speaker>
+				</sp>
+				<sp who="#tesmoing">
+					<l>
+						<del type="rature" hand="#2">
+							<w pos="NOUN" dep="ROOT" lemma="Monsieur" entity="">monsieur</w>
+						</del>
+						<add hand="#2">
+							<w pos="DET" dep="ROOT" lemma="ouy" entity="">ouy</w>
+						</add>
+						<w pos="PROPN" dep="ROOT" lemma="Ouy" entity="LOC">Ouy</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+						<w pos="ADP" dep="case" lemma="sans" entity="">sans</w>
+						<w pos="NOUN" dep="ROOT" lemma="faulte" entity="">faulte</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+					</l>
+					<l>
+						<w pos="CCONJ" dep="cc" lemma="car" entity="">Car</w>
+						<w pos="PRON" dep="nsubj" lemma="lui" entity="">elle</w>
+						<w pos="VERB" dep="ROOT" lemma="avoyt" entity="">avoyt</w>
+						<w pos="DET" dep="det" lemma="le" entity="">la</w>
+						<w pos="NOUN" dep="obj" lemma="jambe" entity="">jambe</w>
+						<w pos="ADJ" dep="amod" lemma="hault" entity="">haulte</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+					</l>
+					<l>
+						<w pos="X" dep="ROOT" lemma="L’" entity="">L’</w>
+						<w pos="DET" dep="dep" lemma="un" entity="">une</w>
+						<w pos="ADP" dep="case" lemma="sur" entity="">sur</w>
+						<w pos="NOUN" dep="nmod" lemma="l’" entity="LOC">l’</w>
+						<w pos="NOUN" dep="amod" lemma="aultre" entity="">aultre</w>
+						<w pos="ADV" dep="advmod" lemma="fermement" entity="">fermement</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+					</l>
+					<l>
+						<w pos="PRON" dep="nsubj" lemma="qui" entity="">Qui</w>
+						<w pos="VERB" dep="ROOT" lemma="n’" entity="PER">n’</w>
+						<w pos="VERB" dep="conj" lemma="estoyt" entity="">estoyt</w>
+						<w pos="ADJ" dep="amod" lemma="grand" entity="">grand</w>
+						<w pos="ADV" dep="obj" lemma="esbatement" entity="">esbatement</w>
+					</l>
+					<l>
+						<w pos="ADP" dep="mark" lemma="au" entity="">Au</w>
+						<w pos="VERB" dep="ROOT" lemma="pauvre" entity="">pauvre</w>
+						<w pos="PROPN" dep="obj" lemma="Colin" entity="PER">Colin</w>
+						<w pos="PRON" dep="nsubj" lemma="qui" entity="">qui</w>
+						<w pos="NOUN" dep="acl:relcl" lemma="mouroyt" entity="">mouroyt</w>
+						<w pos="PUNCT" dep="punct" lemma="." entity="">.</w>
+					</l>
+					<l>
+						<w pos="CCONJ" dep="cc" lemma="mais" entity="">Mais</w>
+						<w pos="PRON" dep="nsubj" lemma="lui" entity="">elle</w>
+						<w pos="VERB" dep="ROOT" lemma="dict" entity="">dict</w>
+						<w pos="PRON" dep="nsubj" lemma="qu’" entity="">qu’</w>
+						<w pos="PRON" dep="nsubj" lemma="il" entity="">il</w>
+						<w pos="ADV" dep="advmod" lemma="ne" entity="">ne</w>
+						<w pos="VERB" dep="ccomp" lemma="seroyt" entity="">seroyt</w>
+					</l>
+					<l>
+						<w pos="PROPN" dep="ROOT" lemma="Rien" entity="">Rien</w>
+						<w pos="PRON" dep="nsubj" lemma="qui" entity="">qui</w>
+						<w pos="VERB" dep="acl:relcl" lemma="fust" entity="PER">fust</w>
+						<w pos="ADP" dep="case" lemma="sans" entity="PER">sans</w>
+						<w pos="SCONJ" dep="obl:mod" lemma="qu’" entity="PER">qu’</w>
+						<w pos="PRON" dep="nsubj" lemma="il" entity="">il</w>
+						<w pos="VERB" dep="ccomp" lemma="fist" entity="">fist</w>
+						<w pos="NOUN" dep="obl:arg" lemma="promesse" entity="">promesse</w>
+					</l>
+					<l>
+						<del type="rature" hand="#2">
+							<w pos="ADP" dep="ROOT" lemma="à" entity="">à</w>
+							<w pos="DET" dep="ROOT" lemma="le" entity="">la</w>
+							<w pos="ADJ" dep="amod" lemma="grand" entity="">grand</w>
+						</del>
+						<add hand="#2">
+							<w pos="CCONJ" dep="ROOT" lemma="et" entity="">et</w>
+							<w pos="ADP" dep="punct" lemma="sans" entity="">sans</w>
+						</add>
+						<w pos="ADP" dep="case" lemma="de" entity="">De</w>
+						<w pos="NOUN" dep="ROOT" lemma="l’" entity="LOC">l’</w>
+						<w pos="VERB" dep="acl" lemma="espousser" entity="">espousser</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+						<w pos="ADJ" dep="conj" lemma="finess" entity="">finesse</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+					</l>
+					<l>
+						<w pos="ADP" dep="case" lemma="en" entity="">En</w>
+						<w pos="NOUN" dep="obl:mod" lemma="l’" entity="LOC">l’</w>
+						<w pos="NOUN" dep="ROOT" lemma="eglise" entity="">eglise</w>
+						<w pos="ADP" dep="case" lemma="de" entity="">de</w>
+						<w pos="DET" dep="det" lemma="son" entity="">leur</w>
+						<w pos="NOUN" dep="nmod" lemma="vilage" entity="">vilage</w>
+						<w pos="PUNCT" dep="punct" lemma="." entity="">.</w>
+					</l>
+					<l>
+						<w pos="PROPN" dep="ROOT" lemma="Colin" entity="">Colin</w>
+						<w pos="ADJ" dep="amod" lemma="disoyt" entity="">disoyt</w>
+						<w pos="PUNCT" dep="punct" lemma=":" entity="">:</w>
+						<w pos="NOUN" dep="appos" lemma="«" entity="">«</w>
+						<w pos="PROPN" dep="flat:name" lemma="huy" entity="LOC">huy</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+						<w pos="PROPN" dep="conj" lemma="huy" entity="LOC">huy</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+						<w pos="NOUN" dep="conj" lemma="formage" entity="">formage</w>
+						<w pos="PUNCT" dep="punct" lemma="»" entity="">»</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+					</l>
+					<l>
+						<w pos="NOUN" dep="ROOT" lemma="contrefaisant" entity="PER">Contrefaisant</w>
+						<w pos="DET" dep="det" lemma="le" entity="">la</w>
+						<w pos="ADJ" dep="amod" lemma="bas" entity="">basse</w>
+						<w pos="NOUN" dep="obj" lemma="voix" entity="">voix</w>
+						<w pos="PUNCT" dep="punct" lemma="." entity="">.</w>
+					</l>
+					<l>
+						<w pos="DET" dep="det" lemma="un" entity="">Un</w>
+						<w pos="NOUN" dep="ROOT" lemma="formage" entity="">formage</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+						<w pos="ADP" dep="case" lemma="par" entity="">par</w>
+						<w pos="ADV" dep="amod" lemma="saincte" entity="PER">saincte</w>
+						<w pos="ADJ" dep="nmod" lemma="croix" entity="PER">croix</w>
+						<w pos="PUNCT" dep="punct" lemma="!" entity="">!</w>
+					</l>
+					<l>
+						<w pos="ADP" dep="case" lemma="pour" entity="">Pour</w>
+						<w pos="DET" dep="det" lemma="un" entity="">un</w>
+						<w pos="NOUN" dep="ROOT" lemma="fourmage" entity="">fourmage</w>
+						<w pos="ADJ" dep="amod" lemma="n’" entity="MISC">n’</w>
+						<w pos="ADP" dep="case" lemma="en" entity="">en</w>
+						<w pos="NOUN" dep="nmod" lemma="feray" entity="">feray</w>
+					</l>
+					<l>
+						<w pos="DET" dep="det" lemma="un" entity="">Un</w>
+						<w pos="NOUN" dep="ROOT" lemma="coup" entity="">coup</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+						<w pos="ADV" dep="cc" lemma="tant" entity="">tant</w>
+						<w pos="SCONJ" dep="fixed" lemma="que" entity="">que</w>
+						<w pos="ADJ" dep="amod" lemma="viu" entity="">viue</w>
+						<w pos="NOUN" dep="amod" lemma="seray" entity="">seray</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+					</l>
+					<l>
+						<del type="rature" hand="#2">
+							<w pos="SCONJ" dep="ROOT" lemma="que" entity="">que</w>
+						</del>
+						<w pos="ADV" dep="ROOT" lemma="dict" entity="">Dict</w>
+						<w pos="PROPN" dep="ROOT" lemma="-elle" entity="">-elle</w>
+						<w pos="PUNCT" dep="ROOT" lemma="." entity="">.</w>
+						<w pos="VERB" dep="expl:comp" lemma="se" entity="">Se</w>
+						<w pos="VERB" dep="ROOT" lemma="voir" entity="">voyant</w>
+						<w pos="PROPN" dep="obj" lemma="Colin" entity="PER">Colin</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+					</l>
+					<l>
+						<w pos="PRON" dep="expl:pass" lemma="se" entity="">Se</w>
+						<w pos="VERB" dep="ROOT" lemma="laiser" entity="">laisa</w>
+						<w pos="VERB" dep="xcomp" lemma="mener" entity="">mener</w>
+						<w pos="ADP" dep="case" lemma="en" entity="">en</w>
+						<w pos="PROPN" dep="obl:mod" lemma="belin" entity="">belin</w>
+					</l>
+					<l>
+						<w pos="CCONJ" dep="cc" lemma="et" entity="">Et</w>
+						<w pos="VERB" dep="ROOT" lemma="bender" entity="">bender</w>
+						<w pos="ADV" dep="advmod" lemma="tout" entity="">tout</w>
+						<w pos="ADP" dep="case" lemma="à" entity="">à</w>
+						<w pos="DET" dep="det" lemma="son" entity="">son</w>
+						<w pos="NOUN" dep="dep" lemma="bel" entity="">bel</w>
+						<w pos="PROPN" dep="fixed" lemma="aise" entity="">aise</w>
+					</l>
+					<l>
+						<w pos="NOUN" dep="case" lemma="y" entity="">Y</w>
+						<w pos="PRON" dep="amod" lemma="vous" entity="">vous</w>
+						<w pos="DET" dep="det" lemma="le" entity="">la</w>
+						<w pos="NOUN" dep="ROOT" lemma="tatonne" entity="">tatonne</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+						<w pos="PRON" dep="case" lemma="y" entity="">y</w>
+						<w pos="DET" dep="det" lemma="le" entity="">la</w>
+						<w pos="NOUN" dep="nmod" lemma="baise" entity="">baise</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+					</l>
+					<l>
+						<w pos="NOUN" dep="ROOT" lemma="y" entity="">Y</w>
+						<w pos="PRON" dep="fixed" lemma="vous" entity="">vous</w>
+						<w pos="DET" dep="det" lemma="le" entity="">la</w>
+						<w pos="NOUN" dep="dep" lemma="couche" entity="">couche</w>
+						<w pos="ADP" dep="case" lemma="sur" entity="">sur</w>
+						<w pos="DET" dep="det" lemma="le" entity="">le</w>
+						<w pos="NOUN" dep="nmod" lemma="dos" entity="">dos</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+					</l>
+					<l>
+						<w pos="CCONJ" dep="cc" lemma="et" entity="">Et</w>
+						<w pos="VERB" dep="ROOT" lemma="aprer" entity="">aprés</w>
+						<w pos="NUM" dep="xcomp" lemma="cinq" entity="">cinq</w>
+						<w pos="CCONJ" dep="cc" lemma="ou" entity="">ou</w>
+						<w pos="VERB" dep="conj" lemma="sis" entity="">sis</w>
+						<w pos="ADJ" dep="amod" lemma="bon" entity="">bons</w>
+						<w pos="DET" dep="ROOT" lemma="mos" entity="">mos</w>
+					</l>
+					<l>
+						<w pos="VERB" dep="ROOT" lemma="feist" entity="">Feist</w>
+						<w pos="VERB" dep="xcomp" lemma="entrer" entity="">entrer</w>
+						<w pos="PROPN" dep="obj" lemma="Genfray" entity="PER">Genfray</w>
+						<w pos="ADP" dep="case" lemma="au" entity="">au</w>
+						<w pos="NOUN" dep="nmod" lemma="bisaq" entity="">bisaq</w>
+						<w pos="PUNCT" dep="punct" lemma="." entity="">.</w>
+					</l>
+					<l>
+						<w pos="DET" dep="det" lemma="le" entity="">Le</w>
+						<w pos="NOUN" dep="nsubj" lemma="chalic" entity="">chalic</w>
+						<w pos="ADJ" dep="amod" lemma="faisoyt" entity="">faisoyt</w>
+						<w pos="PROPN" dep="ROOT" lemma="tic" entity="">tic</w>
+						<w pos="CCONJ" dep="cc" lemma="et" entity="">et</w>
+						<w pos="NOUN" dep="conj" lemma="taq" entity="">taq</w>
+					</l>
+					<l>
+						<w pos="PROPN" dep="ROOT" lemma="Cric" entity="PER">Cric</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+						<w pos="PROPN" dep="conj" lemma="crac" entity="">crac</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+						<w pos="NOUN" dep="conj" lemma="cric" entity="PER">cric</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+						<w pos="ADJ" dep="conj" lemma="croq" entity="LOC">croq</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+						<w pos="NOUN" dep="appos" lemma="c’" entity="MISC">c’</w>
+						<w pos="ADJ" dep="amod" lemma="estoyt" entity="">estoyt</w>
+						<w pos="ADJ" dep="amod" lemma="merveill" entity="">merveille</w>
+						<w pos="PUNCT" dep="punct" lemma="." entity="">.</w>
+					</l>
+					<speaker>
+						<w pos="DET" dep="det" lemma="le" entity="MISC">Le</w>
+						<w pos="PROPN" dep="ROOT" lemma="Tesmoing" entity="MISC">Tesmoing</w>
+					</speaker>
+				</sp>
+				<sp who="#juge">
+					<l>
+						<w pos="ADP" dep="case" lemma="par" entity="">Par</w>
+						<w pos="PRON" dep="amod" lemma="où" entity="">où</w>
+						<w pos="NOUN" dep="ROOT" lemma="l’" entity="PER">l’</w>
+						<w pos="ADJ" dep="amod" lemma="oye" entity="PER">oyes</w>
+						<w pos="PROPN" dep="nmod" lemma="-" entity="PER">-</w>
+						<w pos="NOUN" dep="nmod" lemma="tu" entity="PER">tu</w>
+						<w pos="PUNCT" dep="punct" lemma="?" entity="">?</w>
+					</l>
+				</sp>
+				<sp who="#tesmoing">
+					<l>
+						<w pos="ADP" dep="case" lemma="par" entity="">Par</w>
+						<w pos="NOUN" dep="amod" lemma="l’" entity="ORG">l’</w>
+						<w pos="NOUN" dep="ROOT" lemma="oreille" entity="">oreille</w>
+						<w pos="PUNCT" dep="ROOT" lemma="," entity="">,</w>
+					</l>
+					<l>
+						<w pos="CCONJ" dep="cc" lemma="car" entity="">Car</w>
+						<w pos="PRON" dep="nsubj" lemma="on" entity="">on</w>
+						<w pos="AUX" dep="ROOT" lemma="n’" entity="">n’</w>
+						<w pos="VERB" dep="xcomp" lemma="ot" entity="">ot</w>
+						<w pos="ADV" dep="advmod" lemma="pas" entity="">pas</w>
+						<w pos="DET" dep="det" lemma="de" entity="">du</w>
+						<w pos="NOUN" dep="obj" lemma="bouct" entity="">bouct</w>
+						<w pos="ADP" dep="case" lemma="de" entity="">du</w>
+						<w pos="NOUN" dep="nmod" lemma="ne" entity="">nes</w>
+						<w pos="PUNCT" dep="punct" lemma="!" entity="">!</w>
+					</l>
+					<l>
+						<w pos="PROPN" dep="nsubj" lemma="J’" entity="ORG">J’</w>
+						<w pos="VERB" dep="ROOT" lemma="avoys" entity="ORG">avoys</w>
+						<w pos="X" dep="xcomp" lemma="rompu" entity="">rompu</w>
+						<w pos="DET" dep="det" lemma="le" entity="">le</w>
+						<w pos="NOUN" dep="obj" lemma="boult" entity="">boult</w>
+						<w pos="ADV" dep="advmod" lemma="d’" entity="">d’</w>
+						<w pos="DET" dep="advmod" lemma="un" entity="">un</w>
+						<w pos="DET" dep="ROOT" lemma="ays" entity="">ays</w>
+					</l>
+					<l>
+						<w pos="ADV" dep="advmod" lemma="d’" entity="PER">D’</w>
+						<w pos="ADP" dep="case" lemma="entrer" entity="">entre</w>
+						<w pos="DET" dep="det" lemma="son" entity="">leur</w>
+						<w pos="NOUN" dep="ROOT" lemma="maison" entity="">maison</w>
+						<w pos="CCONJ" dep="cc" lemma="et" entity="">et</w>
+						<w pos="DET" dep="det" lemma="le" entity="">la</w>
+						<w pos="NOUN" dep="conj" lemma="mienne" entity="">mienne</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+					</l>
+					<l>
+						<w pos="ADV" dep="mark" lemma="bien" entity="">Bien</w>
+						<w pos="SCONJ" dep="fixed" lemma="que" entity="">que</w>
+						<w pos="VERB" dep="ROOT" lemma="chascuns" entity="">chascuns</w>
+						<w pos="ADJ" dep="amod" lemma="m’" entity="PER">m’</w>
+						<w pos="ADJ" dep="amod" lemma="apartienn" entity="">apartienne</w>
+					</l>
+					<l>
+						<w pos="CCONJ" dep="cc" lemma="et" entity="">Et</w>
+						<w pos="ADP" dep="case" lemma="par" entity="">par</w>
+						<w pos="ADV" dep="advmod" lemma="là" entity="">là</w>
+						<w pos="NOUN" dep="ROOT" lemma="voye" entity="">voyes</w>
+						<w pos="ADV" dep="advmod" lemma="clerement" entity="">clerement</w>
+					</l>
+					<l>
+						<w pos="ADJ" dep="amod" lemma="tout" entity="">Tout</w>
+						<w pos="DET" dep="det" lemma="son" entity="">leur</w>
+						<w pos="NOUN" dep="nsubj" lemma="joly" entity="">joly</w>
+						<w pos="NOUN" dep="ROOT" lemma="contentement" entity="">contentement</w>
+					</l>
+					<l>
+						<w pos="SCONJ" dep="mark" lemma="que" entity="">Que</w>
+						<w pos="PRON" dep="nsubj" lemma="je" entity="">je</w>
+						<w pos="PRON" dep="ROOT" lemma="vous" entity="">vous</w>
+						<w pos="PRON" dep="ccomp" lemma="ay" entity="">ay</w>
+						<w pos="PRON" dep="iobj" lemma="cy" entity="">cy</w>
+						<w pos="NOUN" dep="xcomp" lemma="racompté" entity="">racompté</w>
+						<w pos="PUNCT" dep="punct" lemma="." entity="">.</w>
+					</l>
+					<speaker>
+						<w pos="DET" dep="det" lemma="le" entity="MISC">Le</w>
+						<w pos="PROPN" dep="ROOT" lemma="Tesmoing" entity="MISC">Tesmoing</w>
+					</speaker>
+				</sp>
+				<sp who="#juge">
+					<l>
+						<w pos="ADV" dep="advmod" lemma="vraiment" entity="">Vraiment</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+						<w pos="ADP" dep="case" lemma="tu" entity="">tu</w>
+						<w pos="NOUN" dep="ROOT" lemma="m’" entity="PER">m’</w>
+						<w pos="ADP" dep="case" lemma="en" entity="">en</w>
+						<w pos="PRON" dep="nmod" lemma="as" entity="">as</w>
+						<w pos="ADV" dep="advmod" lemma="bien" entity="">bien</w>
+						<w pos="NOUN" dep="advmod" lemma="compté" entity="">compté</w>
+					</l>
+					<l>
+						<w pos="PROPN" dep="ROOT" lemma="Faictes" entity="LOC">Faictes</w>
+						<w pos="VERB" dep="flat:name" lemma="aprocher" entity="">aprocher</w>
+						<w pos="DET" dep="det" lemma="le" entity="">les</w>
+						<w pos="NOUN" dep="obj" lemma="partye" entity="LOC">partyes</w>
+						<w pos="PUNCT" dep="punct" lemma="." entity="">.</w>
+					</l>
+					<speaker>
+						<w pos="DET" dep="det" lemma="le" entity="MISC">Le</w>
+						<w pos="NOUN" dep="ROOT" lemma="juge" entity="MISC">Juge</w>
+					</speaker>
+				</sp>
+				<sp who="#mere">
+					<l>
+						<w pos="CCONJ" dep="cc" lemma="et" entity="">Et</w>
+						<w pos="ADV" dep="advmod" lemma="bien" entity="">bien</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+						<w pos="NOUN" dep="nsubj" lemma="seron" entity="">serons</w>
+						<w pos="PRON" dep="iobj" lemma="nous" entity="">nous</w>
+						<w pos="VERB" dep="ROOT" lemma="departyer" entity="">departyes</w>
+						<w pos="PUNCT" dep="punct" lemma="?" entity="">?</w>
+					</l>
+					<l>
+						<w pos="VERB" dep="dep" lemma="avoir" entity="">Avons</w>
+						<w pos="PRON" dep="nsubj" lemma="nous" entity="">-nous</w>
+						<w pos="ADV" dep="advmod" lemma="bien" entity="">bien</w>
+						<w pos="VERB" dep="ROOT" lemma="prouver" entity="">prouvé</w>
+						<w pos="DET" dep="det" lemma="le" entity="">le</w>
+						<w pos="NOUN" dep="obj" lemma="cas" entity="">cas</w>
+						<w pos="PUNCT" dep="punct" lemma="?" entity="">?</w>
+					</l>
+					<speaker>
+						<w pos="DET" dep="det" lemma="le" entity="">La</w>
+						<w pos="NOUN" dep="ROOT" lemma="mere" entity="LOC">Mere</w>
+					</speaker>
+				</sp>
+				<sp who="#juge">
+					<l>
+						<del type="rature" hand="#2">
+							<w pos="PRON" dep="ROOT" lemma="vous" entity="">vous</w>
+						</del>
+						<w pos="PROPN" dep="ROOT" lemma="Poinct" entity="PER">Poinct</w>
+						<w pos="ADV" dep="advmod" lemma="ne" entity="">ne</w>
+						<w pos="X" dep="flat:name" lemma="fault" entity="">fault</w>
+						<w pos="VERB" dep="aux:tense" lemma="avoir" entity="">avoir</w>
+						<w pos="ADV" dep="advmod" lemma="d’" entity="">d’</w>
+						<w pos="ADJ" dep="advcl" lemma="avoca" entity="">avocas</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+					</l>
+					<l>
+						<w pos="CCONJ" dep="cc" lemma="car" entity="">Car</w>
+						<w pos="DET" dep="det" lemma="le" entity="">la</w>
+						<w pos="NOUN" dep="nsubj:pass" lemma="matiere" entity="">matiere</w>
+						<w pos="AUX" dep="aux:pass" lemma="être" entity="">est</w>
+						<w pos="VERB" dep="ROOT" lemma="toter" entity="">totes</w>
+						<w pos="ADJ" dep="amod" lemma="clair" entity="">claire</w>
+						<w pos="PUNCT" dep="punct" lemma="." entity="">.</w>
+					</l>
+					<speaker>
+						<w pos="DET" dep="det" lemma="le" entity="MISC">Le</w>
+						<w pos="NOUN" dep="ROOT" lemma="juge" entity="MISC">Juge</w>
+					</speaker>
+				</sp>
+				<sp who="#fille">
+					<l>
+						<w pos="PRON" dep="ROOT" lemma="qu’" entity="">Qu’</w>
+						<w pos="ADP" dep="case" lemma="en" entity="">en</w>
+						<w pos="NOUN" dep="nmod" lemma="esse" entity="">esse</w>
+						<w pos="PUNCT" dep="punct" lemma="?" entity="">?</w>
+					</l>
+				</sp>
+				<sp who="#juge">
+					<l>
+						<w pos="PRON" dep="nsubj" lemma="vous" entity="">Vous</w>
+						<w pos="VERB" dep="ROOT" lemma="vouler" entity="">voulés</w>
+						<w pos="PRON" dep="iobj" lemma="vous" entity="">vous</w>
+						<w pos="VERB" dep="xcomp" lemma="taire" entity="">taire</w>
+						<w pos="PUNCT" dep="punct" lemma="?" entity="">?</w>
+					</l>
+					<l>
+						<w pos="PRON" dep="nsubj" lemma="nous" entity="">Nous</w>
+						<w pos="VERB" dep="ROOT" lemma="dire" entity="MISC">disons</w>
+						<w pos="VERB" dep="xcomp" lemma="colin" entity="MISC">Colin</w>
+						<w pos="VERB" dep="xcomp" lemma="avoir" entity="">avoir</w>
+						<w pos="ADV" dep="obj" lemma="tort" entity="">tort</w>
+					</l>
+					<l>
+						<w pos="CCONJ" dep="cc" lemma="et" entity="">Et</w>
+						<w pos="ADP" dep="case" lemma="de" entity="">de</w>
+						<w pos="PRON" dep="expl:comp" lemma="se" entity="">se</w>
+						<w pos="VERB" dep="ROOT" lemma="doibt" entity="">doibt</w>
+						<w pos="ADJ" dep="advmod" lemma="estr" entity="">estre</w>
+						<w pos="ADV" dep="advmod" lemma="bien" entity="">bien</w>
+						<w pos="ADV" dep="advmod" lemma="fort" entity="">fort</w>
+					</l>
+					<l>
+						<w pos="PROPN" dep="ROOT" lemma="Blasmé" entity="LOC">Blasmé</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+						<w pos="CCONJ" dep="cc" lemma="et" entity="">et</w>
+						<w pos="PRON" dep="dep" lemma="en" entity="">en</w>
+						<w pos="VERB" dep="conj" lemma="payer" entity="">payer</w>
+						<w pos="NOUN" dep="amod" lemma="l’" entity="ORG">l’</w>
+						<w pos="NOUN" dep="obj" lemma="amende" entity="">amende</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+					</l>
+					<l>
+						<w pos="PROPN" dep="ROOT" lemma="Oultre" entity="">Oultre</w>
+						<w pos="ADV" dep="advmod" lemma="combien" entity="">combien</w>
+						<w pos="SCONJ" dep="mark" lemma="qu’" entity="">qu’</w>
+						<w pos="PRON" dep="expl:subj" lemma="il" entity="">il</w>
+						<w pos="PRON" dep="expl:comp" lemma="se" entity="">se</w>
+						<w pos="VERB" dep="ROOT" lemma="deffende" entity="">deffende</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+					</l>
+					<l>
+						<w pos="CCONJ" dep="cc" lemma="mais" entity="">Mais</w>
+						<w pos="ADP" dep="case" lemma="à" entity="">à</w>
+						<w pos="NOUN" dep="obl:mod" lemma="tort" entity="">tort</w>
+						<w pos="ADV" dep="dep" lemma="d’" entity="MISC">d’</w>
+						<w pos="VERB" dep="ROOT" lemma="avoir" entity="">avoir</w>
+						<w pos="PRON" dep="obj" lemma="rien" entity="">rien</w>
+						<w pos="ADV" dep="nmod" lemma="promys" entity="">promys</w>
+						<w pos="PUNCT" dep="ROOT" lemma="." entity="">.</w>
+					</l>
+					<l>
+						<w pos="ADP" dep="case" lemma="à" entity="">À</w>
+						<w pos="NOUN" dep="ROOT" lemma="marion" entity="MISC">Marion</w>
+						<w pos="PRON" dep="nmod" lemma="nous" entity="">nous</w>
+						<w pos="PRON" dep="amod" lemma="l’" entity="LOC">l’</w>
+						<w pos="AUX" dep="amod" lemma="avoir" entity="">avons</w>
+						<w pos="ADV" dep="ROOT" lemma="mys" entity="">mys</w>
+					</l>
+					<l>
+						<add hand="#2">
+							<w pos="CCONJ" dep="cc" lemma="et" entity="">Et</w>
+							<w pos="NOUN" dep="ROOT" lemma="meton" entity="">metons</w>
+							<w pos="PUNCT" dep="ROOT" lemma="," entity="">,</w>
+							<w pos="ADP" dep="mark" lemma="pour" entity="">pour</w>
+							<w pos="ADV" dep="advmod" lemma="bien" entity="">bien</w>
+							<w pos="VERB" dep="ROOT" lemma="ordonner" entity="">ordonner</w>
+							<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+						</add>
+					</l>
+					<l>
+						<w pos="ADP" dep="case" lemma="à" entity="">À</w>
+						<w pos="PROPN" dep="nummod" lemma="cent" entity="">cent</w>
+						<w pos="ADJ" dep="ROOT" lemma="soublz" entity="">soublz</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+						<w pos="ADP" dep="mark" lemma="sans" entity="">sans</w>
+						<w pos="ADV" dep="advmod" lemma="plus" entity="">plus</w>
+						<w pos="VERB" dep="ROOT" lemma="sermonner" entity="">sermonner</w>
+					</l>
+					<l>
+						<w pos="ADV" dep="advmod" lemma="d’" entity="PER">D’</w>
+						<w pos="NOUN" dep="ROOT" lemma="amende" entity="PER">amende</w>
+						<w pos="CCONJ" dep="cc" lemma="et" entity="">et</w>
+						<w pos="DET" dep="det" lemma="le" entity="">le</w>
+						<w pos="NOUN" dep="conj" lemma="condampne" entity="">condampne</w>
+						<w pos="ADJ" dep="amod" lemma="aussy" entity="">aussy</w>
+					</l>
+					<l>
+						<w pos="ADP" dep="mark" lemma="de" entity="">De</w>
+						<w pos="VERB" dep="ROOT" lemma="demander" entity="">demander</w>
+						<w pos="NOUN" dep="obj" lemma="grace" entity="">grace</w>
+						<w pos="CCONJ" dep="cc" lemma="et" entity="">et</w>
+						<w pos="NOUN" dep="conj" lemma="mercy" entity="">mercy</w>
+					</l>
+					<l>
+						<w pos="ADP" dep="case" lemma="à" entity="">À</w>
+						<w pos="NOUN" dep="ROOT" lemma="marion" entity="MISC">Marion</w>
+						<w pos="ADP" dep="case" lemma="à" entity="">à</w>
+						<w pos="NOUN" dep="nmod" lemma="deul" entity="">deulx</w>
+						<w pos="PROPN" dep="nmod" lemma="genoulx" entity="">genoulx</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+					</l>
+					<l>
+						<del type="rature" hand="#2">
+							<w pos="DET" dep="ROOT" lemma="sy" entity="">sy</w>
+						</del>
+						<w pos="NOUN" dep="nsubj" lemma="nue" entity="LOC">Nues</w>
+						<w pos="ADJ" dep="amod" lemma="jambe" entity="LOC">jambes</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+						<w pos="NOUN" dep="ROOT" lemma="entendé" entity="">entendés</w>
+						<w pos="PRON" dep="nsubj" lemma="vous" entity="">-vous</w>
+						<w pos="PUNCT" dep="punct" lemma="?" entity="">?</w>
+						<w pos="CCONJ" dep="cc" lemma="et" entity="">Et</w>
+						<w pos="VERB" dep="ROOT" lemma="payer" entity="">payera</w>
+						<w pos="ADP" dep="case" lemma="à" entity="">à</w>
+						<w pos="DET" dep="det" lemma="le" entity="">la</w>
+						<w pos="NOUN" dep="obl:arg" lemma="justice" entity="">justice</w>
+					</l>
+					<l>
+						<w pos="DET" dep="det" lemma="le" entity="">Les</w>
+						<w pos="NOUN" dep="nsubj" lemma="frais" entity="">frais</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+						<w pos="ADP" dep="mark" lemma="sans" entity="">sans</w>
+						<w pos="SCONJ" dep="mark" lemma="que" entity="">que</w>
+						<w pos="VERB" dep="advcl" lemma="sortir" entity="">sortir</w>
+						<w pos="PRON" dep="iobj" lemma="y" entity="">y</w>
+						<w pos="VERB" dep="ROOT" lemma="pouvoir" entity="">puisse</w>
+					</l>
+					<l>
+						<w pos="ADP" dep="case" lemma="de" entity="">De</w>
+						<w pos="NOUN" dep="obl:mod" lemma="prisson" entity="">prisson</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+						<w pos="ADJ" dep="iobj" lemma="premier" entity="">premier</w>
+						<w pos="PRON" dep="obj" lemma="que" entity="">que</w>
+						<w pos="VERB" dep="ROOT" lemma="payer" entity="">payer</w>
+						<w pos="PUNCT" dep="punct" lemma="." entity="">.</w>
+					</l>
+					<speaker>
+						<w pos="DET" dep="det" lemma="le" entity="MISC">Le</w>
+						<w pos="NOUN" dep="ROOT" lemma="juge" entity="MISC">Juge</w>
+					</speaker>
+				</sp>
+				<sp who="#mere">
+					<l>
+						<w pos="CCONJ" dep="cc" lemma="or" entity="">Or</w>
+						<w pos="ADV" dep="ROOT" lemma="sus" entity="">sus</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+						<w pos="NOUN" dep="advcl" lemma="as" entity="">as</w>
+						<w pos="NOUN" dep="dep" lemma="-" entity="">-</w>
+						<w pos="ADP" dep="fixed" lemma="tu" entity="">tu</w>
+						<w pos="NOUN" dep="fixed" lemma="bel" entity="">bel</w>
+						<w pos="VERB" dep="xcomp" lemma="abayer" entity="">abayer</w>
+						<w pos="PUNCT" dep="punct" lemma="?" entity="">?</w>
+					</l>
+				</sp>
+				<sp who="#juge">
+					<l>
+						<w pos="DET" dep="det" lemma="tout" entity="">Tout</w>
+						<w pos="NOUN" dep="ROOT" lemma="beau" entity="">beau</w>
+						<w pos="CCONJ" dep="cc" lemma="et" entity="">et</w>
+						<w pos="NOUN" dep="advmod" lemma="sy" entity="">sy</w>
+						<w pos="DET" dep="obj" lemma="le" entity="">la</w>
+						<w pos="NOUN" dep="conj" lemma="condamne" entity="">condamne</w>
+					</l>
+					<l>
+						<del type="rature" hand="#2">
+							<w pos="ADP" dep="case" lemma="en" entity="">en</w>
+							<w pos="DET" dep="det" lemma="son" entity="">son</w>
+							<w pos="NOUN" dep="ROOT" lemma="eglise" entity="">eglise</w>
+							<w pos="VERB" dep="acl" lemma="amener" entity="">amené</w>
+						</del>
+						<add hand="#2">
+							<w pos="ADP" dep="case" lemma="en" entity="">en</w>
+							<w pos="DET" dep="det" lemma="ce" entity="">ce</w>
+							<w pos="NOUN" dep="obl:mod" lemma="jour" entity="">jour</w>
+							<w pos="ADV" dep="dep" lemma="d’" entity="PER">d’</w>
+							<w pos="PROPN" dep="fixed" lemma="huy" entity="PER">huy</w>
+							<w pos="VERB" dep="ROOT" lemma="mener" entity="">mené</w>
+						</add>
+						<w pos="ADV" dep="advmod" lemma="d’" entity="PER">D’</w>
+						<w pos="ADJ" dep="ROOT" lemma="estr" entity="">estre</w>
+					</l>
+					<l>
+						<add hand="#2">
+							<w pos="ADJ" dep="ROOT" lemma="ue" entity="ORG">ues</w>
+						</add>
+						<w pos="VERB" dep="ROOT" lemma="avecq" entity="PER">Avecq</w>
+						<w pos="DET" dep="det" lemma="un" entity="">un</w>
+						<w pos="NOUN" dep="obj" lemma="tabour" entity="">tabour</w>
+						<w pos="CCONJ" dep="cc" lemma="et" entity="">et</w>
+						<w pos="NOUN" dep="conj" lemma="loure" entity="">loure</w>
+					</l>
+					<l>
+						<w pos="CCONJ" dep="cc" lemma="et" entity="">Et</w>
+						<w pos="ADV" dep="advmod" lemma="là" entity="">là</w>
+						<w pos="ADP" dep="case" lemma="sans" entity="">sans</w>
+						<w pos="SCONJ" dep="fixed" lemma="que" entity="">que</w>
+						<w pos="ADV" dep="advmod" lemma="plus" entity="">plus</w>
+						<w pos="ADJ" dep="nsubj" lemma="loing" entity="">loing</w>
+						<w pos="PRON" dep="nsubj" lemma="on" entity="">on</w>
+						<w pos="VERB" dep="ROOT" lemma="courir" entity="">coure</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+					</l>
+					<l>
+						<w pos="PRON" dep="nsubj" lemma="il" entity="">Il</w>
+						<w pos="VERB" dep="ROOT" lemma="espousserer" entity="">espoussera</w>
+						<w pos="PROPN" dep="obj" lemma="Marion" entity="PER">Marion</w>
+					</l>
+					<l>
+						<w pos="ADP" dep="case" lemma="en" entity="">En</w>
+						<w pos="ADJ" dep="amod" lemma="grand" entity="">grande</w>
+						<w pos="NOUN" dep="ROOT" lemma="consolation" entity="">consolation</w>
+						<w pos="PUNCT" dep="punct" lemma="." entity="">.</w>
+					</l>
+					<l>
+						<w pos="VERB" dep="ROOT" lemma="voeylà" entity="PER">Voeylà</w>
+						<w pos="DET" dep="det" lemma="mon" entity="">ma</w>
+						<w pos="NOUN" dep="obj" lemma="sentence" entity="">sentence</w>
+						<w pos="SYM" dep="amod" lemma="donnee" entity="">donnee</w>
+					</l>
+					<speaker>
+						<w pos="DET" dep="det" lemma="le" entity="MISC">Le</w>
+						<w pos="NOUN" dep="ROOT" lemma="juge" entity="MISC">Juge</w>
+					</speaker>
+				</sp>
+				<sp who="#fille">
+					<l>
+						<w pos="PROPN" dep="nsubj" lemma="Dieu" entity="">Dieu</w>
+						<w pos="PRON" dep="iobj" lemma="vous" entity="">vous</w>
+						<w pos="VERB" dep="ROOT" lemma="envoye" entity="">envoye</w>
+						<w pos="ADJ" dep="amod" lemma="bon" entity="">bonne</w>
+						<w pos="NOUN" dep="obj" lemma="journee" entity="">journee</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+					</l>
+					<l>
+						<w pos="ADV" dep="advmod" lemma="tant" entity="">Tant</w>
+						<w pos="PRON" dep="iobj" lemma="vous" entity="">vous</w>
+						<w pos="VERB" dep="ROOT" lemma="ester" entity="">estes</w>
+						<w pos="ADJ" dep="xcomp" lemma="homm" entity="">homme</w>
+						<w pos="ADP" dep="case" lemma="de" entity="">de</w>
+						<w pos="ADV" dep="obl:arg" lemma="bien" entity="">bien</w>
+						<w pos="PUNCT" dep="punct" lemma="." entity="">.</w>
+					</l>
+					<speaker>
+						<w pos="DET" dep="det" lemma="le" entity="MISC">La</w>
+						<w pos="PROPN" dep="ROOT" lemma="Fille" entity="MISC">Fille</w>
+					</speaker>
+				</sp>
+				<sp who="#colin">
+					<l>
+						<w pos="DET" dep="det" lemma="un" entity="">Un</w>
+						<w pos="ADJ" dep="amod" lemma="gros" entity="">gros</w>
+						<w pos="ADJ" dep="ROOT" lemma="vilain" entity="">vilain</w>
+						<w pos="NOUN" dep="amod" lemma="estron" entity="">estron</w>
+						<w pos="ADP" dep="case" lemma="de" entity="">de</w>
+						<w pos="NOUN" dep="nmod" lemma="chien" entity="">chien</w>
+					</l>
+					<l>
+						<w pos="PROPN" dep="nsubj" lemma="Luy" entity="PER">Luy</w>
+						<w pos="VERB" dep="ROOT" lemma="pouvoir" entity="">puisse</w>
+						<w pos="VERB" dep="xcomp" lemma="estouper" entity="">estouper</w>
+						<w pos="DET" dep="det" lemma="le" entity="">les</w>
+						<w pos="NOUN" dep="obj" lemma="babine" entity="">babines</w>
+						<w pos="PUNCT" dep="punct" lemma="!" entity="">!</w>
+					</l>
+					<l>
+						<w pos="NOUN" dep="ROOT" lemma="voylà" entity="LOC">Voylà</w>
+						<w pos="ADP" dep="case" lemma="de" entity="">des</w>
+						<w pos="NOUN" dep="nmod" lemma="fraulde" entity="">frauldes</w>
+						<w pos="ADJ" dep="amod" lemma="feminine" entity="">feminines</w>
+						<w pos="PUNCT" dep="punct" lemma="!" entity="">!</w>
+					</l>
+					<l>
+						<w pos="PROPN" dep="ROOT" lemma="J’" entity="">J’</w>
+						<w pos="ADP" dep="xcomp" lemma="en" entity="">en</w>
+						<w pos="ADV" dep="fixed" lemma="ay" entity="LOC">ay</w>
+						<w pos="PUNCT" dep="punct" lemma="." entity="">.</w>
+					</l>
+					<speaker>
+						<w pos="PROPN" dep="ROOT" lemma="Colin" entity="">Colin</w>
+					</speaker>
+				</sp>
+				<sp who="#tesmoing">
+					<l>
+						<w pos="DET" dep="det" lemma="yl" entity="">Yl</w>
+						<w pos="NOUN" dep="ROOT" lemma="convient" entity="">convient</w>
+						<w pos="VERB" dep="dep" lemma="prendre" entity="">prendre</w>
+						<w pos="ADP" dep="case" lemma="en" entity="">en</w>
+						<w pos="NOUN" dep="obl:mod" lemma="gray" entity="">gray</w>
+						<w pos="PUNCT" dep="punct" lemma="." entity="">.</w>
+					</l>
+				</sp>
+				<sp who="#colin">
+					<l>
+						<del type="rature" hand="#2">
+							<w pos="SCONJ" dep="mark" lemma="que" entity="">Que</w>
+							<w pos="NOUN" dep="nsubj" lemma="l’" entity="LOC">l’</w>
+							<w pos="PRON" dep="nsubj" lemma="on" entity="">on</w>
+							<w pos="VERB" dep="dep" lemma="te" entity="">te</w>
+							<w pos="VERB" dep="ROOT" lemma="pouvoir" entity="">puisse</w>
+							<w pos="VERB" dep="xcomp" lemma="pendre" entity="">pendre</w>
+						</del>
+						<add hand="#2">
+							<w pos="SCONJ" dep="ROOT" lemma="qu’" entity="">Qu’</w>
+							<w pos="ADP" dep="case" lemma="au" entity="">au</w>
+							<w pos="NOUN" dep="obl:arg" lemma="gibet" entity="">gibet</w>
+							<w pos="NOUN" dep="nmod" lemma="soi" entity="">sois</w>
+							<w pos="AUX" dep="dep" lemma="-" entity="">-</w>
+							<w pos="ADV" dep="advmod" lemma="tu" entity="">tu</w>
+							<w pos="NOUN" dep="obl:arg" lemma="estranglé" entity="">estranglé</w>
+							<w pos="PUNCT" dep="punct" lemma="!" entity="">!</w>
+						</add>
+					</l>
+					<l>
+						<w pos="ADJ" dep="nsubj" lemma="c’" entity="MISC">C’</w>
+						<w pos="AUX" dep="cop" lemma="être" entity="">est</w>
+						<w pos="ADP" dep="case" lemma="par" entity="">par</w>
+						<w pos="NOUN" dep="ROOT" lemma="toy" entity="ORG">toy</w>
+						<w pos="SCONJ" dep="mark" lemma="que" entity="">que</w>
+						<w pos="PRON" dep="nsubj" lemma="je" entity="">je</w>
+						<w pos="VERB" dep="acl:relcl" lemma="suys" entity="">suys</w>
+						<w pos="PROPN" dep="dep" lemma="ainsy" entity="">ainsy</w>
+					</l>
+					<speaker>
+						<w pos="PROPN" dep="ROOT" lemma="Colin" entity="">Colin</w>
+					</speaker>
+				</sp>
+				<sp who="#tesmoing">
+					<l>
+						<w pos="PROPN" dep="ROOT" lemma="Pourquoy" entity="">Pourquoy</w>
+						<w pos="PROPN" dep="det" lemma="luy" entity="">luy</w>
+						<w pos="NOUN" dep="appos" lemma="faisoy" entity="">faisoys</w>
+						<w pos="ADP" dep="amod" lemma="tu" entity="">tu</w>
+						<w pos="NOUN" dep="amod" lemma="ausy" entity="">ausy</w>
+					</l>
+					<l>
+						<w pos="NOUN" dep="ROOT" lemma="monsieur" entity="PER">Messieurs</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+						<w pos="PROPN" dep="nmod" lemma="Colin" entity="PER">Colin</w>
+						<w pos="PRON" dep="nsubj" lemma="qui" entity="">qui</w>
+						<w pos="VERB" dep="acl:relcl" lemma="veult" entity="">veult</w>
+						<w pos="NOUN" dep="nmod" lemma="promectre" entity="">promectre</w>
+					</l>
+					<l>
+						<w pos="PROPN" dep="ROOT" lemma="Soyt" entity="PER">Soyt</w>
+						<w pos="ADP" dep="case" lemma="par" entity="">par</w>
+						<w pos="NOUN" dep="nmod" lemma="foy" entity="">foy</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+						<w pos="ADP" dep="case" lemma="par" entity="">par</w>
+						<w pos="NOUN" dep="ROOT" lemma="tesmoingtz" entity="">tesmoingtz</w>
+						<w pos="CCONJ" dep="cc" lemma="ou" entity="">ou</w>
+						<w pos="NOUN" dep="conj" lemma="lestre" entity="">lestre</w>
+					</l>
+					<l>
+						<w pos="NOUN" dep="case" lemma="y" entity="">Y</w>
+						<w pos="VERB" dep="ROOT" lemma="doibt" entity="">doibt</w>
+						<w pos="DET" dep="det" lemma="son" entity="">sa</w>
+						<w pos="NOUN" dep="conj" lemma="parolle" entity="">parolle</w>
+						<w pos="VERB" dep="ROOT" lemma="tenir" entity="">tenir</w>
+					</l>
+					<l>
+						<w pos="CCONJ" dep="cc" lemma="car" entity="">Car</w>
+						<w pos="PRON" dep="nsubj" lemma="on" entity="">on</w>
+						<w pos="VERB" dep="ROOT" lemma="doibt" entity="">doibt</w>
+						<w pos="DET" dep="det" lemma="quelque" entity="">quelque</w>
+						<w pos="NOUN" dep="obl:mod" lemma="jour" entity="">jour</w>
+						<w pos="VERB" dep="xcomp" lemma="venir" entity="">venir</w>
+					</l>
+					<l>
+						<w pos="ADP" dep="case" lemma="devant" entity="">Devant</w>
+						<w pos="DET" dep="det" lemma="le" entity="">le</w>
+						<w pos="NOUN" dep="ROOT" lemma="tre" entity="">tres</w>
+						<w pos="ADJ" dep="amod" lemma="souverain" entity="">souverain</w>
+						<w pos="ADJ" dep="amod" lemma="jug" entity="">juge</w>
+					</l>
+					<l>
+						<w pos="PRON" dep="nsubj" lemma="qui" entity="">Qui</w>
+						<w pos="VERB" dep="ROOT" lemma="voir" entity="">vis</w>
+						<w pos="CCONJ" dep="cc" lemma="et" entity="">et</w>
+						<w pos="VERB" dep="conj" lemma="trespasser" entity="">trespassés</w>
+						<w pos="ADJ" dep="amod" lemma="jug" entity="">juge</w>
+					</l>
+					<l>
+						<w pos="CCONJ" dep="cc" lemma="et" entity="">Et</w>
+						<w pos="PRON" dep="nsubj" lemma="qui" entity="">qui</w>
+						<w pos="ADJ" dep="ROOT" lemma="menteur" entity="">menteur</w>
+						<w pos="VERB" dep="ccomp" lemma="trouver" entity="">trouvé</w>
+						<w pos="AUX" dep="advmod" lemma="être" entity="">sera</w>
+					</l>
+					<l>
+						<w pos="ADP" dep="case" lemma="par" entity="">Par</w>
+						<w pos="DET" dep="det" lemma="son" entity="">ses</w>
+						<w pos="NOUN" dep="obl:mod" lemma="meffaictz" entity="">meffaictz</w>
+						<w pos="DET" dep="det" lemma="le" entity="">le</w>
+						<w pos="VERB" dep="ROOT" lemma="juger" entity="">jugera</w>
+					</l>
+					<l>
+						<w pos="PRON" dep="det" lemma="il" entity="">Il</w>
+						<w pos="VERB" dep="nsubj" lemma="n’" entity="PER">n’</w>
+						<w pos="AUX" dep="cop" lemma="être" entity="">est</w>
+						<w pos="ADV" dep="advmod" lemma="donc" entity="">donc</w>
+						<w pos="SCONJ" dep="mark" lemma="qu’" entity="PER">qu’</w>
+						<w pos="VERB" dep="ROOT" lemma="estre" entity="">estre</w>
+						<w pos="ADJ" dep="obj" lemma="veritabl" entity="">veritable</w>
+					</l>
+					<l>
+						<w pos="CCONJ" dep="cc" lemma="et" entity="">Et</w>
+						<w pos="ADP" dep="case" lemma="en" entity="">en</w>
+						<w pos="NOUN" dep="nummod" lemma="foy" entity="">foy</w>
+						<w pos="ADJ" dep="ROOT" lemma="tre" entity="">tres</w>
+						<w pos="VERB" dep="xcomp" lemma="conster" entity="">constant</w>
+						<w pos="CCONJ" dep="cc" lemma="et" entity="">et</w>
+						<w pos="ADJ" dep="conj" lemma="stable" entity="">stable</w>
+					</l>
+					<l>
+						<w pos="PRON" dep="nsubj" lemma="nous" entity="">Nous</w>
+						<w pos="ADV" dep="advmod" lemma="ne" entity="">ne</w>
+						<w pos="VERB" dep="ROOT" lemma="penser" entity="">pensons</w>
+						<w pos="AUX" dep="aux:tense" lemma="avoir" entity="">avoir</w>
+						<w pos="NOUN" dep="xcomp" lemma="dict" entity="">dict</w>
+						<w pos="VERB" dep="amod" lemma="chosse" entity="">chosse</w>
+					</l>
+					<l>
+						<w pos="ADV" dep="nsubj" lemma="où" entity="">Où</w>
+						<w pos="PROPN" dep="flat:name" lemma="aulcuns" entity="">aulcuns</w>
+						<w pos="VERB" dep="ROOT" lemma="pouvoir" entity="">puissent</w>
+						<w pos="VERB" dep="xcomp" lemma="faire" entity="">faire</w>
+						<w pos="PROPN" dep="obj" lemma="glosse" entity="">glosse</w>
+					</l>
+					<l>
+						<w pos="DET" dep="nsubj" lemma="sy" entity="">Sy</w>
+						<w pos="PRON" dep="nsubj" lemma="on" entity="">on</w>
+						<w pos="VERB" dep="cop" lemma="s’" entity="LOC">s’</w>
+						<w pos="PRON" dep="case" lemma="en" entity="">en</w>
+						<w pos="VERB" dep="ROOT" lemma="sentir" entity="">sent</w>
+						<w pos="ADJ" dep="amod" lemma="piqu" entity="">pique</w>
+						<w pos="ADP" dep="case" lemma="au" entity="">au</w>
+						<w pos="NOUN" dep="obl:arg" lemma="poinct" entity="">poinct</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+					</l>
+					<l>
+						<choice>
+							<corr>
+								<w pos="VERB" dep="ROOT" lemma="entendre" entity="">entendra</w>
+							</corr>
+						</choice>
+						<w pos="NOUN" dep="ROOT" lemma="monsieur" entity="PER">Messieurs</w>
+						<w pos="PUNCT" dep="punct" lemma="," entity="">,</w>
+						<w pos="PRON" dep="nsubj" lemma="on" entity="">on</w>
+						<w pos="ADV" dep="advmod" lemma="ne" entity="">ne</w>
+						<w pos="DET" dep="det" lemma="l" entity="">l</w>
+						<w pos="NOUN" dep="dep" lemma="’" entity="">’</w>
+						<w pos="ADJ" dep="amod" lemma="poinct" entity="">poinct</w>
+					</l>
+					<l>
+						<w pos="CCONJ" dep="cc" lemma="mais" entity="">Mais</w>
+						<w pos="VERB" dep="ROOT" lemma="prier" entity="">prions</w>
+						<w pos="DET" dep="det" lemma="le" entity="">le</w>
+						<w pos="PROPN" dep="obj" lemma="Dieu" entity="MISC">Dieu</w>
+						<w pos="ADJ" dep="amod" lemma="supernel" entity="">supernel</w>
+					</l>
+					<l>
+						<w pos="PRON" dep="nsubj" lemma="vous" entity="">Vous</w>
+						<w pos="VERB" dep="ROOT" lemma="donner" entity="">donner</w>
+						<w pos="NOUN" dep="obj" lemma="repos" entity="">repos</w>
+						<w pos="ADJ" dep="amod" lemma="eternel" entity="">eternel</w>
+					</l>
+					<l>
+						<w pos="ADP" dep="case" lemma="en" entity="">En</w>
+						<w pos="NOUN" dep="obl:mod" lemma="prenant" entity="">prenant</w>
+						<w pos="VERB" dep="ROOT" lemma="conger" entity="">congé</w>
+						<w pos="ADP" dep="case" lemma="de" entity="">de</w>
+						<w pos="DET" dep="det" lemma="ce" entity="">ce</w>
+						<w pos="NOUN" dep="obl:arg" lemma="lieu" entity="">lieu</w>
+					</l>
+					<l>
+						<w pos="DET" dep="det" lemma="un" entity="">Une</w>
+						<w pos="NOUN" dep="ROOT" lemma="chanson" entity="">chanson</w>
+						<w pos="ADP" dep="mark" lemma="pour" entity="">pour</w>
+						<w pos="VERB" dep="acl" lemma="dire" entity="">dire</w>
+						<w pos="ADJ" dep="obj" lemma="adieu" entity="">adieu</w>
+						<w pos="PUNCT" dep="punct" lemma="." entity="">.</w>
+					</l>
+					<speaker>
+						<w pos="DET" dep="det" lemma="le" entity="MISC">Le</w>
+						<w pos="PROPN" dep="ROOT" lemma="Tesmoing" entity="MISC">Tesmoing</w>
+					</speaker>
+				</sp>
+				<p>
+					<w pos="PROPN" dep="ROOT" lemma="Finis" entity="LOC">Finis</w>
+					<w pos="NOUN" dep="flat:name" lemma="–" entity="LOC">–</w>
+					<w pos="NOUN" dep="nmod" lemma="–" entity="LOC">–</w>
+					<w pos="NOUN" dep="punct" lemma=".iii.cc" entity="">.iii.cc</w>
+					<w pos="PUNCT" dep="punct" lemma="." entity="">.</w>
+					<w pos="PRON" dep="ROOT" lemma=".iiii.xx" entity="">.iiii.xx</w>
+					<w pos="PUNCT" dep="punct" lemma="." entity="">.</w>
+					<w pos="NOUN" dep="ROOT" lemma="ligne" entity="">lignes</w>
+				</p>
+			</div>
+		</body>
+	</text>
+</TEI>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title>Title</title>
+			</titleStmt>
+			<editionStmt>
+				<respStmt>
+					<resp>transcription</resp>
+					<name></name>
+				</respStmt>
+				<respStmt>
+					<resp>édition XML-TEI</resp>
+					<name>Emma Belkacemi-Molinier</name>
+				</respStmt>
+			</editionStmt>
+			<publicationStmt>
+				<publisher>Université Sorbonne Nouvelle</publisher>
+				<date>2021</date>
+			</publicationStmt>
+			<sourceDesc>
+				<p>Pièce éditée d'après "Théâtre des boulevards, ou recueil de parades. Tome premier. A Mahon, de l'imprimerie de Gilles Langlois, à l'Enseigne de l'Etrille. 1756"</p>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+	<text>
+		<body>
+		</body>
+	</text>
+</TEI>
