@@ -18,17 +18,20 @@ root_dir = main_dir.parent
 host = os.getenv("TXM_SERVER", "")
 app = FastAPI()
 
+templates = main_dir / "templates"
+
+app.mount("/static", StaticFiles(directory=main_dir / "static"), name="static")
+
 
 @app.get("/", response_class=HTMLResponse, tags=["main"])
 async def read_root():
-    with open(main_dir / "templates" / "index.html") as f:
-        return HTMLResponse(f.read())
+    with open(templates / "index.html") as f:
+        return f.read()
 
 
 @app.post("/upload", tags=["main"])
 async def write_upload(
-        files: List[UploadFile] = File(...),
-        output: List[str] = Form(...)
+    files: List[UploadFile] = File(...), output: List[str] = Form(...)
 ):
     print(f"{output = }")
     print(f"{files = }")
@@ -37,7 +40,10 @@ async def write_upload(
         raise HTTPException(status_code=400, detail="No File Provided")
     # parse all files
     try:
-        to_process = [utils.File(name=f.filename, file=f.file.read().decode("utf-8")) for f in files]
+        to_process = [
+            utils.File(name=f.filename, file=f.file.read().decode("utf-8"))
+            for f in files
+        ]
     except UnicodeDecodeError:
         raise HTTPException(status_code=400, detail="Invalid File Provided")
     # process result

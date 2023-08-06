@@ -1,4 +1,6 @@
-import mimetypes
+from pathlib import Path
+
+from transformers.enums import MimeType
 
 
 class NamedDict:
@@ -43,7 +45,9 @@ class File(NamedDict):
 
     @property
     def mime_type(self):
-        return mimetypes.guess_type(self.file)[0]
+        suffix = Path(self.name).suffix[1:]
+        return MimeType[suffix]
+
 
     @property
     def is_text(self):

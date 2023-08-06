@@ -16,7 +16,7 @@ def pipeline(
     files: List[File],
     output: List[Output] = None,
     tags: List[List[Tag] | Tag] = None,
-) -> List[List[str], List[str | bytes], List[MimeType]]:
+) : #-> List[List[str], List[str | bytes], List[MimeType]]:
     pivots: List[dict] = []
 
     if output is None:

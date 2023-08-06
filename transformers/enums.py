@@ -8,10 +8,12 @@ class EnumPlus(str, Enum):
     def __eq__(self, other) -> bool:
         if isinstance(other, str):
             return self.value == other
-        elif isinstance(other, Tag):
+        elif isinstance(other, EnumPlus):
             return self.value == other.value
+        elif isinstance(other, tuple):
+            return self.value == other[0]
         else:
-            raise TypeError
+            raise TypeError(f"Cannot compare {self} and {other}")
 
     def __hash__(self) -> int:
         return hash(self.value)
