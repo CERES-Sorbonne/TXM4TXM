@@ -1,0 +1,86 @@
+.inputwrapper {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    width: 80%;
+    height: 80%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 700;
+    color: #000;
+}
+
+.inputwrapper:hover {
+    border-color: #000;
+    outline: 2px solid #000;
+    outline-offset: 5px;
+    transition: all 0.2s ease-in-out;
+}
+
+.inputwrapper:focus {
+    outline: 2px solid #000;
+    outline-offset: 5px;
+    transition: all 0.2s ease-in-out;
+
+}
+
+.inputfile::before {
+    content: 'Selectionnez les fichiers à convertir';
+    display: block;
+    background: #fff;
+    border-radius: 5px;
+    padding: 0 10px;
+    margin-bottom: 5px;
+}
+
+.listoffiles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin-top: 10px;
+    font-weight: normal;
+}
+
+
+.level1checkbox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin-top: 10px;
+    font-weight: normal;
+}
+
+.level2checkbox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin-top: 10px;
+    font-weight: normal;
+}
+
+.level2checkbox[state="off"] {
+    display: none;
+}
+
+.myDivInput[state="off"] {
+    display: none;
+}
+
+.form {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    font-weight: normal;
+
+}

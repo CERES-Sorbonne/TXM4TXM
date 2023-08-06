@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+    <link rel="icon" href="favicon.ico"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TXM4TXM">
+    <title>TXM4TXM</title>
+</head>
+
+<body>
+<div class="main">
+    <form method="post" enctype="multipart/form-data" action="/upload" id="myForm">
+
+        <div class="inputwrapper">
+            <input type="file" name="file" id="file" class="inputfile" accept="text/xml" multiple onchange="listoffiles(this)">
+            <div class="listoffiles" id="listoffiles" onclick="document.getElementById('file').click()"></div>
+        </div>
+
+        <div class="level1checkbox" id="txm1">
+            <input type="checkbox" id="txm" name="output" value="txm" class="myInput" onchange="do_expand(this, document.getElementById('txm2'));">
+            <label for="txm">TXM (XML)</label>
+            <div class="level2checkbox" id="txm2" aria-expanded="false" state="off">
+                <div class="myDivInput">
+                    <input type="checkbox" id="txm-id" name="output" value="txm-id" class="myInput"
+                           aria-expanded="false" state="off"> <label for="txm-id">@id</label>
+                </div>
+                <div class="myDivInput">
+                    <input type="checkbox" id="txm-form" name="output" value="txm-form" class="myInput"
+                           aria-expanded="false" state="off"> <label for="txm-form">@form</label>
+                </div>
+                <div class="myDivInput">
+                    <input type="checkbox" id="txm-lemma" name="output" value="txm-lemma" class="myInput"
+                           aria-expanded="false" state="off"> <label for="txm-lemma">@lemma</label>
+                </div>
+                <div class="myDivInput">
+                    <input type="checkbox" id="txm-pos" name="output" value="txm-pos" class="myInput"
+                           aria-expanded="false" state="off"> <label for="txm-pos">@pos</label>
+                </div>
+                <div class="myDivInput">
+                    <input type="checkbox" id="txm-xpos" name="output" value="txm-xpos" class="myInput"
+                           aria-expanded="false" state="off"> <label for="txm-xpos">@xpos</label>
+                </div>
+                <div class="myDivInput">
+                    <input type="checkbox" id="txm-feats" name="output" value="txm-feats" class="myInput"
+                           aria-expanded="false" state="off"> <label for="txm-feats">@feats</label>
+                </div>
+                <div class="myDivInput">
+                    <input type="checkbox" id="txm-head" name="output" value="txm-head" class="myInput"
+                           aria-expanded="false" state="off"> <label for="txm-head">@head</label>
+                </div>
+                <div class="myDivInput">
+                    <input type="checkbox" id="txm-deprel" name="output" value="txm-deprel" class="myInput"
+                           aria-expanded="false" state="off"> <label for="txm-deprel">@deprel</label>
+                </div>
+                <div class="myDivInput">
+                    <input type="checkbox" id="txm-deps" name="output" value="txm-deps" class="myInput"
+                           aria-expanded="false" state="off"> <label for="txm-deps">@deps</label>
+                </div>
+                <div class="myDivInput">
+                    <input type="checkbox" id="txm-misc" name="output" value="txm-misc" class="myInput"
+                           aria-expanded="false" state="off"> <label for="txm-misc">@misc</label>
+                </div>
+                <div class="myDivInput">
+                    <input type="checkbox" id="txm-whitespace" name="output" value="txm-whitespace" class="myInput"
+                           aria-expanded="false" state="off"> <label for="txm-whitespace">@whitespace</label>
+                </div>
+                <div class="myDivInput">
+                    <input type="checkbox" id="txm-text" name="output" value="txm-text" class="myInput" checked
+                           disabled aria-expanded="false" state="off"> <label for="txm-text">#text</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="level1checkbox" id="json1">
+            <input type="checkbox" id="json" name="output" value="json" class="myInput"
+                   onchange="do_expand(this, document.getElementById('json2'));">
+            <label for="json">JSON</label>
+            <div class="level2checkbox" id="json2" aria-expanded="false" state="off">
+                <div class="myDivInput">
+                    <input type="checkbox" id="json-id" name="output" value="json-id" class="myInput"
+                           aria-expanded="false" state="off"> <label for="json-id">@id</label>
+                </div>
+                <div class="myDivInput">
+                    <input type="checkbox" id="json-form" name="output" value="json-form" class="myInput"
+                           aria-expanded="false" state="off"> <label for="json-form">@form</label>
+                </div>
+                <div class="myDivInput">
+                    <input type="checkbox" id="json-lemma" name="output" value="json-lemma" class="myInput"
+                           aria-expanded="false" state="off"> <label for="json-lemma">@lemma</label>
+                </div>
+                <div class="myDivInput">
+                    <input type="checkbox" id="json-pos" name="output" value="json-pos" class="myInput"
+                           aria-expanded="false" state="off"> <label for="json-pos">@pos</label>
+                </div>
+                <div class="myDivInput">
+                    <input type="checkbox" id="json-xpos" name="output" value="json-xpos" class="myInput"
+                           aria-expanded="false" state="off"> <label for="json-xpos">@xpos</label>
+                </div>
+                <div class="myDivInput">
+                    <input type="checkbox" id="json-feats" name="output" value="json-feats" class="myInput"
+                           aria-expanded="false" state="off"> <label for="json-feats">@feats</label>
+                </div>
+                <div class="myDivInput">
+                    <input type="checkbox" id="json-head" name="output" value="json-head" class="myInput"
+                           aria-expanded="false" state="off"> <label for="json-head">@head</label>
+                </div>
+                <div class="myDivInput">
+                    <input type="checkbox" id="json-deprel" name="output" value="json-deprel" class="myInput"
+                           aria-expanded="false" state="off"> <label for="json-deprel">@deprel</label>
+                </div>
+                <div class="myDivInput">
+                    <input type="checkbox" id="json-deps" name="output" value="json-deps" class="myInput"
+                           aria-expanded="false" state="off"> <label for="json-deps">@deps</label>
+                </div>
+                <div class="myDivInput">
+                    <input type="checkbox" id="json-misc" name="output" value="json-misc" class="myInput"
+                           aria-expanded="false" state="off"> <label for="json-misc">@misc</label>
+                </div>
+                <div class="myDivInput">
+                    <input type="checkbox" id="json-whitespace" name="output" value="json-whitespace" class="myInput"
+                           aria-expanded="false" state="off"> <label for="json-whitespace">@whitespace</label>
+                </div>
+                <div class="myDivInput">
+                    <input type="checkbox" id="json-text" name="output" value="json-text" class="myInput" checked
+                           disabled aria-expanded="false" state="off"> <label for="json-text">#text</label>
+                </div>
+            </div>
+        </div>
+
+    </form>
+</div>
+</body>
+</html>

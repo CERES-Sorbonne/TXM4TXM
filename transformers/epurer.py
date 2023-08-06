@@ -1,10 +1,10 @@
-from typing import Iterable
-from transformers.tag import Tag
+from typing import Iterable, Set
+from transformers.enums import Tag
 
-all_tags = [tag for tag in Tag]
+all_tags = list(Tag)
 
 
-def epurer(pivot: dict, tags: Iterable[Tag]) -> dict:
+def epurer(pivot: dict, tags: Iterable[Tag] | Set[Tag]) -> dict:
     """Retire les clés inutiles du pivot"""
     toremove = []
     for k, v in pivot.items():

@@ -5,7 +5,7 @@ import re
 import xmltodict
 import spacy
 
-from transformers.tag import Tag
+from transformers.enums import Tag
 from transformers.default import DefaultTransformer
 
 

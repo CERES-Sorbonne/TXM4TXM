@@ -4,14 +4,14 @@ from pathlib import Path
 import spacy
 
 
-from transformers import to_pivot, to_xml, tag
+from transformers import to_pivot, to_xml, enums
 
 
 if __name__ == "__main__":
     nlp = spacy.load("fr_core_news_sm")
     nlp.max_length = 50000
 
-    tegs = [tag.Tag("id"), tag.Tag("form"), tag.Tag("lemma"), tag.Tag("pos"), tag.Tag("xpos")]
+    tegs = [enums.Tag("id"), enums.Tag("form"), enums.Tag("lemma"), enums.Tag("pos"), enums.Tag("xpos")]
 
     p = to_pivot.PivotTransformer(tags=tegs, nlp=nlp)
 
@@ -21,7 +21,7 @@ if __name__ == "__main__":
 
     print(res)
 
-    tags_xml = [tag.Tag("id"), tag.Tag("form"), tag.Tag("lemma"), tag.Tag("pos")]
+    tags_xml = [enums.Tag("id"), enums.Tag("form"), enums.Tag("lemma"), enums.Tag("pos")]
 
     x = to_xml.XMLTransformer(tags=tags_xml, nlp=nlp, pivot_tags=tegs)
 
