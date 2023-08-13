@@ -16,7 +16,7 @@ class DefaultTransformer(ABC):
             nlp: spacy.language.Language = None
     ) -> None:
 
-        self.pivot_tags = set(pivot_tags) if pivot_tags is not None else set()
+        self.pivot_tags = pivot_tags
 
         if nlp is None:
             self.nlp = spacy.load("fr_core_news_sm")
@@ -30,10 +30,10 @@ class DefaultTransformer(ABC):
             self.tags = tags
 
     def epurer(self, pivot: dict) -> dict:
-        if self.pivot_tags == set() or self.pivot_tags == self.tags:
+        if self.pivot_tags == [] or self.pivot_tags == self.tags:
             return pivot
 
-        if set(self.tags).difference(self.pivot_tags) != set():
+        if set(self.tags).difference(set(self.pivot_tags)) != set():
             raise ValueError("tags must be a subset of pivot_tags")
 
         return epurer(pivot, self.tags)

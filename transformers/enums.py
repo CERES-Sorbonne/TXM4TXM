@@ -47,6 +47,7 @@ class OutputType(EnumPlus):
 
 
 class Output(EnumPlus):
+    pivot = "pivot"
     json = "json"
     txm = "txm"
     iramuteq = "iramuteq"
@@ -58,7 +59,9 @@ class Output(EnumPlus):
     plots = "plots"
 
 
+
 class OutToType(EnumPlus):
+    pivot = OutputType.json
     json = OutputType.json
     txm = OutputType.xml
     iramuteq = OutputType.txt

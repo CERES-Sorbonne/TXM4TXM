@@ -7,6 +7,7 @@ import spacy
 
 from transformers.enums import Tag
 from transformers.default import DefaultTransformer
+from transformers.utils import File
 
 
 class PivotTransformer(DefaultTransformer):
@@ -23,7 +24,7 @@ class PivotTransformer(DefaultTransformer):
             return
 
         if isinstance(e, str):
-            return self.str_to_pivot(e)
+            return self.str_to_pivot(e, tags=self.pivot_tags)
 
         to_update = {}
         to_remove = []
@@ -31,7 +32,7 @@ class PivotTransformer(DefaultTransformer):
         for k, v in e.items():
             if isinstance(v, str):
                 if not "@" in k:
-                    to_update = self.str_to_pivot(v)
+                    to_update = self.str_to_pivot(v, tags=self.pivot_tags)
                     if k != "#text":
                         to_update = {k: to_update}
                     to_remove.append(k)
@@ -99,9 +100,13 @@ class PivotTransformer(DefaultTransformer):
             "w": temp_lst
         }
 
-    def transform(self, file: Path | str) -> dict:
+    def transform(self, file: File | Path | str) -> dict:
 
-        print(f"Processing {file.name}")
+        try:
+            print(f"Processing {file.name}")
+        except AttributeError:
+            print(type(file))
+            print(file)
 
         if isinstance(file, Path):
             with file.open("r", encoding="utf-8") as f:
@@ -111,8 +116,12 @@ class PivotTransformer(DefaultTransformer):
         elif isinstance(file, str):
             text = file
 
+        elif isinstance(file, File):
+            text = file.content
+
         else:
-            raise ValueError("file must be a Path or a str")
+            print(type(file))
+            raise ValueError("file must be a Path, a File or a str")
 
         # soup = BeautifulSoup(text, "lxml-xml")
         text_d = xmltodict.parse(text, attr_prefix="@")
