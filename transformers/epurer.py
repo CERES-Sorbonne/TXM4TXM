@@ -7,7 +7,13 @@ all_tags = list(Tag)
 def epurer(pivot: dict, tags: Iterable[Tag] | Set[Tag]) -> dict:
     """Retire les clés inutiles du pivot"""
     toremove = []
+    if pivot is None:
+        return pivot
+
     for k, v in pivot.items():
+        if k == "teiHeader":
+            continue
+
         if k.startswith("@"):
             to_check = k[1:]
             if to_check in all_tags:
