@@ -1,7 +1,7 @@
 import zipfile
 from typing import List
 from pathlib import Path
-from io import BytesIO
+from io import BytesIO, StringIO
 
 from starlette.datastructures import UploadFile
 
@@ -113,7 +113,6 @@ class File:
         else:
             return UploadFile(filename=self.name, file=self.content)
 
-
     def to_path(self, path: Path):
         path.write_text(self.content, encoding="utf-8")
         return path
@@ -138,27 +137,14 @@ class File:
     def with_suffix(self, suffix):
         return self.pathver.with_suffix(suffix).name
 
-
-# def ZipCreator(list_of_files: List[File], mode: str = "types"):
-#     if mode not in ("types", "names"):
-#         raise ValueError(f"Invalid mode {mode}, must be types or names")
-#
-#     zip_io = BytesIO()
-#     with zipfile.ZipFile(zip_io, mode="w", compression=zipfile.ZIP_DEFLATED) as temp_zip:
-#         for f in list_of_files:
-#             if mode == "types":
-#                 if f.stem.endswith(".pivot"):
-#                     type = "pivot"
-#                 else:
-#                     type = f.suffix[1:]
-#                 temp_zip.writestr(f"{type}/{f.name}", f.content)
-#             elif mode == "names":
-#                 temp_zip.writestr(f.name, f.content)
-#
-#
-#
-#     zip_io.seek(0)
-#     return zip_io
+    @property
+    def io(self):
+        if isinstance(self.content, (BytesIO, StringIO)):
+            return self.content
+        if not isinstance(self.content, bytes):
+            return StringIO(self.content)
+        else:
+            return BytesIO(self.content)
 
 
 class ZipCreator(File):
@@ -167,6 +153,8 @@ class ZipCreator(File):
             raise ValueError(f"Invalid mode {mode}, must be types or names")
 
         self.mode = mode
+
+        name = name if name.endswith(".zip") else name + ".zip"
 
         super().__init__(name, BytesIO())
 
@@ -177,20 +165,38 @@ class ZipCreator(File):
         return True
 
     def fill_zip(self, files: List[File], ):
+        if not files:
+            raise ValueError("Cannot create zip with no files")
 
         with zipfile.ZipFile(self.content, mode="w", compression=zipfile.ZIP_DEFLATED) as temp_zip:
+            types_dict = {}
+            stem_dict = {}
+            main_dict = types_dict if self.mode == "types" else stem_dict
+
             for f in files:
-                if self.mode == "types":
-                    type_ = f.suffix[1:]
-                    temp_zip.writestr(f"{_}/{f.name}", f.content)
-                elif self.mode == "files":
-                    stem = f.stem
-                    temp_zip.writestr(f"{stem}/{f.name}", f.content)
+                type_ = f.suffix[1:]
+
+                stem = f.stem
+                stem = stem.split(".pivot")[0] if ".pivot" in stem else stem
+
+                if type_ not in types_dict:
+                    types_dict[type_] = [f]
+                else:
+                    types_dict[type_].append(f)
+
+                if stem not in stem_dict:
+                    stem_dict[stem] = [f]
+                else:
+                    stem_dict[stem].append(f)
+
+            if len(types_dict) == 1 or len(stem_dict) == 1:
+                for f in files:
+                    temp_zip.writestr(f.name, f.content)
+            else:
+                for k, v in main_dict.items():
+                    for f in v:
+                        temp_zip.writestr(f"{k}/{f.name}", f.content)
 
         self.content.seek(0)
 
         return self.content
-
-
-
-    #
