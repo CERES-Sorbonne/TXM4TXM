@@ -139,53 +139,58 @@ class File:
         return self.pathver.with_suffix(suffix).name
 
 
-def ZipCreator(list_of_files: List[File], mode: str = "types"):
-    if mode not in ("types", "names"):
-        raise ValueError(f"Invalid mode {mode}, must be types or names")
+# def ZipCreator(list_of_files: List[File], mode: str = "types"):
+#     if mode not in ("types", "names"):
+#         raise ValueError(f"Invalid mode {mode}, must be types or names")
+#
+#     zip_io = BytesIO()
+#     with zipfile.ZipFile(zip_io, mode="w", compression=zipfile.ZIP_DEFLATED) as temp_zip:
+#         for f in list_of_files:
+#             if mode == "types":
+#                 if f.stem.endswith(".pivot"):
+#                     type = "pivot"
+#                 else:
+#                     type = f.suffix[1:]
+#                 temp_zip.writestr(f"{type}/{f.name}", f.content)
+#             elif mode == "names":
+#                 temp_zip.writestr(f.name, f.content)
+#
+#
+#
+#     zip_io.seek(0)
+#     return zip_io
 
-    zip_io = BytesIO()
-    with zipfile.ZipFile(zip_io, mode="w", compression=zipfile.ZIP_DEFLATED) as temp_zip:
-        for f in list_of_files:
-            if mode == "types":
-                type = f.suffix[1:]
-                temp_zip.writestr(f"{type}/{f.name}", f.content)
-            elif mode == "names":
-                temp_zip.writestr(f.name, f.content)
+
+class ZipCreator(File):
+    def __init__(self, name, mode: str = "types"):
+        if mode not in ("types", "names"):
+            raise ValueError(f"Invalid mode {mode}, must be types or names")
+
+        self.mode = mode
+
+        super().__init__(name, BytesIO())
+
+    def __repr__(self):
+        return f"ZipCreator(name={self.name}, file={self.content})"
+
+    def is_binary(self):
+        return True
+
+    def fill_zip(self, files: List[File], ):
+
+        with zipfile.ZipFile(self.content, mode="w", compression=zipfile.ZIP_DEFLATED) as temp_zip:
+            for f in files:
+                if self.mode == "types":
+                    type_ = f.suffix[1:]
+                    temp_zip.writestr(f"{_}/{f.name}", f.content)
+                elif self.mode == "files":
+                    stem = f.stem
+                    temp_zip.writestr(f"{stem}/{f.name}", f.content)
+
+        self.content.seek(0)
+
+        return self.content
 
 
 
-    zip_io.seek(0)
-    return zip_io
-
-
-
-    # def __init__(self, name):
-    #     file = BytesIO()
-    #     super().__init__(name, file)
-    #
-    # def __repr__(self):
-    #     return f"ZipCreator(name={self.name}, file={self.content})"
-    #
-    # def is_binary(self):
-    #     return True
-    #
-    # def fill_zip(self, files: List[File], mode: str = "types"):
-    #     if mode not in ("types", "names"):
-    #         raise ValueError(f"Invalid mode {mode}, must be types or names")
-    #
-    #     with ZipFile(self.content, "a") as zip_file:
-    #         for f in files:
-    #             if mode == "types":
-    #                 type = f.suffix[1:]
-    #                 zip_file.writestr(f"{type}/{f.name}", f.content)
-    #             elif mode == "files":
-    #                 stem = f.stem
-    #                 zip_file.writestr(f"{stem}/{f.name}", f.content)
-    #
-    #     self.content.seek(0)
-    #
-    #     return self.content
-    #
-    #
-    #
     #
