@@ -27,6 +27,9 @@ async def read_root():
 async def write_upload(
     files: List[UploadFile] = File(...), output: List[str] = Form(...)
 ):
+    if not files:
+        return HTMLResponse("No files uploaded")
+
     files = [utils.File(f.filename, await f.read()) for f in files]
 
     outputs: dict[Output, list[Tag]]
@@ -52,27 +55,13 @@ async def write_upload(
     if len(results) == 1:
         result = results[0]
 
-        if not isinstance(result.content, bytes):
-            res = io.StringIO(result.content)
-        else:
-            res = io.BytesIO(result.content)
-
-        mime = result.mime_type
-        name = result.name
-
     else:
-        zip = utils.ZipCreator("results.zip", mode="names")
-        zip.fill_zip(results)
-
-        res = zip.content
-
-        mime = MimeType.zip
-
-        name = "results.zip"
+        result = utils.ZipCreator("results", mode="names")
+        result.fill_zip(results)
 
     return StreamingResponse(
-        content=res,
+        content=result.content,
         status_code=200,
-        media_type=mime.value,
-        headers={"Content-Disposition": f"attachment; filename={name}"},
+        media_type=result.mime_type,
+        headers={"Content-Disposition": f"attachment; filename={result.name}"},
     )
