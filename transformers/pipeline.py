@@ -1,6 +1,6 @@
 import json
-from typing import List, Union, Dict, Optional, Tuple
-from pathlib import Path
+from typing import List
+from copy import deepcopy  # To copy the pivot dict
 
 import spacy
 
@@ -58,13 +58,15 @@ def pipeline(
                 File(name=file.with_suffix(".pivot.json"), file=json.dumps(pivot, ensure_ascii=False, indent=4)))
 
         if Output.json in output:
-            json_str = json.dumps(epurer(pivot, tags[output.index(Output.json)]), ensure_ascii=False, indent=4)
+            pivot_copy = deepcopy(pivot)
+            json_str = json.dumps(epurer(pivot_copy, tags[output.index(Output.json)]), ensure_ascii=False, indent=4)
             outputs.append(File(name=file.with_suffix(".json"), file=json_str))
 
         if Output.txm in output:
+            pivot_copy = deepcopy(pivot)
             tag = tags[output.index(Output.txm)] if Output.txm in output else []
 
-            xml = XMLTransformer(tags=tag, pivot_tags=pivot_tags, nlp=nlp).transform(pivot)
+            xml = XMLTransformer(tags=tag, pivot_tags=pivot_tags, nlp=nlp).transform(pivot_copy)
 
             outputs.append(File(name=file.with_suffix(".xml"), file=xml))
 
