@@ -11,7 +11,12 @@ from transformers.utils import File
 
 
 class PivotTransformer(DefaultTransformer):
-    def __init__(self, tags: List[Tag] = None, pivot_tags: List[Tag] = None, nlp: spacy.language.Language = None):
+    def __init__(
+            self,
+            tags: List[Tag] = None,
+            pivot_tags: List[Tag] = None,
+            nlp: spacy.language.Language = None
+    ) -> None:
         super().__init__(tags, pivot_tags, nlp)
         if self.pivot_tags == set():
             self.pivot_tags = self.tags
@@ -20,11 +25,8 @@ class PivotTransformer(DefaultTransformer):
             raise ValueError("pivot_tags must be equal to tags (or empty) for PivotTransformer")
 
     def replace_text(self, e: dict | str) -> dict | str | None:
-        if e is None:
-            return
-
         if isinstance(e, str):
-            return self.str_to_pivot(e, tags=self.pivot_tags)
+            return self.str_to_pivot(e)
 
         to_update = {}
         to_remove = []
@@ -32,7 +34,7 @@ class PivotTransformer(DefaultTransformer):
         for k, v in e.items():
             if isinstance(v, str):
                 if not "@" in k:
-                    to_update = self.str_to_pivot(v, tags=self.pivot_tags)
+                    to_update = self.str_to_pivot(v)
                     if k != "#text":
                         to_update = {k: to_update}
                     to_remove.append(k)
@@ -43,7 +45,7 @@ class PivotTransformer(DefaultTransformer):
             elif isinstance(v, list):
                 if v == []:
                     continue
-                e[k] = [self.replace_text(x) for x in v]
+                e[k] = [self.replace_text(x) for x in v if x is not None]
 
             elif v is None:
                 continue
@@ -57,11 +59,11 @@ class PivotTransformer(DefaultTransformer):
         e.update(to_update)
         return e
 
-    def str_to_pivot(self, text: str, tags: List[Tag] = None) -> dict:
-        if tags is None:
-            tags = [tag for tag in Tag]
-
-        tags = set(tags)
+    # def str_to_pivot(self, text: str, tags: List[Tag] = None) -> dict:
+    #     if tags is None:
+    #         tags = [tag for tag in Tag]
+    def str_to_pivot(self, text: str) -> dict:
+        tags = set(self.pivot_tags)
 
         text = re.sub(r"(\s)+", " ", text)
         doc = self.nlp(text)
@@ -102,11 +104,11 @@ class PivotTransformer(DefaultTransformer):
 
     def transform(self, file: File | Path | str) -> dict:
 
-        try:
-            print(f"Processing {file.name}")
-        except AttributeError:
-            print(type(file))
-            print(file)
+        if not isinstance(file, (File, Path, str)):
+            raise ValueError(f"file must be a Path, a File or a str ({type(file) = })")
+
+        name = file.name if "name" in file.__dict__ else file[:10] + "..." + file[-10:]
+        print(f"Processing {name}")
 
         if isinstance(file, Path):
             with file.open("r", encoding="utf-8") as f:
@@ -119,11 +121,6 @@ class PivotTransformer(DefaultTransformer):
         elif isinstance(file, File):
             text = file.content
 
-        else:
-            print(type(file))
-            raise ValueError("file must be a Path, a File or a str")
-
-        # soup = BeautifulSoup(text, "lxml-xml")
         text_d = xmltodict.parse(text, attr_prefix="@")
         texte = text_d["TEI"]["text"]
 

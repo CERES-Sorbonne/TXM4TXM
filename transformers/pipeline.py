@@ -19,7 +19,11 @@ def pipeline(
     output: List[Output] = None,
     tags: List[List[Tag] | Tag] = None,
 ) -> List[File]:
-    pivots: List[dict] = []
+    """Pipeline de transformation des fichiers
+    prend une liste de fichiers en entrée et retourne une liste de ces fichiers transformés
+    dans les différents formats demandés (xml, json), avec les tags demandés
+    (id, form, lemma, pos, text, etc.)
+    """
 
     if output is None:
         output = [Output.json]
@@ -39,18 +43,11 @@ def pipeline(
 
     pivot_tags = list(set([tag for tag_list in tags for tag in tag_list]))
 
-    # outputs = {"name": [], "output": [], "mime": []}
     outputs = []
 
     for file in files:
-        file_name = []
-        file_output = []
-        file_mime = []
-
         if file.mime_type == MimeType.xml:
-            pivot = PivotTransformer(
-                tags=pivot_tags, pivot_tags=pivot_tags, nlp=nlp
-            ).transform(file)
+            pivot = PivotTransformer(tags=pivot_tags, pivot_tags=pivot_tags, nlp=nlp).transform(file)
         elif file.mime_type == MimeType.json:
             pivot = file.content
         else:
@@ -58,67 +55,17 @@ def pipeline(
 
         if Output.pivot in output:
             outputs.append(
-                File(
-                    name=file.with_suffix(".pivot.json"),
-                    file=json.dumps(pivot, ensure_ascii=False, indent=4),
-                    # mime_type = MimeType.json
-                )
-            )
-            #
-            #
-            # file_name.append(file.with_suffix(".pivot.json"))
-            # file_output.append(json.dumps(pivot, ensure_ascii=False, indent=4))
-            # file_mime.append(MimeType.json)
+                File(name=file.with_suffix(".pivot.json"), file=json.dumps(pivot, ensure_ascii=False, indent=4)))
 
         if Output.json in output:
-            # file_name.append(file.with_suffix(".json"))
-            # file_output.append(
-            #     json.dumps(
-            #         epurer(
-            #             pivot,
-            #             tags[output.index(Output.json)],
-            #         ),
-            #         ensure_ascii=False,
-            #         indent=4,
-            #     )
-            # )
-            # file_mime.append(MimeType.json)
-            json_str = json.dumps(
-                epurer(pivot, tags[output.index(Output.json)]),
-                ensure_ascii=False,
-                indent=4,
-            )
-            outputs.append(
-                File(
-                    name=file.with_suffix(".json"),
-                    file=json_str,
-                    # mime_type = MimeType.json
-                )
-            )
+            json_str = json.dumps(epurer(pivot, tags[output.index(Output.json)]), ensure_ascii=False, indent=4)
+            outputs.append(File(name=file.with_suffix(".json"), file=json_str))
 
         if Output.txm in output:
             tag = tags[output.index(Output.txm)] if Output.txm in output else []
 
-            xml = XMLTransformer(tags=tag, pivot_tags=pivot_tags, nlp=nlp).transform(
-                pivot
-            )
-            # file_name.append(file.with_suffix(".xml"))
-            # file_output.append(xml)
-            # file_mime.append(MimeType.xml)
+            xml = XMLTransformer(tags=tag, pivot_tags=pivot_tags, nlp=nlp).transform(pivot)
 
-            outputs.append(
-                File(
-                    name=file.with_suffix(".xml"),
-                    file=xml,
-                    # mime_type = MimeType.xml
-                )
-            )
-
-        # outputs["name"].extend(file_name)
-        # outputs["output"].extend(file_output)
-        # outputs["mime"].extend(file_mime)
-        #
-
-        print()
+            outputs.append(File(name=file.with_suffix(".xml"), file=xml))
 
     return outputs
