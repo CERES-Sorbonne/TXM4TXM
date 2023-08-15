@@ -1,5 +1,3 @@
-import io
-import os
 from typing import List
 from pathlib import Path
 
@@ -8,7 +6,7 @@ from fastapi.staticfiles import StaticFiles
 from fastapi.responses import StreamingResponse, HTMLResponse, FileResponse
 
 from transformers import utils, pipeline
-from transformers.enums import MimeType, Output, Tag
+from transformers.enums import Output, Tag
 
 main_dir = Path(__file__).parent
 
@@ -24,24 +22,22 @@ async def read_root():
 
 
 @app.post("/upload", tags=["main"], response_class=FileResponse)
-async def write_upload(
-    files: List[UploadFile] = File(...), output: List[str] = Form(...)
-):
+async def write_upload(files: List[UploadFile] = File(...), output: List[str] = Form(...)):
+    outputs: dict[Output, list[Tag]]
+    output_types: list[Output]
+    
+    results: List[File]
+    result: File
+
     if not files:
         return HTMLResponse("No files uploaded")
+    if not output:
+        return HTMLResponse("No output selected")
 
     files = [utils.File(f.filename, await f.read()) for f in files]
 
-    outputs: dict[Output, list[Tag]]
-    output_types: list[Output]
+    outputs = {Output(o): [Tag("text")] for o in output if "-" not in o}
 
-    results: List[File]
-    result: File
-    res: io.StringIO | io.BytesIO
-    mime: MimeType
-    name: str
-
-    outputs = {Output(o): [Tag("text")] for o in output if not "-" in o}
     for o in output:
         o = o.split("-")
         if len(o) == 2:
@@ -56,7 +52,7 @@ async def write_upload(
         result = results[0]
 
     else:
-        result = utils.ZipCreator("results", mode="names")
+        result = utils.ZipCreator("results", mode="types")
         result.fill_zip(results)
 
     return StreamingResponse(

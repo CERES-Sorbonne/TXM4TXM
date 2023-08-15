@@ -59,9 +59,6 @@ class PivotTransformer(DefaultTransformer):
         e.update(to_update)
         return e
 
-    # def str_to_pivot(self, text: str, tags: List[Tag] = None) -> dict:
-    #     if tags is None:
-    #         tags = [tag for tag in Tag]
     def str_to_pivot(self, text: str) -> dict:
         tags = set(self.pivot_tags)
 
@@ -98,9 +95,7 @@ class PivotTransformer(DefaultTransformer):
 
             temp_lst.append(temp)
 
-        return {
-            "w": temp_lst
-        }
+        return {"w": temp_lst}
 
     def transform(self, file: File | Path | str) -> dict:
 

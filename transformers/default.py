@@ -11,8 +11,8 @@ from transformers.enums import Tag
 class DefaultTransformer(ABC):
     def __init__(
             self,
-            tags: List[Tag] = None,
-            pivot_tags: List[Tag] = None,
+            tags: List[List[Tag]] | List[Tag] = None,
+            pivot_tags: List[List[Tag]] | List[Tag] = None,
             nlp: spacy.language.Language = None
     ) -> None:
 

@@ -13,7 +13,10 @@ class File:
         self.__pathver = None
         self.name = name
         if isinstance(file, bytes):
-            file = file.decode("utf-8")
+            try:
+                file = file.decode("utf-8")
+            except UnicodeDecodeError:
+                file = BytesIO(file)
         elif isinstance(file, UploadFile):
             file = file.file.read().decode("utf-8")
         self.content = file
@@ -141,10 +144,9 @@ class File:
     def io(self):
         if isinstance(self.content, (BytesIO, StringIO)):
             return self.content
-        if not isinstance(self.content, bytes):
-            return StringIO(self.content)
-        else:
-            return BytesIO(self.content)
+        if self.is_binary:
+            BytesIO(self.content)
+        return StringIO(self.content)
 
 
 class ZipCreator(File):
@@ -177,7 +179,11 @@ class ZipCreator(File):
                 type_ = f.suffix[1:]
 
                 stem = f.stem
-                stem = stem.split(".pivot")[0] if ".pivot" in stem else stem
+
+                if stem.endswith(".pivot"):
+                    stem = stem[:-6]
+                    type_ = "pivot"
+
 
                 if type_ not in types_dict:
                     types_dict[type_] = [f]

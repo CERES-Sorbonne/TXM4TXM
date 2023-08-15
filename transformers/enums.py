@@ -59,7 +59,6 @@ class Output(EnumPlus):
     plots = "plots"
 
 
-
 class OutToType(EnumPlus):
     pivot = OutputType.json
     json = OutputType.json
