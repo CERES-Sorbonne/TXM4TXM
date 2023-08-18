@@ -14,7 +14,7 @@
 
 <body>
 <div class="main">
-    <form method="post" enctype="multipart/form-data" action="/upload" id="myForm">
+    <form method="post" enctype="multipart/form-data" action="/upload" id="myForm" class="center">
 
         <div class="inputwrapper">
             <input type="file" name="files" id="files" class="inputfile" accept="text/xml" multiple onchange="listoffiles(this)">
@@ -138,8 +138,8 @@
         </div>
 
 
-        <div class="inputwrapper">
-            <button type="submit" class="btn btn-primary">Submit</button>
+        <div class="inputwrapper center buttonwrapper" onclick="this.children[0].click();">
+            <button id="send" type="submit" class="btn btn-primary" disabled>Traiter les fichiers</button>
         </div>
 
     </form>
