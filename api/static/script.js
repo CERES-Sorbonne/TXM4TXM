@@ -7,24 +7,13 @@ function do_expand(element, target) {
     state = element.checked ? 'on' : 'off';
 
     target.setAttribute('state', state);
-
-    if (state === 'on') {
-        target.removeAttribute('aria-expanded');
-    } else {
-        target.setAttribute('aria-expanded', 'false');
-    }
+    target.setAttribute('aria-expanded', state === 'on' ? 'checked' : '');
 
     for (let i = 0; i < target.children.length; i++) {
         child = target.children[i].children[0];
         child.setAttribute('state', state);
-
-        if (state === 'on') {
-            child.removeAttribute('aria-expanded');
-        } else {
-            child.setAttribute('aria-expanded', 'false');
-        }
+        child.setAttribute('aria-expanded', state === 'on' ? 'checked' : '');
     }
-    activatesubmit();
 }
 
 
@@ -37,28 +26,16 @@ function listoffiles(element) {
 
 function activatesubmit() {
     let ison = false;
-    let lst = document.getElementsByClassName("level2checkbox");
     let reallst = document.getElementById("files");
 
-    for (let i = 0; i < lst.length; i++) {
-        if (lst[i].getAttribute('state') === 'on') {
-            ison = true;
-            break;
+    if (reallst.files.length > 0) {
+        let lst = document.getElementsByClassName("level2checkbox");
+        for (let i = 0; i < lst.length; i++) {
+            if (lst[i].getAttribute('state') === 'on') {
+                ison = true;
+                break;
+            }
         }
     }
-
-    if (reallst.files.length < 0) {
-        ison = false;
-    }
-
-    if (ison) {
-        document.getElementById('send').disabled = false;
-        console.log(document.getElementById('send'));
-        console.log(document.getElementById('send').disabled);
-    } else {
-        document.getElementById('send').disabled = true;
-
-    }
+    document.getElementById('send').disabled = !ison;
 }
-
-
