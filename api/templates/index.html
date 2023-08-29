@@ -21,8 +21,9 @@
             <div class="listoffiles" id="listoffiles" onclick="document.getElementById('files').click()"></div>
         </div>
 
-        <div class="level1checkbox" id="pivot1">
-            <input type="checkbox" id="pivot" name="output" value="pivot" class="myInput">
+        <div class="level1checkbox" id="pivot1"
+                onchange="activatesubmit();">
+            <input type="checkbox" id="pivot" name="output" value="pivot" class="myInput activateSubmit">
             <label for="pivot">Pivot</label>
         </div>
 
@@ -30,7 +31,7 @@
             <input type="checkbox" id="txm" name="output" value="txm" class="myInput"
                    onchange="do_expand(this, document.getElementById('txm2'));">
             <label for="txm">TXM (XML)</label>
-            <div class="level2checkbox" id="txm2" aria-expanded="false" state="off">
+            <div class="level2checkbox activateSubmit" id="txm2" aria-expanded="false" state="off">
                 <div class="myDivInput">
                     <input type="checkbox" id="txm-id" name="output" value="txm-id" class="myInput"
                            aria-expanded="false" state="off"> <label for="txm-id">@id</label>
@@ -86,7 +87,7 @@
             <input type="checkbox" id="json" name="output" value="json" class="myInput"
                    onchange="do_expand(this, document.getElementById('json2'));">
             <label for="json">JSON</label>
-            <div class="level2checkbox" id="json2" aria-expanded="false" state="off">
+            <div class="level2checkbox activateSubmit" id="json2" aria-expanded="false" state="off">
                 <div class="myDivInput">
                     <input type="checkbox" id="json-id" name="output" value="json-id" class="myInput"
                            aria-expanded="false" state="off"> <label for="json-id">@id</label>

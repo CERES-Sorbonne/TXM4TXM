@@ -14,6 +14,7 @@ function do_expand(element, target) {
         child.setAttribute('state', state);
         child.setAttribute('aria-expanded', state === 'on' ? 'checked' : '');
     }
+    activatesubmit();
 }
 
 
@@ -29,13 +30,16 @@ function activatesubmit() {
     let reallst = document.getElementById("files");
 
     if (reallst.files.length > 0) {
-        let lst = document.getElementsByClassName("level2checkbox");
+        // console.log(reallst.files.length);
+        let lst = document.getElementsByClassName("activateSubmit");
         for (let i = 0; i < lst.length; i++) {
             if (lst[i].getAttribute('state') === 'on') {
+                // console.log(lst[i].getAttribute('state'));
                 ison = true;
                 break;
             }
         }
     }
+    // console.log(ison);
     document.getElementById('send').disabled = !ison;
 }
