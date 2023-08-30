@@ -7,12 +7,18 @@ import spacy
 from transformers.enums import Tag
 from transformers.default import DefaultTransformer
 
+allfields = "ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC"
+tupfields = ("@id", "@form", "@lemma", "@upos", "@xpos", "@feats", "@head", "@deprel", "@deps", "@misc")
+
 
 class CONLLUTransformer(DefaultTransformer):
-    allfields = "ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC"
-    lstfields = allfields.split()
-    lstfields[3] = "POS"
-    lstfields = ["@" + x.lower() for x in lstfields]
+    @property
+    def tupfields(self) -> tuple[str, ...]:
+        return tupfields
+
+    @property
+    def allfields(self) -> str:
+        return allfields
 
     def __init__(
         self,
@@ -20,6 +26,9 @@ class CONLLUTransformer(DefaultTransformer):
         pivot_tags: List[List[Tag]] | List[Tag] = None,
         nlp: spacy.language.Language = None,
     ):
+        if tags is not None and Tag.id not in tags:
+            tags.append(Tag.id)
+
         super().__init__(tags, pivot_tags, nlp)
 
         self.sent_id = 0
@@ -47,7 +56,7 @@ class CONLLUTransformer(DefaultTransformer):
             if "@form" not in w:
                 w["@form"] = w["#text"]
 
-            self.srtio.write("\t".join([str(w[field]) if field in w and w[field] else "_" for field in self.lstfields]))
+            self.srtio.write("\t".join([str(w[field]) if field in w and w[field] else "_" for field in self.tupfields]))
             self.srtio.write("\n")
 
         self.srtio.write("\n")
@@ -69,6 +78,8 @@ class CONLLUTransformer(DefaultTransformer):
             self.w_process(v)
 
     def transform(self, pivot: Path | str | dict) -> str:
+        pivot = self.epurer(pivot)
+
         self.iterateonpivot(pivot)
 
         self.srtio.seek(0)
@@ -81,7 +92,7 @@ if __name__ == "__main__":
     file = "/home/marceau/PycharmProjects/codif/results/json/BerPet.json"
 
     with open(file, "r", encoding="utf-8") as f:
-        pivot = json.load(f)
+        fic = json.load(f)
 
     conllu = CONLLUTransformer()
-    print(conllu.transform(pivot))
+    print(conllu.transform(fic))

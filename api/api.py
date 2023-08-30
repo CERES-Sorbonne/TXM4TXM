@@ -44,6 +44,9 @@ async def write_upload(files: List[UploadFile] = File(...), output: List[str] = 
         if len(o) == 2:
             outputs[Output(o[0])].append(Tag(o[1]))
 
+    if Output.conllu in outputs:
+        outputs[Output.conllu].append(Tag.id)
+
     output_types = [k for k in outputs]
     output_tags = [outputs[k] for k in outputs]
 
