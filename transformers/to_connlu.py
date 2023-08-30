@@ -2,20 +2,17 @@ from io import StringIO
 from pathlib import Path
 from typing import List
 
-import re
-import xmltodict
 import spacy
 
 from transformers.enums import Tag
 from transformers.default import DefaultTransformer
-from transformers.utils import File
 
 
 class CONNLUTransformer(DefaultTransformer):
     allfields = "ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC"
     lstfields = allfields.split()
+    lstfields[3] = "POS"
     lstfields = ["@" + x.lower() for x in lstfields]
-    lstfields = list(enumerate(lstfields, 1))
 
     def __init__(
         self,
@@ -49,15 +46,8 @@ class CONNLUTransformer(DefaultTransformer):
         for w in v:
             if "@form" not in w:
                 w["@form"] = w["#text"]
-            for i, field in self.lstfields:
-                if field not in w:
-                    if field == "@id":
-                        self.srtio.write(f"{i}\t")
-                    else:
-                        self.srtio.write("_\t")
-                else:
-                    self.srtio.write(f"{w[field]}\t")
 
+            self.srtio.write("\t".join([str(w[field]) if field in w and w[field] else "_" for field in self.lstfields]))
             self.srtio.write("\n")
 
         self.srtio.write("\n")
@@ -75,10 +65,6 @@ class CONNLUTransformer(DefaultTransformer):
             if k != "w":
                 self.iterateonpivot(v)
                 continue
-
-            # if not all(x.startswith("@") or x == "#text" for x in v):
-            #     self.iterateonpivot(v)
-            #     continue
 
             self.w_process(v)
 
