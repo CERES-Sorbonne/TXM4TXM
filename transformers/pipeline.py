@@ -5,8 +5,11 @@ from copy import deepcopy  # To copy the pivot dict
 import spacy
 
 from transformers.enums import Output, MimeType, Tag
+
 from transformers.to_pivot import PivotTransformer
 from transformers.to_xml import XMLTransformer
+from transformers.to_connlu import CONNLUTransformer
+
 from transformers.utils import File
 from transformers.epurer import epurer
 
@@ -69,5 +72,13 @@ def pipeline(
             xml = XMLTransformer(tags=tag, pivot_tags=pivot_tags, nlp=nlp).transform(pivot_copy)
 
             outputs.append(File(name=file.with_suffix(".xml"), file=xml))
+
+        if Output.connlu in output:
+            pivot_copy = deepcopy(pivot)
+            tag = tags[output.index(Output.connlu)] if Output.connlu in output else []
+
+            connlu = CONNLUTransformer(tags=tag, pivot_tags=pivot_tags, nlp=nlp).transform(pivot_copy)
+
+            outputs.append(File(name=file.with_suffix(".connlu"), file=connlu))
 
     return outputs

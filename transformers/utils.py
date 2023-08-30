@@ -19,6 +19,7 @@ class File:
                 file = BytesIO(file)
         elif isinstance(file, UploadFile):
             file = file.file.read().decode("utf-8")
+
         self.content = file
 
     def __repr__(self):
