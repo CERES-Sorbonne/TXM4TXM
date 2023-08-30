@@ -16,6 +16,7 @@ class DefaultTransformer(ABC):
             nlp: spacy.language.Language = None
     ) -> None:
 
+        self.sent_id = 0
         self.pivot_tags = pivot_tags
 
         if nlp is None:
@@ -40,3 +41,31 @@ class DefaultTransformer(ABC):
 
     def transform(self, pivot: Path | str | dict) -> dict:
         raise NotImplementedError
+
+    def iterateonpivot(self, pivot: dict | list) -> None:
+        if isinstance(pivot, list):
+            for x in pivot:
+                self.iterateonpivot(x)
+            return
+
+        for k, v in pivot.items():
+            if not isinstance(v, list | dict):
+                continue
+
+            if k != "w":
+                self.iterateonpivot(v)
+                continue
+
+            self.w_process(v)
+
+    def w_process(self, v):
+        raise NotImplementedError
+
+    def idsent(self, sentid: int | str | None = None) -> None:
+        if sentid:
+            if isinstance(sentid, int):
+                self.sent_id = sentid
+        else:
+            self.sent_id += 1
+
+        #self.srtio.write(f"# sent_id = {self.sent_id}\n")

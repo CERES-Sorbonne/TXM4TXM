@@ -37,12 +37,7 @@ class CONLLUTransformer(DefaultTransformer):
         self.srtio.write(f"# global.columns = {self.allfields}\n")
 
     def idsent(self, sentid: int | str | None = None) -> None:
-        if sentid:
-            if isinstance(sentid, int):
-                self.sent_id = sentid
-        else:
-            self.sent_id += 1
-
+        super().idsent(sentid)
         self.srtio.write(f"# sent_id = {self.sent_id}\n")
 
     def w_process(self, v: list) -> None:
@@ -61,23 +56,12 @@ class CONLLUTransformer(DefaultTransformer):
 
         self.srtio.write("\n")
 
-    def iterateonpivot(self, pivot: dict | list) -> None:
-        if isinstance(pivot, list):
-            for x in pivot:
-                self.iterateonpivot(x)
-            return
-
-        for k, v in pivot.items():
-            if not isinstance(v, list | dict):
-                continue
-
-            if k != "w":
-                self.iterateonpivot(v)
-                continue
-
-            self.w_process(v)
-
     def transform(self, pivot: Path | str | dict) -> str:
+        if self.srtio:
+            self.srtio.close()
+            self.srtio = StringIO()
+
+        pivot.pop("TEI-EXTRACTED-METADATA")
         pivot = self.epurer(pivot)
 
         self.iterateonpivot(pivot)
