@@ -58,6 +58,7 @@ class Output(EnumPlus):
     processed_stats = "processed_stats"
     plots = "plots"
     conllu = "conllu"
+    hyperbase = "hyperbase"
 
 
 class OutToType(EnumPlus):
@@ -72,6 +73,7 @@ class OutToType(EnumPlus):
     processed_stats = OutputType.zip
     plots = OutputType.zip
     conllu = OutputType.txt
+    hyperbase = OutputType.txt
 
 
 class MimeType(EnumPlus):
@@ -81,6 +83,7 @@ class MimeType(EnumPlus):
     csv = "text/csv"
     zip = "application/zip"
     conllu = "text/conllu"
+    hyperbase = "text/hyperbase"
 
 
 def get_mimetype(output_type: OutputType) -> MimeType:

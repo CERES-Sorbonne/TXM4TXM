@@ -9,6 +9,7 @@ from transformers.enums import Output, MimeType, Tag
 from transformers.to_pivot import PivotTransformer
 from transformers.to_xml import XMLTransformer
 from transformers.to_conllu import CONLLUTransformer
+from transformers.to_hyperbase import HyperbaseTransformer
 
 from transformers.utils import File
 from transformers.epurer import epurer
@@ -80,5 +81,13 @@ def pipeline(
             conllu = CONLLUTransformer(tags=tag, pivot_tags=pivot_tags, nlp=nlp).transform(pivot_copy)
 
             outputs.append(File(name=file.with_suffix(".conllu"), file=conllu))
+
+        if Output.hyperbase in output:
+            pivot_copy = deepcopy(pivot)
+            tag = tags[output.index(Output.hyperbase)] if Output.hyperbase in output else []
+
+            hyperbase = HyperbaseTransformer(tags=tag, pivot_tags=pivot_tags, nlp=nlp).transform(pivot_copy)
+
+            outputs.append(File(name=file.with_suffix(".hyperbase.txt"), file=hyperbase))
 
     return outputs
