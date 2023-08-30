@@ -1,3 +1,4 @@
+from io import StringIO
 from typing import List
 from pathlib import Path
 
@@ -54,6 +55,9 @@ async def write_upload(files: List[UploadFile] = File(...), output: List[str] = 
     else:
         result = utils.ZipCreator("results", mode="types")
         result.fill_zip(results)
+
+    if isinstance(result.content, str):
+        result.content = StringIO(result.content)
 
     return StreamingResponse(
         content=result.content,
