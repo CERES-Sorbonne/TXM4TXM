@@ -57,7 +57,7 @@ class Output(EnumPlus):
     stats = "stats"
     processed_stats = "processed_stats"
     plots = "plots"
-    connlu = "connlu"
+    conllu = "conllu"
 
 
 class OutToType(EnumPlus):
@@ -71,7 +71,7 @@ class OutToType(EnumPlus):
     stats = OutputType.json
     processed_stats = OutputType.zip
     plots = OutputType.zip
-    connlu = OutputType.txt
+    conllu = OutputType.txt
 
 
 class MimeType(EnumPlus):
@@ -80,7 +80,7 @@ class MimeType(EnumPlus):
     xml = "text/xml"
     csv = "text/csv"
     zip = "application/zip"
-    connlu = "text/connlu"
+    conllu = "text/conllu"
 
 
 def get_mimetype(output_type: OutputType) -> MimeType:

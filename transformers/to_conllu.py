@@ -8,7 +8,7 @@ from transformers.enums import Tag
 from transformers.default import DefaultTransformer
 
 
-class CONNLUTransformer(DefaultTransformer):
+class CONLLUTransformer(DefaultTransformer):
     allfields = "ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC"
     lstfields = allfields.split()
     lstfields[3] = "POS"
@@ -83,5 +83,5 @@ if __name__ == "__main__":
     with open(file, "r", encoding="utf-8") as f:
         pivot = json.load(f)
 
-    connlu = CONNLUTransformer()
-    print(connlu.transform(pivot))
+    conllu = CONLLUTransformer()
+    print(conllu.transform(pivot))
