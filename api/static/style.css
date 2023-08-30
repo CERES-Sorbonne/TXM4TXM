@@ -93,3 +93,11 @@ body {
     text-shadow: 8px 8px 10px #0000008c;
     background-color: #343a40;
 }
+
+label {
+    font-size: 1em;
+    color: white;
+    text-shadow: 5px 5px 8px #0000000c;
+    margin-right: 10px;
+}
+
