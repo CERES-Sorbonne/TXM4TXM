@@ -187,6 +187,61 @@
             </div>
         </div>
 
+         <div class="level1checkbox" id="hyperbase1">
+            <input type="checkbox" id="hyperbase" name="output" value="hyperbase" class="myInput"
+                   onchange="do_expand(this, document.getElementById('hyperbase2'));">
+            <label for="hyperbase">hyperbase</label>
+            <div class="level2checkbox activateSubmit" id="hyperbase2" aria-expanded="false" state="off">
+                <div class="myDivInput">
+                    <input type="checkbox" id="hyperbase-id" name="output" value="hyperbase-id" class="myInput"
+                           aria-expanded="false" state="off"> <label for="hyperbase-id">@id</label>
+                </div>
+                <div class="myDivInput">
+                    <input type="checkbox" id="hyperbase-form" name="output" value="hyperbase-form" class="myInput"
+                           aria-expanded="false" state="off"> <label for="hyperbase-form">@form</label>
+                </div>
+                <div class="myDivInput">
+                    <input type="checkbox" id="hyperbase-lemma" name="output" value="hyperbase-lemma" class="myInput"
+                           aria-expanded="false" state="off"> <label for="hyperbase-lemma">@lemma</label>
+                </div>
+                <div class="myDivInput">
+                    <input type="checkbox" id="hyperbase-pos" name="output" value="hyperbase-pos" class="myInput"
+                           aria-expanded="false" state="off"> <label for="hyperbase-pos">@pos</label>
+                </div>
+                <div class="myDivInput">
+                    <input type="checkbox" id="hyperbase-xpos" name="output" value="hyperbase-xpos" class="myInput"
+                           aria-expanded="false" state="off"> <label for="hyperbase-xpos">@xpos</label>
+                </div>
+                <div class="myDivInput">
+                    <input type="checkbox" id="hyperbase-feats" name="output" value="hyperbase-feats" class="myInput"
+                           aria-expanded="false" state="off"> <label for="hyperbase-feats">@feats</label>
+                </div>
+                <div class="myDivInput">
+                    <input type="checkbox" id="hyperbase-head" name="output" value="hyperbase-head" class="myInput"
+                           aria-expanded="false" state="off"> <label for="hyperbase-head">@head</label>
+                </div>
+                <div class="myDivInput">
+                    <input type="checkbox" id="hyperbase-deprel" name="output" value="hyperbase-deprel" class="myInput"
+                           aria-expanded="false" state="off"> <label for="hyperbase-deprel">@deprel</label>
+                </div>
+                <div class="myDivInput">
+                    <input type="checkbox" id="hyperbase-deps" name="output" value="hyperbase-deps" class="myInput"
+                           aria-expanded="false" state="off"> <label for="hyperbase-deps">@deps</label>
+                </div>
+                <div class="myDivInput">
+                    <input type="checkbox" id="hyperbase-misc" name="output" value="hyperbase-misc" class="myInput"
+                           aria-expanded="false" state="off"> <label for="hyperbase-misc">@misc</label>
+                </div>
+                <div class="myDivInput">
+                    <input type="checkbox" id="hyperbase-whitespace" name="output" value="hyperbase-whitespace" class="myInput"
+                           aria-expanded="false" state="off"> <label for="hyperbase-whitespace">@whitespace</label>
+                </div>
+                <div class="myDivInput">
+                    <input type="checkbox" id="hyperbase-text" name="output" value="hyperbase-text" class="myInput" checked
+                           disabled aria-expanded="false" state="off"> <label for="hyperbase-text">#text</label>
+                </div>
+            </div>
+        </div>
 
         <div class="inputwrapper center buttonwrapper" onclick="this.children[0].click();">
             <button id="send" type="submit" class="btn btn-primary" disabled>Traiter les fichiers</button>

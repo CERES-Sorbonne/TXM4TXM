@@ -30,16 +30,24 @@ function activatesubmit() {
     let reallst = document.getElementById("files");
 
     if (reallst.files.length > 0) {
-        // console.log(reallst.files.length);
-        let lst = document.getElementsByClassName("activateSubmit");
-        for (let i = 0; i < lst.length; i++) {
-            if (lst[i].getAttribute('state') === 'on') {
-                // console.log(lst[i].getAttribute('state'));
-                ison = true;
-                break;
+        // if no lvl2 checkbox is on, check if pivot is on
+        // we do it separately as pivot dosent have any sub-checkboxes
+        ison = document.getElementById("pivot").checked;
+
+        if (!ison) {
+            // console.log(reallst.files.length);
+            let lst = document.getElementsByClassName("activateSubmit");
+            // console.log(lst)
+            for (let i = 0; i < lst.length; i++) {
+                if (lst[i].getAttribute('state') === 'on') {
+                    // console.log(lst[i].getAttribute('state'));
+                    ison = true;
+                    break;
+                }
             }
         }
     }
+
     // console.log(ison);
     document.getElementById('send').disabled = !ison;
 }
