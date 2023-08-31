@@ -63,6 +63,7 @@ def pipeline(
 
         if Output.json in output:
             pivot_copy = deepcopy(pivot)
+            pivot_copy.pop("TEI-EXTRACTED-METADATA")
             json_str = json.dumps(epurer(pivot_copy, tags[output.index(Output.json)]), ensure_ascii=False, indent=4)
             outputs.append(File(name=file.with_suffix(".json"), file=json_str))
 
