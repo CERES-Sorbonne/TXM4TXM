@@ -83,7 +83,7 @@ class HyperbaseTransformer(DefaultTransformer):
             v = [v]
 
         if "@pos" not in v[0] or "@lemma" not in v[0]:
-            sent = self.sentWMaxSpacing(v)
+            sent = self.sentWSpacing(v)
             par = remove_par(sent).strip()
 
             if par:

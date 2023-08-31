@@ -1,3 +1,4 @@
+import re
 from abc import ABC
 from pathlib import Path
 from typing import List
@@ -98,11 +99,17 @@ class DefaultTransformer(ABC):
         return self.sent_id
 
     @staticmethod
-    def spaceAfter(w: dict) -> bool:
-        return w["@misc"] != "SpaceAfter=No"
+    def spaceAfter(w: dict) -> str:
+        if "@misc" in w:
+            return " " if w["@misc"] != "SpaceAfter=No" else ""
+
+        if "@whitespace" in w:
+            return w["@whitespace"]
+
+        return " "
 
     def textWSpacing(self, w: dict) -> str:
-        return w["#text"] + " " if self.spaceAfter(w) else w["#text"]
+        return w["#text"] + self.spaceAfter(w)
 
     def sentWSpacing(self, sent: list[dict]) -> str:
         return "".join([self.textWSpacing(w) for w in sent])

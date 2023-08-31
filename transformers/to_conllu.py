@@ -37,7 +37,7 @@ class CONLLUTransformer(DefaultTransformer):
     def w_process(self, v: list) -> None:
         self.idsent()
 
-        self.srtio.write(f"# text = {self.sentWMaxSpacing(v)}\n")
+        self.srtio.write(f"# text = {self.sentWSpacing(v)}\n")
 
         for w in v:
             if "@form" not in w:
