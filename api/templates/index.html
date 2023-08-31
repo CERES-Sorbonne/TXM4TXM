@@ -13,16 +13,18 @@
 </head>
 
 <body>
+
 <div class="main">
     <form method="post" enctype="multipart/form-data" action="/upload" id="myForm" class="center">
 
         <div class="inputwrapper">
-            <input type="file" name="files" id="files" class="inputfile" accept="text/xml" multiple onchange="listoffiles(this)">
+            <input type="file" name="files" id="files" class="inputfile" accept="text/xml" multiple
+                   onchange="listoffiles(this)">
             <div class="listoffiles" id="listoffiles" onclick="document.getElementById('files').click()"></div>
         </div>
 
         <div class="level1checkbox" id="pivot1"
-                onchange="activatesubmit();">
+             onchange="activatesubmit();">
             <input type="checkbox" id="pivot" name="output" value="pivot" class="myInput activateSubmit">
             <label for="pivot">Pivot</label>
         </div>
@@ -77,8 +79,9 @@
                            aria-expanded="false" state="off"> <label for="txm-whitespace">@whitespace</label>
                 </div>
                 <div class="myDivInput">
-                    <input type="checkbox" id="txm-text" name="output" value="txm-text" class="myInput" checked
-                           disabled aria-expanded="false" state="off"> <label for="txm-text">#text</label>
+                    <input type="checkbox" id="txm-text" name="output" value="txm-text" class="myInput mandatory"
+                           checked disabled aria-expanded="false"
+                           state="off"> <label for="txm-text" class="mandatory">#text</label>
                 </div>
             </div>
         </div>
@@ -133,8 +136,9 @@
                            aria-expanded="false" state="off"> <label for="json-whitespace">@whitespace</label>
                 </div>
                 <div class="myDivInput">
-                    <input type="checkbox" id="json-text" name="output" value="json-text" class="myInput" checked
-                           disabled aria-expanded="false" state="off"> <label for="json-text">#text</label>
+                    <input type="checkbox" id="json-text" name="output" value="json-text" class="myInput mandatory"
+                           checked disabled aria-expanded="false"
+                           state="off"> <label for="json-text" class="mandatory">#text</label>
                 </div>
             </div>
         </div>
@@ -145,12 +149,14 @@
             <label for="conllu">CoNLL-U</label>
             <div class="level2checkbox activateSubmit" id="conllu2" aria-expanded="false" state="off">
                 <div class="myDivInput">
-                    <input type="checkbox" id="conllu-id" name="output" value="conllu-id" class="myInput" checked
-                           disabled aria-expanded="false" state="off"> <label for="conllu-id">ID</label>
+                    <input type="checkbox" id="conllu-id" name="output" value="conllu-id" class="myInput mandatory"
+                           checked disabled aria-expanded="false"
+                           state="off"> <label for="conllu-id" class="mandatory">ID</label>
                 </div>
                 <div class="myDivInput">
-                    <input type="checkbox" id="conllu-form" name="output" value="conllu-form" class="myInput" checked
-                           disabled aria-expanded="false" state="off"> <label for="conllu-form">FORM</label>
+                    <input type="checkbox" id="conllu-form" name="output" value="conllu-form" class="myInput mandatory"
+                           checked disabled aria-expanded="false"
+                           state="off"> <label for="conllu-form" class="mandatory">FORM</label>
                 </div>
                 <div class="myDivInput">
                     <input type="checkbox" id="conllu-lemma" name="output" value="conllu-lemma" class="myInput"
@@ -187,58 +193,58 @@
             </div>
         </div>
 
-         <div class="level1checkbox" id="hyperbase1">
+        <div class="level1checkbox" id="hyperbase1">
             <input type="checkbox" id="hyperbase" name="output" value="hyperbase" class="myInput"
                    onchange="do_expand(this, document.getElementById('hyperbase2'));">
             <label for="hyperbase">Hyperbase</label>
             <div class="level2checkbox activateSubmit" id="hyperbase2" aria-expanded="false" state="off">
                 <div class="myDivInput">
                     <input type="checkbox" id="hyperbase-id" name="output" value="hyperbase-id" class="myInput"
-                           aria-expanded="false" state="off"> <label for="hyperbase-id">@id</label>
+                           aria-expanded="false" state="off"> <label for="hyperbase-id">id</label>
                 </div>
                 <div class="myDivInput">
-                    <input type="checkbox" id="hyperbase-form" name="output" value="hyperbase-form" class="myInput"
-                           aria-expanded="false" state="off"> <label for="hyperbase-form">@form</label>
+                    <input type="checkbox" id="hyperbase-lemma" name="output" value="hyperbase-lemma"
+                           class="myInput manualTagging1" aria-expanded="false"
+                           state="off"> <label for="hyperbase-lemma" class="manualTagging1">lemma</label>
                 </div>
                 <div class="myDivInput">
-                    <input type="checkbox" id="hyperbase-lemma" name="output" value="hyperbase-lemma" class="myInput"
-                           aria-expanded="false" state="off"> <label for="hyperbase-lemma">@lemma</label>
-                </div>
-                <div class="myDivInput">
-                    <input type="checkbox" id="hyperbase-pos" name="output" value="hyperbase-pos" class="myInput"
-                           aria-expanded="false" state="off"> <label for="hyperbase-pos">@pos</label>
+                    <input type="checkbox" id="hyperbase-pos" name="output" value="hyperbase-pos"
+                           class="myInput manualTagging1" aria-expanded="false"
+                           state="off"> <label for="hyperbase-pos" class="manualTagging1">pos</label>
                 </div>
                 <div class="myDivInput">
                     <input type="checkbox" id="hyperbase-xpos" name="output" value="hyperbase-xpos" class="myInput"
-                           aria-expanded="false" state="off"> <label for="hyperbase-xpos">@xpos</label>
+                           aria-expanded="false" state="off"> <label for="hyperbase-xpos">xpos</label>
                 </div>
                 <div class="myDivInput">
                     <input type="checkbox" id="hyperbase-feats" name="output" value="hyperbase-feats" class="myInput"
-                           aria-expanded="false" state="off"> <label for="hyperbase-feats">@feats</label>
+                           aria-expanded="false" state="off"> <label for="hyperbase-feats">feats</label>
                 </div>
                 <div class="myDivInput">
                     <input type="checkbox" id="hyperbase-head" name="output" value="hyperbase-head" class="myInput"
-                           aria-expanded="false" state="off"> <label for="hyperbase-head">@head</label>
+                           aria-expanded="false" state="off"> <label for="hyperbase-head">head</label>
                 </div>
                 <div class="myDivInput">
                     <input type="checkbox" id="hyperbase-deprel" name="output" value="hyperbase-deprel" class="myInput"
-                           aria-expanded="false" state="off"> <label for="hyperbase-deprel">@deprel</label>
+                           aria-expanded="false" state="off"> <label for="hyperbase-deprel">deprel</label>
                 </div>
                 <div class="myDivInput">
                     <input type="checkbox" id="hyperbase-deps" name="output" value="hyperbase-deps" class="myInput"
-                           aria-expanded="false" state="off"> <label for="hyperbase-deps">@deps</label>
+                           aria-expanded="false" state="off"> <label for="hyperbase-deps">deps</label>
                 </div>
                 <div class="myDivInput">
                     <input type="checkbox" id="hyperbase-misc" name="output" value="hyperbase-misc" class="myInput"
-                           aria-expanded="false" state="off"> <label for="hyperbase-misc">@misc</label>
+                           aria-expanded="false" state="off"> <label for="hyperbase-misc">misc</label>
                 </div>
                 <div class="myDivInput">
-                    <input type="checkbox" id="hyperbase-whitespace" name="output" value="hyperbase-whitespace" class="myInput"
-                           aria-expanded="false" state="off"> <label for="hyperbase-whitespace">@whitespace</label>
+                    <input type="checkbox" id="hyperbase-whitespace" name="output" value="hyperbase-whitespace"
+                           class="myInput"
+                           aria-expanded="false" state="off"> <label for="hyperbase-whitespace">whitespace</label>
                 </div>
                 <div class="myDivInput">
-                    <input type="checkbox" id="hyperbase-text" name="output" value="hyperbase-text" class="myInput" checked
-                           disabled aria-expanded="false" state="off"> <label for="hyperbase-text">#text</label>
+                    <input type="checkbox" id="hyperbase-text" name="output" value="hyperbase-text"
+                           class="myInput mandatory" checked disabled aria-expanded="false"
+                           state="off"> <label for="hyperbase-text" class="mandatory">text</label>
                 </div>
             </div>
         </div>
@@ -248,6 +254,65 @@
         </div>
 
     </form>
+
+    <div class="FAQ">
+        <h2>Comment utiliser TXM4TXM ?</h2>
+
+        <p>
+            Pour utiliser TXM4TXM, vous devez sélectionner les fichiers XML que vous désirez traiter, puis choisir les
+            exports que vous désirez.
+        </p>
+        <p>
+            Lorsque vous sélectionnerez un export, les options disponibles pour celui-ci s'afficheront.
+        </p>
+        <p>
+            Selon les exports, les étiquettes disponibles seront différentes, et certaines seront obligatoires.
+            (en <x class="mandatory">vert</x>)
+        </p>
+        <p>
+            Les étiquettes en <x class="manualTagging1">rouge</x> sont des étiquettes qui ne sont pas
+            obligatoires, mais qui ont un intéret particulier pour l'export en question.
+        </p>
+        <p>
+            Les étiquettes précédées d'un "@" sont des étiquettes qui seront exportées en tant qu'attributs. Et celles
+            précédées d'un "#" seront exportées en tant que texte au sein de la balise. Cette notation est issue de la
+            librairie xmltodict et est utilisée pour le passage de XML à JSON.
+        </p>
+
+
+
+        <ul>
+            <li>
+                L'export "Pivot" est le résultat intermédiaire produit afin de proposer de multiples exports, il permet
+                alors de regénérer de prochains exports en s'affranchissant de quelques étapes. <br/>
+                Vous ne pourrez pas choisir d'étiquettes directement pour ce dernier, mais il contiendra l'ensemble des
+                étiquettes sélectionnées pour les autres imports. Si vous désirez un même format, mais avec des balises
+                spécifiques, utilisez l'export "JSON".
+            </li>
+            <li>
+                L'export pour TXM vous fournira des XMLs reprenant au plus proche la structure originale. <br/>
+                Selon les annotations que vous choisirez, les mots seront contenus individuellement dans une balise &lt
+                w &gt avec comme attributs les étiquettes rattachées au mot.
+            </li>
+            <li>
+                L'export JSON est très similaire au "Pivot", cet export ne se différencira que dans les étiquettes, vous
+                pouvez n'en choisir que quelques-unes.
+            </li>
+            <li>
+                L'export CoNLL-U vous permet d'obtenir les phrases/paragraphes uniquement, mais au même format que les
+                corpus d'Universal Dependencies. <br/>
+                Vous permettant alors de les exploiter dans certains logiciels, comme GREW-Match qui permet d'effectuer
+                des recherches sur les relations de dépendance avec les mots, ou encore LIMA. <br/>
+                Si vous ne savez pas quelles étiquettes choisir, le mieux et de les cocher toutes.
+            </li>
+            <li>
+                Pour utiliser une annotation manuelle dans Hyperbase, vous devez au minimum sélectionner les étiquettes
+                "lemma" et "pos". <br/>
+                À l'instar de l'export CoNLL-U, cet export ne prendra que les phrases/paragraphes.
+            </li>
+        </ul>
+    </div>
+
 </div>
 </body>
 </html>
