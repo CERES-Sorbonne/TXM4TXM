@@ -30,6 +30,8 @@ def to_meta(s: str) -> str:
 
 
 class HyperbaseTransformer(DefaultTransformer):
+    supTags = ('@id', '@xpos', '@feats', '@head', '@deprel', '@deps', '@misc', '@whitespace')
+
     def __init__(
         self,
         tags: List[List[Tag]] | List[Tag] = None,
@@ -96,7 +98,12 @@ class HyperbaseTransformer(DefaultTransformer):
                     w["@form"] = w["#text"]
 
                 try:
-                    self.srtio.write(f"{w['@form']}\t{w['@pos']}\t{w['@lemma']}\n")
+                    self.srtio.write(f"{w['@form']}\t{w['@pos']}")
+                    for key in self.supTags:
+                        if key in w:
+                            value = w[key] if w[key] else "_"
+                            self.srtio.write(f":{value}")
+                    self.srtio.write(f"\t{w['@lemma']}\n")
                 except KeyError:
                     print(w)
                     raise
