@@ -7,16 +7,36 @@ import spacy
 from transformers.epurer import epurer
 from transformers.enums import Tag
 
+tupfields = (
+    "@id",
+    "@form",
+    "@lemma",
+    "@upos",
+    "@xpos",
+    "@feats",
+    "@head",
+    "@deprel",
+    "@deps",
+    "@misc",
+)
+
 
 class DefaultTransformer(ABC):
+    @property
+    def tupfields(self) -> tuple[str, ...]:
+        return tupfields
+
     def __init__(
-            self,
-            tags: List[List[Tag]] | List[Tag] = None,
-            pivot_tags: List[List[Tag]] | List[Tag] = None,
-            nlp: spacy.language.Language = None
+        self,
+        tags: List[List[Tag]] | List[Tag] = None,
+        pivot_tags: List[List[Tag]] | List[Tag] = None,
+        nlp: spacy.language.Language = None,
     ) -> None:
 
-        self.sent_id = 0
+        self.sent_id_n = 0
+        self.sent_id_text = None
+        self.sent_id = None
+
         self.pivot_tags = pivot_tags
 
         if nlp is None:
@@ -45,8 +65,13 @@ class DefaultTransformer(ABC):
     def iterateonpivot(self, pivot: dict | list) -> None:
         if isinstance(pivot, list):
             for x in pivot:
-                self.iterateonpivot(x)
+                if isinstance(x, list | dict):
+                    self.iterateonpivot(x)
             return
+
+        if isinstance(pivot, str):
+            print(pivot)
+            raise ValueError("pivot is a string")
 
         for k, v in pivot.items():
             if not isinstance(v, list | dict):
@@ -61,11 +86,32 @@ class DefaultTransformer(ABC):
     def w_process(self, v):
         raise NotImplementedError
 
-    def idsent(self, sentid: int | str | None = None) -> None:
+    def idsent(self, sentid: int | str | None = None) -> str | int:
         if sentid:
             if isinstance(sentid, int):
-                self.sent_id = sentid
+                self.sent_id_n = sentid
         else:
-            self.sent_id += 1
+            self.sent_id_n += 1
 
-        #self.srtio.write(f"# sent_id = {self.sent_id}\n")
+        self.sent_id = f"{self.sent_id_text}-{self.sent_id_n}"
+
+        return self.sent_id
+
+    @staticmethod
+    def spaceAfter(w: dict) -> bool:
+        return w["@misc"] != "SpaceAfter=No"
+
+    def textWSpacing(self, w: dict) -> str:
+        return w["#text"] + " " if self.spaceAfter(w) else w["#text"]
+
+    def sentWSpacing(self, sent: list[dict]) -> str:
+        return "".join([self.textWSpacing(w) for w in sent])
+
+    @staticmethod
+    def sentWOSpacing(sent: list[dict]) -> str:
+        return " ".join([w["#text"] for w in sent])
+
+    def sentWMaxSpacing(self, sent: list[dict]) -> str:
+        return (
+            self.sentWSpacing(sent) if "@misc" in sent[0] else self.sentWOSpacing(sent)
+        )

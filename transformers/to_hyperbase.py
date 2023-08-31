@@ -52,6 +52,7 @@ class HyperbaseTransformer(DefaultTransformer):
         pivot = self.epurer(pivot)
 
         meta = pivot.pop("TEI-EXTRACTED-METADATA")
+        print(meta)
 
         self.metaline = StringIO()
         self.metaline.write("**** ")
@@ -82,8 +83,7 @@ class HyperbaseTransformer(DefaultTransformer):
             v = [v]
 
         if "@pos" not in v[0] or "@lemma" not in v[0]:
-            sent = [w["#text"] for w in v]
-            sent = " ".join(sent)
+            sent = self.sentWMaxSpacing(v)
             par = remove_par(sent).strip()
 
             if par:
@@ -110,5 +110,4 @@ class HyperbaseTransformer(DefaultTransformer):
             self.srtio.write("\n\n")
 
     def idsent(self, sentid: int | str | None = None) -> None:
-        super().idsent(sentid)
-        self.srtio.write(self.metaline.getvalue() + f"*sent_{self.sent_id}\n")
+        self.srtio.write(self.metaline.getvalue() + f"*sent_{super().idsent(sentid)}\n")

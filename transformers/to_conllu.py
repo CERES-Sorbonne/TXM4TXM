@@ -8,14 +8,9 @@ from transformers.enums import Tag
 from transformers.default import DefaultTransformer
 
 allfields = "ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC"
-tupfields = ("@id", "@form", "@lemma", "@upos", "@xpos", "@feats", "@head", "@deprel", "@deps", "@misc")
 
 
 class CONLLUTransformer(DefaultTransformer):
-    @property
-    def tupfields(self) -> tuple[str, ...]:
-        return tupfields
-
     @property
     def allfields(self) -> str:
         return allfields
@@ -37,21 +32,25 @@ class CONLLUTransformer(DefaultTransformer):
         self.srtio.write(f"# global.columns = {self.allfields}\n")
 
     def idsent(self, sentid: int | str | None = None) -> None:
-        super().idsent(sentid)
-        self.srtio.write(f"# sent_id = {self.sent_id}\n")
+        self.srtio.write(f"# sent_id = {super().idsent(sentid)}\n")
 
     def w_process(self, v: list) -> None:
         self.idsent()
 
-        sent = [w["#text"] for w in v]  #  if isinstance(w, dict) and "#text" in w]
-        sent = " ".join(sent)
-        self.srtio.write(f"# text = {sent}\n")
+        self.srtio.write(f"# text = {self.sentWMaxSpacing(v)}\n")
 
         for w in v:
             if "@form" not in w:
                 w["@form"] = w["#text"]
 
-            self.srtio.write("\t".join([str(w[field]) if field in w and w[field] else "_" for field in self.tupfields]))
+            self.srtio.write(
+                "\t".join(
+                    [
+                        str(w[field]) if field in w and w[field] else "_"
+                        for field in self.tupfields
+                    ]
+                )
+            )
             self.srtio.write("\n")
 
         self.srtio.write("\n")
