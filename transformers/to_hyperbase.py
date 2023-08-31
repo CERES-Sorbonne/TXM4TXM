@@ -1,15 +1,11 @@
 from io import StringIO
-from pathlib import Path
 from typing import List
 
 import re
-import xmltodict
 import spacy
-from bs4 import BeautifulSoup
 
 from transformers.enums import Tag
 from transformers.default import DefaultTransformer
-from transformers.utils import File
 
 
 def remove_par(s: str) -> str:
