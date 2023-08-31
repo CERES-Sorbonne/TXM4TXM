@@ -185,6 +185,10 @@ class ZipCreator(File):
                     stem = stem[:-6]
                     type_ = "pivot"
 
+                if stem.endswith(".hyperbase"):
+                    stem = stem[:-10]
+                    type_ = "hyperbase"
+
 
                 if type_ not in types_dict:
                     types_dict[type_] = [f]

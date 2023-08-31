@@ -25,12 +25,28 @@ def remove_par(s: str) -> str:
     return s
 
 
-def to_meta(s: str) -> str:
-    return re.sub(r"\s", "-", s)
+def feats2meta(feats: str) -> str:
+    if feats == "_" or not feats:
+        return "_"
+
+    feats = feats.split("|")
+    feats = [e.split("=")[1] for e in feats]
+    feats = [e.replace(" ", "-") for e in feats]
+
+    return f":{':'.join(feats) if feats else '_'}"
+
+
 
 
 class HyperbaseTransformer(DefaultTransformer):
-    supTags = ('@id', '@xpos', '@feats', '@head', '@deprel', '@deps', '@misc', '@whitespace')
+    supTags = (
+        '@id',
+        '@xpos',
+        # '@feats',
+        '@head',
+        '@deprel',
+        '@deps'
+    )
 
     def __init__(
         self,
@@ -52,22 +68,21 @@ class HyperbaseTransformer(DefaultTransformer):
         pivot = self.epurer(pivot)
 
         meta = pivot.pop("TEI-EXTRACTED-METADATA")
-        print(meta)
 
         self.metaline = StringIO()
         self.metaline.write("**** ")
 
         for k, v in meta.items():
             if isinstance(v, str):
-                self.metaline.write(f"*{k.lower()}_{v} ")
+                self.metaline.write(f"*{k.lower()}_{self.for_meta_field(v)} ")
 
             if k == "Personnages":
                 for i, p in enumerate(v):
-                    self.metaline.write(f"*personnage-{i}_{p['Id']} ")
+                    self.metaline.write(f"*personnage-{i}_{self.for_meta_field(p['Id'])} ")
 
             if k == "Responsables":
                 for r in v:
-                    self.metaline.write(f"*responsable-{r['Role']}_{r['Name']} ")
+                    self.metaline.write(f"*responsable-{self.for_meta_field(r['Role'])}_{self.for_meta_field(r['Name'])} ")
 
         # self.srtio.write(f"{metaline.getvalue().strip()}")
 
@@ -82,6 +97,8 @@ class HyperbaseTransformer(DefaultTransformer):
         if not isinstance(v, list):
             v = [v]
 
+
+
         if "@pos" not in v[0] or "@lemma" not in v[0]:
             sent = self.sentWSpacing(v)
             par = remove_par(sent).strip()
@@ -94,15 +111,30 @@ class HyperbaseTransformer(DefaultTransformer):
             self.idsent()
             for w in v:
 
-                if "@form" not in w:
-                    w["@form"] = w["#text"]
+                if "#text" not in w:
+                    try:
+                        w["#text"] = w["@form"]
+                    except KeyError:
+                        print("Impossible de trouver le texte du mot")
+                        print(w)
+                        raise
 
                 try:
-                    self.srtio.write(f"{w['@form']}\t{w['@pos']}")
+                    self.srtio.write(f"{w['#text']}\t{w['@pos']}")
+
                     for key in self.supTags:
-                        if key in w:
+                        if key not in w:
+                            continue
+
+                        if key == "@feats" and False:  # Maybe they should be at the end of the line
+                            self.srtio.write(feats2meta(w[key]))
+                        else:
                             value = w[key] if w[key] else "_"
-                            self.srtio.write(f":{value}")
+                            self.srtio.write(f":{self.for_meta_field(value)}")
+
+                    if "@feats" in w:
+                        self.srtio.write(feats2meta(w["@feats"]))
+
                     self.srtio.write(f"\t{w['@lemma']}\n")
                 except KeyError:
                     print(w)
