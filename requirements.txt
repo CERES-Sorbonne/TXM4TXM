@@ -1,7 +1,10 @@
-spacy
+spacy~=3.6.0
 fr_core_news_sm @https://github.com/explosion/spacy-models/releases/download/fr_core_news_sm-3.6.0/fr_core_news_sm-3.6.0.tar.gz
-xmltodict
+xmltodict~=0.13.0
+beautifulsoup4~=4.12.2
+lxml
 
 uvicorn[standard]
 python-multipart
 fastapi<=0.101.0
+starlette~=0.27.0
