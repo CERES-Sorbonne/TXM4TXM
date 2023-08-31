@@ -114,11 +114,12 @@ class DefaultTransformer(ABC):
     def sentWSpacing(self, sent: list[dict]) -> str:
         return "".join([self.textWSpacing(w) for w in sent])
 
-    @staticmethod
-    def sentWOSpacing(sent: list[dict]) -> str:
-        return " ".join([w["#text"] for w in sent])
+    def text_id_from_title(self, meta: dict) -> None:
+        self.sent_id_text = self.for_meta_field(meta["Titre"])
 
-    def sentWMaxSpacing(self, sent: list[dict]) -> str:
-        return (
-            self.sentWSpacing(sent) if "@misc" in sent[0] else self.sentWOSpacing(sent)
-        )
+    @staticmethod
+    def for_meta_field(s: str | int) -> str:
+        if isinstance(s, int):
+            return str(s)
+
+        return re.sub(r"(\s|[(,.;:?!\[\]\\/{}*&^%$#@+=~`|])+", "-", s).replace('"', "").strip("-")

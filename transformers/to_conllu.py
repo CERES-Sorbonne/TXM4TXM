@@ -60,7 +60,7 @@ class CONLLUTransformer(DefaultTransformer):
             self.srtio.close()
             self.srtio = StringIO()
 
-        pivot.pop("TEI-EXTRACTED-METADATA")
+        self.text_id_from_title(pivot.pop("TEI-EXTRACTED-METADATA"))
         pivot = self.epurer(pivot)
 
         self.iterateonpivot(pivot)
