@@ -1,11 +1,9 @@
-import concurrent.futures
 import json
 from pathlib import Path
 from typing import List
 from copy import deepcopy  # To copy the pivot dict
 
 import spacy
-from tqdm.auto import tqdm
 
 from transformers.enums import Output, MimeType, Tag
 
@@ -17,8 +15,6 @@ from transformers.to_hyperbase import HyperbaseTransformer
 from transformers.utils import File
 from transformers.epurer import epurer
 from multiprocessing import Pool
-
-# print("Number of cpu : ", multiprocessing.cpu_count())
 
 nlp = spacy.load("fr_core_news_sm")
 nlp.max_length = 50000
@@ -53,43 +49,21 @@ def pipeline(
 
     pivot_tags = list(set([tag for tag_list in tags for tag in tag_list]))
 
-    # outputs = []
-
-    # pbar = tqdm(files, desc="Processing files", unit="file")
-    #
-    # for file in pbar:
-    # with concurrent.futures.ThreadPoolExecutor(max_workers=16) as executor:
-    #     futures = (
-    #         executor.submit(file_processing, file, output, tags, pivot_tags, outputs)
-    #         for file in files
-    #     )
-    #
-    #     [future.result() for future in concurrent.futures.as_completed(futures)]
-    #
-    #     # print(outputs)
-    #
-    # return outputs
-    #
-    # procs = []
-    #
-    # for file in files:
-    #     proc = multiprocessing.Process(target=file_processing, args=(file, output, tags, pivot_tags, None))
-    #     procs.append(proc)
-    #     proc.start()
-    #
-    # for proc in procs:
-    #     proc.join()
-    #
-    # return outputs
-
     with Pool(16) as p:
-        # Double esses because lists in a list
-        resultss = p.starmap(file_processing, [(file, output, tags, pivot_tags, None) for file in files])
+        # Double esses because lists are in a list when expected result is a simple list
+        # the starmap is retruning List[List[File]] when the non concurrent version is returning List[File]
+        # we do this to avoid using threads that would write in the same list and that should have to wait for
+        # each other to finish writing. This way, each thread writes in its own list and we concatenate them at the end
+        # to have a single list. Maybe there is a better way to do this, but I don't know it.
+
+        resultss = p.starmap(
+            file_processing,
+            [(file, output, tags, pivot_tags) for file in files]
+        )
         return [result for results in resultss for result in results]
 
 
-
-def file_processing(file, output, tags, pivot_tags, outputs) -> None:  # -> List[File]:
+def file_processing(file, output, tags, pivot_tags) -> List[File]:
     outputs = []
     if not isinstance(file, (File, Path, str)):
         raise ValueError(f"file must be a Path, a File or a str ({type(file) = })")
