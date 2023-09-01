@@ -20,7 +20,7 @@ app.mount("/static", StaticFiles(directory=main_dir / "static"), name="static")
 
 @app.get("/", response_class=HTMLResponse, tags=["main"])
 async def read_root():
-    with open(main_dir / "templates/index.html") as f:
+    with open(main_dir / "templates/index.html", encoding="utf-8") as f:
         return f.read()
 
 
