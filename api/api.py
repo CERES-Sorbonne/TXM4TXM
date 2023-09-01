@@ -43,8 +43,11 @@ async def write_upload(files: List[UploadFile] = File(...), output: List[str] = 
 
     for o in output:
         o = o.split("-")
-        if len(o) == 2:
-            outputs[Output(o[0])].append(Tag(o[1]))
+        try:
+            if len(o) == 2:
+                outputs[Output(o[0])].append(Tag(o[1]))
+        except ValueError:
+            print(f"Seems like {o[0]} has been unchecked, cannot set {o[1]}")
 
     if Output.conllu in outputs:
         outputs[Output.conllu].append(Tag.id)

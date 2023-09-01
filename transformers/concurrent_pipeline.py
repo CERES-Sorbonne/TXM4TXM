@@ -16,6 +16,9 @@ from transformers.to_hyperbase import HyperbaseTransformer
 
 from transformers.utils import File
 from transformers.epurer import epurer
+from multiprocessing import Pool
+
+# print("Number of cpu : ", multiprocessing.cpu_count())
 
 nlp = spacy.load("fr_core_news_sm")
 nlp.max_length = 50000
@@ -50,25 +53,44 @@ def pipeline(
 
     pivot_tags = list(set([tag for tag_list in tags for tag in tag_list]))
 
-    outputs = []
+    # outputs = []
 
     # pbar = tqdm(files, desc="Processing files", unit="file")
     #
     # for file in pbar:
-    with concurrent.futures.ThreadPoolExecutor(max_workers=16) as executor:
-        futures = (
-            executor.submit(file_processing, file, output, tags, pivot_tags, outputs)
-            for file in files
-        )
+    # with concurrent.futures.ThreadPoolExecutor(max_workers=16) as executor:
+    #     futures = (
+    #         executor.submit(file_processing, file, output, tags, pivot_tags, outputs)
+    #         for file in files
+    #     )
+    #
+    #     [future.result() for future in concurrent.futures.as_completed(futures)]
+    #
+    #     # print(outputs)
+    #
+    # return outputs
+    #
+    # procs = []
+    #
+    # for file in files:
+    #     proc = multiprocessing.Process(target=file_processing, args=(file, output, tags, pivot_tags, None))
+    #     procs.append(proc)
+    #     proc.start()
+    #
+    # for proc in procs:
+    #     proc.join()
+    #
+    # return outputs
 
-        [future.result() for future in concurrent.futures.as_completed(futures)]
+    with Pool(16) as p:
+        # Double esses because lists in a list
+        resultss = p.starmap(file_processing, [(file, output, tags, pivot_tags, None) for file in files])
+        return [result for results in resultss for result in results]
 
-        # print(outputs)
-
-    return outputs
 
 
 def file_processing(file, output, tags, pivot_tags, outputs) -> None:  # -> List[File]:
+    outputs = []
     if not isinstance(file, (File, Path, str)):
         raise ValueError(f"file must be a Path, a File or a str ({type(file) = })")
 
@@ -132,4 +154,4 @@ def file_processing(file, output, tags, pivot_tags, outputs) -> None:  # -> List
 
         outputs.append(File(name=file.with_suffix(".hyperbase.txt"), file=hyperbase))
 
-    # return outputs
+    return outputs
