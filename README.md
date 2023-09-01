@@ -41,5 +41,5 @@ You can also visit the `/docs` endpoint to see the documentation of the API.
 The documentation is also available, in a different format, at the `/redoc` endpoint.
 
 ## License
-This project is licensed under the AGPL-3.0 license - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the AGPL-3.0 license - see the [LICENSE.txt](LICENSE.txt) file for details.
 
