@@ -14,7 +14,7 @@ from transformers.to_hyperbase import HyperbaseTransformer
 
 from transformers.utils import File
 from transformers.epurer import epurer
-from multiprocessing import Pool
+from multiprocessing import Pool, cpu_count
 
 nlp = spacy.load("fr_core_news_sm")
 nlp.max_length = 50000
@@ -49,12 +49,12 @@ def pipeline(
 
     pivot_tags = list(set([tag for tag_list in tags for tag in tag_list]))
 
-    with Pool(16) as p:
-        # Double esses because lists are in a list when expected result is a simple list
-        # the starmap is retruning List[List[File]] when the non concurrent version is returning List[File]
-        # we do this to avoid using threads that would write in the same list and that should have to wait for
-        # each other to finish writing. This way, each thread writes in its own list and we concatenate them at the end
-        # to have a single list. Maybe there is a better way to do this, but I don't know it.
+    with Pool(cpu_count()) as p:
+        """Double esses because lists are in a list when expected result is a simple list
+        the starmap is retruning List[List[File]] when the non concurrent version is returning List[File]
+        we do this to avoid using threads that would write in the same list and that should have to wait for
+        each other to finish writing. This way, each thread writes in its own list and we concatenate them at the end
+        to have a single list. Maybe there is a better way to do this, but I don't know it."""
 
         resultss = p.starmap(
             file_processing,
