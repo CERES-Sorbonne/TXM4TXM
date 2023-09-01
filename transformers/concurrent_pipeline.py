@@ -23,7 +23,7 @@ nlp.max_length = 50000
 
 def pipeline(
     files: List[File],
-    outputs: List[Output] = None,
+    output: List[Output] = None,
     tags: List[List[Tag] | Tag] = None,
 ) -> List[File]:
     """Pipeline de transformation des fichiers
@@ -32,44 +32,43 @@ def pipeline(
     (id, form, lemma, pos, text, etc.)
     """
 
-    if outputs is None:
+    if output is None:
         output = [Output.json]
 
     if tags is None:
-        tags = [[Tag.id, Tag.form, Tag.lemma, Tag.pos, Tag.text] for _ in outputs]
+        tags = [[Tag.id, Tag.form, Tag.lemma, Tag.pos, Tag.text] for _ in output]
 
     if isinstance(tags[0], Tag):
-        tags = [tags for _ in outputs]
+        tags = [tags for _ in output]
 
-    if len(tags) != len(outputs):
+    if len(tags) != len(output):
         if len(tags) == 1:
-            tags = [tags[0] for _ in outputs]
+            tags = [tags[0] for _ in output]
 
         else:
             raise ValueError("tags must be the same length as files or a single list")
 
     pivot_tags = list(set([tag for tag_list in tags for tag in tag_list]))
 
-    # outputs = []
+    outputs = []
 
     # pbar = tqdm(files, desc="Processing files", unit="file")
     #
     # for file in pbar:
-    with concurrent.futures.ProcessPoolExecutor() as executor:
-        futures = (executor.submit(file_processing, file, outputs, tags, pivot_tags) for file in files)
+    with concurrent.futures.ThreadPoolExecutor(max_workers=16) as executor:
+        futures = (
+            executor.submit(file_processing, file, output, tags, pivot_tags, outputs)
+            for file in files
+        )
 
-        res = [future.result() for future in concurrent.futures.as_completed(futures)]
+        [future.result() for future in concurrent.futures.as_completed(futures)]
 
-        print(res)
+        # print(outputs)
 
-    return res
-
-
+    return outputs
 
 
-
-def file_processing(file, output, tags, pivot_tags) -> List[File]:
-    outputs = tuple()
+def file_processing(file, output, tags, pivot_tags, outputs) -> None:  # -> List[File]:
     if not isinstance(file, (File, Path, str)):
         raise ValueError(f"file must be a Path, a File or a str ({type(file) = })")
 
@@ -133,4 +132,4 @@ def file_processing(file, output, tags, pivot_tags) -> List[File]:
 
         outputs.append(File(name=file.with_suffix(".hyperbase.txt"), file=hyperbase))
 
-        return outputs
+    # return outputs

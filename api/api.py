@@ -9,6 +9,8 @@ from fastapi.responses import StreamingResponse, HTMLResponse, FileResponse
 from transformers import utils, pipeline
 from transformers.enums import Output, Tag
 
+from transformers import concurrent_pipeline as pipeline
+
 main_dir = Path(__file__).parent
 
 app = FastAPI()
