@@ -3,6 +3,7 @@ fr_core_news_sm @https://github.com/explosion/spacy-models/releases/download/fr_
 xmltodict~=0.13.0
 beautifulsoup4~=4.12.2
 lxml
+tqdm
 
 uvicorn[standard]
 python-multipart

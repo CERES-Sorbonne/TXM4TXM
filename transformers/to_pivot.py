@@ -111,8 +111,8 @@ class PivotTransformer(DefaultTransformer):
         if not isinstance(file, (File, Path, str)):
             raise ValueError(f"file must be a Path, a File or a str ({type(file) = })")
 
-        name = file.name if "name" in file.__dict__ else file[:10] + "..." + file[-10:]
-        print(f"Processing {name}")
+        # name = file.name if "name" in file.__dict__ else file[:10] + "..." + file[-10:]
+        # print(f"Processing {name}")
 
         if isinstance(file, Path):
             with file.open("r", encoding="utf-8") as f:

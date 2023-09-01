@@ -1,8 +1,10 @@
 import json
+from pathlib import Path
 from typing import List
 from copy import deepcopy  # To copy the pivot dict
 
 import spacy
+from tqdm.auto import tqdm
 
 from transformers.enums import Output, MimeType, Tag
 
@@ -49,7 +51,15 @@ def pipeline(
 
     outputs = []
 
-    for file in files:
+    pbar = tqdm(files, desc="Processing files", unit="file")
+
+    for file in pbar:
+        if not isinstance(file, (File, Path, str)):
+            raise ValueError(f"file must be a Path, a File or a str ({type(file) = })")
+
+        name = file.name if "name" in file.__dict__ else file[:10] + "..." + file[-10:]
+        pbar.set_postfix_str(name)
+
         if file.mime_type == MimeType.xml:
             pivot = PivotTransformer(tags=pivot_tags, pivot_tags=pivot_tags, nlp=nlp).transform(file)
         elif file.mime_type == MimeType.json:
