@@ -46,7 +46,7 @@ async def write_upload(files: List[UploadFile] = File(...), output: List[str] = 
         try:
             if len(o) == 2:
                 outputs[Output(o[0])].append(Tag(o[1]))
-        except ValueError:
+        except KeyError:
             print(f"Seems like {o[0]} has been unchecked, cannot set {o[1]}")
 
     if Output.conllu in outputs:

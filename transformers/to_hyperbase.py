@@ -27,7 +27,7 @@ def remove_par(s: str) -> str:
 
 def feats2meta(feats: str) -> str:
     if feats == "_" or not feats:
-        return "_"
+        return ""
 
     feats = feats.split("|")
     feats = [e.split("=")[1] for e in feats]
@@ -84,7 +84,9 @@ class HyperbaseTransformer(DefaultTransformer):
                 for r in v:
                     self.metaline.write(f"*responsable-{self.for_meta_field(r['Role'])}_{self.for_meta_field(r['Name'])} ")
 
-        # self.srtio.write(f"{metaline.getvalue().strip()}")
+        # self.srtio.write(f"{self.metaline.getvalue().strip()}\n\n")
+        self.srtio.write(f"{self.metaline.getvalue().strip()}\n")
+
 
         self.iterateonpivot(pivot)
 
@@ -109,7 +111,7 @@ class HyperbaseTransformer(DefaultTransformer):
 
         else:
             self.idsent()
-            for w in v:
+            for i, w in enumerate(v, 1):
 
                 if "#text" not in w:
                     try:
@@ -119,9 +121,15 @@ class HyperbaseTransformer(DefaultTransformer):
                         print(w)
                         raise
 
+                lenv = len(v)
+
+                if i == lenv or (i > lenv-2 and w["#text"] in (".", "?", "!", "...")):
+                    w["@pos"] = "SENT" if w["@pos"] == "PUNCT" else f"SENT:{w['@pos']}"
+
                 try:
                     self.srtio.write(f"{w['#text']}\t{w['@pos']}")
 
+                    # if w["@pos"] != "SENT":
                     for key in self.supTags:
                         if key not in w:
                             continue
@@ -139,7 +147,8 @@ class HyperbaseTransformer(DefaultTransformer):
                 except KeyError:
                     print(w)
                     raise
-            self.srtio.write("\n\n")
+            # self.srtio.write("\n\n")
 
     def idsent(self, sentid: int | str | None = None) -> None:
+        return  # Try to diminish the size of the file because it's too big for Hyperbase
         self.srtio.write(self.metaline.getvalue() + f"*sent_{super().idsent(sentid)}\n")
