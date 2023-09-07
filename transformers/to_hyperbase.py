@@ -147,7 +147,7 @@ class HyperbaseTransformer(DefaultTransformer):
                 except KeyError:
                     print(w)
                     raise
-            # self.srtio.write("\n\n")
+            self.srtio.write("__PARA__\tSENT\t__PARA__\n\n")
 
     def idsent(self, sentid: int | str | None = None) -> None:
         return  # Try to diminish the size of the file because it's too big for Hyperbase
