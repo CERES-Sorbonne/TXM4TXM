@@ -41,7 +41,7 @@ class PivotTransformer(DefaultTransformer):
 
         for k, v in e.items():
             if isinstance(v, str):
-                if not "@" in k:
+                if "@" not in k:
                     to_update = self.str_to_pivot(v)
                     if k != "#text":
                         to_update = {k: to_update}
@@ -117,13 +117,17 @@ class PivotTransformer(DefaultTransformer):
         if isinstance(file, Path):
             with file.open("r", encoding="utf-8") as f:
                 text = f.read()
-                text = re.sub(r"(\s)\1+", r"\g<1>", text).strip()  # Dégémination espaces
 
         elif isinstance(file, str):
             text = file
 
         elif isinstance(file, File):
             text = file.content
+
+        text = re.sub(
+            r"(\s)\1+", r"\g<1>", text
+        ).strip()  # Dégémination espaces
+        text = re.sub(r'<hi rend="\w+">([^<]+)</hi>', r"\g<1>", text)
 
         self.meta(text)
 
@@ -145,11 +149,11 @@ class PivotTransformer(DefaultTransformer):
         #     return self._meta
 
         soup = BeautifulSoup(file, "xml")
-        
+
         TEI = soup.find("TEI")
         teiHeader = TEI.find("teiHeader")
         text = TEI.find("text")
-        
+
         self._meta = {
             "Titre": teiHeader.find("title").text,
             "Edition": teiHeader.find("edition").text if teiHeader.find("edition") else "N/A",
@@ -163,7 +167,7 @@ class PivotTransformer(DefaultTransformer):
             "Source": elaguer(teiHeader.find("sourceDesc").text),
         }
         self._meta = {k: v.strip() for k, v in self._meta.items()}
-        
+
         personnages = text.find("castList").findAll("castItem")
         personnages = [
             {"Id": p.attrs["xml:id"], "Display": elaguer(p.text)}
@@ -172,10 +176,11 @@ class PivotTransformer(DefaultTransformer):
             for p in personnages
         ]
         self._meta["Personnages"] = personnages
-        
+
         responsables = teiHeader.findAll("respStmt")
         responsables = [
-            {"Name": r.find("name").text, "Role": r.find("resp").text} for r in responsables
+            {"Name": r.find("name").text, "Role": r.find("resp").text}
+            for r in responsables
         ]
         self._meta["Responsables"] = responsables
 
