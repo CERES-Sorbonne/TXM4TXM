@@ -19,15 +19,12 @@ app = FastAPI(root_path="/txm4txm")
 
 host = os.getenv("TXM4TXM_SERVER", "")
 
-app.mount(f"{host}/static", StaticFiles(directory=main_dir / "static"), name="static")
+app.mount("/static", StaticFiles(directory=main_dir / "static"), name="static")
 templates = Jinja2Templates(directory=os.path.join(main_dir, "templates"))
 
 
 @app.get("/", response_class=HTMLResponse, tags=["main"])
 async def read_root():
-    # with open(main_dir / "templates/index.html", encoding="utf-8") as f:
-    #     return f.read()
-
     return templates.TemplateResponse("index.html", {"request": {}, "host": host})
 
 
