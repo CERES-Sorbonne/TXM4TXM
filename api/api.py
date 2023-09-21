@@ -15,7 +15,7 @@ from transformers import concurrent_pipeline as pipeline
 
 main_dir = Path(__file__).parent
 
-app = FastAPI()
+app = FastAPI(root_path="/txm4txm")
 
 host = os.getenv("TXM4TXM_SERVER", "")
 
@@ -31,7 +31,7 @@ async def read_root():
     return templates.TemplateResponse("index.html", {"request": {}, "host": host})
 
 
-@app.post(f"{host}/upload", tags=["main"], response_class=FileResponse)
+@app.post("/upload", tags=["main"], response_class=FileResponse)
 async def write_upload(files: List[UploadFile] = File(...), output: List[str] = Form(...)):
     outputs: dict[Output, list[Tag]]
     output_types: list[Output]
