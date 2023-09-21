@@ -31,7 +31,7 @@ async def read_root():
     return templates.TemplateResponse("index.html", {"request": {}, "host": host})
 
 
-@app.post("/upload", tags=["main"], response_class=FileResponse)
+@app.post(f"{host}/upload", tags=["main"], response_class=FileResponse)
 async def write_upload(files: List[UploadFile] = File(...), output: List[str] = Form(...)):
     outputs: dict[Output, list[Tag]]
     output_types: list[Output]
