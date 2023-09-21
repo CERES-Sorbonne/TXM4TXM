@@ -19,7 +19,7 @@ app = FastAPI(root_path="/txm4txm")
 
 host = os.getenv("TXM4TXM_SERVER", "")
 
-app.mount("/static", StaticFiles(directory=main_dir / "static"), name="static")
+app.mount(f"{host}/static", StaticFiles(directory=main_dir / "static"), name="static")
 templates = Jinja2Templates(directory=os.path.join(main_dir, "templates"))
 
 
