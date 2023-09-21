@@ -26,7 +26,7 @@ templates = Jinja2Templates(directory=os.path.join(main_dir, "templates"))
 
 @app.get("/", response_class=HTMLResponse, tags=["main"])
 async def read_root():
-    return templates.TemplateResponse("index.html", {"request": {}, "host": host})
+    return templates.TemplateResponse("index.html", {"request": {}, "host": host, "prefix": prefix})
 
 
 @app.post("/upload", tags=["main"], response_class=FileResponse)
