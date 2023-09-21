@@ -1,3 +1,4 @@
+import os
 from io import StringIO
 from typing import List
 from pathlib import Path
@@ -5,6 +6,7 @@ from pathlib import Path
 from fastapi import FastAPI, UploadFile, Form, File
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import StreamingResponse, HTMLResponse, FileResponse
+from starlette.templating import Jinja2Templates
 
 from transformers import utils, pipeline
 from transformers.enums import Output, Tag
@@ -15,13 +17,18 @@ main_dir = Path(__file__).parent
 
 app = FastAPI()
 
+host = os.getenv("TXM4TXM_SERVER", "")
+
 app.mount("/static", StaticFiles(directory=main_dir / "static"), name="static")
+templates = Jinja2Templates(directory=os.path.join(main_dir, "templates"))
 
 
 @app.get("/", response_class=HTMLResponse, tags=["main"])
 async def read_root():
-    with open(main_dir / "templates/index.html", encoding="utf-8") as f:
-        return f.read()
+    # with open(main_dir / "templates/index.html", encoding="utf-8") as f:
+    #     return f.read()
+
+    return templates.TemplateResponse("index.html", {"request": {}, "host": host})
 
 
 @app.post("/upload", tags=["main"], response_class=FileResponse)
