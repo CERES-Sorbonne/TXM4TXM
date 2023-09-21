@@ -15,9 +15,10 @@ from transformers import concurrent_pipeline as pipeline
 
 main_dir = Path(__file__).parent
 
-app = FastAPI(root_path="/txm4txm")
+app = FastAPI()
 
 host = os.getenv("TXM4TXM_SERVER", "")
+prefix = os.getenv("TXM4TXM_PREFIX", "")
 
 app.mount("/static", StaticFiles(directory=main_dir / "static"), name="static")
 templates = Jinja2Templates(directory=os.path.join(main_dir, "templates"))
