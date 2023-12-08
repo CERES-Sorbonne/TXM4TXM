@@ -133,17 +133,25 @@ class PivotTransformer(DefaultTransformer):
 
         text_d = xmltodict.parse(text, attr_prefix="@")
 
+        tei_form = ""
         try:
             texte = text_d["TEI"]["text"]
+            tei_form = "TEI"
         except KeyError:
             try:
                 texte = text_d["tei"]["text"]
+                tei_form = "tei"
             except KeyError:
                 texte = text_d
+                keys_to_put = []
 
         self.replace_text(texte)
 
-        text_d["TEI"]["text"] = texte
+        if tei_form:
+            text_d[tei_form]["text"] = texte
+        else:
+            text_d = texte
+
 
         if self._meta:
             text_d["TEI-EXTRACTED-METADATA"] = self._meta
