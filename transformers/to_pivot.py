@@ -127,31 +127,20 @@ class PivotTransformer(DefaultTransformer):
         text = re.sub(
             r"(\s)\1+", r"\g<1>", text
         ).strip()  # Dégémination espaces
+
         text = re.sub(r'<hi rend="\w+">([^<]+)</hi>', r"\g<1>", text)
 
         self.meta(text)
 
         text_d = xmltodict.parse(text, attr_prefix="@")
 
-        tei_form = ""
         try:
-            texte = text_d["TEI"]["text"]
-            tei_form = "TEI"
+            text_d["TEI"]["text"] = self.replace_text(text_d["TEI"]["text"])
         except KeyError:
             try:
-                texte = text_d["tei"]["text"]
-                tei_form = "tei"
+                text_d["tei"]["text"] = self.replace_text(text_d["tei"]["text"])
             except KeyError:
-                texte = text_d
-                keys_to_put = []
-
-        self.replace_text(texte)
-
-        if tei_form:
-            text_d[tei_form]["text"] = texte
-        else:
-            text_d = texte
-
+                text_d = self.replace_text(text_d)
 
         if self._meta:
             text_d["TEI-EXTRACTED-METADATA"] = self._meta
@@ -163,7 +152,7 @@ class PivotTransformer(DefaultTransformer):
         # if self._meta is not None:
         #     return self._meta
 
-        soup = BeautifulSoup(file, "lxml")
+        soup = BeautifulSoup(file, "xml")
         self._meta = {}
 
         TEI = soup.find("TEI")
