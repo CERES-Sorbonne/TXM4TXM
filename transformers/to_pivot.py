@@ -148,25 +148,30 @@ class PivotTransformer(DefaultTransformer):
         # if self._meta is not None:
         #     return self._meta
 
-        soup = BeautifulSoup(file, "xml")
+        soup = BeautifulSoup(file, "lxml")
+        self._meta = {}
 
         TEI = soup.find("TEI")
-        teiHeader = TEI.find("teiHeader")
-        text = TEI.find("text")
+        if TEI is not None:
+            teiHeader = TEI.find("teiHeader")
+            text = TEI.find("text")
 
-        self._meta = {
-            "Titre": teiHeader.find("title").text,
-            "Edition": teiHeader.find("edition").text if teiHeader.find("edition") else "N/A",
-            "Publication": teiHeader.find("publicationStmt").find("publisher").text
-            if teiHeader.find("publicationStmt").find("publisher")
-            else "N/A",
-            "Date": teiHeader.find("publicationStmt").find("date").attrs["when"]
-            if teiHeader.find("publicationStmt").find("date")
-            and "when" in teiHeader.find("publicationStmt").find("date").attrs
-            else "N/A",
-            "Source": elaguer(teiHeader.find("sourceDesc").text),
-        }
-        self._meta = {k: v.strip() for k, v in self._meta.items()}
+            self._meta = {
+                "Titre": teiHeader.find("title").text,
+                "Edition": teiHeader.find("edition").text if teiHeader.find("edition") else "N/A",
+                "Publication": teiHeader.find("publicationStmt").find("publisher").text
+                if teiHeader.find("publicationStmt").find("publisher")
+                else "N/A",
+                "Date": teiHeader.find("publicationStmt").find("date").attrs["when"]
+                if teiHeader.find("publicationStmt").find("date")
+                and "when" in teiHeader.find("publicationStmt").find("date").attrs
+                else "N/A",
+                "Source": elaguer(teiHeader.find("sourceDesc").text),
+            }
+            self._meta = {k: v.strip() for k, v in self._meta.items()}
+
+        else:
+            text = soup
 
         personnages = text.find("castList").findAll("castItem")
         personnages = [
