@@ -193,7 +193,7 @@ class PivotTransformer(DefaultTransformer):
                 for r in responsables
             ]
             self._meta["Responsables"] = responsables
-        except (AttributeError, AssertionError):
+        except (AttributeError, AssertionError, UnboundLocalError):
             pass
 
         return self._meta
