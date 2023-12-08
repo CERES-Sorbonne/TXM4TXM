@@ -132,7 +132,14 @@ class PivotTransformer(DefaultTransformer):
         self.meta(text)
 
         text_d = xmltodict.parse(text, attr_prefix="@")
-        texte = text_d["TEI"]["text"]
+
+        try:
+            texte = text_d["TEI"]["text"]
+        except KeyError:
+            try:
+                texte = text_d["tei"]["text"]
+            except KeyError:
+                texte = text_d
 
         self.replace_text(texte)
 
@@ -152,6 +159,10 @@ class PivotTransformer(DefaultTransformer):
         self._meta = {}
 
         TEI = soup.find("TEI")
+
+        if TEI is None:
+            TEI = soup.find("tei")
+
         if TEI is not None:
             teiHeader = TEI.find("teiHeader")
             text = TEI.find("text")
