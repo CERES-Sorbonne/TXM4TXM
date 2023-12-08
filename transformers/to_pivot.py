@@ -171,6 +171,7 @@ class PivotTransformer(DefaultTransformer):
             self._meta = {k: v.strip() for k, v in self._meta.items()}
 
         else:
+            teiHeader = None
             text = soup
 
         try:
