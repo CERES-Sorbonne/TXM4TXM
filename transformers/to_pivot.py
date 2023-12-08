@@ -165,6 +165,9 @@ class PivotTransformer(DefaultTransformer):
 
         if TEI is not None:
             teiHeader = TEI.find("teiHeader")
+            if teiHeader is None:
+                teiHeader = TEI.find("teiheader")
+
             text = TEI.find("text")
 
             self._meta = {
