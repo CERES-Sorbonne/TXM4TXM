@@ -168,19 +168,30 @@ class PivotTransformer(DefaultTransformer):
             if teiHeader is None:
                 teiHeader = TEI.find("teiheader")
 
+            publicationStmt = teiHeader.find("publicationStmt")
+            if publicationStmt is None:
+                publicationStmt = teiHeader.find("publicationstmt")
+
+            sourceDesc = teiHeader.find("sourceDesc")
+            if sourceDesc is None:
+                sourceDesc = teiHeader.find("sourcedesc")
+
+            if sourceDesc is not None:
+                sourceDesc = sourceDesc.text
+
             text = TEI.find("text")
 
             self._meta = {
                 "Titre": teiHeader.find("title").text,
                 "Edition": teiHeader.find("edition").text if teiHeader.find("edition") else "N/A",
-                "Publication": teiHeader.find("publicationStmt").find("publisher").text
-                if teiHeader.find("publicationStmt").find("publisher")
+                "Publication": publicationStmt.find("publisher").text
+                if publicationStmt.find("publisher")
                 else "N/A",
-                "Date": teiHeader.find("publicationStmt").find("date").attrs["when"]
-                if teiHeader.find("publicationStmt").find("date")
-                and "when" in teiHeader.find("publicationStmt").find("date").attrs
+                "Date": publicationStmt.find("date").attrs["when"]
+                if publicationStmt.find("date")
+                and "when" in publicationStmt.find("date").attrs
                 else "N/A",
-                "Source": elaguer(teiHeader.find("sourceDesc").text),
+                "Source": elaguer(sourceDesc),
             }
             self._meta = {k: v.strip() for k, v in self._meta.items()}
 
