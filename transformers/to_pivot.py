@@ -173,20 +173,27 @@ class PivotTransformer(DefaultTransformer):
         else:
             text = soup
 
-        personnages = text.find("castList").findAll("castItem")
-        personnages = [
-            {"Id": p.attrs["xml:id"], "Display": elaguer(p.text)}
-            if "xml:id" in p.attrs
-            else {"Id": "N/A", "Display": p.text}
-            for p in personnages
-        ]
-        self._meta["Personnages"] = personnages
+        try:
+            personnages = text.find("castList").findAll("castItem")
+            personnages = [
+                {"Id": p.attrs["xml:id"], "Display": elaguer(p.text)}
+                if "xml:id" in p.attrs
+                else {"Id": "N/A", "Display": p.text}
+                for p in personnages
+            ]
+            self._meta["Personnages"] = personnages
+        except AttributeError:
+            pass
 
-        responsables = teiHeader.findAll("respStmt")
-        responsables = [
-            {"Name": r.find("name").text, "Role": r.find("resp").text}
-            for r in responsables
-        ]
-        self._meta["Responsables"] = responsables
+        try:
+            responsables = teiHeader.findAll("respStmt")
+            assert responsables is not None
+            responsables = [
+                {"Name": r.find("name").text, "Role": r.find("resp").text}
+                for r in responsables
+            ]
+            self._meta["Responsables"] = responsables
+        except (AttributeError, AssertionError):
+            pass
 
         return self._meta
