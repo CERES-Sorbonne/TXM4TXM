@@ -38,6 +38,17 @@ class Tag(EnumPlus):
     text = "text"
 
 
+class Mode(EnumPlus):
+    spacy = "spacy"
+    treetagger = "treetagger"
+
+
+class Model(EnumPlus):
+    french = "french"
+    old_french = "old-french"
+    french_spoken = "french-spoken"
+
+
 class OutputType(EnumPlus):
     csv = "csv"
     json = "json"

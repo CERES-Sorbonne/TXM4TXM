@@ -1,12 +1,14 @@
+import os
 import re
 from abc import ABC
 from pathlib import Path
 from typing import List
 
 import spacy
+from treetagger import TreeTagger
 
+from transformers.enums import Tag, Model
 from transformers.epurer import epurer
-from transformers.enums import Tag
 
 tupfields = (
     "@id",
@@ -27,11 +29,26 @@ class DefaultTransformer(ABC):
     def tupfields(self) -> tuple[str, ...]:
         return tupfields
 
+    @classmethod
+    def path_to_treetager(self) -> str:
+        p1 = os.popen("echo $TREETAGGER_HOME").read().strip()
+        print(p1)
+
+        tt = os.getenv("TREETAGGER_HOME", None)
+        if tt is None:
+            tt = os.getenv("PATH", "").split(":")
+            tt = [x for x in tt if "treetagger" in x.lower()]
+            if tt == []:
+                print("TREETAGGER_HOME is not set")
+                raise ValueError("TREETAGGER_HOME is not set")
+            tt = tt[0]
+        return tt
+
     def __init__(
-        self,
-        tags: List[List[Tag]] | List[Tag] = None,
-        pivot_tags: List[List[Tag]] | List[Tag] = None,
-        nlp: spacy.language.Language = None,
+            self,
+            tags: List[List[Tag]] | List[Tag] = None,
+            pivot_tags: List[List[Tag]] | List[Tag] = None,
+            nlp: spacy.language.Language | Model | TreeTagger = None,
     ) -> None:
 
         self.sent_id_n = 0
@@ -45,6 +62,16 @@ class DefaultTransformer(ABC):
             self.nlp.max_length = 50000
         else:
             self.nlp = nlp
+
+        if isinstance(self.nlp, Model):
+            print(f"Loading TreeTagger model {self.nlp}...")
+            self.nlp = TreeTagger(
+                path_to_treetagger=self.path_to_treetager(),
+                language=self.nlp,
+            )
+
+        if isinstance(self.nlp, TreeTagger):
+            print(f"Using already loaded TreeTagger model\n{self.nlp}")
 
         if tags is None:
             self.tags = list(Tag)

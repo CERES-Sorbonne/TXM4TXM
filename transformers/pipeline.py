@@ -1,29 +1,45 @@
 import json
+from copy import deepcopy  # To copy the pivot dict
 from pathlib import Path
 from typing import List
-from copy import deepcopy  # To copy the pivot dict
 
 import spacy
 from tqdm.auto import tqdm
+from treetagger import TreeTagger
 
-from transformers.enums import Output, MimeType, Tag
-
-from transformers.to_pivot import PivotTransformer
-from transformers.to_xml import XMLTransformer
+from transformers.default import DefaultTransformer
+from transformers.enums import Output, MimeType, Tag, Mode, Model
+from transformers.epurer import epurer
 from transformers.to_conllu import CONLLUTransformer
 from transformers.to_hyperbase import HyperbaseTransformer
-
+from transformers.to_pivot import PivotTransformer
+from transformers.to_pivotTT import PivotTransformerTT
+from transformers.to_xml import XMLTransformer
 from transformers.utils import File
-from transformers.epurer import epurer
 
-nlp = spacy.load("fr_core_news_sm")
-nlp.max_length = 50000
+global nlp
+
+
+def spacy_load():
+    global nlp
+    nlp = spacy.load("fr_core_news_sm")
+    nlp.max_length = 50000
+
+
+def treetagger_load(model: Model = Model.french):
+    global nlp
+    nlp = TreeTagger(
+        path_to_treetagger=DefaultTransformer.path_to_treetager(),
+        language=model
+    )
 
 
 def pipeline(
     files: List[File],
     output: List[Output] = None,
     tags: List[List[Tag] | Tag] = None,
+    mode: Mode = Mode.spacy,
+    model: Model = Model.french,
 ) -> List[File]:
     """Pipeline de transformation des fichiers
     prend une liste de fichiers en entrée et retourne une liste de ces fichiers transformés
@@ -49,6 +65,15 @@ def pipeline(
 
     pivot_tags = list(set([tag for tag_list in tags for tag in tag_list]))
 
+    if mode == Mode.spacy:
+        global nlp
+        spacy_load()
+    elif mode == Mode.treetagger:
+        global nlp
+        treetagger_load(model=model)
+    else:
+        raise ValueError("mode must be spacy or treetagger")
+
     outputs = []
 
     pbar = tqdm(files, desc="Processing files", unit="file")
@@ -61,7 +86,16 @@ def pipeline(
         pbar.set_postfix_str(name)
 
         if file.mime_type == MimeType.xml:
-            pivot = PivotTransformer(tags=pivot_tags, pivot_tags=pivot_tags, nlp=nlp).transform(file)
+            if mode == Mode.spacy:
+                pivot = PivotTransformer(
+                    tags=pivot_tags, pivot_tags=pivot_tags, nlp=nlp
+                ).transform(file)
+            elif mode == Mode.treetagger:
+                pivot = PivotTransformerTT(
+                    tags=pivot_tags, pivot_tags=pivot_tags, nlp=nlp
+                ).transform(file)
+            else:
+                raise ValueError("mode must be spacy or treetagger")
         elif file.mime_type == MimeType.json:
             pivot = file.content
         else:
