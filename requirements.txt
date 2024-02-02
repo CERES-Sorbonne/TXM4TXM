@@ -4,7 +4,7 @@ xmltodict~=0.13.0  #@https://github.com/lindsay-stevens/xmltodict.git
 beautifulsoup4~=4.12.2
 lxml
 tqdm
-treetagger
+treetagger @https://github.com/miotto/treetagger-python.git
 
 uvicorn[standard]
 python-multipart
