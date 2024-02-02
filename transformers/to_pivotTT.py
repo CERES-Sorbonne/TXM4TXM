@@ -1,12 +1,12 @@
+import re
 from pathlib import Path
 from typing import List
 
-import re
 import xmltodict
 from bs4 import BeautifulSoup
 
-from transformers.enums import Model, Tag
 from transformers.default import DefaultTransformer
+from transformers.enums import Model, Tag
 from transformers.utils import File
 
 
@@ -88,7 +88,6 @@ class PivotTransformerTT(DefaultTransformer):
             temp_lst.append(temp)
 
         return {"w": temp_lst}
-
 
     def transform(self, file: File | Path | str) -> dict:
         text = None
