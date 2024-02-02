@@ -5,6 +5,7 @@ export TXM_PREFIX=/txm4txm
 export TXM_PORT=1818
 export ROOT_PATH=$TXM_PREFIX
 export FOLDER=/home/marceau/GH/TXM4TXM
+export TREETAGGER_HOME=/home/marceau/TreeTagger/
 
 cd $FOLDER || exit
 
