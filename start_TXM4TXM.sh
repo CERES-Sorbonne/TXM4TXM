@@ -47,7 +47,7 @@ source "$FOLDER""/venv/bin/activate"
 # Ensure that we have everything we need
 for package in `cat requirements.txt`
 do
-    if $(echo "$package" | grep -q '@https') or $(echo "$package" | grep -q '@git+https')
+    if $(echo "$package" | grep -q '@')
     then
         echo "Skipping $package"
         continue
