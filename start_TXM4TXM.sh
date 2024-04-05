@@ -42,12 +42,12 @@ then
     pip install -r requirements.txt
 fi
 
-source "$FOLDER"/"venv/bin/activate"
+source "$FOLDER""/venv/bin/activate"
 
 # Ensure that we have everything we need
 for package in `cat requirements.txt`
 do
-    if $(echo $package | grep 'https')
+    if $(echo $package | grep -q '@https')
     then
         echo "Skipping $package"
         continue
@@ -60,7 +60,7 @@ do
 done
 
 
-COMMAND="source $FOLDER""venv/bin/activate; python -m uvicorn src.main:app --host ${TXM4TXM_HOST:-'0.0.0.0'} --port ${TXM4TXM_PORT:-'8000'} --root-path ${ROOT_PATH:-'/'} --workers 4 --timeout-keep-alive 1000 --log-config log.conf"
+COMMAND="source $FOLDER/venv/bin/activate; python -m uvicorn src.main:app --host ${TXM4TXM_HOST:-'0.0.0.0'} --port ${TXM4TXM_PORT:-'8000'} --root-path ${ROOT_PATH:-'/'} --workers 4 --timeout-keep-alive 1000 --log-config log.conf"
 
 printf "Starting txm4txm with command:\n"
 echo "$COMMAND"
