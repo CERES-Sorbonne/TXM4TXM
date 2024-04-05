@@ -6,7 +6,7 @@ source .env_txm4txm > /dev/null 2>&1
 
 set +a
 
-if [ "$SECRET_KEY" ]
+if [ "$TREETAGGER_HOME" ]
 then
 
     echo "TREETAGGER_HOME is set to '$TREETAGGER_HOME'"
