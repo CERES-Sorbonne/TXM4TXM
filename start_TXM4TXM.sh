@@ -1,31 +1,77 @@
 #!/bin/bash
 
-export TXM_PATH=https://ceres.huma-num.fr/txm4txm
-export TXM_PREFIX=/txm4txm
-export TXM_PORT=1818
-export ROOT_PATH=$TXM_PREFIX
-export FOLDER=/home/marceau/GH/TXM4TXM
-export TREETAGGER_HOME=/home/marceau/TreeTagger/
+set -efaou pipefail
 
-cd $FOLDER || exit
+source .env_txm4txm > /dev/null 2>&1
 
-git pull
-source ./venv/bin/activate
-pip install -r requirements.txt --quiet
+set +a
 
-IS_RUNNING=$(ps -aux | grep uvicorn | grep txm4txm)
+if [ "$SECRET_KEY" ]
+then
 
+    echo "TREETAGGER_HOME is set to '$TREETAGGER_HOME'"
+else
+    echo "TREETAGGER_HOME is not set, if you continue, only the spaCy model will be available"
+    read -p "Continue? [ y / $(tput setaf 1)N$(tput sgr0) ] " -n 1 -r
+    echo
+    if [[ ! $REPLY =~ ^[Yy]$ ]]
+    then
+        echo "Aborting"
+        exit 1
+    else
+        echo "Caution, no output will be saved"
+    fi
+fi
+
+
+cd "${FOLDER:=`pwd`/}"
+
+# Ensure pwd has worked
+if [ -z "${FOLDER%/*}" ]
+then
+    echo "The pwd command failed, leading to cd to $FOLDER"
+    exit 1
+fi
+
+# git pull origin master --quiet || exit
+
+if [ ! -d "venv" ]
+then
+    python3.11 -m venv venv
+    source venv/bin/activate
+    pip install -r requirements.txt
+fi
+
+source "$FOLDER""venv/bin/activate"
+
+# Ensure that we have everything we need
+for package in `cat requirements.txt`
+do
+    if ! pip show $package > /dev/null
+    then
+        echo "Missing $package, trying to install it..."
+        pip install $package
+    fi
+done
+
+
+COMMAND="source $FOLDER""venv/bin/activate; python -m uvicorn src.main:app --host ${TXM4TXM_HOST:-'0.0.0.0'} --port ${TXM4TXM_PORT:-'8000'} --root-path ${ROOT_PATH:-'/'} --workers 4 --timeout-keep-alive 1000 --log-config log.conf"
+
+printf "Starting txm4txm with command:\n"
+echo "$COMMAND"
+
+set +ue
+IS_RUNNING=`screen -ls | grep Txm4txm`
 if [ -z "$IS_RUNNING" ]
 then
-    echo "europarser service currently not running, starting gunicorn..."
-     python -m uvicorn api.api:app --port $TXM_PORT --root-path $ROOT_PATH --workers 8 --limit-max-requests 8 --reload-dir /home/marceau/GH/TXM4TXM --timeout-keep-alive 180
+    set -ue
+    echo "txm4txm service currently not running, starting..."
+    screen -S Txm4txm -dm bash -c "$COMMAND"
 else
-    echo "europarser already running, restarting..."
-    ps -aux | grep uvicorn | grep txm4txm | awk '{print $2}' | xargs kill -9
-    python -m uvicorn api.api:app --port $TXM_PORT --root-path $ROOT_PATH --workers 8 --limit-max-requests 8 --reload-dir /home/marceau/GH/TXM4TXM --timeout-keep-alive 180
+    set -ue
+    echo "txm4txm already running, restarting..."
+    screen -S Txm4txm -X quit
+    screen -S Txm4txm -dm bash -c "$COMMAND"
 fi
 
 cd -
-
-
-
