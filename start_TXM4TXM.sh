@@ -47,6 +47,11 @@ source "$FOLDER"/"venv/bin/activate"
 # Ensure that we have everything we need
 for package in `cat requirements.txt`
 do
+    if $(echo $package | grep -q '@https://')
+    then
+        echo "Skipping $package"
+        continue
+    fi
     if ! pip show $package > /dev/null
     then
         echo "Missing $package, trying to install it..."
