@@ -8,7 +8,7 @@ from fastapi.staticfiles import StaticFiles
 from fastapi.responses import StreamingResponse, HTMLResponse, FileResponse
 from starlette.templating import Jinja2Templates
 
-from transformers import utils, pipeline
+from transformers import utils  # , pipeline
 from transformers.enums import Output, Tag, Mode
 
 from transformers import concurrent_pipeline as pipeline

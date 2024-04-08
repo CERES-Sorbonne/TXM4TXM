@@ -17,14 +17,15 @@ from transformers.to_pivotTT import PivotTransformerTT
 from transformers.to_xml import XMLTransformer
 from transformers.utils import File
 
-global nlp
-nlp = None
+
+# global nlp
+# nlp = None
 
 
 def spacy_load():
-    global nlp
     nlp = spacy.load("fr_core_news_sm")
     nlp.max_length = 50000
+    return nlp
 
 
 def treetagger_load(model: Model = Model.french):
@@ -33,6 +34,13 @@ def treetagger_load(model: Model = Model.french):
         path_to_treetagger=DefaultTransformer.path_to_treetager(),
         language=model
     )
+    return nlp
+
+
+spacy_nlp = spacy_load()
+treetagger_nlp_fr = treetagger_load(Model.french)
+treetagger_nlp_old_fr = treetagger_load(Model.old_french)
+treetagger_nlp_fr_spoken = treetagger_load(Model.french_spoken)
 
 
 def pipeline(
@@ -67,11 +75,13 @@ def pipeline(
     pivot_tags = list(set([tag for tag_list in tags for tag in tag_list]))
 
     if mode == Mode.spacy:
-        global nlp
-        spacy_load()
+        # global nlp
+        # spacy_load()
+        pass
     elif mode == Mode.treetagger:
-        global nlp
-        treetagger_load(model=model)
+        # global nlp
+        # treetagger_load(model=model)
+        pass
     else:
         raise ValueError("mode must be spacy or treetagger")
 
@@ -84,12 +94,12 @@ def pipeline(
 
         resultss = p.starmap(
             file_processing,
-            [(file, output, tags, pivot_tags) for file in files]
+            [(file, output, tags, pivot_tags, mode, model) for file in files]
         )
         return [result for results in resultss for result in results]
 
 
-def file_processing(file, output, tags, pivot_tags, mode: Mode = Mode.spacy) -> List[File]:
+def file_processing(file, output, tags, pivot_tags, mode: Mode = Mode.spacy, model = Model.french) -> List[File]:
     outputs = []
     if not isinstance(file, (File, Path, str)):
         raise ValueError(f"file must be a Path, a File or a str ({type(file) = })")
@@ -97,14 +107,24 @@ def file_processing(file, output, tags, pivot_tags, mode: Mode = Mode.spacy) -> 
     # name = file.name if "name" in file.__dict__ else file[:10] + "..." + file[-10:]
     # pbar.set_postfix_str(name)
 
+    match model:
+        case Model.french:
+            tt_nlp = treetagger_nlp_fr
+        case Model.old_french:
+            tt_nlp = treetagger_nlp_old_fr
+        case Model.french_spoken:
+            tt_nlp = treetagger_nlp_fr_spoken
+
+
+
     if file.mime_type == MimeType.xml:
         if mode == Mode.spacy:
             pivot = PivotTransformer(
-                tags=pivot_tags, pivot_tags=pivot_tags, nlp=nlp
+                tags=pivot_tags, pivot_tags=pivot_tags, nlp=spacy_nlp
             ).transform(file)
         elif mode == Mode.treetagger:
             pivot = PivotTransformerTT(
-                tags=pivot_tags, pivot_tags=pivot_tags, nlp=nlp
+                tags=pivot_tags, pivot_tags=pivot_tags, nlp=tt_nlp
             ).transform(file)
         else:
             raise ValueError("mode must be spacy or treetagger")
