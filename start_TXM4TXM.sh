@@ -45,19 +45,19 @@ fi
 source "$FOLDER""/venv/bin/activate"
 
 # Ensure that we have everything we need
-for package in `cat requirements.txt`
-do
-    if $(echo "$package" | grep -q '@')
-    then
-        echo "Skipping $package"
-        continue
-    fi
-    if ! pip show $package > /dev/null
-    then
-        echo "Missing $package, trying to install it..."
-        pip install $package
-    fi
-done
+#for package in `cat requirements.txt`
+#do
+#    if $(echo "$package" | grep -q '@')
+#    then
+#        echo "Skipping $package"
+#        continue
+#    fi
+#    if ! pip show $package > /dev/null
+#    then
+#        echo "Missing $package, trying to install it..."
+#        pip install $package
+#    fi
+#done
 
 
 COMMAND="source $FOLDER/venv/bin/activate; python -m uvicorn api.api:app --host ${TXM4TXM_HOST:-'0.0.0.0'} --port ${TXM4TXM_PORT:-'8000'} --root-path ${ROOT_PATH:-'/'} --workers 4 --timeout-keep-alive 1000 --log-config log.conf"

@@ -31,8 +31,8 @@ class DefaultTransformer(ABC):
 
     @classmethod
     def path_to_treetager(self) -> str:
-        p1 = os.popen("echo $TREETAGGER_HOME").read().strip()
-        print(p1)
+        # p1 = os.popen("echo $TREETAGGER_HOME").read().strip()
+        # print(p1)
 
         tt = os.getenv("TREETAGGER_HOME", None)
         if tt is None:
@@ -50,6 +50,8 @@ class DefaultTransformer(ABC):
             pivot_tags: List[List[Tag]] | List[Tag] = None,
             nlp: spacy.language.Language | Model | TreeTagger = None,
     ) -> None:
+        print(f"{self.__class__.__name__} init...")
+        print(f"model: {nlp}")
 
         self.sent_id_n = 0
         self.sent_id_text = None

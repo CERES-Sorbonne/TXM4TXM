@@ -85,12 +85,17 @@ def pipeline(
         name = file.name if "name" in file.__dict__ else file[:10] + "..." + file[-10:]
         pbar.set_postfix_str(name)
 
+        print("a")
         if file.mime_type == MimeType.xml:
+            print(f"Processing {name}")
+            print(f"Loading {mode} model {nlp}...")
             if mode == Mode.spacy:
+                print(f"Loading spacy model {nlp}...")
                 pivot = PivotTransformer(
                     tags=pivot_tags, pivot_tags=pivot_tags, nlp=nlp
                 ).transform(file)
             elif mode == Mode.treetagger:
+                print(f"Loading TreeTagger model {nlp}...")
                 pivot = PivotTransformerTT(
                     tags=pivot_tags, pivot_tags=pivot_tags, nlp=nlp
                 ).transform(file)
