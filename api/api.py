@@ -17,8 +17,8 @@ main_dir = Path(__file__).parent
 
 app = FastAPI()
 
-host = os.getenv("TXM_PATH", "")
-prefix = os.getenv("TXM_PREFIX", "")
+host = os.getenv("TXM4TXM_PATH", "")
+prefix = os.getenv("TXM4TXM_PREFIX", "")
 
 treetagger_home = os.getenv("TREETAGGER_HOME", "")
 
