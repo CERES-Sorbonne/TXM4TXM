@@ -44,21 +44,27 @@ fi
 
 source "$FOLDER""/venv/bin/activate"
 
-# Ensure that we have everything we need
-#for package in `cat requirements.txt`
-#do
-#    if $(echo "$package" | grep -q '@')
-#    then
-#        echo "Skipping $package"
-#        continue
-#    fi
-#    if ! pip show $package > /dev/null
-#    then
-#        echo "Missing $package, trying to install it..."
-#        pip install $package
-#    fi
-#done
-
+set +e
+sed "s/\(.*\)\(--\|#\).*/\1/g" "requirements.txt" | grep -v '^ *#' | while IFS= read -r package
+do
+    if [[ "git" == *"$package"* ]]
+    then
+      package_name=$(echo "$package" | cut -d'@' -f1)
+      package_url=$(echo "$package" | cut -d'@' -f2)
+      if ! pip show "$package_name" > /dev/null
+      then
+          echo "Missing $package, trying to install it..."
+          pip install git+"$package_url"@master
+      fi
+    else
+      if ! pip show "$package" > /dev/null
+      then
+          echo "Missing $package, trying to install it..."
+          pip install "$package"
+      fi
+    fi
+done
+set -e
 
 COMMAND="source $FOLDER/venv/bin/activate; python -m uvicorn api.api:app --host ${TXM4TXM_HOST:-'0.0.0.0'} --port ${TXM4TXM_PORT:-'8000'} --root-path ${ROOT_PATH:-'/'} --workers 4 --timeout-keep-alive 1000 --log-config log.conf"
 

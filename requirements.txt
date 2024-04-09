@@ -1,12 +1,11 @@
-spacy #~=3.7.0
-fr_core_news_sm @https://github.com/explosion/spacy-models/releases/download/fr_core_news_sm-3.7.0/fr_core_news_sm-3.7.0-py3-none-any.whl
-xmltodict #~=0.13.0  #@https://github.com/lindsay-stevens/xmltodict.git
-beautifulsoup4 #~=4.12.2
-lxml
-tqdm
-# treetagger @https://github.com/miotto/treetagger-python.git
-
 uvicorn[standard]
 python-multipart
-fastapi #<=0.109.1
-starlette #~=0.36.2
+fastapi
+starlette
+spacy
+fr_core_news_sm @https://github.com/explosion/spacy-models/releases/download/fr_core_news_sm-3.7.0/fr_core_news_sm-3.7.0-py3-none-any.whl
+xmltodict  #@https://github.com/lindsay-stevens/xmltodict.git
+beautifulsoup4
+lxml
+tqdm
+treetagger @https://github.com/miotto/treetagger-python.git
