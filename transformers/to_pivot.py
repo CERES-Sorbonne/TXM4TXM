@@ -12,7 +12,7 @@ from transformers.utils import File
 
 
 def elaguer(texte):
-    return re.sub(r"\s+", " ", texte).strip()
+    return re.sub(r"\s+", " ", texte).strip() if texte else "N/A"
 
 
 class PivotTransformer(DefaultTransformer):
@@ -179,13 +179,15 @@ class PivotTransformer(DefaultTransformer):
             text = TEI.find("text")
 
             self._meta = {
-                "Titre": teiHeader.find("title").text,
+                "Titre": teiHeader.find("title").text if teiHeader.find("title") else "N/A",
                 "Edition": teiHeader.find("edition").text if teiHeader.find("edition") else "N/A",
                 "Publication": publicationStmt.find("publisher").text
-                if publicationStmt.find("publisher")
+                if publicationStmt is not None
+                and publicationStmt.find("publisher")
                 else "N/A",
                 "Date": publicationStmt.find("date").attrs["when"]
-                if publicationStmt.find("date")
+                if publicationStmt is not None
+                and publicationStmt.find("date")
                 and "when" in publicationStmt.find("date").attrs
                 else "N/A",
                 "Source": elaguer(sourceDesc),
